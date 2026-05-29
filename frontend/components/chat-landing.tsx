@@ -61,7 +61,7 @@ export default function ChatLanding({ onSend, loading }: Props) {
     <div className="flex flex-col flex-1 items-center justify-center px-4 bg-gray-50">
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-semibold text-gray-800">
-          有什麼保險問題，盡管問我
+          有什麼保險問題，儘管問我
         </h1>
       </div>
 
