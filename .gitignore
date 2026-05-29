@@ -1,0 +1,36 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Next.js
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+
+# General
+.DS_Store
+*.log
+
+# Claude Code local memory (contains private conversation history)
+.claude/
+
+# Research / paper files (not project code)
+paper_draft_v1.md
+paper_final.docx
+paper_final.pdf
+paper_revised.docx
+paper_revised.pdf
+presentation.pdf
+presentation.pptx
+convert_to_docx.py
+make_pptx.js
+process_record.md
