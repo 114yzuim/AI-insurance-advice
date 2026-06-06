@@ -1,0 +1,222 @@
+/* 中性預設樣式 — 可整份替換或只改 :root 變數套同學的 theme。
+   顏色/字級全走 CSS 變數,元件不寫死任何色票。 */
+:root {
+  --alloc-a: #4a6fa5; /* 金融 / 投資 */
+  --alloc-b: #5b8c6e; /* 保險 / 年金 */
+  --alloc-c: #6faaa0; /* 醫療 / 長照 */
+
+  --alloc-bg: #faf8f3;
+  --alloc-surface: #ffffff;
+  --alloc-sunk: #f3f1ea;
+  --alloc-ink: #2b2b28;
+  --alloc-ink-2: #5c5b54;
+  --alloc-ink-3: #8d8b82;
+  --alloc-line: #e4e1d8;
+  --alloc-accent: #2b2b28;
+  --alloc-radius: 12px;
+  --alloc-font: system-ui, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+.alloc-strategy {
+  font-family: var(--alloc-font);
+  color: var(--alloc-ink);
+  max-width: 920px;
+}
+.alloc-strategy__eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--alloc-ink-3);
+}
+.alloc-strategy__title {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 6px 0 4px;
+}
+.alloc-strategy__sub {
+  color: var(--alloc-ink-2);
+  font-size: 15px;
+  margin: 0 0 22px;
+}
+
+/* cards */
+.alloc-card {
+  background: var(--alloc-surface);
+  border: 1px solid var(--alloc-line);
+  border-radius: var(--alloc-radius);
+  padding: 20px;
+}
+.alloc-mode-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.alloc-mode-card {
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+.alloc-mode-card.is-selected {
+  border-color: var(--alloc-b);
+  background: color-mix(in srgb, var(--alloc-b) 8%, var(--alloc-surface));
+  box-shadow: 0 0 0 1px var(--alloc-b) inset;
+}
+.alloc-mode-card__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+.alloc-mode-card__tag { font-size: 22px; font-weight: 600; }
+.alloc-mode-card__eng { font-size: 13px; color: var(--alloc-ink-3); }
+.alloc-mode-card__desc { font-size: 14px; color: var(--alloc-ink-2); line-height: 1.6; margin: 12px 0 16px; }
+.alloc-mode-card__foot {
+  border-top: 1px solid var(--alloc-line);
+  padding-top: 12px;
+  font-size: 13px;
+  color: var(--alloc-ink-3);
+}
+.alloc-mode-card.is-selected .alloc-mode-card__foot { color: var(--alloc-b); }
+
+/* panel */
+.alloc-strategy__panel { margin-top: 4px; }
+.alloc-strategy__panel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.alloc-strategy__panel-title { font-size: 20px; font-weight: 500; margin-top: 4px; }
+.alloc-chip {
+  margin-left: auto;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--alloc-sunk);
+  color: var(--alloc-ink-2);
+  white-space: nowrap;
+}
+.alloc-error {
+  background: #fbeaea;
+  color: #9a2c2c;
+  border: 1px solid #e6c3c3;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* result */
+.alloc-result__body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.alloc-donut__big { font-size: 26px; font-weight: 600; fill: var(--alloc-ink); }
+.alloc-donut__small { font-size: 10px; fill: var(--alloc-ink-3); letter-spacing: 0.05em; }
+
+.alloc-bars { display: flex; flex-direction: column; gap: 14px; }
+.alloc-bar__head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.alloc-bar__name { display: flex; align-items: center; gap: 8px; font-weight: 500; }
+.alloc-bar__chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+.alloc-bar__sub { color: var(--alloc-ink-3); font-size: 12px; }
+.alloc-bar__pct { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
+.alloc-bar__track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--alloc-sunk);
+  overflow: hidden;
+}
+.alloc-bar__fill { height: 100%; border-radius: 999px; transition: width 0.25s; }
+
+/* constraints */
+.alloc-constraints { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+.alloc-constraint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--alloc-sunk);
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0.55;
+}
+.alloc-constraint.is-active { opacity: 1; }
+.alloc-constraint__label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.alloc-constraint__dot { width: 8px; height: 8px; border-radius: 999px; background: var(--alloc-ink-3); }
+.alloc-constraint.is-active .alloc-constraint__dot { background: var(--alloc-b); }
+.alloc-constraint__value { font-size: 13px; color: var(--alloc-ink-2); font-variant-numeric: tabular-nums; }
+.alloc-constraint__input {
+  width: 56px;
+  margin: 0 2px;
+  padding: 2px 6px;
+  border: 1px solid var(--alloc-line);
+  border-radius: 6px;
+  font: inherit;
+  text-align: right;
+}
+
+/* binding tags + note */
+.alloc-binding { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.alloc-binding__tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--alloc-sunk);
+  color: var(--alloc-ink-3);
+  border: 1px solid transparent;
+}
+.alloc-binding__tag.is-binding {
+  background: color-mix(in srgb, var(--alloc-a) 12%, var(--alloc-surface));
+  color: var(--alloc-a);
+  border-color: color-mix(in srgb, var(--alloc-a) 35%, transparent);
+}
+.alloc-result__note { font-size: 13px; color: var(--alloc-ink-2); margin: 12px 0 0; }
+
+/* needs (Layer 1) */
+.alloc-needs { margin-top: 16px; border-top: 1px solid var(--alloc-line); padding-top: 12px; }
+.alloc-needs__toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  color: var(--alloc-ink-3);
+}
+.alloc-needs__grid { display: flex; gap: 24px; margin-top: 10px; }
+.alloc-needs__item { display: flex; align-items: baseline; gap: 6px; }
+.alloc-needs__bucket { font-weight: 700; color: var(--alloc-ink-2); }
+.alloc-needs__num { font-variant-numeric: tabular-nums; color: var(--alloc-ink); }
+
+/* actions */
+.alloc-strategy__actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; }
+.alloc-btn {
+  font: inherit;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--alloc-line);
+  background: var(--alloc-surface);
+  cursor: pointer;
+}
+.alloc-btn--primary { background: var(--alloc-accent); color: #fff; border-color: var(--alloc-accent); }
+.alloc-btn:disabled { opacity: 0.5; cursor: default; }

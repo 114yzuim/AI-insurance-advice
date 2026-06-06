@@ -4,6 +4,7 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import chat, products, translate, needs_assessment, claims
+from allocation.router import router as allocation_router
 
 app = FastAPI(title="AI Insurance B2C API")
 
@@ -20,6 +21,7 @@ app.include_router(chat.router, prefix="/chat", tags=["chat"])
 app.include_router(translate.router, prefix="/translate", tags=["translate"])
 app.include_router(needs_assessment.router, prefix="/needs-assessment", tags=["needs-assessment"])
 app.include_router(claims.router, prefix="/claims", tags=["claims"])
+app.include_router(allocation_router, prefix="/api/allocation", tags=["allocation"])
 
 
 @app.get("/")

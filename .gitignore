@@ -27,10 +27,27 @@ frontend/out/
 paper_draft_v1.md
 paper_final.docx
 paper_final.pdf
+paper_final_text.txt
 paper_revised.docx
 paper_revised.pdf
 presentation.pdf
 presentation.pptx
+presentation_*.pptx
+presentation_*.pdf
+thesis_presentation.pptx
 convert_to_docx.py
 make_pptx.js
+make_pptx_en.js
 process_record.md
+
+# Slide export images
+slide-*.jpg
+en-slide-*.jpg
+
+# Node modules (root-level, from build scripts)
+node_modules/
+
+# Temp / scratch files
+tmp_*.json
+tmp_*.txt
+selected_products_check.txt

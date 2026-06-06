@@ -30,6 +30,12 @@ export default function RootLayout({
                 保險商品
               </Link>
               <Link
+                href="/allocation"
+                className="text-gray-600 hover:text-blue-700 transition-colors"
+              >
+                配置建議
+              </Link>
+              <Link
                 href="/health-check"
                 className="text-gray-600 hover:text-blue-700 transition-colors"
               >

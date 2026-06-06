@@ -1,0 +1,2 @@
+pydantic>=2.0
+fastapi>=0.100      # 只有 router.py 需要;核心 estimator/solver 不依賴 fastapi
