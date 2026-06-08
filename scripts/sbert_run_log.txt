@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+載入模型：paraphrase-multilingual-MiniLM-L12-v2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12419.52it/s]
+建立 780 筆商品向量嵌入...
+Batches:   0%|          | 0/25 [00:00<?, ?it/s]Batches:   4%|▍         | 1/25 [00:00<00:04,  5.48it/s]Batches:  44%|████▍     | 11/25 [00:00<00:00, 45.04it/s]Batches:  84%|████████▍ | 21/25 [00:00<00:00, 65.40it/s]Batches: 100%|██████████| 25/25 [00:00<00:00, 54.55it/s]
+
+情境：S01 建築工人意外險
+
+情境：S08 上班族補強醫療
+
+情境：S13 55歲家庭主婦
+
+完成！共 9 筆，結果存至 C:\Users\User\Desktop\Claude Code\AI insurance B2C\scripts\sbert_results.json

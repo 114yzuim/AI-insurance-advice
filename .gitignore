@@ -3,6 +3,9 @@
 .env.local
 .env.*.local
 
+# ChromaDB vector store (rebuilt automatically on first startup)
+backend/chroma_db/
+
 # Python
 __pycache__/
 *.py[cod]

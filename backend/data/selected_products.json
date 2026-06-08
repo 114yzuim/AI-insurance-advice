@@ -1,0 +1,102 @@
+{
+  "description": "Full PDF RAG 實驗選定商品：6 類別各 2 筆，共 12 筆。PDF 已下載至 backend/data/pdfs/",
+  "total": 12,
+  "products": [
+    {
+      "id": "HM_001",
+      "category": "健康醫療",
+      "product_name": "鑫安實在住院醫療終身健康保險",
+      "company": "富邦人壽",
+      "pdf_path": "backend/data/pdfs/HM_001.pdf",
+      "pdf_url": "https://www.fubon.com/life/cms/23F3A42248C54558A7BC50EE9EA751A7/2025-12/202512291524475320726545.pdf"
+    },
+    {
+      "id": "HM_002",
+      "category": "健康醫療",
+      "product_name": "台灣人壽真滿溢一年定期日額型住院手術健康保險附約",
+      "company": "台灣人壽",
+      "pdf_path": "backend/data/pdfs/HM_002.pdf",
+      "pdf_url": "https://www.taiwanlife.com/portal-api/File/23578"
+    },
+    {
+      "id": "LI_001",
+      "category": "壽險保障",
+      "product_name": "新光人壽Go普惠new定期保險",
+      "company": "新光人壽",
+      "pdf_path": "backend/data/pdfs/LI_001.pdf",
+      "pdf_url": "https://www.skl.com.tw/sklife_resource/leap_do/ins_download_picture/1735304364095/WFA_2_CT.pdf"
+    },
+    {
+      "id": "LI_002",
+      "category": "壽險保障",
+      "product_name": "遠雄人壽美滿美利讚美元利率變動型增額終身壽險",
+      "company": "遠雄人壽",
+      "pdf_path": "backend/data/pdfs/LI_002.pdf",
+      "pdf_url": "https://www.fglife.com.tw/termsLink.html?UUID=BB1&termsKind=O"
+    },
+    {
+      "id": "AN_001",
+      "category": "年金保險",
+      "product_name": "新豪開鑫利率變動型年金保險(甲型)",
+      "company": "富邦人壽",
+      "pdf_path": "backend/data/pdfs/AN_001.pdf",
+      "pdf_url": "https://www.fubon.com/life/cms/D3A6323B5A72447097CB91D8E0C50DDF/2025-12/202512311452286007397653.pdf"
+    },
+    {
+      "id": "AN_002",
+      "category": "年金保險",
+      "product_name": "遠雄人壽金添得利利率變動型年金保險（甲型）",
+      "company": "遠雄人壽",
+      "pdf_path": "backend/data/pdfs/AN_002.pdf",
+      "pdf_url": "https://www.fglife.com.tw/termsLink.html?UUID=NJE&termsKind=O"
+    },
+    {
+      "id": "AC_001",
+      "category": "意外傷害",
+      "product_name": "安康如意終身保險",
+      "company": "富邦人壽",
+      "pdf_path": "backend/data/pdfs/AC_001.pdf",
+      "pdf_url": "https://www.fubon.com/life/cms/CFF3BC0403144F5AA5B85D2E6D2B3B93/2025-12/202512291329360816263672.pdf"
+    },
+    {
+      "id": "AC_002",
+      "category": "意外傷害",
+      "product_name": "台灣人壽意生平安一年定期傷害暨兒童傷害失能保險附約",
+      "company": "台灣人壽",
+      "pdf_path": "backend/data/pdfs/AC_002.pdf",
+      "pdf_url": "https://www.taiwanlife.com/portal-api/File/23766"
+    },
+    {
+      "id": "IV_001",
+      "category": "投資型保險",
+      "product_name": "金富裕變額年金保險",
+      "company": "富邦人壽",
+      "pdf_path": "backend/data/pdfs/IV_001.pdf",
+      "pdf_url": "https://www.fubon.com/life/cms/910EA18FDC554C42B4B0E7E49DC9B75F/2025-06/202506261003555569171463.pdf"
+    },
+    {
+      "id": "IV_002",
+      "category": "投資型保險",
+      "product_name": "新光人壽享加鑫變額年金保險",
+      "company": "新光人壽",
+      "pdf_path": "backend/data/pdfs/IV_002.pdf",
+      "pdf_url": "https://www.skl.com.tw/sklife_resource/leap_do/ins_download_picture/1767092635218/VA3003(%E6%96%B0%E5%85%89%E4%BA%BA%E5%A3%BD%E4%BA%AB%E5%8A%A0%E9%91%AB%E8%AE%8A%E9%A1%8D%E5%B9%B4%E9%87%91%E4%BF%9D%E9%9A%AA)-1150101-V1.pdf"
+    },
+    {
+      "id": "EN_001",
+      "category": "還本養老",
+      "product_name": "享滿富分紅終身保險",
+      "company": "富邦人壽",
+      "pdf_path": "backend/data/pdfs/EN_001.pdf",
+      "pdf_url": "https://www.fubon.com/life/cms/C3991152DC664172A7B35C83CF66B70A/2025-12/202512291540094197770538.pdf"
+    },
+    {
+      "id": "EN_002",
+      "category": "還本養老",
+      "product_name": "遠雄人壽富貴喜多利利率變動型終身還本保險",
+      "company": "遠雄人壽",
+      "pdf_path": "backend/data/pdfs/EN_002.pdf",
+      "pdf_url": "https://www.fglife.com.tw/termsLink.html?UUID=WM1&termsKind=O"
+    }
+  ]
+}
