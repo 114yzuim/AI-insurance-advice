@@ -59,7 +59,7 @@ export default function AllocationPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900 mb-1">配置建議</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-1">退休規劃</h1>
         <p className="text-gray-500 text-sm">
           根據您的基本資料，系統將估算金融、保險、醫療三桶的配置比例。
         </p>

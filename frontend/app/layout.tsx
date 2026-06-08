@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
 import FontSizeToggle from "@/components/font-size-toggle";
+import NavLinks from "@/components/nav-links";
 import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -22,32 +23,7 @@ export default function RootLayout({
             <Link href="/" className="text-lg font-semibold text-blue-700 shrink-0">
               AI 保險顧問
             </Link>
-            <div className="flex items-center gap-5 text-sm">
-              <Link
-                href="/products"
-                className="text-gray-600 hover:text-blue-700 transition-colors"
-              >
-                保險商品
-              </Link>
-              <Link
-                href="/allocation"
-                className="text-gray-600 hover:text-blue-700 transition-colors"
-              >
-                配置建議
-              </Link>
-              <Link
-                href="/health-check"
-                className="text-gray-600 hover:text-blue-700 transition-colors"
-              >
-                需求評估
-              </Link>
-              <Link
-                href="/claims"
-                className="text-gray-600 hover:text-blue-700 transition-colors"
-              >
-                理賠模擬
-              </Link>
-            </div>
+            <NavLinks />
             <div className="ml-auto">
               <FontSizeToggle />
             </div>

@@ -11,15 +11,15 @@ interface Props {
 const CARDS: { mode: StrategyMode; tag: string; eng: string; desc: string }[] = [
   {
     mode: "free",
-    tag: "自由配",
+    tag: "自由配（AI 協助）",
     eng: "Free Allocation",
-    desc: "系統依客戶資產 / 年期 / 需求自行估算 ABC 比例,作為一個基準起點。",
+    desc: "系統依您的年齡、年期、需求自行估算 ABC 比例，作為一個基準起點，無需手動設定。",
   },
   {
     mode: "cons",
-    tag: "設定配",
+    tag: "設定配（人工設定）",
     eng: "Constrained Allocation",
-    desc: "保經先指定條件——保險佔比下限、必含醫療、特定上限——再讓系統在這個籠子裡求解。",
+    desc: "您自行指定條件——保險佔比下限、必含醫療、特定上限——系統在這些條件內求出最佳解。",
   },
 ];
 

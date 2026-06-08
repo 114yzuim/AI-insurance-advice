@@ -206,6 +206,46 @@
 .alloc-needs__bucket { font-weight: 700; color: var(--alloc-ink-2); }
 .alloc-needs__num { font-variant-numeric: tabular-nums; color: var(--alloc-ink); }
 
+/* ABC bucket intro */
+.alloc-abc-intro {
+  background: var(--alloc-sunk);
+  border-radius: var(--alloc-radius);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.alloc-abc-intro__title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--alloc-ink-3);
+  margin-bottom: 12px;
+}
+.alloc-abc-intro__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.alloc-abc-intro__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--alloc-ink-2);
+}
+.alloc-abc-intro__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
 /* actions */
 .alloc-strategy__actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; }
 .alloc-btn {

@@ -96,6 +96,24 @@ export function AllocationStrategy({
         </p>
       </header>
 
+      <div className="alloc-abc-intro">
+        <p className="alloc-abc-intro__title">三桶說明</p>
+        <div className="alloc-abc-intro__grid">
+          <div className="alloc-abc-intro__item">
+            <span className="alloc-abc-intro__badge" style={{ background: "var(--alloc-a)" }}>A</span>
+            <span><strong>金融 / 投資</strong>：ETF、債券、定存等資產累積</span>
+          </div>
+          <div className="alloc-abc-intro__item">
+            <span className="alloc-abc-intro__badge" style={{ background: "var(--alloc-b)" }}>B</span>
+            <span><strong>保險 / 年金</strong>：儲蓄險、年金、投資型保單</span>
+          </div>
+          <div className="alloc-abc-intro__item">
+            <span className="alloc-abc-intro__badge" style={{ background: "var(--alloc-c)" }}>C</span>
+            <span><strong>醫療 / 長照</strong>：醫療險、失能、長照給付</span>
+          </div>
+        </div>
+      </div>
+
       <StrategyModeCards mode={mode} onChange={setMode} />
 
       <section className="alloc-card alloc-strategy__panel">
