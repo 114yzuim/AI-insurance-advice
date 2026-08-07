@@ -557,7 +557,7 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
               <PolarGrid />
               <PolarAngleAxis dataKey="subject" tick={{ fontSize: 12 }} />
               <Radar name="每月保費" dataKey="每月保費" stroke="#1d4ed8" fill="#3b82f6" fillOpacity={0.3} />
-              <Tooltip formatter={(val: number) => `${val.toLocaleString()} 元/月`} />
+              <Tooltip formatter={(val) => `${Number(val ?? 0).toLocaleString()} 元/月`} />
             </RadarChart>
           </ResponsiveContainer>
         </div>

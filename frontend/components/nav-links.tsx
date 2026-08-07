@@ -3,14 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const CUSTOMER_LINKS = [
+type NavLink = {
+  href: string;
+  label: string;
+  exact?: boolean;
+};
+
+const CUSTOMER_LINKS: NavLink[] = [
   { href: "/chat", label: "AI 顧問" },
   { href: "/products", label: "保險商品" },
   { href: "/health-check", label: "需求評估" },
   { href: "/claims", label: "理賠模擬" },
 ];
 
-const ADVISOR_LINKS = [
+const ADVISOR_LINKS: NavLink[] = [
   { href: "/advisor", label: "客戶列表", exact: true },
 ];
 

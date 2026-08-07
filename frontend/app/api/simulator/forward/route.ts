@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-
-const BACKEND = "http://127.0.0.1:8000";
+import { BACKEND } from "@/app/api/_lib/backend";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();

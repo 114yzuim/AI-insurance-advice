@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-
-const BACKEND = process.env.BACKEND_URL ?? "http://127.0.0.1:8000";
+import { BACKEND } from "@/app/api/_lib/backend";
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData();

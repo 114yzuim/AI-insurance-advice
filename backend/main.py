@@ -1,6 +1,8 @@
 from dotenv import load_dotenv
 load_dotenv()
 
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import chat, products, translate, needs_assessment, claims, simulator
@@ -12,9 +14,15 @@ init_db()
 
 app = FastAPI(title="AI-insurance-advice API")
 
+frontend_origins = [
+    origin.strip()
+    for origin in os.getenv("FRONTEND_URL", "").split(",")
+    if origin.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", *frontend_origins],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
