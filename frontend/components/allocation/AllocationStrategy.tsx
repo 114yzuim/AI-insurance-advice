@@ -20,6 +20,7 @@ interface Props {
   baseUrl?: string;
   initialConstraints?: Constraint[];
   onNext?: (result: ViewModel) => void;
+  nextLabel?: string;
 }
 
 export interface ViewModel {
@@ -39,6 +40,7 @@ export function AllocationStrategy({
   baseUrl = "/api/allocation",
   initialConstraints = DEFAULT_CONSTRAINTS,
   onNext,
+  nextLabel = "查看退休規劃曲線 →",
 }: Props) {
   const apiClient = useMemo(() => api ?? createAllocationApi(baseUrl), [api, baseUrl]);
   const [mode, setMode] = useState<StrategyMode>("free");
@@ -90,29 +92,11 @@ export function AllocationStrategy({
     <div className="alloc-strategy">
       <header className="alloc-strategy__head">
         <div className="alloc-strategy__eyebrow">Allocation Strategy</div>
-        <h2 className="alloc-strategy__title">選擇配置策略</h2>
+        <h2 className="alloc-strategy__title">選擇計算方式</h2>
         <p className="alloc-strategy__sub">
-          告訴系統要不要設限——讓系統自行估算,還是您指定條件。
+          不確定的話，選「讓系統幫我算」就好；有特定想法再切換到「我自己設條件」。
         </p>
       </header>
-
-      <div className="alloc-abc-intro">
-        <p className="alloc-abc-intro__title">三桶說明</p>
-        <div className="alloc-abc-intro__grid">
-          <div className="alloc-abc-intro__item">
-            <span className="alloc-abc-intro__badge" style={{ background: "var(--alloc-a)" }}>A</span>
-            <span><strong>金融 / 投資</strong>：ETF、債券、定存等資產累積</span>
-          </div>
-          <div className="alloc-abc-intro__item">
-            <span className="alloc-abc-intro__badge" style={{ background: "var(--alloc-b)" }}>B</span>
-            <span><strong>保險 / 年金</strong>：儲蓄險、年金、投資型保單</span>
-          </div>
-          <div className="alloc-abc-intro__item">
-            <span className="alloc-abc-intro__badge" style={{ background: "var(--alloc-c)" }}>C</span>
-            <span><strong>醫療 / 長照</strong>：醫療險、失能、長照給付</span>
-          </div>
-        </div>
-      </div>
 
       <StrategyModeCards mode={mode} onChange={setMode} />
 
@@ -154,7 +138,7 @@ export function AllocationStrategy({
               disabled={loading || !view || !view.feasible}
               onClick={() => view && onNext(view)}
             >
-              跑出情境 →
+              {nextLabel}
             </button>
           </div>
         )}

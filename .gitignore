@@ -6,6 +6,9 @@
 # ChromaDB vector store (rebuilt automatically on first startup)
 backend/chroma_db/
 
+# SQLite advisor DB (contains test client PII, rebuilt via db_init.py)
+backend/advisor.db
+
 # Python
 __pycache__/
 *.py[cod]

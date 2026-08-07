@@ -8,18 +8,20 @@ interface Props {
   onChange: (mode: StrategyMode) => void;
 }
 
-const CARDS: { mode: StrategyMode; tag: string; eng: string; desc: string }[] = [
+const CARDS: { mode: StrategyMode; tag: string; eng: string; desc: string; foot: string }[] = [
   {
     mode: "free",
-    tag: "自由配（AI 協助）",
-    eng: "Free Allocation",
-    desc: "系統依您的年齡、年期、需求自行估算 ABC 比例，作為一個基準起點，無需手動設定。",
+    tag: "讓系統幫我算",
+    eng: "AI 自動建議",
+    desc: "系統根據您的年齡、退休年齡與風險偏好，自動估算儲蓄投資、保險保障、醫療長照三類的建議比例。不需手動設定任何條件。",
+    foot: "適合剛開始規劃、不確定從哪裡下手的用戶",
   },
   {
     mode: "cons",
-    tag: "設定配（人工設定）",
-    eng: "Constrained Allocation",
-    desc: "您自行指定條件——保險佔比下限、必含醫療、特定上限——系統在這些條件內求出最佳解。",
+    tag: "我自己設條件",
+    eng: "手動設定限制",
+    desc: "您指定規則，例如「保險至少佔 25%」或「一定要含醫療保障」，系統在這些條件下算出最合適的配置。",
+    foot: "適合已有想法、想確認方案可行性的用戶",
   },
 ];
 
@@ -42,7 +44,7 @@ export function StrategyModeCards({ mode, onChange }: Props) {
             </div>
             <p className="alloc-mode-card__desc">{card.desc}</p>
             <div className="alloc-mode-card__foot">
-              {selected ? "✓ 已選擇" : "點擊選擇"}
+              {selected ? `✓ 已選擇 · ${card.foot}` : card.foot}
             </div>
           </button>
         );

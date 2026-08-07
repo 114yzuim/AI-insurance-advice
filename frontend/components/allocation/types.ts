@@ -78,8 +78,8 @@ export const BUCKET_META: Record<Bucket, { label: string; sub: string; cssVar: s
 
 /** 對應 backend default_constraints() — 原型「設定配」預設 4 條。 */
 export const DEFAULT_CONSTRAINTS: Constraint[] = [
-  { id: "ins_floor", label: "保險佔比下限", kind: "floor", bucket: "B", value: 25, active: true },
-  { id: "med_must", label: "必含醫療 / 長照", kind: "must_include", bucket: "C", value: 10, active: true },
-  { id: "fin_cap", label: "金融佔比上限", kind: "cap", bucket: "A", value: 60, active: true },
+  { id: "ins_floor", label: "保險購買佔比", kind: "floor", bucket: "B", value: 25, active: true },
+  { id: "med_must", label: "醫療/長照 投入資源", kind: "must_include", bucket: "C", value: 10, active: true },
+  { id: "fin_cap", label: "金融投資增值", kind: "cap", bucket: "A", value: 60, active: true },
   { id: "liquidity", label: "流動性保留 ≥6個月", kind: "liquidity", bucket: null, value: 6, active: false },
 ];

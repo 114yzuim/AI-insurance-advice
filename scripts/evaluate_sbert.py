@@ -23,7 +23,7 @@ openai_client  = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 gemini_client  = ggenai.Client(api_key=os.environ["Google_AI_Studio_API_key"])
 
 RESULTS_PATH = Path(__file__).parent / "sbert_results.json"
-OUTPUT_PATH  = Path(__file__).parent / "sbert_eval_results.json"
+OUTPUT_PATH  = Path(__file__).parent / "sbert_eval_results_v3.json"
 AHP_WEIGHTS  = {"D1": 0.648, "D2": 0.230, "D3": 0.122}
 
 EVAL_SYSTEM = """你是一位嚴格、中立的保險推薦品質評審員。
@@ -35,8 +35,12 @@ EVAL_PROMPT = """【用戶情境】{scenario_label}
 【AI 回應】{reply}
 
 【評分 Rubric】
-D1 需求覆蓋率
-  1=未覆蓋核心需求  2=部分覆蓋，有方向但缺具體商品  3=完整覆蓋，推薦了具名商品並說明適配原因
+D1 需求覆蓋率（評分時僅判斷「是否回應了用戶需求」，條款細節的有無不影響本維度，由 D2 另行評分）
+  1=未覆蓋核心需求：無方向、無具體商品、亦未說明無法滿足需求之原因
+  2=部分覆蓋：有方向但缺具體商品，或對需求理解含糊籠統
+  3=完整覆蓋，符合以下任一情況即可得 3 分（兩者互相獨立，(a) 不要求條款細節）：
+     (a) 推薦了具名商品並說明適配原因（僅需商品名稱＋符合需求的理由，不要求條款層級細節，那是 D2 的評分範圍）
+     (b) 正確判斷無符合需求之商品，且具體說明排除原因（如指出職業類別、年齡等具體限制條件），而非籠統建議諮詢業務員或未說明理由
 
 D2 條款一致性
   1=無任何商品具體資訊，純靠業界通則  2=有商品名稱或保費數字，但欠缺條款細節  3=明確引用具體條款資訊或可核實保費

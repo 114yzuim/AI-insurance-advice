@@ -1,0 +1,758 @@
+[
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "D1:正確判斷職業限制排除具名商品並說明原因。D2:有商品名稱但缺具體條款細節。D3:充分揭露職業類別、預算限制、解約注意事項。"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "覆蓋需求、引用條款、完整揭露限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "正確判斷職業限制，揭露具體商品細節與重要注意事項。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "D1:正確判斷商品不符並具體說明職業類別限制。D2:有商品名稱但缺條款細節。D3:充分揭露職業限制與注意事項。"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "指出無符合商品並說明原因，商品細節欠缺，但限制揭露充分。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "正確判斷並說明職業限制"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "D1:正確判斷職業不符並說明具體排除原因。D2:有商品名稱與給付數字但無條款細節。D3:充分揭露職業限制與早期解約風險。"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "完整覆蓋需求，條款詳盡，具體揭露職業限制。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "D1: 正確判斷商品不符需求，並說明具體限制（職業類別）。D2: 提供了具名商品的具體條款資訊。D3: 充分揭露職業限制及注意事項，但未提及一般除外責任。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品+適配原因；引用具體條款（日額比例、步數標準、折減幅度）；揭露附約限制、精神疾病上限、手術給付規則等注意事項"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，細節完整並揭露限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具體商品並說明適配性；提供多項條款細節及費率影響因素；充分揭露限制與注意事項。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品+適配原因(D1)；引用具體條款如365天、20%、0.5倍(D2)；揭露精神疾病限制、附約限制、日額型缺口等(D3)"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "具商品名及適配性，含條款細節，部分限制揭露"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "D1推薦具名商品並說明適配性。D2引用多個具體條款細節。D3揭露附約特性、日額型限制及職業類別注意事項。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品+適配原因；引用具體條款（日額倍數、天數上限、步數門檻）；揭露附約限制、年齡調費、精神疾病上限等注意事項"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品且解釋原因，引用具體條款並充分揭露限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並解釋適配性，引用條款且充分揭露限制。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品含條款細節（年金開始時間、保證期間選項、年齡上限），並揭露宣告利率波動、保障限制等注意事項"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並解釋適配原因，提供完整條款與限制說明。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦商品符合需求，條款細節與限制皆有揭露。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": ""
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "提供具名商品及詳細條款，揭露限制與注意事項，完整覆蓋需求"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，詳述條款內容及重要限制，並明確指出未涵蓋的保障項目。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM1_Claude",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品含適配原因；引用年齡上限、宣告利率機制等具體條款；充分揭露流動性風險、宣告利率非保證等限制"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並細述條款與限制。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，細節符合條款，揭露限制與注意事項完整。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 2,
+      "W_score": 2.648,
+      "notes": "正確排除不適合商品並說明職業類別限制，但缺乏具體條款細節，未推薦替代商品"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "明確指出不符職業類別，建議高風險產品"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "正確判斷不符並說明職業限制，提供具名商品與具體條款資訊。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 2,
+      "W_score": 2.648,
+      "notes": "D1:具名商品並說明職業類別排除原因符合(b)；D2:有商品名稱但無條款細節；D3:揭露職業限制但未充分說明其他除外責任"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "判斷無合適商品，說明職業限制，揭露限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "正確判斷商品不符需求，具體說明職業限制，並提供商品條款細節。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 2,
+      "W_score": 2.648,
+      "notes": "具名商品並指出職業限制排除原因得D1=3；有商品名稱但缺條款細節；揭露職業限制但未充分說明除外責任"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "推薦商品並說明不適合原因，提供部分條款資訊，完整揭露限制。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並具體說明排除原因，揭露職業/預算限制。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "推薦具名商品並說明適配原因，引用具體條款細節，但未揭露年齡/健康狀況承保限制等重要事項"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "提供具名商品及條款，部分揭露限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，說明適配原因，揭露具體條款和部分限制"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "推薦具名商品並說明適配原因，引用具體條款；但未揭露年齡、職業等承保限制"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "提供商品及條款資訊，揭露部分限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，詳述條款特色與限制，並提及注意事項。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "推薦具名商品並說明適配原因得D1=3；引用具體條款細節得D2=3；揭露精神疾病限制與手術給付限制但未提年齡/職業除外，D3=2"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具體商品名稱、條款細節及限制完整呈現，滿足用戶需求"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並說明適配性，具體條款與給付限制揭露充分。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 2,
+      "W_score": 2.648,
+      "notes": "D1:具名商品並說明退休適配理由；D2:有商品名稱與條款描述但無具體保費數字；D3:揭露年齡限制但未說明解約損失等重要限制"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具體產品，提供條款細節，揭露年齡限制等注意事項。"
+    },
+    "gemini": {
+      "D1": 2,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.23,
+      "notes": "D1:僅回應退休規劃，漏保障需求。D2:提及具體條款細節，可核實。D3:揭露年齡限制，未提除外責任及職業限制。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 2,
+      "W_score": 2.648,
+      "notes": "推薦具名商品並說明退休適配性，但缺乏具體條款數字；揭露年齡上限與注意事項，但除外責任揭露不足"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "涵蓋用戶需求，有具體商品和條款，揭露年齡限制。"
+    },
+    "gemini": {
+      "D1": 2,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 2.352,
+      "notes": "部分覆蓋需求，未涵蓋「保障」面；條款資訊具體；充分揭露限制與注意事項"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM2_GPT4o",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 2,
+      "W_score": 2.648,
+      "notes": "D1:推薦具名商品並說明退休適配原因；D2:有商品名稱與部分給付結構，缺乏具體條款細節與保費試算；D3:僅揭露年齡上限限制，未充分說明其他除外責任"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "推薦具名商品，條款細節充分，年齡限制揭露缺除外責任。"
+    },
+    "gemini": {
+      "D1": 2,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.23,
+      "notes": "D1: 僅涵蓋退休規劃，未回應保障需求。D2: 具體列出年金給付細節與保證期間。D3: 僅揭露年齡限制，未提除外責任。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "D1推薦具名商品並說明適配原因；D2有商品名稱但缺具體條款數據；D3充分揭露職業限制、解約風險等注意事項"
+    },
+    "gpt4o": {
+      "D1": 2,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 2.352,
+      "notes": "部分覆蓋需求，條款詳細，限制揭露充分"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，並具體指出職業限制與預算考量。條款細節明確，揭露資訊完整。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "推薦具名商品並說明適配原因得D1=3；有商品名稱但缺乏具體條款細節得D2=2；充分揭露職業限制、解約風險等注意事項得D3=3"
+    },
+    "gpt4o": {
+      "D1": 2,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.23,
+      "notes": "部分覆蓋需求，條款具體完整，限制揭露不全"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具體商品並詳述特色，同時揭露關鍵職業與預算限制。"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "scenario_label": "建築工人意外險",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 2,
+      "D3": 3,
+      "W_score": 2.77,
+      "notes": "D1:有具名商品+適配理由。D2:有商品名稱與保障金額但缺乏具體條款依據。D3:充分揭露職業限制、解約風險、除外事項。"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "完整覆蓋需求，具體條款及限制揭露充分"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並說明適配原因，同時揭露職業類別、預算等重要限制，條款細節明確。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "具名商品並說明適配原因；引用具體條款細節；但未揭露年齡限制、附約主約需求等除外條件"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "完整推薦商品並解釋，條款清楚但部分限制揭露"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品，引用具體條款，揭露重要限制與附約性質。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": ""
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "完整覆蓋需求，條款明確，充分揭露限制。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具體商品並說明適配原因，明確引用多項條款細節，充分揭露多項限制與注意事項。"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "scenario_label": "上班族補強醫療",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": ""
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 2,
+      "W_score": 2.878,
+      "notes": "具名商品並適配說明，條款細節明確，缺揭露所有限制。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具體商品並詳述條款細節與限制"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 1,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品+適配原因(D1)；引用條款第七、十五、十八條(D2)；揭露年齡限制、生存證明等注意事項(D3)"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品且詳細說明條款及限制"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "AI推薦具名商品並說明適配退休與保障原因；明確引用條款編號；充分揭露限制與注意事項。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 2,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品+適配原因完整；引用條款第七、十五、十八條；揭露年齡限制、年金開始日、生存證明等限制"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "完整覆蓋需求，條款詳實，揭露充分限制。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具體商品並說明適配，引用具體條款，充分揭露限制。"
+    }
+  },
+  {
+    "scenario_id": "S13",
+    "scenario_label": "55歲家庭主婦",
+    "generator": "LLM3_Gemini",
+    "strategy": "single_product_chunk",
+    "run": 3,
+    "claude": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "具名商品並說明適配原因；引用條款第7、15、18條；揭露年齡限制、給付條件等限制"
+    },
+    "gpt4o": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "全面符合需求，引用條款，揭露限制完全。"
+    },
+    "gemini": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "W_score": 3.0,
+      "notes": "推薦具名商品並說明適配性；引用具體條款資訊；充分揭露限制。"
+    }
+  }
+]

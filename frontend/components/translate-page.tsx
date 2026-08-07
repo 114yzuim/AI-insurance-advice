@@ -47,8 +47,15 @@ export default function TranslateContent({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pdf_url: url, product_name: name }),
       });
-      if (!res.ok) throw new Error();
       const data = await res.json();
+      if (!res.ok) {
+        const msg =
+          (data as { detail?: string })?.detail ||
+          (data as { error?: string })?.error ||
+          "保單解析失敗，請確認保單連結是否有效，或稍後再試。";
+        setError(msg);
+        return;
+      }
       setSummary(data.summary);
       setDisclaimer(data.disclaimer);
       onSave({
@@ -200,9 +207,23 @@ export default function TranslateContent({
 
         {/* URL-mode error */}
         {error && isUrlMode && (
-          <div className="py-16 flex flex-col items-center gap-4">
-            <p className="text-sm text-red-500">{error}</p>
-            <Link href="/products" className="text-sm text-blue-700 hover:underline">返回商品列表</Link>
+          <div className="py-12 flex flex-col items-center gap-4 max-w-sm mx-auto text-center">
+            <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-2xl">⚠</div>
+            <p className="text-sm text-red-600 leading-relaxed">{error}</p>
+            <div className="flex flex-col sm:flex-row gap-3 mt-2 w-full">
+              <Link
+                href="/translate"
+                className="flex-1 py-2.5 bg-blue-700 text-white rounded-xl text-sm font-medium hover:bg-blue-800 transition-colors text-center"
+              >
+                改用上傳 PDF
+              </Link>
+              <Link
+                href="/products"
+                className="flex-1 py-2.5 border border-gray-200 text-gray-600 rounded-xl text-sm font-medium hover:bg-gray-50 transition-colors text-center"
+              >
+                返回商品列表
+              </Link>
+            </div>
           </div>
         )}
 

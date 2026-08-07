@@ -3,20 +3,26 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const LINKS = [
+const CUSTOMER_LINKS = [
+  { href: "/chat", label: "AI 顧問" },
   { href: "/products", label: "保險商品" },
   { href: "/health-check", label: "需求評估" },
   { href: "/claims", label: "理賠模擬" },
-  { href: "/allocation", label: "退休規劃" },
+];
+
+const ADVISOR_LINKS = [
+  { href: "/advisor", label: "客戶列表", exact: true },
 ];
 
 export default function NavLinks() {
   const pathname = usePathname();
+  const isAdvisor = pathname.startsWith("/advisor");
+  const links = isAdvisor ? ADVISOR_LINKS : CUSTOMER_LINKS;
 
   return (
-    <div className="flex items-center gap-5 text-sm">
-      {LINKS.map(({ href, label }) => {
-        const active = pathname.startsWith(href);
+    <div className="flex items-center gap-5 text-sm flex-1">
+      {links.map(({ href, label, exact }) => {
+        const active = exact ? pathname === href : pathname.startsWith(href);
         return (
           <Link
             key={href}
@@ -31,6 +37,18 @@ export default function NavLinks() {
           </Link>
         );
       })}
+
+      <div className="ml-auto">
+        {isAdvisor ? (
+          <Link href="/chat" className="text-xs text-gray-400 hover:text-blue-600 transition-colors border border-gray-200 rounded-lg px-3 py-1.5">
+            ← 客戶入口
+          </Link>
+        ) : (
+          <Link href="/advisor" className="text-xs text-gray-400 hover:text-emerald-600 transition-colors border border-gray-200 rounded-lg px-3 py-1.5">
+            業務員工具 →
+          </Link>
+        )}
+      </div>
     </div>
   );
 }

@@ -119,6 +119,9 @@ export default function ChatInterface({ messages, loading, onSend }: Props) {
 
       {/* Input area */}
       <div className="border-t border-gray-200 bg-gray-50 px-4 py-3">
+        <p className="max-w-2xl mx-auto text-xs text-gray-400 text-center mb-2">
+          本服務提供資訊參考，非正式保險建議，請諮詢合格業務員。
+        </p>
         <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-sm px-4 pt-4 pb-3">
           <textarea
             ref={inputRef}

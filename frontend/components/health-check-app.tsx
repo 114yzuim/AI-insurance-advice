@@ -551,14 +551,16 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
 
       <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
         <h2 className="text-sm font-medium text-gray-500 mb-4">每月保費分配（元/月）</h2>
-        <ResponsiveContainer width="100%" height={240}>
-          <RadarChart data={radarData}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" tick={{ fontSize: 12 }} />
-            <Radar name="每月保費" dataKey="每月保費" stroke="#1d4ed8" fill="#3b82f6" fillOpacity={0.3} />
-            <Tooltip formatter={(val: number) => `${val.toLocaleString()} 元/月`} />
-          </RadarChart>
-        </ResponsiveContainer>
+        <div style={{ height: "16rem" }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart data={radarData}>
+              <PolarGrid />
+              <PolarAngleAxis dataKey="subject" tick={{ fontSize: 12 }} />
+              <Radar name="每月保費" dataKey="每月保費" stroke="#1d4ed8" fill="#3b82f6" fillOpacity={0.3} />
+              <Tooltip formatter={(val: number) => `${val.toLocaleString()} 元/月`} />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
 
       {result.recommended_products?.length > 0 && (

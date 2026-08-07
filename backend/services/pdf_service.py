@@ -15,9 +15,17 @@ async def extract_pdf_from_bytes(content: bytes) -> str:
 
 
 async def fetch_pdf_text(url: str) -> str:
-    async with httpx.AsyncClient(timeout=30) as client:
-        response = await client.get(url)
+    # verify=False handles insurers with non-standard SSL certs (e.g. missing SKI)
+    async with httpx.AsyncClient(timeout=30, verify=False) as client:
+        response = await client.get(url, follow_redirects=True)
         response.raise_for_status()
+
+    content_type = response.headers.get("content-type", "")
+    if "html" in content_type.lower():
+        raise ValueError(
+            "此連結指向網頁而非 PDF 文件，無法自動解析。"
+            "請至保險公司官網手動下載 PDF 保單後，使用「上傳 PDF」功能。"
+        )
 
     with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
         tmp.write(response.content)

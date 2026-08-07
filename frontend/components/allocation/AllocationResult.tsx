@@ -26,7 +26,7 @@ function Donut({ allocation }: { allocation: Allocation }) {
   const circ = 2 * Math.PI * r;
   let offset = 0;
   return (
-    <svg viewBox="0 0 140 140" width={150} height={150} className="alloc-donut">
+    <svg viewBox="0 0 140 140" className="alloc-donut">
       <g transform="rotate(-90 70 70)">
         {BUCKETS.map((b) => {
           const len = (allocation[key(b)] / 100) * circ;
@@ -47,10 +47,10 @@ function Donut({ allocation }: { allocation: Allocation }) {
           return node;
         })}
       </g>
-      <text x={70} y={66} textAnchor="middle" className="alloc-donut__big">
+      <text x={70} y={66} textAnchor="middle" className="alloc-donut__big" fontSize={26}>
         100%
       </text>
-      <text x={70} y={86} textAnchor="middle" className="alloc-donut__small">
+      <text x={70} y={86} textAnchor="middle" className="alloc-donut__small" fontSize={10}>
         ABC 配置
       </text>
     </svg>

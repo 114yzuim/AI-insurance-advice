@@ -59,6 +59,7 @@ async def extract_profile(history: list[dict], message: str) -> dict:
         resp = await _client.messages.create(
             model="claude-haiku-4-5-20251001",
             max_tokens=200,
+            temperature=0,
             system=_EXTRACT_SYSTEM,
             messages=[{"role": "user", "content": conversation}],
         )

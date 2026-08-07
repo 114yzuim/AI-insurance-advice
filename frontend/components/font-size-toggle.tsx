@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 type FontSize = "small" | "medium" | "large";
 
 const OPTIONS: { label: string; value: FontSize; scale: string }[] = [
-  { label: "小", value: "small", scale: "112.5%" },
-  { label: "中", value: "medium", scale: "131.25%" },
-  { label: "大", value: "large", scale: "175%" },
+  { label: "小", value: "small", scale: "100%" },
+  { label: "中", value: "medium", scale: "130%" },
+  { label: "大", value: "large", scale: "225%" },
 ];
 
 function apply(size: FontSize) {
