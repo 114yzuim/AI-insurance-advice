@@ -207,7 +207,7 @@ export default function HealthCheckApp() {
   })();
 
   return (
-    <div className="flex h-full overflow-hidden bg-gray-50">
+    <div className="flex h-full overflow-hidden bg-[#f7faf8]">
       <HealthCheckSidebar
         profiles={profiles}
         currentId={currentProfileId}
@@ -227,20 +227,51 @@ export default function HealthCheckApp() {
 
 function WelcomeView({ onNew }: { onNew: () => void }) {
   return (
-    <div className="flex flex-col items-center justify-center h-full text-center px-6 py-12">
-      <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-5">
-        <ClipboardIcon />
+    <div className="mx-auto max-w-6xl px-5 py-8 md:px-8">
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <section className="rounded-[2rem] bg-white p-6 shadow-xl shadow-teal-100/70 ring-1 ring-slate-100 md:p-8">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-teal-700">
+            <ClipboardIcon />
+          </div>
+          <p className="mt-6 text-sm font-bold text-teal-700">保障健檢</p>
+          <h1 className="mt-2 max-w-2xl text-3xl font-bold leading-tight text-slate-950 md:text-5xl">
+            <span className="block">用一份問卷</span>
+            <span className="block">看懂家庭保障缺口</span>
+          </h1>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+            建立顧客或家庭資料後，依序填寫成員狀況，AI 會整理保障優先順序、預算提醒與可參考商品。
+          </p>
+          <button
+            onClick={onNew}
+            className="mt-7 rounded-xl bg-slate-950 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-slate-200 transition hover:bg-slate-800"
+          >
+            開始保障健檢
+          </button>
+        </section>
+
+        <aside className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-bold text-slate-950">評估會看哪些面向</h2>
+          <div className="mt-4 space-y-3">
+            <GuideCard title="家庭責任" text="婚姻、扶養人數與債務。" />
+            <GuideCard title="收入與預算" text="每月收入與可負擔保費。" />
+            <GuideCard title="健康與職業" text="病史、職業風險與意外暴露。" />
+          </div>
+        </aside>
       </div>
-      <h1 className="text-xl font-semibold text-gray-800 mb-2">保障需求評估</h1>
-      <p className="text-sm text-gray-500 max-w-xs leading-relaxed mb-6">
-        建立顧客資料，填完所有成員問卷後，AI 一次分析整個家庭的保障需求
-      </p>
-      <button
-        onClick={onNew}
-        className="px-6 py-2.5 bg-blue-700 text-white rounded-xl text-sm font-medium hover:bg-blue-800 transition-colors"
-      >
-        建立顧客資料
-      </button>
+      <div className="mt-6 grid gap-3 md:grid-cols-3">
+        <GuideCard title="1. 建立資料" text="設定個人或家庭成員，讓評估有明確對象。" />
+        <GuideCard title="2. 填寫問卷" text="用選項快速整理收入、責任、健康與預算。" />
+        <GuideCard title="3. 取得建議" text="產出保障優先順序、保費提醒與參考商品。" />
+      </div>
+    </div>
+  );
+}
+
+function GuideCard({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="rounded-2xl bg-slate-50 p-4">
+      <p className="text-sm font-bold text-slate-800">{title}</p>
+      <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
     </div>
   );
 }
@@ -258,34 +289,36 @@ function SetupView({
   const [count, setCount] = useState(1);
 
   return (
-    <div className="max-w-md mx-auto px-4 py-12">
-      <div className="mb-8 text-center">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-1">建立顧客資料</h1>
-        <p className="text-sm text-gray-400">填完所有成員問卷後，AI 一次評估整個家庭</p>
-      </div>
+    <div className="mx-auto grid min-h-full max-w-5xl items-center gap-6 px-5 py-8 md:px-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <div>
+        <p className="text-sm font-bold text-teal-700">建立資料</p>
+        <h1 className="mt-2 text-3xl font-bold text-slate-950">先設定這次要評估的人</h1>
+        <p className="mt-3 max-w-xl text-base leading-7 text-slate-600">
+          可以只評估自己，也可以一次建立家庭成員，後續結果會依照整體責任與預算一起整理。
+        </p>
 
-      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 flex flex-col gap-6">
+        <div className="mt-6 flex flex-col gap-6 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-teal-100/70">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">資料名稱(個人、家庭)</label>
+          <label className="mb-2 block text-sm font-bold text-slate-700">資料名稱</label>
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="例如：我的家庭、王先生"
-            className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm text-gray-800 focus:outline-none focus:border-blue-400 placeholder-gray-300"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-300 focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
           />
         </div>
 
         <div>
-          <p className="text-sm font-medium text-gray-700 mb-3">這次要評估幾個人？</p>
+          <p className="mb-3 text-sm font-bold text-slate-700">這次要評估幾個人？</p>
           <div className="flex gap-2">
             {[1, 2, 3, 4].map((n) => (
               <button
                 key={n}
                 onClick={() => setCount(n)}
-                className={`flex-1 py-2.5 rounded-xl border text-sm font-medium transition-colors ${
+                className={`flex-1 rounded-2xl border py-3 text-sm font-bold transition ${
                   count === n
-                    ? "bg-blue-700 text-white border-blue-700"
-                    : "border-gray-200 text-gray-600 hover:border-blue-300 hover:text-blue-700"
+                    ? "border-slate-950 bg-slate-950 text-white"
+                    : "border-slate-200 text-slate-600 hover:border-teal-300 hover:text-teal-700"
                 }`}
               >
                 {n} 人
@@ -296,15 +329,27 @@ function SetupView({
 
         <button
           onClick={() => onConfirm(name, count)}
-          className="w-full py-3 bg-blue-700 text-white rounded-xl font-medium text-sm hover:bg-blue-800 transition-colors"
+          className="w-full rounded-xl bg-slate-950 py-3 text-sm font-bold text-white transition hover:bg-slate-800"
         >
           開始填問卷
         </button>
       </div>
 
-      <button onClick={onCancel} className="mt-4 w-full text-sm text-gray-400 hover:text-gray-600 text-center">
-        取消
-      </button>
+        <button onClick={onCancel} className="mt-4 text-sm font-bold text-slate-400 transition hover:text-slate-600">
+          取消
+        </button>
+      </div>
+
+      <aside className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm">
+        <h2 className="text-sm font-bold text-slate-950">接下來會問</h2>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {["年齡", "收入", "家庭責任", "債務", "健康", "保費預算"].map((item) => (
+            <span key={item} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-bold text-slate-600">
+              {item}
+            </span>
+          ))}
+        </div>
+      </aside>
     </div>
   );
 }
@@ -313,12 +358,12 @@ function SetupView({
 
 function AssessingView({ memberCount }: { memberCount: number }) {
   return (
-    <div className="flex flex-col items-center justify-center h-full gap-4 text-gray-500 px-4 text-center">
+    <div className="flex h-full flex-col items-center justify-center gap-4 px-4 text-center text-slate-500">
       <SpinnerIcon />
-      <p className="text-base font-medium text-gray-700">
+      <p className="text-base font-bold text-slate-700">
         正在評估 {memberCount} 位成員的保障需求…
       </p>
-      <p className="text-sm text-gray-400">考慮家庭脈絡進行分析，約需 10–20 秒</p>
+      <p className="text-sm text-slate-400">考慮家庭脈絡進行分析，約需 10–20 秒</p>
     </div>
   );
 }
@@ -360,15 +405,15 @@ function QuestionnaireView({
 
   if (nameStep) {
     return (
-      <div className="max-w-xl mx-auto px-4 py-12">
-        <div className="mb-8 text-center">
-          <p className="text-xs text-blue-600 font-medium mb-1">
+      <div className="mx-auto flex min-h-full max-w-3xl flex-col justify-center px-5 py-8 md:px-8">
+        <div className="mb-6">
+          <p className="text-sm font-bold text-teal-700">
             第 {memberIndex + 1} 位 / 共 {totalMembers} 位
           </p>
-          <h1 className="text-2xl font-semibold text-gray-800 mb-1">請輸入姓名或關係</h1>
-          <p className="text-sm text-gray-400">方便之後區分各人的評估結果</p>
+          <h1 className="mt-2 text-3xl font-bold text-slate-950">請輸入姓名或關係</h1>
+          <p className="mt-2 text-sm text-slate-500">方便之後區分每位成員的評估結果。</p>
         </div>
-        <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-xl shadow-teal-100/70">
           <input
             autoFocus
             value={memberName}
@@ -377,16 +422,16 @@ function QuestionnaireView({
               if (e.key === "Enter") { setMemberName((v) => v.trim() || defaultName); setNameStep(false); }
             }}
             placeholder={defaultName}
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-800 focus:outline-none focus:border-blue-400 placeholder-gray-300 mb-4"
+            className="mb-4 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-300 focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
           />
           <button
             onClick={() => { setMemberName((v) => v.trim() || defaultName); setNameStep(false); }}
-            className="w-full py-3 bg-blue-700 text-white rounded-xl font-medium text-sm hover:bg-blue-800 transition-colors"
+            className="w-full rounded-xl bg-slate-950 py-3 text-sm font-bold text-white transition hover:bg-slate-800"
           >
             下一步
           </button>
         </div>
-        {error && <p className="mt-4 text-sm text-red-500 text-center">{error}</p>}
+        {error && <p className="mt-4 text-center text-sm text-red-500">{error}</p>}
       </div>
     );
   }
@@ -394,41 +439,42 @@ function QuestionnaireView({
   const q = QUESTIONS[step];
   const isLastMember = memberIndex === totalMembers - 1;
   const isLastQuestion = step === QUESTIONS.length - 1;
-  const progress = Math.round((step / QUESTIONS.length) * 100);
+  const progress = Math.round(((step + 1) / QUESTIONS.length) * 100);
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-12">
-      <div className="mb-8 text-center">
-        <p className="text-xs text-blue-600 font-medium mb-1">
+    <div className="mx-auto grid min-h-full max-w-5xl items-center gap-6 px-5 py-8 md:px-8 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <section>
+        <div className="mb-6">
+        <p className="text-sm font-bold text-teal-700">
           {memberName}・第 {memberIndex + 1} 位 / 共 {totalMembers} 位
         </p>
-        <h1 className="text-2xl font-semibold text-gray-800 mb-1">保障需求評估</h1>
+        <h1 className="mt-2 text-3xl font-bold text-slate-950">保障需求評估</h1>
         {isLastMember && isLastQuestion && (
-          <p className="text-xs text-amber-600 mt-1">填完後將送出所有成員資料進行評估</p>
+          <p className="mt-2 text-sm font-bold text-amber-600">填完後將送出所有成員資料進行評估</p>
         )}
       </div>
 
       <div className="mb-6">
-        <div className="flex justify-between text-xs text-gray-400 mb-1.5">
+        <div className="mb-2 flex justify-between text-xs font-bold text-slate-400">
           <span>第 {step + 1} / {QUESTIONS.length} 題</span>
           <span>{progress}%</span>
         </div>
-        <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+        <div className="h-2 overflow-hidden rounded-full bg-slate-200">
           <div
-            className="h-full bg-blue-600 rounded-full transition-all duration-300"
+            className="h-full rounded-full bg-teal-500 transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-        <p className="text-base font-medium text-gray-800 mb-5">{q.question}</p>
-        <div className="flex flex-col gap-2.5">
+      <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-teal-100/70">
+        <p className="mb-5 text-xl font-bold text-slate-950">{q.question}</p>
+        <div className="grid gap-2.5 sm:grid-cols-2">
           {q.options.map((opt) => (
             <button
               key={opt}
               onClick={() => handleOption(opt)}
-              className="w-full text-left px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-700 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-left text-sm font-bold text-slate-700 transition hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800"
             >
               {opt}
             </button>
@@ -439,11 +485,20 @@ function QuestionnaireView({
       {step > 0 && (
         <button
           onClick={() => setStep(step - 1)}
-          className="mt-4 text-sm text-gray-400 hover:text-gray-600 flex items-center gap-1"
+          className="mt-4 flex items-center gap-1 text-sm font-bold text-slate-400 hover:text-slate-600"
         >
           <ChevronLeftIcon /> 上一題
         </button>
       )}
+      </section>
+
+      <aside className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm">
+        <p className="text-sm font-bold text-slate-950">目前進度</p>
+        <p className="mt-3 text-4xl font-bold text-teal-700">{progress}%</p>
+        <p className="mt-2 text-sm leading-6 text-slate-500">
+          回答會暫存在本頁，最後一位成員完成後才會送出評估。
+        </p>
+      </aside>
     </div>
   );
 }
@@ -461,17 +516,18 @@ function ProfileResultView({
   const member = profile.members[activeMember];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-5">
+    <div className="mx-auto max-w-6xl px-5 py-8 md:px-8">
+      <div className="mb-5 flex flex-col gap-4 rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm md:flex-row md:items-center md:justify-between">
         <div>
-          <h1 className="text-xl font-semibold text-gray-800">{profile.name}</h1>
-          <p className="text-xs text-gray-400 mt-0.5">
+          <p className="text-sm font-bold text-teal-700">健檢結果</p>
+          <h1 className="mt-1 text-2xl font-bold text-slate-950">{profile.name}</h1>
+          <p className="mt-1 text-xs text-slate-400">
             {profile.members.length} 人・{new Date(profile.createdAt).toLocaleDateString("zh-TW")}
           </p>
         </div>
         <button
           onClick={onNew}
-          className="flex items-center gap-1.5 px-4 py-2 bg-blue-700 text-white rounded-xl text-sm font-medium hover:bg-blue-800 transition-colors"
+          className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-slate-950 px-4 py-2 text-sm font-bold text-white transition hover:bg-slate-800"
         >
           <PlusSmIcon /> 建立新資料
         </button>
@@ -479,8 +535,8 @@ function ProfileResultView({
 
       {/* Family summary */}
       {profile.familySummary && (
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-5 text-sm text-blue-900 leading-relaxed">
-          <span className="font-medium">家庭整體摘要：</span>{profile.familySummary}
+        <div className="mb-5 rounded-[1.5rem] border border-teal-100 bg-teal-50 p-4 text-sm leading-7 text-teal-900">
+          <span className="font-bold">家庭整體摘要：</span>{profile.familySummary}
         </div>
       )}
 
@@ -493,8 +549,8 @@ function ProfileResultView({
               onClick={() => setActiveMember(i)}
               className={`shrink-0 px-4 py-2 rounded-xl text-sm font-medium border transition-colors ${
                 i === activeMember
-                  ? "bg-blue-700 text-white border-blue-700"
-                  : "border-gray-200 text-gray-600 hover:border-blue-300"
+                  ? "border-slate-950 bg-slate-950 text-white"
+                  : "border-slate-200 bg-white text-slate-600 hover:border-teal-300 hover:text-teal-700"
               }`}
             >
               {m.name}
@@ -505,7 +561,7 @@ function ProfileResultView({
 
       {member && <MemberResultSection member={member} disclaimer={""} />}
 
-      <p className="text-xs text-gray-400 text-center mt-4">
+      <p className="mt-5 text-center text-xs text-slate-400">
         本服務提供資訊參考，非正式保險建議，請諮詢合格業務員。
       </p>
     </div>
@@ -522,18 +578,19 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
   }));
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-900 leading-relaxed">
-        <span className="font-medium">摘要：</span>{result.summary}
-      </div>
+    <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
+      <div className="space-y-5">
+        <div className="rounded-[1.5rem] border border-amber-200 bg-amber-50 p-4 text-sm leading-7 text-amber-900">
+          <span className="font-bold">摘要：</span>{result.summary}
+        </div>
 
-      <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-sm text-gray-700 leading-relaxed">
-        <span className="font-medium">預算規劃：</span>{result.budget_note}
-      </div>
+        <div className="rounded-[1.5rem] border border-slate-200 bg-white p-4 text-sm leading-7 text-slate-700">
+          <span className="font-bold">預算規劃：</span>{result.budget_note}
+        </div>
 
       {inBudget.length > 0 && (
         <div>
-          <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">在預算內，建議優先投保</h2>
+          <h2 className="mb-3 text-xs font-bold uppercase text-slate-500">在預算內，建議優先投保</h2>
           <div className="flex flex-col gap-2.5">
             {inBudget.map((item) => <PriorityCard key={item.key} item={item} highlighted />)}
           </div>
@@ -542,21 +599,23 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
 
       {deferred.length > 0 && (
         <div>
-          <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">預算充裕後再補足</h2>
+          <h2 className="mb-3 text-xs font-bold uppercase text-slate-500">預算充裕後再補足</h2>
           <div className="flex flex-col gap-2.5">
             {deferred.map((item) => <PriorityCard key={item.key} item={item} highlighted={false} />)}
           </div>
         </div>
       )}
+      </div>
 
-      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-        <h2 className="text-sm font-medium text-gray-500 mb-4">每月保費分配（元/月）</h2>
+      <aside className="space-y-5">
+      <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
+        <h2 className="mb-4 text-sm font-bold text-slate-700">每月保費分配（元/月）</h2>
         <div style={{ height: "16rem" }}>
           <ResponsiveContainer width="100%" height="100%">
             <RadarChart data={radarData}>
               <PolarGrid />
               <PolarAngleAxis dataKey="subject" tick={{ fontSize: 12 }} />
-              <Radar name="每月保費" dataKey="每月保費" stroke="#1d4ed8" fill="#3b82f6" fillOpacity={0.3} />
+              <Radar name="每月保費" dataKey="每月保費" stroke="#0f766e" fill="#14b8a6" fillOpacity={0.28} />
               <Tooltip formatter={(val) => `${Number(val ?? 0).toLocaleString()} 元/月`} />
             </RadarChart>
           </ResponsiveContainer>
@@ -568,27 +627,28 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
       )}
 
       {disclaimer && <p className="text-xs text-gray-400 text-center">{disclaimer}</p>}
+      </aside>
     </div>
   );
 }
 
 function ProductRecommendations({ products }: { products: ProductCard[] }) {
   return (
-    <div className="bg-green-50 border border-green-200 rounded-2xl p-4">
-      <div className="flex items-center gap-2 mb-3">
+    <div className="rounded-[1.5rem] border border-emerald-200 bg-emerald-50 p-4">
+      <div className="mb-3 flex items-center gap-2">
         <StarIcon />
-        <h2 className="text-sm font-semibold text-green-800">資料庫推薦商品</h2>
+        <h2 className="text-sm font-bold text-emerald-800">資料庫推薦商品</h2>
       </div>
-      <p className="text-xs text-green-700 mb-3">根據此成員的需求評估，以下商品可能值得了解（僅供參考）</p>
+      <p className="mb-3 text-xs leading-5 text-emerald-700">根據此成員的需求評估，以下商品可能值得了解（僅供參考）</p>
       <div className="flex flex-col gap-2.5">
         {products.map((p) => (
-          <div key={p.product_id} className="bg-white rounded-xl border border-green-100 px-4 py-3 flex items-center justify-between gap-3">
+          <div key={p.product_id} className="flex items-center justify-between gap-3 rounded-2xl border border-emerald-100 bg-white px-4 py-3">
             <div className="min-w-0">
-              <p className="text-sm font-medium text-gray-800 truncate">{p.product_name}</p>
-              <p className="text-xs text-gray-500 mt-0.5">{p.company}・{p.category}</p>
+              <p className="truncate text-sm font-bold text-slate-800">{p.product_name}</p>
+              <p className="mt-0.5 text-xs text-slate-500">{p.company}・{p.category}</p>
             </div>
             {p.source_url && (
-              <a href={p.source_url} target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs text-blue-600 hover:text-blue-800 font-medium">
+              <a href={p.source_url} target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-bold text-teal-700 hover:text-teal-900">
                 查看 →
               </a>
             )}
@@ -601,20 +661,20 @@ function ProductRecommendations({ products }: { products: ProductCard[] }) {
 
 function PriorityCard({ item, highlighted }: { item: RecommendationItem; highlighted: boolean }) {
   return (
-    <div className={`rounded-xl border p-4 ${highlighted ? "bg-white border-blue-200 border-l-4 border-l-blue-500" : "bg-gray-50 border-gray-200"}`}>
+    <div className={`rounded-2xl border p-4 ${highlighted ? "border-teal-200 border-l-4 border-l-teal-500 bg-white" : "border-slate-200 bg-slate-50"}`}>
       <div className="flex items-start justify-between gap-3">
-        <div className="flex items-center gap-2.5 min-w-0">
-          <span className={`shrink-0 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center ${highlighted ? "bg-blue-600 text-white" : "bg-gray-300 text-gray-600"}`}>
+        <div className="flex min-w-0 items-center gap-2.5">
+          <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${highlighted ? "bg-teal-600 text-white" : "bg-slate-300 text-slate-600"}`}>
             {item.priority}
           </span>
           <div className="min-w-0">
-            <span className="text-sm font-medium text-gray-800">{KEY_LABEL[item.key] ?? item.key}</span>
-            <p className="text-xs text-gray-500 mt-0.5 leading-relaxed">{item.reason}</p>
+            <span className="text-sm font-bold text-slate-800">{KEY_LABEL[item.key] ?? item.key}</span>
+            <p className="mt-0.5 text-xs leading-6 text-slate-500">{item.reason}</p>
           </div>
         </div>
         <div className="shrink-0 text-right">
-          <p className="text-sm font-semibold text-gray-800">{item.amount.toLocaleString()} {item.unit}</p>
-          <p className="text-xs text-gray-400 mt-0.5">{item.premium_range}</p>
+          <p className="text-sm font-bold text-slate-800">{item.amount.toLocaleString()} {item.unit}</p>
+          <p className="mt-0.5 text-xs text-slate-400">{item.premium_range}</p>
         </div>
       </div>
     </div>
@@ -625,7 +685,7 @@ function PriorityCard({ item, highlighted }: { item: RecommendationItem; highlig
 
 function SpinnerIcon() {
   return (
-    <svg className="animate-spin text-blue-600" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg className="animate-spin text-teal-600" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M21 12a9 9 0 1 1-6.219-8.56" />
     </svg>
   );
@@ -646,7 +706,7 @@ function ChevronLeftIcon() {
 }
 function ClipboardIcon() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.8">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
       <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
       <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
     </svg>
@@ -654,7 +714,7 @@ function ClipboardIcon() {
 }
 function StarIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="2.5">
       <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
     </svg>
   );

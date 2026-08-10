@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import MarkdownContent from "./markdown-content";
 
 interface Product {
@@ -55,7 +55,7 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
       const data = await res.json();
       setMessages([...newMessages, { role: "assistant", content: data.reply }]);
     } catch {
-      setMessages([...newMessages, { role: "assistant", content: "抱歉，發生錯誤，請稍後再試。" }]);
+      setMessages([...newMessages, { role: "assistant", content: "抱歉，暫時無法取得回覆，請稍後再試。" }]);
     } finally {
       setLoading(false);
     }
@@ -69,68 +69,68 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
   }
 
   return (
-    <div className="h-full flex flex-col bg-white">
-      {/* Header */}
-      <div className="shrink-0 px-4 py-3 border-b border-gray-200 bg-gray-50 flex items-start justify-between">
-        <div>
-          <p className="text-sm font-semibold text-gray-700">AI 商品詢問</p>
-          <p className="text-xs text-gray-400 mt-0.5">
-            {selected.length === 0 ? "請先勾選商品" : `已選 ${selected.length} 個商品`}
-          </p>
+    <aside className="flex h-full flex-col bg-white">
+      <div className="shrink-0 border-b border-slate-100 px-4 py-4">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-bold text-teal-700">AI 商品詢問</p>
+            <h2 className="mt-1 text-lg font-bold text-slate-950">
+              {selected.length === 0 ? "先勾選商品" : `已選 ${selected.length} 張商品`}
+            </h2>
+          </div>
+          {messages.length > 0 && (
+            <button
+              onClick={() => setMessages([])}
+              title="清除對話紀錄"
+              className="rounded-full px-2.5 py-1 text-xs font-bold text-slate-400 transition hover:bg-rose-50 hover:text-rose-500"
+            >
+              清除
+            </button>
+          )}
         </div>
-        {messages.length > 0 && (
-          <button
-            onClick={() => setMessages([])}
-            title="清除對話紀錄"
-            className="text-xs text-gray-400 hover:text-red-500 transition-colors mt-0.5"
-          >
-            清除
-          </button>
-        )}
       </div>
 
-      {/* Selected product chips */}
       {selected.length > 0 && (
-        <div className="shrink-0 px-3 py-2 border-b border-gray-100 flex flex-wrap gap-1.5 max-h-28 overflow-y-auto">
-          {selected.map((p) => (
-            <span
-              key={p.product_id}
-              className="inline-flex items-center gap-1 text-xs bg-blue-50 text-blue-700 border border-blue-200 rounded-full px-2.5 py-1"
-            >
-              <span className="max-w-[120px] truncate">{p.product_name}</span>
-              <button
-                onClick={() => onDeselect(p.product_id)}
-                className="text-blue-400 hover:text-blue-700 leading-none"
+        <div className="shrink-0 border-b border-slate-100 px-3 py-3">
+          <div className="flex max-h-32 flex-wrap gap-1.5 overflow-y-auto">
+            {selected.map((p) => (
+              <span
+                key={p.product_id}
+                className="inline-flex items-center gap-1 rounded-full border border-teal-100 bg-teal-50 px-2.5 py-1 text-xs font-bold text-teal-700"
               >
-                ×
-              </button>
-            </span>
-          ))}
+                <span className="max-w-[130px] truncate">{p.product_name}</span>
+                <button
+                  onClick={() => onDeselect(p.product_id)}
+                  className="leading-none text-teal-400 hover:text-teal-800"
+                  title="移除商品"
+                >
+                  x
+                </button>
+              </span>
+            ))}
+          </div>
         </div>
       )}
 
-      {/* Messages */}
-      <div className="flex-1 min-h-0 overflow-y-auto px-4 py-4 flex flex-col gap-3">
+      <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto px-4 py-4">
         {selected.length === 0 && messages.length === 0 ? (
-          <div className="flex-1 flex flex-col items-center justify-center text-center gap-3 text-gray-400">
-            <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-2xl">
-              💬
-            </div>
-            <p className="text-sm">勾選左側商品後<br />即可詢問 AI 相關問題</p>
-          </div>
+          <EmptyState
+            title="勾選商品後詢問 AI"
+            description="例如條款限制、保障差異、適合情境，都可以放在這裡問。"
+          />
         ) : messages.length === 0 ? (
-          <div className="flex-1 flex flex-col items-center justify-center text-center gap-2 text-gray-400">
-            <p className="text-sm">已選好商品，可以開始詢問</p>
-            <p className="text-xs text-gray-300">例如：這些商品有什麼差異？</p>
-          </div>
+          <EmptyState
+            title="可以開始詢問"
+            description="試著問：這些商品的保障差異在哪裡？"
+          />
         ) : (
           messages.map((m, i) => (
             <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
               <div
-                className={`max-w-[85%] text-xs leading-relaxed rounded-2xl px-3.5 py-2.5 ${
+                className={`max-w-[88%] rounded-2xl px-3.5 py-2.5 text-xs leading-6 ${
                   m.role === "user"
-                    ? "bg-blue-600 text-white rounded-br-sm whitespace-pre-wrap"
-                    : "bg-gray-100 text-gray-800 rounded-bl-sm"
+                    ? "rounded-br-md bg-slate-950 text-white"
+                    : "rounded-bl-md bg-slate-100 text-slate-800"
                 }`}
               >
                 {m.role === "user" ? m.content : <MarkdownContent content={m.content} />}
@@ -138,13 +138,14 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
             </div>
           ))
         )}
+
         {loading && (
           <div className="flex justify-start">
-            <div className="bg-gray-100 rounded-2xl rounded-bl-sm px-3.5 py-2.5">
-              <div className="flex gap-1 items-center h-4">
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:0ms]" />
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:150ms]" />
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:300ms]" />
+            <div className="rounded-2xl rounded-bl-md bg-slate-100 px-3.5 py-2.5">
+              <div className="flex h-4 items-center gap-1">
+                <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:0ms]" />
+                <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:150ms]" />
+                <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:300ms]" />
               </div>
             </div>
           </div>
@@ -152,32 +153,59 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
         <div ref={bottomRef} />
       </div>
 
-      {/* Input */}
-      <div className="shrink-0 border-t border-gray-200 px-3 py-3 bg-white">
-        <div className="flex gap-2 items-end">
+      <div className="shrink-0 border-t border-slate-100 bg-white px-3 py-3">
+        <div className="flex items-end gap-2">
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={selected.length === 0 ? "請先勾選商品…" : "輸入問題，Enter 送出"}
+            placeholder={selected.length === 0 ? "請先勾選商品..." : "輸入問題，Enter 送出"}
             disabled={selected.length === 0 || loading}
             rows={2}
-            className="flex-1 resize-none text-xs text-gray-800 placeholder-gray-400 border border-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:bg-gray-50 disabled:text-gray-400"
+            className="flex-1 resize-none rounded-2xl border border-slate-200 px-3 py-2 text-xs leading-5 text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-teal-300 focus:ring-4 focus:ring-teal-100 disabled:bg-slate-50 disabled:text-slate-400"
           />
           <button
             onClick={handleSend}
             disabled={!input.trim() || selected.length === 0 || loading}
-            className="shrink-0 w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
+            title="送出"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+            <SendIcon />
           </button>
         </div>
-        <p className="text-[10px] text-gray-300 mt-1.5 text-center">
-          本服務提供資訊參考，非正式保險建議
+        <p className="mt-2 text-center text-[10px] text-slate-300">
+          AI 回覆僅供資訊參考
         </p>
       </div>
+    </aside>
+  );
+}
+
+function EmptyState({ title, description }: { title: string; description: string }) {
+  return (
+    <div className="flex flex-1 flex-col items-center justify-center rounded-3xl border border-dashed border-slate-200 bg-slate-50 px-4 text-center">
+      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-teal-700 shadow-sm">
+        <MessageIcon />
+      </div>
+      <p className="mt-3 text-sm font-bold text-slate-700">{title}</p>
+      <p className="mt-1 max-w-52 text-xs leading-5 text-slate-400">{description}</p>
     </div>
+  );
+}
+
+function MessageIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+    </svg>
+  );
+}
+
+function SendIcon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+      <path d="M22 2L11 13" />
+      <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+    </svg>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { CustomerProfile } from "./health-check-app";
 
 interface Props {
@@ -15,7 +15,14 @@ interface Props {
 }
 
 export default function HealthCheckSidebar({
-  profiles, currentId, open, onNew, onSelect, onDelete, onRename, onToggle,
+  profiles,
+  currentId,
+  open,
+  onNew,
+  onSelect,
+  onDelete,
+  onRename,
+  onToggle,
 }: Props) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [menuOpenId, setMenuOpenId] = useState<string | null>(null);
@@ -41,11 +48,11 @@ export default function HealthCheckSidebar({
 
   if (!open) {
     return (
-      <div className="flex flex-col w-12 shrink-0 border-r border-gray-200 bg-white items-center py-3 gap-2">
-        <button onClick={onToggle} className="p-2 rounded-lg hover:bg-gray-100 text-gray-500">
+      <div className="flex w-12 shrink-0 flex-col items-center gap-2 border-r border-slate-200 bg-white py-3">
+        <button onClick={onToggle} className="rounded-xl p-2 text-slate-500 hover:bg-slate-100" title="展開側欄">
           <MenuIcon />
         </button>
-        <button onClick={onNew} className="p-2 rounded-lg hover:bg-blue-50 text-blue-700">
+        <button onClick={onNew} className="rounded-xl p-2 text-teal-700 hover:bg-teal-50" title="建立資料">
           <PlusIcon />
         </button>
       </div>
@@ -53,27 +60,27 @@ export default function HealthCheckSidebar({
   }
 
   return (
-    <div className="flex flex-col w-64 shrink-0 border-r border-gray-200 bg-white overflow-hidden">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100">
-        <span className="font-semibold text-sm text-gray-700">顧客資料</span>
-        <button onClick={onToggle} className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500">
+    <aside className="flex w-64 shrink-0 flex-col overflow-hidden border-r border-slate-200 bg-white">
+      <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
+        <span className="text-sm font-bold text-slate-700">健檢紀錄</span>
+        <button onClick={onToggle} className="rounded-xl p-1.5 text-slate-500 hover:bg-slate-100" title="收合側欄">
           <MenuIcon />
         </button>
       </div>
 
-      <div className="px-3 pt-2 pb-1">
+      <div className="px-3 pb-1 pt-2">
         <button
           onClick={onNew}
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-blue-700 hover:bg-blue-50 transition-colors"
+          className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-teal-700 transition hover:bg-teal-50"
         >
           <PlusIcon />
-          建立資料
+          建立健檢資料
         </button>
       </div>
 
       <div className="flex-1 overflow-y-auto px-2 pb-4">
         {profiles.length === 0 && (
-          <p className="text-xs text-gray-400 text-center mt-8">尚無顧客資料</p>
+          <p className="mt-8 text-center text-xs text-slate-400">目前沒有健檢紀錄</p>
         )}
         {profiles.map((profile) => {
           const isActive = profile.id === currentId;
@@ -82,14 +89,16 @@ export default function HealthCheckSidebar({
           return (
             <div
               key={profile.id}
-              onClick={() => { if (renamingId !== profile.id) onSelect(profile.id); }}
+              onClick={() => {
+                if (renamingId !== profile.id) onSelect(profile.id);
+              }}
               onMouseEnter={() => setHoveredId(profile.id)}
               onMouseLeave={() => setHoveredId(null)}
-              className={`relative flex items-center rounded-lg px-3 py-2 mt-1 text-sm cursor-pointer transition-colors ${
-                isActive ? "bg-blue-50 text-blue-700" : "text-gray-700 hover:bg-gray-100"
+              className={`relative mt-1 flex cursor-pointer items-center rounded-xl px-3 py-2 text-sm transition ${
+                isActive ? "bg-teal-50 text-teal-800" : "text-slate-700 hover:bg-slate-100"
               }`}
             >
-              <div className="flex-1 min-w-0">
+              <div className="min-w-0 flex-1">
                 {renamingId === profile.id ? (
                   <input
                     autoFocus
@@ -102,12 +111,12 @@ export default function HealthCheckSidebar({
                       e.stopPropagation();
                     }}
                     onClick={(e) => e.stopPropagation()}
-                    className="w-full text-xs bg-transparent border-b border-blue-400 focus:outline-none"
+                    className="w-full border-b border-teal-400 bg-transparent text-xs focus:outline-none"
                   />
                 ) : (
                   <>
-                    <span className="truncate text-xs font-medium block">{profile.name}</span>
-                    <span className="text-xs text-gray-400">
+                    <span className="block truncate text-xs font-bold">{profile.name}</span>
+                    <span className="text-xs text-slate-400">
                       {profile.members.length} / {profile.totalMembers} 人
                     </span>
                   </>
@@ -116,34 +125,38 @@ export default function HealthCheckSidebar({
 
               {showMenu && renamingId !== profile.id && (
                 <div
-                  className="relative shrink-0 ml-1"
+                  className="relative ml-1 shrink-0"
                   ref={menuOpenId === profile.id ? menuRef : undefined}
                   onClick={(e) => e.stopPropagation()}
                 >
                   <button
                     onClick={() => setMenuOpenId(menuOpenId === profile.id ? null : profile.id)}
-                    className="p-1 rounded hover:bg-gray-200 text-gray-400 hover:text-gray-600"
+                    className="rounded-lg p-1 text-slate-400 hover:bg-slate-200 hover:text-slate-600"
+                    title="更多操作"
                   >
                     <DotsIcon />
                   </button>
 
                   {menuOpenId === profile.id && (
-                    <div className="absolute right-0 top-full mt-1 w-36 bg-white border border-gray-200 rounded-xl shadow-lg z-50 py-1">
+                    <div className="absolute right-0 top-full z-50 mt-1 w-36 rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
                       <button
                         onClick={() => {
                           setMenuOpenId(null);
                           setRenamingId(profile.id);
                           setRenameValue(profile.name);
                         }}
-                        className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                        className="flex w-full items-center gap-2.5 px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
                       >
                         <RenameIcon />
                         重新命名
                       </button>
-                      <div className="border-t border-gray-100 my-1" />
+                      <div className="my-1 border-t border-slate-100" />
                       <button
-                        onClick={() => { onDelete(profile.id); setMenuOpenId(null); }}
-                        className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-red-500 hover:bg-red-50"
+                        onClick={() => {
+                          onDelete(profile.id);
+                          setMenuOpenId(null);
+                        }}
+                        className="flex w-full items-center gap-2.5 px-3 py-2 text-sm text-red-500 hover:bg-red-50"
                       >
                         <TrashIcon />
                         刪除
@@ -156,31 +169,39 @@ export default function HealthCheckSidebar({
           );
         })}
       </div>
-    </div>
+    </aside>
   );
 }
 
 function MenuIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="18" x2="21" y2="18" />
     </svg>
   );
 }
+
 function PlusIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
     </svg>
   );
 }
+
 function DotsIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <circle cx="5" cy="12" r="2" /><circle cx="12" cy="12" r="2" /><circle cx="19" cy="12" r="2" />
+      <circle cx="5" cy="12" r="2" />
+      <circle cx="12" cy="12" r="2" />
+      <circle cx="19" cy="12" r="2" />
     </svg>
   );
 }
+
 function RenameIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -189,6 +210,7 @@ function RenameIcon() {
     </svg>
   );
 }
+
 function TrashIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

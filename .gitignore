@@ -54,6 +54,7 @@ en-slide-*.jpg
 node_modules/
 
 # Temp / scratch files
+tmp-ui-check/
 tmp_*.json
 tmp_*.txt
 selected_products_check.txt
