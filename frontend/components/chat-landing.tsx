@@ -46,28 +46,28 @@ type TaskCard = {
 const TASKS: TaskCard[] = [
   {
     title: "保障盤點",
-    description: "用年齡、家庭與工作狀況，找出優先補強項目。",
+    description: "找出優先補強項目",
     prompt: "請用白話幫我評估目前最需要補強哪些保險保障。",
     icon: "shield",
     accent: "bg-teal-100 text-teal-700",
   },
   {
     title: "保單解讀",
-    description: "上傳 PDF 後，整理條款重點、限制與注意事項。",
+    description: "整理條款重點與限制",
     prompt: "我想上傳保單 PDF，請幫我整理重點、限制與注意事項。",
     icon: "file",
     accent: "bg-sky-100 text-sky-700",
   },
   {
     title: "預算分配",
-    description: "把有限保費拆成醫療、意外、失能與壽險順序。",
+    description: "安排保費使用順序",
     prompt: "如果我每月保費預算有限，應該先安排哪些保障？",
     icon: "wallet",
     accent: "bg-amber-100 text-amber-700",
   },
   {
     title: "理賠準備",
-    description: "釐清情境、可能適用保障，以及應準備的文件。",
+    description: "確認流程與必備文件",
     prompt: "請告訴我申請理賠通常需要準備哪些文件與流程。",
     icon: "claim",
     accent: "bg-rose-100 text-rose-700",
@@ -76,9 +76,11 @@ const TASKS: TaskCard[] = [
 
 const SUMMARY_STEPS = [
   "描述問題或上傳保單",
-  "AI 先整理重點與疑問",
-  "依照風險與預算排下一步",
+  "AI 整理重點與疑問",
+  "依風險與預算排下一步",
 ];
+
+const TOPICS = ["醫療險", "失能險", "壽險", "保費預算", "除外責任", "理賠文件"];
 
 export default function ChatLanding({ onSend, loading }: Props) {
   const [input, setInput] = useState("");
@@ -124,38 +126,22 @@ export default function ChatLanding({ onSend, loading }: Props) {
 
   return (
     <div className="flex flex-1 overflow-y-auto bg-[#f7faf8]">
-      <div className="w-full px-4 py-6 sm:px-6 lg:px-8 xl:px-10">
-        <div className="mx-auto grid w-full max-w-[1540px] gap-6 xl:grid-cols-[minmax(0,1fr)_360px]">
+      <div className="w-full px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto grid w-full max-w-[1360px] gap-5 xl:grid-cols-[minmax(0,1fr)_310px]">
           <section className="min-w-0">
-            <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
-              <div className="min-w-0">
-                <p className="text-sm font-bold text-teal-700">AI 保險諮詢</p>
-                <h1 className="mt-3 max-w-4xl text-3xl font-bold leading-tight text-slate-950 md:text-4xl xl:text-5xl">
-                  <span className="block">把保險問題說出來</span>
-                  <span className="block">我幫你整理下一步</span>
-                </h1>
-                <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-                  適合用來問保障缺口、看懂保單、整理預算分配，也可以先把理賠情境講清楚。
-                </p>
-              </div>
-
-              <div className="rounded-3xl border border-teal-100 bg-white p-4 shadow-sm">
-                <p className="text-sm font-bold text-slate-900">使用流程</p>
-                <div className="mt-4 space-y-3">
-                  {SUMMARY_STEPS.map((step, index) => (
-                    <div key={step} className="flex items-center gap-3">
-                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-teal-50 text-xs font-bold text-teal-700">
-                        {index + 1}
-                      </span>
-                      <span className="text-sm font-medium text-slate-600">{step}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="max-w-4xl">
+              <p className="text-sm font-bold text-teal-700">AI 保險諮詢</p>
+              <h1 className="mt-3 text-3xl font-bold leading-tight text-slate-950 md:text-4xl xl:text-5xl">
+                <span className="block">把保險問題說出來</span>
+                <span className="block">我幫你整理下一步</span>
+              </h1>
+              <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+                適合用來問保障缺口、看懂保單、整理預算分配，也可以先把理賠情境講清楚。
+              </p>
             </div>
 
-            <div className="mt-6 grid gap-5 2xl:grid-cols-[minmax(0,1fr)_390px]">
-              <div className="rounded-[2rem] border border-slate-200 bg-white p-4 shadow-xl shadow-teal-100/70">
+            <div className="mt-6 rounded-[1.75rem] border border-slate-200 bg-white p-4 shadow-xl shadow-teal-100/70">
+              <div className="rounded-[1.25rem] border border-slate-100 bg-slate-50/70 p-4">
                 <textarea
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
@@ -166,8 +152,8 @@ export default function ChatLanding({ onSend, loading }: Props) {
                     }
                   }}
                   placeholder={isListening ? "正在聆聽..." : "輸入你的保險問題，或上傳 PDF 保單..."}
-                  rows={7}
-                  className="max-h-72 min-h-44 w-full resize-none text-base leading-7 text-slate-800 placeholder:text-slate-400 focus:outline-none"
+                  rows={4}
+                  className="max-h-56 min-h-32 w-full resize-none bg-transparent text-base leading-7 text-slate-800 placeholder:text-slate-400 focus:outline-none"
                   onInput={(e) => {
                     const el = e.currentTarget;
                     el.style.height = "auto";
@@ -187,13 +173,13 @@ export default function ChatLanding({ onSend, loading }: Props) {
                   </div>
                 )}
 
-                <div className="mt-3 flex items-center justify-between border-t border-slate-100 pt-3">
+                <div className="mt-3 flex items-center justify-between border-t border-slate-200 pt-3">
                   <div className="flex items-center gap-1">
                     <button
                       onClick={() => fileInputRef.current?.click()}
                       disabled={loading}
                       title="上傳保單 PDF"
-                      className="rounded-xl p-2 text-slate-400 transition hover:bg-teal-50 hover:text-teal-700 disabled:opacity-40"
+                      className="rounded-xl p-2 text-slate-500 transition hover:bg-white hover:text-teal-700 disabled:opacity-40"
                     >
                       <PlusCircleIcon />
                     </button>
@@ -215,7 +201,7 @@ export default function ChatLanding({ onSend, loading }: Props) {
                       className={`rounded-xl p-2 transition disabled:opacity-40 ${
                         isListening
                           ? "animate-pulse bg-rose-50 text-rose-500"
-                          : "text-slate-400 hover:bg-teal-50 hover:text-teal-700"
+                          : "text-slate-500 hover:bg-white hover:text-teal-700"
                       }`}
                     >
                       <MicIcon />
@@ -232,76 +218,65 @@ export default function ChatLanding({ onSend, loading }: Props) {
                   </button>
                 </div>
               </div>
+            </div>
 
-              <div className="grid gap-3 sm:grid-cols-2 2xl:grid-cols-1">
-                {TASKS.map((task) => (
-                  <button
-                    key={task.title}
-                    onClick={() => handleSend(task.prompt)}
-                    disabled={loading}
-                    className="group flex min-h-32 items-start gap-3 rounded-3xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-teal-200 hover:shadow-md disabled:opacity-40"
-                  >
-                    <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl ${task.accent}`}>
-                      <TaskIcon name={task.icon} />
-                    </span>
-                    <span className="min-w-0">
-                      <span className="block text-base font-bold text-slate-950">{task.title}</span>
-                      <span className="mt-1 block text-sm leading-6 text-slate-500">{task.description}</span>
-                    </span>
-                  </button>
-                ))}
-              </div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 2xl:grid-cols-4">
+              {TASKS.map((task) => (
+                <button
+                  key={task.title}
+                  onClick={() => handleSend(task.prompt)}
+                  disabled={loading}
+                  className="group flex min-h-28 items-start gap-3 rounded-3xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-teal-200 hover:shadow-md disabled:opacity-40"
+                >
+                  <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl ${task.accent}`}>
+                    <TaskIcon name={task.icon} />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-base font-bold text-slate-950">{task.title}</span>
+                    <span className="mt-1 block text-sm leading-6 text-slate-500">{task.description}</span>
+                  </span>
+                </button>
+              ))}
             </div>
           </section>
 
-          <aside className="hidden xl:flex min-w-0 flex-col gap-4">
-            <div className="rounded-[2rem] bg-slate-950 p-5 text-white shadow-xl shadow-slate-200">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-bold text-teal-200">諮詢後會整理成</p>
-                  <h2 className="mt-1 text-2xl font-bold">清楚的保障路徑</h2>
-                </div>
-                <span className="rounded-2xl bg-teal-400 px-3 py-2 text-sm font-bold text-slate-950">AI</span>
-              </div>
-
-              <div className="mt-6 grid grid-cols-3 gap-2">
-                <VisualBar label="問題" height="h-20" color="bg-teal-300" />
-                <VisualBar label="缺口" height="h-28" color="bg-amber-300" />
-                <VisualBar label="行動" height="h-16" color="bg-sky-300" />
-              </div>
-
-              <div className="mt-6 space-y-3">
-                {["風險排序", "條款重點", "預算提醒"].map((item) => (
-                  <div key={item} className="flex items-center justify-between rounded-2xl bg-white/10 px-4 py-3">
-                    <span className="text-sm font-medium text-slate-100">{item}</span>
-                    <CheckIcon />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-sm font-bold text-slate-900">常見問題方向</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {["醫療險", "失能險", "壽險", "保費預算", "除外責任", "理賠文件"].map((topic) => (
-                  <span key={topic} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-600">
-                    {topic}
+          <aside className="min-w-0">
+            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-4 shadow-sm xl:sticky xl:top-24">
+              <section>
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className="text-sm font-bold text-slate-950">使用流程</h2>
+                  <span className="rounded-full bg-teal-50 px-2.5 py-1 text-xs font-bold text-teal-700">
+                    3 步
                   </span>
-                ))}
-              </div>
+                </div>
+                <div className="mt-3 space-y-2.5">
+                  {SUMMARY_STEPS.map((step, index) => (
+                    <div key={step} className="flex items-center gap-2.5">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-50 text-xs font-bold text-teal-700">
+                        {index + 1}
+                      </span>
+                      <span className="text-sm font-medium leading-5 text-slate-600">{step}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <div className="my-4 h-px bg-slate-100" />
+
+              <section>
+                <h2 className="text-sm font-bold text-slate-950">常見問題方向</h2>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {TOPICS.map((topic) => (
+                    <span key={topic} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-600">
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+              </section>
             </div>
           </aside>
         </div>
       </div>
-    </div>
-  );
-}
-
-function VisualBar({ label, height, color }: { label: string; height: string; color: string }) {
-  return (
-    <div className="flex flex-col justify-end rounded-2xl bg-white/10 p-2">
-      <div className={`rounded-xl ${height} ${color}`} />
-      <p className="mt-2 text-center text-xs font-bold text-slate-200">{label}</p>
     </div>
   );
 }
@@ -386,14 +361,6 @@ function ClaimIcon() {
     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M9 11l3 3L22 4" />
       <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-    </svg>
-  );
-}
-
-function CheckIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-teal-300">
-      <polyline points="20,6 9,17 4,12" />
     </svg>
   );
 }
