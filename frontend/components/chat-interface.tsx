@@ -98,7 +98,7 @@ export default function ChatInterface({ messages, loading, onSend }: Props) {
   return (
     <div className="flex flex-1 flex-col overflow-hidden">
       <div className="flex-1 overflow-y-auto px-4 py-6">
-        <div className="mx-auto flex max-w-3xl flex-col gap-4">
+        <div className="mx-auto flex max-w-5xl flex-col gap-4">
           {messages.map((msg, i) => (
             <div key={i} className={`flex gap-3 ${msg.role === "user" ? "flex-row-reverse" : "flex-row"}`}>
               {msg.role === "assistant" && (
@@ -137,10 +137,10 @@ export default function ChatInterface({ messages, loading, onSend }: Props) {
       </div>
 
       <div className="border-t border-slate-200 bg-white/80 px-4 py-3 backdrop-blur">
-        <p className="mx-auto mb-2 max-w-3xl text-center text-xs text-slate-400">
+        <p className="mx-auto mb-2 max-w-5xl text-center text-xs text-slate-400">
           AI 回覆僅供參考，實際投保、承保與理賠仍以保險公司條款與專業顧問說明為準。
         </p>
-        <div className="mx-auto max-w-3xl rounded-3xl border border-slate-200 bg-white px-4 pb-3 pt-4 shadow-sm">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-slate-200 bg-white px-4 pb-3 pt-4 shadow-sm">
           <textarea
             ref={inputRef}
             value={input}

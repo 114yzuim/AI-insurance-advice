@@ -12,7 +12,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-TW" className="h-full antialiased">
-      <body className="h-full bg-slate-50">
+      <body className="flex h-full flex-col bg-slate-50">
         <SiteHeader />
         <main className="min-h-0 flex-1 overflow-auto">{children}</main>
       </body>
