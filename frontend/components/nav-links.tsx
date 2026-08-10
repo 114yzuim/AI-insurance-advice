@@ -10,14 +10,14 @@ type NavLink = {
 };
 
 const CUSTOMER_LINKS: NavLink[] = [
-  { href: "/chat", label: "AI 顧問" },
-  { href: "/products", label: "保險商品" },
-  { href: "/health-check", label: "需求評估" },
-  { href: "/claims", label: "理賠模擬" },
+  { href: "/chat", label: "AI 諮詢" },
+  { href: "/products", label: "商品清單" },
+  { href: "/health-check", label: "保障健檢" },
+  { href: "/claims", label: "理賠協助" },
 ];
 
 const ADVISOR_LINKS: NavLink[] = [
-  { href: "/advisor", label: "客戶列表", exact: true },
+  { href: "/advisor", label: "客戶總覽", exact: true },
 ];
 
 export default function NavLinks() {
@@ -26,17 +26,17 @@ export default function NavLinks() {
   const links = isAdvisor ? ADVISOR_LINKS : CUSTOMER_LINKS;
 
   return (
-    <div className="flex items-center gap-5 text-sm flex-1">
+    <div className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-sm">
       {links.map(({ href, label, exact }) => {
         const active = exact ? pathname === href : pathname.startsWith(href);
         return (
           <Link
             key={href}
             href={href}
-            className={`transition-colors font-medium ${
+            className={`shrink-0 rounded-full px-3 py-2 font-semibold transition ${
               active
-                ? "text-blue-700 underline underline-offset-4 decoration-2"
-                : "text-gray-500 hover:text-blue-700"
+                ? "bg-slate-950 text-white"
+                : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
             }`}
           >
             {label}
@@ -44,14 +44,14 @@ export default function NavLinks() {
         );
       })}
 
-      <div className="ml-auto">
+      <div className="ml-auto shrink-0">
         {isAdvisor ? (
-          <Link href="/chat" className="text-xs text-gray-400 hover:text-blue-600 transition-colors border border-gray-200 rounded-lg px-3 py-1.5">
-            ← 客戶入口
+          <Link href="/chat" className="rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-500 transition hover:border-teal-300 hover:text-teal-700">
+            切換到使用者
           </Link>
         ) : (
-          <Link href="/advisor" className="text-xs text-gray-400 hover:text-emerald-600 transition-colors border border-gray-200 rounded-lg px-3 py-1.5">
-            業務員工具 →
+          <Link href="/advisor" className="rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-500 transition hover:border-amber-300 hover:text-amber-700">
+            顧問工作台
           </Link>
         )}
       </div>

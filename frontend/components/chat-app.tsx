@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import ChatSidebar from "./chat-sidebar";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ChatInterface from "./chat-interface";
 import ChatLanding from "./chat-landing";
+import ChatSidebar from "./chat-sidebar";
 
 export interface Message {
   role: "user" | "assistant";
@@ -19,11 +19,12 @@ export interface Conversation {
 }
 
 const STORAGE_KEY = "insurance_conversations";
+const NEW_CHAT_TITLE = "新的諮詢";
 
 function makeConversation(): Conversation {
   return {
     id: Date.now().toString(),
-    title: "新對話",
+    title: NEW_CHAT_TITLE,
     createdAt: Date.now(),
     messages: [],
   };
@@ -31,27 +32,30 @@ function makeConversation(): Conversation {
 
 export default function ChatApp({ initMessage }: { initMessage?: string }) {
   const [conversations, setConversations] = useState<Conversation[]>([]);
-  const [currentId, setCurrentId] = useState<string>("");
+  const [currentId, setCurrentId] = useState("");
   const [loading, setLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const initSentRef = useRef(false);
-  const handleSendRef = useRef<(text: string) => Promise<void>>(() => Promise.resolve());
 
   useEffect(() => {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      try {
-        const parsed: Conversation[] = JSON.parse(raw);
-        if (parsed.length > 0) {
-          setConversations(parsed);
-          setCurrentId(parsed[0].id);
-          return;
+    window.setTimeout(() => {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        try {
+          const parsed: Conversation[] = JSON.parse(raw);
+          if (parsed.length > 0) {
+            setConversations(parsed);
+            setCurrentId(parsed[0].id);
+            return;
+          }
+        } catch {
+          localStorage.removeItem(STORAGE_KEY);
         }
-      } catch {}
-    }
-    const conv = makeConversation();
-    setConversations([conv]);
-    setCurrentId(conv.id);
+      }
+      const conv = makeConversation();
+      setConversations([conv]);
+      setCurrentId(conv.id);
+    }, 0);
   }, []);
 
   useEffect(() => {
@@ -72,25 +76,14 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
       const conv = makeConversation();
       setConversations([conv]);
       setCurrentId(conv.id);
-    } else {
-      setConversations(next);
-      if (currentId === id) setCurrentId(next[0].id);
+      return;
     }
+    setConversations(next);
+    if (currentId === id) setCurrentId(next[0].id);
   }
 
   const current = conversations.find((c) => c.id === currentId);
-  const messages = current?.messages ?? [];
-
-  // keep ref in sync so the init effect always calls the latest version
-  handleSendRef.current = handleSend;
-
-  // auto-send initMessage once after conversations are loaded
-  useEffect(() => {
-    if (!initMessage || initSentRef.current || !currentId) return;
-    initSentRef.current = true;
-    handleSendRef.current(initMessage);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentId]);
+  const messages = useMemo(() => current?.messages ?? [], [current?.messages]);
 
   function handleRename(id: string, title: string) {
     setConversations((prev) =>
@@ -104,7 +97,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
     );
   }
 
-  async function handleSend(text: string, file?: File) {
+  const handleSend = useCallback(async (text: string, file?: File) => {
     const userMsg: Message = { role: "user", content: text };
     const history = messages.map((m) => ({ role: m.role, content: m.content }));
     const withUser = [...messages, userMsg];
@@ -115,7 +108,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
           ? {
               ...c,
               messages: withUser,
-              title: c.title === "新對話" ? text.slice(0, 28) : c.title,
+              title: c.title === NEW_CHAT_TITLE ? text.slice(0, 28) : c.title,
             }
           : c
       )
@@ -139,6 +132,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
         });
         data = await res.json();
       }
+
       setConversations((prev) =>
         prev.map((c) =>
           c.id === currentId
@@ -150,19 +144,31 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
       setConversations((prev) =>
         prev.map((c) =>
           c.id === currentId
-            ? { ...c, messages: [...withUser, { role: "assistant", content: "抱歉，發生了錯誤，請稍後再試。" }] }
+            ? {
+                ...c,
+                messages: [
+                  ...withUser,
+                  { role: "assistant", content: "抱歉，暫時無法取得回覆。請稍後再試，或換個方式描述你的問題。" },
+                ],
+              }
             : c
         )
       );
     } finally {
       setLoading(false);
     }
-  }
+  }, [currentId, messages]);
+
+  useEffect(() => {
+    if (!initMessage || initSentRef.current || !currentId) return;
+    initSentRef.current = true;
+    void handleSend(initMessage);
+  }, [currentId, handleSend, initMessage]);
 
   const isLanding = messages.length === 0;
 
   return (
-    <div className="flex h-full overflow-hidden bg-gray-50">
+    <div className="flex h-full overflow-hidden bg-[#f7faf8]">
       <ChatSidebar
         conversations={conversations}
         currentId={currentId}
@@ -177,11 +183,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
       {isLanding ? (
         <ChatLanding onSend={handleSend} loading={loading} />
       ) : (
-        <ChatInterface
-          messages={messages}
-          loading={loading}
-          onSend={handleSend}
-        />
+        <ChatInterface messages={messages} loading={loading} onSend={handleSend} />
       )}
     </div>
   );

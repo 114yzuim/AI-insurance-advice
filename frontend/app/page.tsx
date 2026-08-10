@@ -1,90 +1,135 @@
 import Link from "next/link";
 
+const highlights = [
+  { label: "3 分鐘", value: "快速理解保障缺口" },
+  { label: "AI", value: "整理保單與需求" },
+  { label: "清楚", value: "用白話說明下一步" },
+];
+
+const customerFeatures = ["AI 保險問答", "商品條款整理", "保障健檢", "理賠文件協助"];
+const advisorFeatures = ["客戶資料管理", "資產負債盤點", "問卷需求分析", "退休配置試算"];
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
-      <div className="flex-1 flex flex-col items-center justify-center px-4 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">AI 保險顧問平台</h1>
-          <p className="text-gray-500 text-lg">整合式金融保障規劃工具</p>
-        </div>
+    <div className="min-h-full bg-[#f7faf8] text-slate-900">
+      <section className="mx-auto grid min-h-full w-full max-w-6xl grid-cols-1 gap-10 px-5 py-8 md:grid-cols-[1.05fr_0.95fr] md:px-8 md:py-12">
+        <div className="flex flex-col justify-center">
+          <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-teal-200 bg-white px-3 py-1.5 text-sm font-medium text-teal-700 shadow-sm">
+            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+            AI 保險顧問平台
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
-          {/* Customer Portal */}
-          <div className="bg-white rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow p-8 flex flex-col">
-            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-5">
-              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-            </div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">客戶入口</h2>
-            <p className="text-gray-500 text-sm mb-6">一般民眾使用的 AI 保險諮詢服務</p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-8 flex-1">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-blue-400 rounded-full shrink-0" />
-                AI 保險顧問對話
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-blue-400 rounded-full shrink-0" />
-                保險商品瀏覽
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-blue-400 rounded-full shrink-0" />
-                個人需求評估
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-blue-400 rounded-full shrink-0" />
-                理賠情境模擬
-              </li>
-            </ul>
+          <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-normal text-slate-950 md:text-6xl">
+            讓保險規劃變得好懂、好問、好決定
+          </h1>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">
+            從保單解讀、保障健檢到顧問工作台，把複雜資料整理成清楚建議，讓使用者知道現在最該處理什麼。
+          </p>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/chat"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-3 rounded-xl text-center transition-colors"
+              className="inline-flex items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-800"
             >
-              進入客戶入口 →
+              開始 AI 諮詢
+            </Link>
+            <Link
+              href="/health-check"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-700"
+            >
+              做保障健檢
             </Link>
           </div>
 
-          {/* Advisor Portal */}
-          <div className="bg-white rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-shadow p-8 flex flex-col">
-            <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-5">
-              <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">業務員工具</h2>
-            <p className="text-gray-500 text-sm mb-6">業務員使用的客戶管理與規劃後台</p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-8 flex-1">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" />
-                客戶資料建檔管理
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" />
-                資產負債表填寫
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" />
-                退休規劃問卷
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" />
-                退休資產曲線試算
-              </li>
-            </ul>
-            <Link
-              href="/advisor"
-              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium py-3 rounded-xl text-center transition-colors"
-            >
-              進入業務員工具 →
-            </Link>
+          <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
+            {highlights.map((item) => (
+              <div key={item.label} className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
+                <p className="text-2xl font-bold text-teal-700">{item.label}</p>
+                <p className="mt-1 text-sm leading-5 text-slate-500">{item.value}</p>
+              </div>
+            ))}
           </div>
         </div>
 
-        <p className="mt-10 text-xs text-gray-400">
-          本平台提供資訊參考，非正式保險建議，請諮詢合格業務員。
-        </p>
-      </div>
+        <div className="flex items-center">
+          <div className="w-full rounded-[2rem] border border-white bg-white/80 p-4 shadow-2xl shadow-teal-100 backdrop-blur">
+            <div className="rounded-[1.5rem] bg-[#eaf7f1] p-5">
+              <div className="mb-5 flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-semibold text-teal-700">今日規劃重點</p>
+                  <h2 className="mt-1 text-2xl font-bold text-slate-950">先補強醫療與失能風險</h2>
+                </div>
+                <div className="rounded-2xl bg-amber-300 px-3 py-2 text-sm font-bold text-amber-950">
+                  優先
+                </div>
+              </div>
+
+              <div className="grid gap-3">
+                <VisualCard title="保障缺口" value="72%" color="bg-rose-100 text-rose-700" />
+                <VisualCard title="預算可行性" value="良好" color="bg-emerald-100 text-emerald-700" />
+                <VisualCard title="下一步" value="比較 3 張保單" color="bg-sky-100 text-sky-700" />
+              </div>
+
+              <div className="mt-5 grid grid-cols-2 gap-3">
+                <PortalCard
+                  title="一般使用者"
+                  description="問問題、看商品、做健檢。"
+                  href="/chat"
+                  features={customerFeatures}
+                  accent="bg-teal-500"
+                />
+                <PortalCard
+                  title="保險顧問"
+                  description="管理客戶與產出建議。"
+                  href="/advisor"
+                  features={advisorFeatures}
+                  accent="bg-amber-400"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+  );
+}
+
+function VisualCard({ title, value, color }: { title: string; value: string; color: string }) {
+  return (
+    <div className="flex items-center justify-between rounded-2xl bg-white p-4 shadow-sm">
+      <span className="text-sm font-medium text-slate-500">{title}</span>
+      <span className={`rounded-full px-3 py-1 text-sm font-bold ${color}`}>{value}</span>
+    </div>
+  );
+}
+
+function PortalCard({
+  title,
+  description,
+  href,
+  features,
+  accent,
+}: {
+  title: string;
+  description: string;
+  href: string;
+  features: string[];
+  accent: string;
+}) {
+  return (
+    <Link href={href} className="group rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-md">
+      <span className={`mb-4 block h-2 w-12 rounded-full ${accent}`} />
+      <h3 className="text-lg font-bold text-slate-950">{title}</h3>
+      <p className="mt-1 text-sm leading-6 text-slate-500">{description}</p>
+      <ul className="mt-4 space-y-2">
+        {features.slice(0, 3).map((feature) => (
+          <li key={feature} className="flex items-center gap-2 text-sm text-slate-600">
+            <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
+            {feature}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-5 text-sm font-semibold text-teal-700">進入服務</p>
+    </Link>
   );
 }

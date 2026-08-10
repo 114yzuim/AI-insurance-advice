@@ -1,6 +1,34 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
+
+type SpeechRecognitionResultEvent = {
+  results: {
+    0: {
+      0: {
+        transcript: string;
+      };
+    };
+  };
+};
+
+type SpeechRecognitionInstance = {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  onresult: ((event: SpeechRecognitionResultEvent) => void) | null;
+  onend: (() => void) | null;
+  onerror: (() => void) | null;
+  start: () => void;
+  stop: () => void;
+};
+
+type SpeechRecognitionConstructor = new () => SpeechRecognitionInstance;
+type SpeechWindow = Window &
+  typeof globalThis & {
+    SpeechRecognition?: SpeechRecognitionConstructor;
+    webkitSpeechRecognition?: SpeechRecognitionConstructor;
+  };
 
 interface Props {
   onSend: (text: string, file?: File) => void;
@@ -8,10 +36,10 @@ interface Props {
 }
 
 const SUGGESTIONS = [
-  { icon: <ShieldIcon />, label: "保險觀念", prompt: "壽險和意外險有什麼差別？" },
-  { icon: <DocIcon />, label: "保單解析", prompt: "怎麼看懂保單條款？" },
-  { icon: <CheckIcon />, label: "需求評估", prompt: "我該如何評估自己需要哪些保障？" },
-  { icon: <ClockIcon />, label: "理賠流程", prompt: "保險理賠的流程是什麼？" },
+  { label: "我需要哪些保障？", prompt: "請用白話幫我評估目前最需要補強哪些保險保障。" },
+  { label: "幫我看保單", prompt: "我想上傳保單 PDF，請幫我整理重點、限制與注意事項。" },
+  { label: "預算怎麼分配？", prompt: "如果我每月保費預算有限，應該先安排哪些保障？" },
+  { label: "理賠要準備什麼？", prompt: "請告訴我申請理賠通常需要準備哪些文件與流程。" },
 ];
 
 export default function ChatLanding({ onSend, loading }: Props) {
@@ -19,7 +47,7 @@ export default function ChatLanding({ onSend, loading }: Props) {
   const [file, setFile] = useState<File | null>(null);
   const [isListening, setIsListening] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const recognitionRef = useRef<any>(null);
+  const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
   function handleSend(text?: string) {
     const msg = (text ?? input).trim();
@@ -30,11 +58,10 @@ export default function ChatLanding({ onSend, loading }: Props) {
   }
 
   function toggleVoice() {
-    const SR =
-      (window as any).SpeechRecognition ||
-      (window as any).webkitSpeechRecognition;
+    const speechWindow = window as SpeechWindow;
+    const SR = speechWindow.SpeechRecognition || speechWindow.webkitSpeechRecognition;
     if (!SR) {
-      alert("你的瀏覽器不支援語音輸入，請使用 Chrome 或 Edge。");
+      alert("此瀏覽器不支援語音輸入，建議使用 Chrome 或 Edge。");
       return;
     }
     if (isListening) {
@@ -46,9 +73,9 @@ export default function ChatLanding({ onSend, loading }: Props) {
     recognition.lang = "zh-TW";
     recognition.continuous = false;
     recognition.interimResults = false;
-    recognition.onresult = (e: any) => {
+    recognition.onresult = (e) => {
       const transcript = e.results[0][0].transcript;
-      setInput((prev) => (prev ? prev + " " + transcript : transcript));
+      setInput((prev) => (prev ? `${prev} ${transcript}` : transcript));
     };
     recognition.onend = () => setIsListening(false);
     recognition.onerror = () => setIsListening(false);
@@ -58,15 +85,15 @@ export default function ChatLanding({ onSend, loading }: Props) {
   }
 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center px-4 bg-gray-50">
-      <div className="mb-8 text-center">
-        <h1 className="text-3xl font-semibold text-gray-800">
-          有什麼保險問題，儘管問我
+    <div className="flex flex-1 flex-col items-center justify-center bg-[#f7faf8] px-4 py-10">
+      <div className="mb-7 max-w-2xl text-center">
+        <p className="mb-3 text-sm font-bold text-teal-700">AI 保險諮詢</p>
+        <h1 className="text-3xl font-bold leading-tight text-slate-950 md:text-4xl">
+          把保險問題說出來，我幫你整理成下一步
         </h1>
       </div>
 
-      {/* Input box */}
-      <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm px-4 pt-4 pb-3">
+      <div className="w-full max-w-2xl rounded-3xl border border-slate-200 bg-white p-4 shadow-xl shadow-teal-100/70">
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -76,9 +103,9 @@ export default function ChatLanding({ onSend, loading }: Props) {
               handleSend();
             }
           }}
-          placeholder={isListening ? "正在聆聽..." : "輸入你的問題... (Enter 送出)"}
-          rows={3}
-          className="w-full resize-none text-sm text-gray-800 placeholder-gray-400 focus:outline-none leading-relaxed"
+          placeholder={isListening ? "正在聆聽..." : "輸入你的保險問題，或上傳 PDF 保單..."}
+          rows={4}
+          className="max-h-56 w-full resize-none text-base leading-7 text-slate-800 placeholder:text-slate-400 focus:outline-none"
           onInput={(e) => {
             const el = e.currentTarget;
             el.style.height = "auto";
@@ -86,30 +113,25 @@ export default function ChatLanding({ onSend, loading }: Props) {
           }}
         />
 
-        {/* File chip */}
         {file && (
           <div className="mt-2">
-            <span className="inline-flex items-center gap-1.5 text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">
+            <span className="inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-sm font-medium text-teal-700">
               <PdfFileIcon />
               <span className="max-w-[240px] truncate">{file.name}</span>
-              <button
-                onClick={() => setFile(null)}
-                className="ml-0.5 leading-none hover:text-blue-900"
-              >
-                ×
+              <button onClick={() => setFile(null)} className="font-bold hover:text-teal-900" title="移除檔案">
+                x
               </button>
             </span>
           </div>
         )}
 
-        <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
-          <div className="flex items-center gap-0.5">
-            {/* File upload */}
+        <div className="mt-3 flex items-center justify-between border-t border-slate-100 pt-3">
+          <div className="flex items-center gap-1">
             <button
               onClick={() => fileInputRef.current?.click()}
               disabled={loading}
               title="上傳保單 PDF"
-              className="p-2 rounded-lg text-gray-400 hover:text-blue-700 hover:bg-blue-50 transition-colors disabled:opacity-40"
+              className="rounded-xl p-2 text-slate-400 transition hover:bg-teal-50 hover:text-teal-700 disabled:opacity-40"
             >
               <PlusCircleIcon />
             </button>
@@ -119,21 +141,19 @@ export default function ChatLanding({ onSend, loading }: Props) {
               accept=".pdf,application/pdf"
               className="hidden"
               onChange={(e) => {
-                const f = e.target.files?.[0];
-                if (f) setFile(f);
+                const nextFile = e.target.files?.[0];
+                if (nextFile) setFile(nextFile);
                 e.target.value = "";
               }}
             />
-
-            {/* Voice */}
             <button
               onClick={toggleVoice}
               disabled={loading}
-              title={isListening ? "停止錄音" : "語音輸入"}
-              className={`p-2 rounded-lg transition-colors disabled:opacity-40 ${
+              title={isListening ? "停止語音輸入" : "語音輸入"}
+              className={`rounded-xl p-2 transition disabled:opacity-40 ${
                 isListening
-                  ? "text-red-500 bg-red-50 animate-pulse"
-                  : "text-gray-400 hover:text-blue-700 hover:bg-blue-50"
+                  ? "animate-pulse bg-rose-50 text-rose-500"
+                  : "text-slate-400 hover:bg-teal-50 hover:text-teal-700"
               }`}
             >
               <MicIcon />
@@ -143,7 +163,7 @@ export default function ChatLanding({ onSend, loading }: Props) {
           <button
             onClick={() => handleSend()}
             disabled={!input.trim() || loading}
-            className="flex items-center gap-1.5 px-4 py-2 bg-blue-700 text-white rounded-xl text-sm font-medium hover:bg-blue-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            className="inline-flex items-center gap-2 rounded-xl bg-slate-950 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
           >
             <SendIcon />
             送出
@@ -151,17 +171,15 @@ export default function ChatLanding({ onSend, loading }: Props) {
         </div>
       </div>
 
-      {/* Suggestion chips */}
-      <div className="flex flex-wrap gap-2 mt-5 justify-center max-w-lg">
-        {SUGGESTIONS.map((s) => (
+      <div className="mt-5 flex max-w-2xl flex-wrap justify-center gap-2">
+        {SUGGESTIONS.map((suggestion) => (
           <button
-            key={s.label}
-            onClick={() => handleSend(s.prompt)}
+            key={suggestion.label}
+            onClick={() => handleSend(suggestion.prompt)}
             disabled={loading}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-full border border-gray-200 bg-white text-sm text-gray-600 hover:bg-gray-50 hover:border-blue-200 hover:text-blue-700 disabled:opacity-40 transition-colors"
+            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-600 transition hover:border-teal-300 hover:text-teal-700 disabled:opacity-40"
           >
-            {s.icon}
-            {s.label}
+            {suggestion.label}
           </button>
         ))}
       </div>
@@ -171,16 +189,17 @@ export default function ChatLanding({ onSend, loading }: Props) {
 
 function PlusCircleIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <circle cx="12" cy="12" r="10" />
       <line x1="12" y1="8" x2="12" y2="16" />
       <line x1="8" y1="12" x2="16" y2="12" />
     </svg>
   );
 }
+
 function MicIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
       <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
       <line x1="12" y1="19" x2="12" y2="23" />
@@ -188,48 +207,21 @@ function MicIcon() {
     </svg>
   );
 }
+
 function SendIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M22 2L11 13" /><path d="M22 2L15 22L11 13L2 9L22 2Z" />
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+      <path d="M22 2L11 13" />
+      <path d="M22 2L15 22L11 13L2 9L22 2Z" />
     </svg>
   );
 }
+
 function PdfFileIcon() {
   return (
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
       <polyline points="14,2 14,8 20,8" />
-    </svg>
-  );
-}
-function ShieldIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    </svg>
-  );
-}
-function DocIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-      <polyline points="14,2 14,8 20,8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" />
-    </svg>
-  );
-}
-function CheckIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <polyline points="9,11 12,14 22,4" />
-      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-    </svg>
-  );
-}
-function ClockIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <circle cx="12" cy="12" r="10" /><polyline points="12,6 12,12 16,14" />
     </svg>
   );
 }

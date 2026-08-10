@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Conversation } from "./chat-app";
 
 interface Props {
@@ -28,16 +28,24 @@ function groupByDate(convs: Conversation[]) {
     if (items.length) groups.push({ label, items });
   };
 
-  push("最愛", starred);
+  push("已收藏", starred);
   push("今天", rest.filter((c) => c.createdAt >= todayStart));
   push("昨天", rest.filter((c) => c.createdAt >= yesterdayStart && c.createdAt < todayStart));
-  push("過去 7 天", rest.filter((c) => c.createdAt >= weekStart && c.createdAt < yesterdayStart));
+  push("近 7 天", rest.filter((c) => c.createdAt >= weekStart && c.createdAt < yesterdayStart));
   push("更早", rest.filter((c) => c.createdAt < weekStart));
   return groups;
 }
 
 export default function ChatSidebar({
-  conversations, currentId, open, onNew, onSelect, onDelete, onRename, onStar, onToggle,
+  conversations,
+  currentId,
+  open,
+  onNew,
+  onSelect,
+  onDelete,
+  onRename,
+  onStar,
+  onToggle,
 }: Props) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [menuOpenId, setMenuOpenId] = useState<string | null>(null);
@@ -45,7 +53,6 @@ export default function ChatSidebar({
   const [renameValue, setRenameValue] = useState("");
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // close menu on outside click
   useEffect(() => {
     if (!menuOpenId) return;
     function handleClick(e: MouseEvent) {
@@ -72,11 +79,11 @@ export default function ChatSidebar({
 
   if (!open) {
     return (
-      <div className="flex flex-col w-12 shrink-0 border-r border-gray-200 bg-white items-center py-3 gap-2">
-        <button onClick={onToggle} className="p-2 rounded-lg hover:bg-gray-100 text-gray-500">
+      <div className="flex w-12 shrink-0 flex-col items-center gap-2 border-r border-slate-200 bg-white py-3">
+        <button onClick={onToggle} className="rounded-xl p-2 text-slate-500 hover:bg-slate-100" title="展開側欄">
           <MenuIcon />
         </button>
-        <button onClick={onNew} className="p-2 rounded-lg hover:bg-blue-50 text-blue-700">
+        <button onClick={onNew} className="rounded-xl p-2 text-teal-700 hover:bg-teal-50" title="新增諮詢">
           <PlusIcon />
         </button>
       </div>
@@ -86,31 +93,31 @@ export default function ChatSidebar({
   const groups = groupByDate(conversations);
 
   return (
-    <div className="flex flex-col w-64 shrink-0 border-r border-gray-200 bg-white overflow-hidden">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100">
-        <span className="font-semibold text-sm text-gray-700">對話記錄</span>
-        <button onClick={onToggle} className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500">
+    <aside className="flex w-64 shrink-0 flex-col overflow-hidden border-r border-slate-200 bg-white">
+      <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
+        <span className="text-sm font-bold text-slate-700">諮詢紀錄</span>
+        <button onClick={onToggle} className="rounded-xl p-1.5 text-slate-500 hover:bg-slate-100" title="收合側欄">
           <MenuIcon />
         </button>
       </div>
 
-      <div className="px-3 pt-2 pb-1">
+      <div className="px-3 pb-1 pt-2">
         <button
           onClick={onNew}
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-blue-700 hover:bg-blue-50 transition-colors"
+          className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-teal-700 transition hover:bg-teal-50"
         >
           <PlusIcon />
-          新對話
+          新的諮詢
         </button>
       </div>
 
       <div className="flex-1 overflow-y-auto px-2 pb-4">
         {groups.length === 0 && (
-          <p className="text-xs text-gray-400 text-center mt-8">尚無對話記錄</p>
+          <p className="mt-8 text-center text-xs text-slate-400">目前沒有諮詢紀錄</p>
         )}
         {groups.map((group) => (
           <div key={group.label} className="mt-3">
-            <p className="text-xs text-gray-400 px-2 py-1 font-medium">{group.label}</p>
+            <p className="px-2 py-1 text-xs font-bold text-slate-400">{group.label}</p>
             {group.items.map((conv) => {
               const isActive = conv.id === currentId;
               const showMenu = hoveredId === conv.id || isActive;
@@ -118,16 +125,16 @@ export default function ChatSidebar({
               return (
                 <div
                   key={conv.id}
-                  onClick={() => { if (renamingId !== conv.id) onSelect(conv.id); }}
+                  onClick={() => {
+                    if (renamingId !== conv.id) onSelect(conv.id);
+                  }}
                   onMouseEnter={() => setHoveredId(conv.id)}
                   onMouseLeave={() => setHoveredId(null)}
-                  className={`relative flex items-center rounded-lg px-3 py-2 text-sm cursor-pointer transition-colors ${
-                    isActive ? "bg-blue-50 text-blue-700" : "text-gray-700 hover:bg-gray-100"
+                  className={`relative flex cursor-pointer items-center rounded-xl px-3 py-2 text-sm transition ${
+                    isActive ? "bg-teal-50 text-teal-800" : "text-slate-700 hover:bg-slate-100"
                   }`}
                 >
-                  {conv.starred && (
-                    <span className="mr-1 text-yellow-400 text-xs shrink-0">★</span>
-                  )}
+                  {conv.starred && <span className="mr-1 shrink-0 text-xs text-amber-400">★</span>}
 
                   {renamingId === conv.id ? (
                     <input
@@ -141,49 +148,45 @@ export default function ChatSidebar({
                         e.stopPropagation();
                       }}
                       onClick={(e) => e.stopPropagation()}
-                      className="flex-1 text-xs bg-transparent border-b border-blue-400 focus:outline-none min-w-0"
+                      className="min-w-0 flex-1 border-b border-teal-400 bg-transparent text-xs focus:outline-none"
                     />
                   ) : (
-                    <span className="truncate flex-1 text-xs">{conv.title}</span>
+                    <span className="flex-1 truncate text-xs font-medium">{conv.title}</span>
                   )}
 
-                  {/* Three-dot menu button */}
                   {showMenu && renamingId !== conv.id && (
                     <div
-                      className="relative shrink-0 ml-1"
+                      className="relative ml-1 shrink-0"
                       ref={menuOpenId === conv.id ? menuRef : undefined}
                       onClick={(e) => e.stopPropagation()}
                     >
                       <button
                         onClick={() => setMenuOpenId(menuOpenId === conv.id ? null : conv.id)}
-                        className="p-1 rounded hover:bg-gray-200 text-gray-400 hover:text-gray-600"
+                        className="rounded-lg p-1 text-slate-400 hover:bg-slate-200 hover:text-slate-600"
+                        title="更多操作"
                       >
                         <DotsIcon />
                       </button>
 
                       {menuOpenId === conv.id && (
-                        <div className="absolute right-0 top-full mt-1 w-44 bg-white border border-gray-200 rounded-xl shadow-lg z-50 py-1">
+                        <div className="absolute right-0 top-full z-50 mt-1 w-44 rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
                           <MenuItem
                             icon={<StarMenuIcon filled={!!conv.starred} />}
-                            label={conv.starred ? "取消最愛" : "加入最愛"}
-                            onClick={() => { onStar(conv.id); setMenuOpenId(null); }}
+                            label={conv.starred ? "取消收藏" : "加入收藏"}
+                            onClick={() => {
+                              onStar(conv.id);
+                              setMenuOpenId(null);
+                            }}
                           />
-                          <MenuItem
-                            icon={<RenameIcon />}
-                            label="重新命名"
-                            onClick={() => startRename(conv)}
-                          />
-                          <MenuItem
-                            icon={<FolderIcon />}
-                            label="加入資料夾"
-                            onClick={() => setMenuOpenId(null)}
-                            disabled
-                          />
-                          <div className="border-t border-gray-100 my-1" />
+                          <MenuItem icon={<RenameIcon />} label="重新命名" onClick={() => startRename(conv)} />
+                          <div className="my-1 border-t border-slate-100" />
                           <MenuItem
                             icon={<TrashIcon />}
                             label="刪除"
-                            onClick={() => { onDelete(conv.id); setMenuOpenId(null); }}
+                            onClick={() => {
+                              onDelete(conv.id);
+                              setMenuOpenId(null);
+                            }}
                             danger
                           />
                         </div>
@@ -196,29 +199,26 @@ export default function ChatSidebar({
           </div>
         ))}
       </div>
-    </div>
+    </aside>
   );
 }
 
 function MenuItem({
-  icon, label, onClick, danger, disabled,
+  icon,
+  label,
+  onClick,
+  danger,
 }: {
   icon: React.ReactNode;
   label: string;
   onClick: () => void;
   danger?: boolean;
-  disabled?: boolean;
 }) {
   return (
     <button
       onClick={onClick}
-      disabled={disabled}
-      className={`w-full flex items-center gap-2.5 px-3 py-2 text-sm transition-colors ${
-        disabled
-          ? "text-gray-300 cursor-not-allowed"
-          : danger
-          ? "text-red-500 hover:bg-red-50"
-          : "text-gray-700 hover:bg-gray-50"
+      className={`flex w-full items-center gap-2.5 px-3 py-2 text-sm transition ${
+        danger ? "text-red-500 hover:bg-red-50" : "text-slate-700 hover:bg-slate-50"
       }`}
     >
       {icon}
@@ -230,24 +230,32 @@ function MenuItem({
 function MenuIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="18" x2="21" y2="18" />
     </svg>
   );
 }
+
 function PlusIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
     </svg>
   );
 }
+
 function DotsIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <circle cx="5" cy="12" r="2" /><circle cx="12" cy="12" r="2" /><circle cx="19" cy="12" r="2" />
+      <circle cx="5" cy="12" r="2" />
+      <circle cx="12" cy="12" r="2" />
+      <circle cx="19" cy="12" r="2" />
     </svg>
   );
 }
+
 function StarMenuIcon({ filled }: { filled: boolean }) {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill={filled ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
@@ -255,6 +263,7 @@ function StarMenuIcon({ filled }: { filled: boolean }) {
     </svg>
   );
 }
+
 function RenameIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -263,13 +272,7 @@ function RenameIcon() {
     </svg>
   );
 }
-function FolderIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-    </svg>
-  );
-}
+
 function TrashIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
