@@ -9,6 +9,29 @@ const highlights = [
 const customerFeatures = ["AI 保險問答", "商品條款整理", "保障健檢", "理賠文件協助"];
 const advisorFeatures = ["客戶資料管理", "資產負債盤點", "問卷需求分析", "退休配置試算"];
 
+const previewItems = [
+  {
+    title: "保單重點",
+    value: "條款白話整理",
+    color: "bg-sky-100 text-sky-700",
+  },
+  {
+    title: "保障缺口",
+    value: "找出優先補強",
+    color: "bg-rose-100 text-rose-700",
+  },
+  {
+    title: "預算建議",
+    value: "保費分配方向",
+    color: "bg-emerald-100 text-emerald-700",
+  },
+  {
+    title: "下一步行動",
+    value: "比較商品與文件",
+    color: "bg-amber-100 text-amber-700",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-full bg-[#f7faf8] text-slate-900">
@@ -54,20 +77,20 @@ export default function Home() {
         <div className="flex items-center">
           <div className="w-full rounded-[2rem] border border-white bg-white/80 p-4 shadow-2xl shadow-teal-100 backdrop-blur">
             <div className="rounded-[1.5rem] bg-[#eaf7f1] p-5">
-              <div className="mb-5 flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-semibold text-teal-700">今日規劃重點</p>
-                  <h2 className="mt-1 text-2xl font-bold text-slate-950">先補強醫療與失能風險</h2>
-                </div>
-                <div className="rounded-2xl bg-amber-300 px-3 py-2 text-sm font-bold text-amber-950">
-                  優先
-                </div>
+              <div className="mb-5">
+                <p className="text-sm font-semibold text-teal-700">平台能幫你整理什麼</p>
+                <h2 className="mt-1 text-2xl font-bold leading-tight text-slate-950">
+                  把複雜保險資訊變成清楚行動
+                </h2>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  這裡是功能預覽，實際建議會依照使用者輸入的資料與保單內容產生。
+                </p>
               </div>
 
               <div className="grid gap-3">
-                <VisualCard title="保障缺口" value="72%" color="bg-rose-100 text-rose-700" />
-                <VisualCard title="預算可行性" value="良好" color="bg-emerald-100 text-emerald-700" />
-                <VisualCard title="下一步" value="比較 3 張保單" color="bg-sky-100 text-sky-700" />
+                {previewItems.map((item) => (
+                  <VisualCard key={item.title} title={item.title} value={item.value} color={item.color} />
+                ))}
               </div>
 
               <div className="mt-5 grid grid-cols-2 gap-3">
