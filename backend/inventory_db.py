@@ -171,8 +171,7 @@ def seed_inventory_if_empty(conn: sqlite3.Connection) -> None:
     if not SEED_PATH.exists():
         return
     product_count = conn.execute("SELECT COUNT(*) FROM insurance_products").fetchone()[0]
-    company_count = conn.execute("SELECT COUNT(*) FROM insurance_companies").fetchone()[0]
-    if product_count or company_count:
+    if product_count:
         return
 
     with gzip.open(SEED_PATH, "rt", encoding="utf-8") as seed_file:
