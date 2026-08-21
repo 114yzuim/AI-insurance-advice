@@ -1,9 +1,11 @@
 import json
 import pathlib
 import sqlite3
+import gzip
 from contextlib import contextmanager
 
 DB_PATH = pathlib.Path(__file__).parent / "insurance_inventory.db"
+SEED_PATH = pathlib.Path(__file__).parent / "data" / "inventory_seed.json.gz"
 
 _JSON_COLS = {"former_names", "download_urls", "metadata"}
 
@@ -161,7 +163,32 @@ CREATE INDEX IF NOT EXISTS idx_customer_policy_uploads_profile ON customer_polic
 def init_inventory_db() -> None:
     with sqlite3.connect(str(DB_PATH)) as conn:
         conn.executescript(_SCHEMA)
+        seed_inventory_if_empty(conn)
         conn.commit()
+
+
+def seed_inventory_if_empty(conn: sqlite3.Connection) -> None:
+    if not SEED_PATH.exists():
+        return
+    product_count = conn.execute("SELECT COUNT(*) FROM insurance_products").fetchone()[0]
+    company_count = conn.execute("SELECT COUNT(*) FROM insurance_companies").fetchone()[0]
+    if product_count or company_count:
+        return
+
+    with gzip.open(SEED_PATH, "rt", encoding="utf-8") as seed_file:
+        payload = json.load(seed_file)
+
+    for table in ("insurance_companies", "insurance_products", "policy_documents", "policy_document_chunks"):
+        rows = payload.get(table, [])
+        if not rows:
+            continue
+        columns = list(rows[0].keys())
+        placeholders = ", ".join(["?"] * len(columns))
+        column_sql = ", ".join(columns)
+        conn.executemany(
+            f"INSERT OR REPLACE INTO {table} ({column_sql}) VALUES ({placeholders})",
+            [[row.get(column) for column in columns] for row in rows],
+        )
 
 
 @contextmanager
