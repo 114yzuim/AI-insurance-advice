@@ -17,7 +17,8 @@ const CUSTOMER_LINKS: NavLink[] = [
 ];
 
 const ADVISOR_LINKS: NavLink[] = [
-  { href: "/advisor", label: "客戶總覽", exact: true },
+  { href: "/advisor", label: "顧問工作台", exact: true },
+  { href: "/advisor/inventory", label: "產品資料庫" },
 ];
 
 export default function NavLinks() {
@@ -50,7 +51,7 @@ export default function NavLinks() {
             href="/chat"
             className="rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-500 transition hover:border-teal-300 hover:text-teal-700"
           >
-            切回客戶模式
+            切換客戶模式
           </Link>
         ) : (
           <Link
