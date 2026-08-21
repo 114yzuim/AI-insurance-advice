@@ -54,7 +54,9 @@ export default function ProductList({ categories, companies }: ProductListProps)
   }, [page, keyword, selectedCategory, selectedCompany]);
 
   useEffect(() => {
-    fetchProducts();
+    queueMicrotask(() => {
+      fetchProducts();
+    });
   }, [fetchProducts]);
 
   const totalPages = Math.ceil(total / PAGE_SIZE);

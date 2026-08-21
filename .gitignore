@@ -5,9 +5,25 @@
 
 # ChromaDB vector store (rebuilt automatically on first startup)
 backend/chroma_db/
+backend/data/documents/
+backend/data/customer_policy_uploads/
+backend/data/claim_documents/
+backend/data/product_link_audit.json
+backend/data/pdf_snapshot_downloads.json
+backend/data/inventory_quality_report.json
+backend/data/policy_document_audit.json
+backend/data/pdf_parse_report.json
+backend/data/taiwan_life_adapter_candidates.json
+backend/data/kgi_life_suspicious_documents.json
+backend/data/adapter_cache/
+backend/data/probe_*.pdf
+backend/data/*_probe.json
+backend/data/*_downloads.json
+backend/data/*_parse*.json
 
 # SQLite advisor DB (contains test client PII, rebuilt via db_init.py)
 backend/advisor.db
+backend/insurance_inventory.db
 
 # Python
 __pycache__/

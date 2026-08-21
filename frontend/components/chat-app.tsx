@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ChatInterface from "./chat-interface";
 import ChatLanding from "./chat-landing";
 import ChatSidebar from "./chat-sidebar";
+import { fetchPolicyPortfolio, formatPolicyContextForAi } from "@/lib/demo-policies";
 
 export interface Message {
   role: "user" | "assistant";
@@ -35,6 +36,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
   const [currentId, setCurrentId] = useState("");
   const [loading, setLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [policyContext, setPolicyContext] = useState(() => formatPolicyContextForAi());
   const initSentRef = useRef(false);
 
   useEffect(() => {
@@ -63,6 +65,20 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
     }
   }, [conversations]);
+
+  useEffect(() => {
+    let mounted = true;
+    fetchPolicyPortfolio()
+      .then((portfolio) => {
+        if (mounted) setPolicyContext(formatPolicyContextForAi(portfolio.policies));
+      })
+      .catch(() => {
+        if (mounted) setPolicyContext(formatPolicyContextForAi());
+      });
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   function handleNew() {
     const conv = makeConversation();
@@ -121,6 +137,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
         const formData = new FormData();
         formData.append("message", text);
         formData.append("history", JSON.stringify(history));
+        formData.append("product_context", policyContext);
         formData.append("file", file);
         const res = await fetch("/api/chat/upload", { method: "POST", body: formData });
         data = await res.json();
@@ -128,7 +145,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: text, history }),
+          body: JSON.stringify({ message: text, history, product_context: policyContext }),
         });
         data = await res.json();
       }
@@ -157,7 +174,7 @@ export default function ChatApp({ initMessage }: { initMessage?: string }) {
     } finally {
       setLoading(false);
     }
-  }, [currentId, messages]);
+  }, [currentId, messages, policyContext]);
 
   useEffect(() => {
     if (!initMessage || initSentRef.current || !currentId) return;

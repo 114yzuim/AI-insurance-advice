@@ -1,0 +1,1905 @@
+{
+  "company": "元大人壽",
+  "generated_at": "2026-08-21T04:20:45.358439+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 92,
+    "documents_seen": 176,
+    "products_upserted": 92,
+    "documents_upserted": 176
+  },
+  "items": [
+    {
+      "company": "元大人壽",
+      "product_id": "-",
+      "product_uid": "5696E1A4-B9E1-4F1D-AFBE-427FB8A6A760",
+      "product_name": "事事元滿專案",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=5696E1A4-B9E1-4F1D-AFBE-427FB8A6A760",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/11310_事事元滿條款.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/事事元滿(團險)_文宣字第P113221號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "-",
+      "product_uid": "F3BD0B82-69E6-47D4-824F-D81A206DAF1E",
+      "product_name": "元創世紀專案",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=F3BD0B82-69E6-47D4-824F-D81A206DAF1E",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/11310_元創世紀條款.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/元創世紀(團險)_文宣字第P113221號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GMI",
+      "product_uid": "FEF5825F-F566-4502-A9A5-86261D5D0678",
+      "product_name": "元大人壽團體意外傷害住院日額保險附約",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=FEF5825F-F566-4502-A9A5-86261D5D0678",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/GMI05006.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GMS",
+      "product_uid": "4EC164D5-76EC-425E-AB15-2C6FB49106FD",
+      "product_name": "元大人壽團體新意外傷害醫療保險附約",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=4EC164D5-76EC-425E-AB15-2C6FB49106FD",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/111-12-20      GMS元大人壽團體新意外傷害醫療保險附約 7.5tp  2頁.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GCL",
+      "product_uid": "7C3220AC-EFC7-44B5-B402-4A11B53176E5",
+      "product_name": "元大人壽團體一年定期癌症健康保險",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=7C3220AC-EFC7-44B5-B402-4A11B53176E5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/GCL02004.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GHE",
+      "product_uid": "C4A6FBE8-26A4-4B1F-8257-C51C9B9843F2",
+      "product_name": "元大人壽團體住院醫療健康保險",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=C4A6FBE8-26A4-4B1F-8257-C51C9B9843F2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/GHE01003.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GMC",
+      "product_uid": "8C57DCDE-74CF-46E6-AACB-DABC13BBA8CD",
+      "product_name": "元大人壽團體微型傷害保險",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=8C57DCDE-74CF-46E6-AACB-DABC13BBA8CD",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/111-12-20      GMC元大人壽團體微型傷害保險 7.5tp 6頁.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/GMC_文宣字第P114129號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GOH",
+      "product_uid": "038E0FE9-ABB3-4CA4-BF97-7928428BB6E0",
+      "product_name": "元大人壽團體職業災害給付保險",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=038E0FE9-ABB3-4CA4-BF97-7928428BB6E0",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/111-11-29    GOH 元大人壽團體職業災害給付保險 7.5tp 2頁.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GPA",
+      "product_uid": "CFB742C7-74B8-46A7-8291-AC69938D45BC",
+      "product_name": "元大人壽團體傷害保險",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=CFB742C7-74B8-46A7-8291-AC69938D45BC",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/111-12-26       GPA元大人壽團體傷害保險  7.5tp  5頁.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "GTL",
+      "product_uid": "9B855CE6-56BA-4514-BA83-5B6D4F3B5B72",
+      "product_name": "元大人壽團體一年定期壽險",
+      "category": "團體保險區",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/71A87312-2A58-4D3C-96A0-0EA6EACEA554/detail/?prodId=9B855CE6-56BA-4514-BA83-5B6D4F3B5B72",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/GTL090001.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BJ",
+      "product_uid": "6F84A224-5CAD-4343-BF7F-84902CEC1EFA",
+      "product_name": "元大人壽日優寶日圓利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "日圓",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=6F84A224-5CAD-4343-BF7F-84902CEC1EFA",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BJ010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BJ_文宣字第P115105號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BD",
+      "product_uid": "A876BC7F-5EE9-438A-B6FF-09EB42EB6D9C",
+      "product_name": "元大人壽美好時刻美元養老保險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=A876BC7F-5EE9-438A-B6FF-09EB42EB6D9C",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BD010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BD_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BE",
+      "product_uid": "822CB3E6-A904-4277-9A7A-93A7D6789F35",
+      "product_name": "元大人壽金享元元美元利率變動型還本終身保險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=822CB3E6-A904-4277-9A7A-93A7D6789F35",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BE010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BE_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BF",
+      "product_uid": "6102B41F-B1D0-4B9D-A6BB-EEA243B1B639",
+      "product_name": "元大人壽百富美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=6102B41F-B1D0-4B9D-A6BB-EEA243B1B639",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BF010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BF_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BM",
+      "product_uid": "5778B83E-D9ED-415F-89A8-00D84A64D068",
+      "product_name": "元大人壽福氣美滿美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=5778B83E-D9ED-415F-89A8-00D84A64D068",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BM010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BM_文宣字第P115117號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BN",
+      "product_uid": "BFDF1E7B-0EAD-4F3E-A54E-CD9B97116DF2",
+      "product_name": "元大人壽元傳鑫美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=BFDF1E7B-0EAD-4F3E-A54E-CD9B97116DF2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BN010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BN_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BO",
+      "product_uid": "A4454CAC-CCAC-4100-9BA7-0B75781564D9",
+      "product_name": "元大人壽優享美利美元利率變動型還本終身保險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=A4454CAC-CCAC-4100-9BA7-0B75781564D9",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BO010001.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BP",
+      "product_uid": "96B1BDD4-0AFB-4CFF-85FD-2400A8704145",
+      "product_name": "元大人壽金好美美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=96B1BDD4-0AFB-4CFF-85FD-2400A8704145",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BP010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BP_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BQ",
+      "product_uid": "F1521E41-7F93-407E-ADBB-B3653D9AF7BA",
+      "product_name": "元大人壽元大臻旺美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=F1521E41-7F93-407E-ADBB-B3653D9AF7BA",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BQ010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BQ_文宣字第P115003號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BS",
+      "product_uid": "87475335-0454-4F26-8FD3-0EE4D625A58C",
+      "product_name": "元大人壽元承富美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=87475335-0454-4F26-8FD3-0EE4D625A58C",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BS010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BS_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BT",
+      "product_uid": "EE0BF351-B88A-4A6E-B7F4-BA12C527A909",
+      "product_name": "元大人壽旺傳富美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=EE0BF351-B88A-4A6E-B7F4-BA12C527A909",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/元大人壽旺傳富美元利率變動型終身壽險_條款樣張_20250110.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BT_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BU",
+      "product_uid": "AF4C79A7-7581-4B21-A785-0E4FD66B5FE5",
+      "product_name": "元大人壽鑫美好美元養老保險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=AF4C79A7-7581-4B21-A785-0E4FD66B5FE5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BU010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BU_文宣字第P115088號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "BV",
+      "product_uid": "0C9A4037-82BB-4643-A754-9DE9C284C4C2",
+      "product_name": "元大人壽新美利倍傳美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=0C9A4037-82BB-4643-A754-9DE9C284C4C2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BV010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/BV_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "JF",
+      "product_uid": "539BF5BA-9D46-401A-AC28-8F4E5062D337",
+      "product_name": "元大人壽元滿鑽多利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=539BF5BA-9D46-401A-AC28-8F4E5062D337",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JF010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JF_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "JI",
+      "product_uid": "8974EDFB-926B-4DAC-A55F-9B6B450B3A5F",
+      "product_name": "元大人壽金元寶利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=8974EDFB-926B-4DAC-A55F-9B6B450B3A5F",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JI010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JI_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "JJ",
+      "product_uid": "4B1937A8-C387-4C37-8726-E3D22D68F21C",
+      "product_name": "元大人壽元大金旺利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=4B1937A8-C387-4C37-8726-E3D22D68F21C",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JJ010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JJ_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "JY",
+      "product_uid": "E23C62F2-239D-43D1-B40C-17A3EE45BA56",
+      "product_name": "元大人壽真億達利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=E23C62F2-239D-43D1-B40C-17A3EE45BA56",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JY010002 with TI.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JY_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "JZ",
+      "product_uid": "B07ADB7E-BF2E-47B6-BDA0-DD19BC6F01A5",
+      "product_name": "元大人壽元滿富利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=B07ADB7E-BF2E-47B6-BDA0-DD19BC6F01A5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JZ010002 with TI.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JZ_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "KO",
+      "product_uid": "F28574D5-EC4B-45C9-927F-409AC0F37A6C",
+      "product_name": "元大人壽龍億達美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=F28574D5-EC4B-45C9-927F-409AC0F37A6C",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/KO010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/KO_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "LB",
+      "product_uid": "7725CBF9-A150-4EC8-966C-1E72ACD0E0C9",
+      "product_name": "元大人壽永傳經典終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=7725CBF9-A150-4EC8-966C-1E72ACD0E0C9",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LB030004.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LB_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "LE",
+      "product_uid": "BF9438ED-C786-4391-9BAD-89411EA0BE48",
+      "product_name": "元大人壽小額終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=BF9438ED-C786-4391-9BAD-89411EA0BE48",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LE030001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LE_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "LL",
+      "product_uid": "C2EF65FD-7348-4C55-AA90-2DBCE809B065",
+      "product_name": "元大人壽鑫達利率變動型增額終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=C2EF65FD-7348-4C55-AA90-2DBCE809B065",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LL020007 with TI.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LL_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "M7",
+      "product_uid": "3306E526-E40E-4776-8CFA-ED2F3DD2566A",
+      "product_name": "元大人壽永愛傳家定期壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=3306E526-E40E-4776-8CFA-ED2F3DD2566A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/M7010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/M7_M8_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "M8",
+      "product_uid": "D6E8B7B9-EDB3-4733-9E69-1DFD2C06C454",
+      "product_name": "元大人壽永愛傳家遞減定期壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=D6E8B7B9-EDB3-4733-9E69-1DFD2C06C454",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/M8010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/M7_M8_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QD",
+      "product_uid": "E132C1CE-BF33-4175-B3A9-CCF715B5396F",
+      "product_name": "元大人壽享美溢美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=E132C1CE-BF33-4175-B3A9-CCF715B5396F",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QD010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QD_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QF",
+      "product_uid": "99BF7BB1-167F-41E6-A4C6-E0FD7026E24E",
+      "product_name": "元大人壽元傳富美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=99BF7BB1-167F-41E6-A4C6-E0FD7026E24E",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QF010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QF_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QI",
+      "product_uid": "5F44817B-478F-4B5B-A781-9A6E1323FA22",
+      "product_name": "元大人壽金美寶美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=5F44817B-478F-4B5B-A781-9A6E1323FA22",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QI010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QI_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QM",
+      "product_uid": "533D9545-C711-4383-A11E-5AC4FF5CE8DF",
+      "product_name": "元大人壽美旺達美元利率變動型增額終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=533D9545-C711-4383-A11E-5AC4FF5CE8DF",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QM010002 with TI.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QM_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QQ",
+      "product_uid": "530DF31C-84EF-4EAA-8E34-B0E9686EB121",
+      "product_name": "元大人壽元美金旺美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=530DF31C-84EF-4EAA-8E34-B0E9686EB121",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QQ010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QQ_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QU",
+      "product_uid": "70966E9A-B33C-40A9-A839-E4667E8B9410",
+      "product_name": "元大人壽享美年美元利率變動型增額還本終身保險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=70966E9A-B33C-40A9-A839-E4667E8B9410",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QU010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QU_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QV",
+      "product_uid": "1422CAB2-D465-4184-900B-3B100CDF7298",
+      "product_name": "元大人壽美利倍傳美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=1422CAB2-D465-4184-900B-3B100CDF7298",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QV010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QV_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "QZ",
+      "product_uid": "1C8FA822-76DE-4789-B392-811397857B03",
+      "product_name": "元大人壽鑫優利美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=1C8FA822-76DE-4789-B392-811397857B03",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QZ010003.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/QZ文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "TM",
+      "product_uid": "1A2A4C2A-2C91-42F2-B91B-9EEF7ECFB620",
+      "product_name": "元大人壽新加值定期壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=1A2A4C2A-2C91-42F2-B91B-9EEF7ECFB620",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/TM030003.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/TM_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "XB",
+      "product_uid": "1BD5C39E-BDD6-4B61-884A-209256F45296",
+      "product_name": "元大人壽傳富6年繳計畫美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=1BD5C39E-BDD6-4B61-884A-209256F45296",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/XB010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/XB_文宣字第P115068號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "XA",
+      "product_uid": "434B401B-7465-4924-A20E-D0950DBD48C4",
+      "product_name": "元大人壽傳富計畫-1美元利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=434B401B-7465-4924-A20E-D0950DBD48C4",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/XA010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/XA_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZI",
+      "product_uid": "A06B4CC7-A32C-4DAD-98FD-BBD258781DD5",
+      "product_name": "元大人壽臻鑫旺利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=A06B4CC7-A32C-4DAD-98FD-BBD258781DD5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZI010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZI_文宣字第P115100號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZJ",
+      "product_uid": "95FAD906-8D8A-44D7-898E-D3DB839B507B",
+      "product_name": "元大人壽旺億昇利率變動型終身壽險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=95FAD906-8D8A-44D7-898E-D3DB839B507B",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZJ010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZJ_文宣字第P115030號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZU",
+      "product_uid": "B5E97D3A-0959-4A18-970C-832F8FD3CDE3",
+      "product_name": "元大人壽元享年年利率變動型還本終身保險",
+      "category": "壽險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/AD41F790-FCFA-4F5A-A4F8-1CC9B74B3C91/detail/?prodId=B5E97D3A-0959-4A18-970C-832F8FD3CDE3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZU010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZU_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "SI",
+      "product_uid": "AAE556B4-3A6B-4E59-BAE2-9C568347A575",
+      "product_name": "元大人壽橘好世代定期健康保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=AAE556B4-3A6B-4E59-BAE2-9C568347A575",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/SI010005.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/SI_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "A1",
+      "product_uid": "65A82AB2-580A-40CB-AD7B-BEF6078AA6E0",
+      "product_name": "元大人壽新帳戶醫療終身健康保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=65A82AB2-580A-40CB-AD7B-BEF6078AA6E0",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/A1050007.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/A1_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZA",
+      "product_uid": "513E0015-5821-43C0-81D2-C76873704800",
+      "product_name": "元大人壽神氣實足住院醫療終身健康保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=513E0015-5821-43C0-81D2-C76873704800",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZA010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZA_文宣字第P115115號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZH",
+      "product_uid": "1E8E7DAA-0F0F-4C31-8342-A89D13549F9C",
+      "product_name": "元大人壽新一年期手術醫療健康保險附約",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=1E8E7DAA-0F0F-4C31-8342-A89D13549F9C",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZHA10001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZH_文宣字第P114113號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "A2",
+      "product_uid": "6AC01863-DC97-4564-A864-547D4BEF1026",
+      "product_name": "元大人壽健康人生終身醫療健康保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=6AC01863-DC97-4564-A864-547D4BEF1026",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/A2060006.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/A2_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "HJ",
+      "product_uid": "800585A5-F12F-408A-9D71-3C5A8676C609",
+      "product_name": "元大人壽新膝望保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=800585A5-F12F-408A-9D71-3C5A8676C609",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/HJ010004.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/HJ_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "IV",
+      "product_uid": "BA27DF11-03E3-4993-A074-B615F9350C25",
+      "product_name": "元大人壽好視元滿保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=BA27DF11-03E3-4993-A074-B615F9350C25",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/IV010003.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/IV_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "H1",
+      "product_uid": "7CCBC67E-2C9A-4ACB-AF64-0CD20470B2A9",
+      "product_name": "元大人壽新終身醫療還本保險",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=7CCBC67E-2C9A-4ACB-AF64-0CD20470B2A9",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/H1050005.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/H1_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZR",
+      "product_uid": "877988B0-8A43-4128-B15D-D0D8F0C665D6",
+      "product_name": "元大人壽元心實足住院醫療健康保險附約",
+      "category": "健康醫療",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/0EA655E3-A13A-4E74-BE2C-25CA749FB61B/detail/?prodId=877988B0-8A43-4128-B15D-D0D8F0C665D6",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZR010001 0227.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZR_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "AT",
+      "product_uid": "0DDA2E32-37C7-43C5-893C-2012763E546D",
+      "product_name": "元大人壽利率變動型即期年金保險",
+      "category": "年金險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/20AF01A1-18D0-4D15-9613-4ACA51BA35FD/detail/?prodId=0DDA2E32-37C7-43C5-893C-2012763E546D",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/AT010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/AT_文宣字第P114121號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "AU",
+      "product_uid": "4757ED20-AA4D-4FC9-BEFF-350185745274",
+      "product_name": "元大人壽美元利率變動型即期年金保險",
+      "category": "年金險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/20AF01A1-18D0-4D15-9613-4ACA51BA35FD/detail/?prodId=4757ED20-AA4D-4FC9-BEFF-350185745274",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/AU010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/AU_文宣字第P114121號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "PD",
+      "product_uid": "1CDA8364-26B4-40B8-91EB-8D480AC66B81",
+      "product_name": "元大人壽一年期傷害失能保險附約",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=1CDA8364-26B4-40B8-91EB-8D480AC66B81",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/PD010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/PD_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "ZQ",
+      "product_uid": "CDC95DA4-5B57-4512-8085-6DFB7C496E58",
+      "product_name": "元大人壽享新意外傷害醫療保險附約",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=CDC95DA4-5B57-4512-8085-6DFB7C496E58",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZQ條款樣張.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/ZQ_文宣字第P114170號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "MC",
+      "product_uid": "AF635D4F-B2F0-4007-996F-645D3DEA3F81",
+      "product_name": "元大人壽微型傷害保險",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=AF635D4F-B2F0-4007-996F-645D3DEA3F81",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/MC020004.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/MC_文宣字第P114129號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "MI",
+      "product_uid": "20A7C841-5879-4691-A214-D37854FECB09",
+      "product_name": "元大人壽意外傷害住院日額保險附約",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=20A7C841-5879-4691-A214-D37854FECB09",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/MI050008.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/MI_文宣字第P113345號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "UE",
+      "product_uid": "B57556FF-F701-4A28-8B88-73F71002DEFF",
+      "product_name": "元大人壽一年期傷害保險附約",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=B57556FF-F701-4A28-8B88-73F71002DEFF",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/UE020001_1001版.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/UE_文宣字第P113224號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "PR",
+      "product_uid": "26D23D85-735D-46F6-B500-E1A68F741E8D",
+      "product_name": "元大人壽人身傷害保險附約（III）",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=26D23D85-735D-46F6-B500-E1A68F741E8D",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/PR130001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/PR_文宣字第P113221號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "RB",
+      "product_uid": "377F8747-2113-4DC8-897B-EB14A8AA3B84",
+      "product_name": "元大人壽安鑫３３３終身保險",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=377F8747-2113-4DC8-897B-EB14A8AA3B84",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/RB030004.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/RB_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "YP",
+      "product_uid": "5BF53BC6-44A3-4B05-A5D5-FAE6316C6F7A",
+      "product_name": "元大人壽永元青春保險",
+      "category": "意外險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/E9E098C5-36E9-4A10-B208-61DA2EED80B9/detail/?prodId=5BF53BC6-44A3-4B05-A5D5-FAE6316C6F7A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/YP010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/YP_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "RO",
+      "product_uid": "9EDF6168-A09E-41E4-BFDF-49D4B594CEF3",
+      "product_name": "元大人壽卡安鑫100重大傷病終身健康保險",
+      "category": "重大傷(疾)病",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/8DDE8EA7-5537-4C26-A6BC-A05633C4A18D/detail/?prodId=9EDF6168-A09E-41E4-BFDF-49D4B594CEF3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/RO020003.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/RO_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "RQ",
+      "product_uid": "BE8C99CD-6E92-48BF-874B-018DC90A99F4",
+      "product_name": "元大人壽超安心重大傷病定期健康保險附約",
+      "category": "重大傷(疾)病",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/8DDE8EA7-5537-4C26-A6BC-A05633C4A18D/detail/?prodId=BE8C99CD-6E92-48BF-874B-018DC90A99F4",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/RQ010005.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/RQ_P113371號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "DD",
+      "product_uid": "CAA19739-91F6-4E72-9267-B40547CFAF4A",
+      "product_name": "元大人壽重大疾病暨特定傷病健康保險附約（Ⅱ）",
+      "category": "重大傷(疾)病",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/8DDE8EA7-5537-4C26-A6BC-A05633C4A18D/detail/?prodId=CAA19739-91F6-4E72-9267-B40547CFAF4A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/DD060005.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/DD_文宣字第P113221號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "DP",
+      "product_uid": "D15F0610-848D-4604-B46B-D07291DA960F",
+      "product_name": "元大人壽重大疾病健康保險附約（乙型）",
+      "category": "重大傷(疾)病",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/8DDE8EA7-5537-4C26-A6BC-A05633C4A18D/detail/?prodId=D15F0610-848D-4604-B46B-D07291DA960F",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/DP030005.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/DP_文宣字第P113221號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "LF",
+      "product_uid": "564B5F1C-31C4-4D13-820E-04B004C85A7A",
+      "product_name": "元大人壽元氣護照長期照顧終身健康保險",
+      "category": "長期照顧",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/C2CB2B62-9746-4E72-8E2B-A0F6AFE003C1/detail/?prodId=564B5F1C-31C4-4D13-820E-04B004C85A7A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LF+F0_條款樣張.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/LF_文宣字第P115007號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "JO",
+      "product_uid": "ACB00F2B-94BA-49CA-A833-15948C9AEB91",
+      "product_name": "元大人壽親愛貝比終身醫療健康保險",
+      "category": "婦嬰保障",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/C34EB811-C593-4DCD-93AF-E4FE8B9F8D05/detail/?prodId=ACB00F2B-94BA-49CA-A833-15948C9AEB91",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JO040003.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/JO_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "C2",
+      "product_uid": "F185CF1C-D62B-49DE-9067-EC5F2DF9D1B2",
+      "product_name": "元大人壽真安心保本防癌保險",
+      "category": "防癌保障",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/2D7D80EC-D25D-4C6A-8F2D-ED0A0BE69B63/detail/?prodId=F185CF1C-D62B-49DE-9067-EC5F2DF9D1B2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/C2080006.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/C2_文宣字第P114186號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "HC",
+      "product_uid": "99F86A83-EE0F-4AC0-8F1A-4F8D8EBC01A8",
+      "product_name": "元大人壽終身防癌健康保險",
+      "category": "防癌保障",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/2D7D80EC-D25D-4C6A-8F2D-ED0A0BE69B63/detail/?prodId=99F86A83-EE0F-4AC0-8F1A-4F8D8EBC01A8",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/HC050003.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/HC_文宣字第P113221號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "WM",
+      "product_uid": "DDE18F57-577E-4096-AAE1-08AB9696362B",
+      "product_name": "元大人壽新美意美元豁免保險費附約",
+      "category": "豁免保費",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/D759FEE3-CB08-4ADA-A488-FAB3E2706C50/detail/?prodId=DDE18F57-577E-4096-AAE1-08AB9696362B",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/WM020005.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/WM_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "WO",
+      "product_uid": "A8A93F66-0DAD-468C-8BE0-08C4977F4F6A",
+      "product_name": "元大人壽新真意豁免保險費附約",
+      "category": "豁免保費",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/D759FEE3-CB08-4ADA-A488-FAB3E2706C50/detail/?prodId=A8A93F66-0DAD-468C-8BE0-08C4977F4F6A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/WO020004.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/WO_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "WQ",
+      "product_uid": "6C1377FC-BB08-4455-B08D-5D08DEAC5FCB",
+      "product_name": "元大人壽新真心豁免保險費附約",
+      "category": "豁免保費",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/D759FEE3-CB08-4ADA-A488-FAB3E2706C50/detail/?prodId=6C1377FC-BB08-4455-B08D-5D08DEAC5FCB",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/113-6-5     WQ 元大人壽新真心豁免保險費附約 7.5tp 6頁.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/WQ_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "WN",
+      "product_uid": "F51EED10-D928-4897-A95F-59541E8B8069",
+      "product_name": "元大人壽新美心美元豁免保險費附約",
+      "category": "豁免保費",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/D759FEE3-CB08-4ADA-A488-FAB3E2706C50/detail/?prodId=F51EED10-D928-4897-A95F-59541E8B8069",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/113-5-28     WN 元大人壽新美心美元豁免保險費附約 7.5tp 5頁.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/WN_文宣字第P115122號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "T2",
+      "product_uid": "DFA9F4AA-4365-4B6C-97A3-428966174032",
+      "product_name": "元大人壽元元豐收外幣變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=DFA9F4AA-4365-4B6C-97A3-428966174032",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T2010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U2U3T2T3_文宣字第Q115058號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "T3",
+      "product_uid": "F4F0AC0C-07F6-464B-BFBF-C8D6FDD6F18A",
+      "product_name": "元大人壽元元豐收外幣變額年金保險",
+      "category": "投資型保險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=F4F0AC0C-07F6-464B-BFBF-C8D6FDD6F18A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T3010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U2U3T2T3_文宣字第Q115058號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "T5",
+      "product_uid": "2A5F764E-02CF-4F5A-B66C-61CC213ECD9D",
+      "product_name": "元大人壽元元致富外幣變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=2A5F764E-02CF-4F5A-B66C-61CC213ECD9D",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T5010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T5T6U5U6_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "T6",
+      "product_uid": "9B6BC245-0AAD-4B75-BA1C-F7902D730704",
+      "product_name": "元大人壽元元致富外幣變額年金保險",
+      "category": "投資型保險",
+      "currency": "美元",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=9B6BC245-0AAD-4B75-BA1C-F7902D730704",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T6010001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T5T6U5U6_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "U2",
+      "product_uid": "905D78BB-9196-466B-B519-74D1CEF03B7F",
+      "product_name": "元大人壽元元豐收變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=905D78BB-9196-466B-B519-74D1CEF03B7F",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U2040001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U2U3T2T3_文宣字第Q115058號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "U3",
+      "product_uid": "4F47F4CA-63D7-4FDE-BC5D-6762A851183A",
+      "product_name": "元大人壽元元豐收變額年金保險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=4F47F4CA-63D7-4FDE-BC5D-6762A851183A",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U3040001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U2U3T2T3_文宣字第Q115058號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "U5",
+      "product_uid": "20898F7A-1FE4-4EB8-A0C3-694DB692EF99",
+      "product_name": "元大人壽元元致富變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=20898F7A-1FE4-4EB8-A0C3-694DB692EF99",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U5030001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T5T6U5U6_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "U6",
+      "product_uid": "8542105E-2C73-4576-BF77-B401D1733C84",
+      "product_name": "元大人壽元元致富變額年金保險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=8542105E-2C73-4576-BF77-B401D1733C84",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/U6030001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/T5T6U5U6_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "W1",
+      "product_uid": "90CA8501-8097-4C9F-9C7E-6876BE9D2BA1",
+      "product_name": "元大人壽大利元滿變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=90CA8501-8097-4C9F-9C7E-6876BE9D2BA1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W1040001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W1W2_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "W2",
+      "product_uid": "BFE019BD-F052-4DC0-B006-369F6805B30C",
+      "product_name": "元大人壽大利元滿變額年金保險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=BFE019BD-F052-4DC0-B006-369F6805B30C",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W2050001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W1W2_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "W3",
+      "product_uid": "1D958FB4-7B96-48DA-BBB5-49D3E3E266E6",
+      "product_name": "元大人壽享利元元變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=1D958FB4-7B96-48DA-BBB5-49D3E3E266E6",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W3040001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W3W4_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "W4",
+      "product_uid": "9CADB1C8-F844-4CC4-8A50-5A3A89A6B528",
+      "product_name": "元大人壽享利元元變額年金保險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=9CADB1C8-F844-4CC4-8A50-5A3A89A6B528",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W4050001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W3W4_文宣字第Q115049號.pdf"
+        }
+      ]
+    },
+    {
+      "company": "元大人壽",
+      "product_id": "W8",
+      "product_uid": "2ABFF5FF-689A-4E07-AD83-46ECCA221804",
+      "product_name": "元大人壽元夢計畫變額萬能壽險",
+      "category": "投資型保險",
+      "currency": "新台幣",
+      "source_url": "https://www.yuantalife.com.tw/products/overview/395D2004-D9FE-4BE0-9521-FBC881013B34/detail/?prodId=2ABFF5FF-689A-4E07-AD83-46ECCA221804",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款樣張",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W8010002.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.yuantalife.com.tw/api/api/reservation/resource/pdf/W8_文宣字第Q115049號.pdf"
+        }
+      ]
+    }
+  ]
+}

@@ -53,10 +53,10 @@ export function AllocationStrategy({
 
   useEffect(() => {
     let ignore = false;
-    setLoading(true);
-    setError(null);
 
     (async () => {
+      setLoading(true);
+      setError(null);
       try {
         if (mode === "free") {
           const { needs, allocation } = await apiClient.estimate(client);

@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-08-21T02:58:37.478707+00:00",
+  "total": 5,
+  "summary": {
+    "source": {
+      "ok": 5
+    },
+    "pdf": {
+      "non_pdf": 5
+    }
+  },
+  "items": [
+    {
+      "product_db_id": 598,
+      "product_id": "NUEW0201",
+      "company": "台灣人壽",
+      "product_name": "台灣人壽多美富美元養老保險",
+      "source_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NUEW0201?type_id=7",
+      "source": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NUEW0201?type_id=7",
+        "result": "ok",
+        "error": ""
+      },
+      "pdf_url": "https://www.taiwanlife.com/portal-api/File/23959",
+      "pdf": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/File/23959",
+        "result": "non_pdf",
+        "error": ""
+      }
+    },
+    {
+      "product_db_id": 599,
+      "product_id": "NTTL1101",
+      "company": "台灣人壽",
+      "product_name": "台灣人壽吉安心定期壽險",
+      "source_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NTTL1101?type_id=7",
+      "source": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NTTL1101?type_id=7",
+        "result": "ok",
+        "error": ""
+      },
+      "pdf_url": "https://www.taiwanlife.com/portal-api/File/22641",
+      "pdf": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/File/22641",
+        "result": "non_pdf",
+        "error": ""
+      }
+    },
+    {
+      "product_db_id": 600,
+      "product_id": "NUEW0101",
+      "company": "台灣人壽",
+      "product_name": "台灣人壽美利富美元養老保險",
+      "source_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NUEW0101?type_id=7",
+      "source": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NUEW0101?type_id=7",
+        "result": "ok",
+        "error": ""
+      },
+      "pdf_url": "https://www.taiwanlife.com/html/Activity/2025/usdinsurance/index.html?utm_source=twlife",
+      "pdf": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/html/Activity/2025/usdinsurance/index.html?utm_source=twlife",
+        "result": "non_pdf",
+        "error": ""
+      }
+    },
+    {
+      "product_db_id": 601,
+      "product_id": "NTEW0301",
+      "company": "台灣人壽",
+      "product_name": "台灣人壽金彩養老保險【限本公司特定通路銷售】",
+      "source_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NTEW0301?type_id=7",
+      "source": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NTEW0301?type_id=7",
+        "result": "ok",
+        "error": ""
+      },
+      "pdf_url": "https://www.taiwanlife.com/portal-api/File/17243",
+      "pdf": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/File/17243",
+        "result": "non_pdf",
+        "error": ""
+      }
+    },
+    {
+      "product_db_id": 602,
+      "product_id": "NTTL1001",
+      "company": "台灣人壽",
+      "product_name": "台灣人壽e微保微型一年定期壽險【限本公司特定通路銷售】",
+      "source_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NTTL1001?type_id=7",
+      "source": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/ProductDetail/NTTL1001?type_id=7",
+        "result": "ok",
+        "error": ""
+      },
+      "pdf_url": "https://www.taiwanlife.com/portal-api/File/16164",
+      "pdf": {
+        "status": "200",
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://www.taiwanlife.com/portal-api/File/16164",
+        "result": "non_pdf",
+        "error": ""
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@ from typing import Optional
 from fastapi import APIRouter, Form, File, UploadFile
 from pydantic import BaseModel
 from services.claude_service import get_advisory_response
+from services.clause_service import format_clause_context, search_clauses
 from services.rag_service import retrieve_relevant_products, format_context
 from services.pdf_rag_service import retrieve_clause_chunks, format_clause_context
 from services.pdf_service import extract_pdf_from_bytes
@@ -51,6 +52,11 @@ async def chat(req: ChatRequest):
     if req.product_context:
         context = req.product_context + ("\n\n" if context else "") + context
 
+    clause_items = search_clauses(req.message, limit=6)
+    clause_context = format_clause_context(clause_items)
+    if clause_context:
+        context = context + ("\n\n" if context else "") + clause_context
+
     reply = await get_advisory_response(req.message, req.history, context)
     return ChatResponse(reply=reply, disclaimer=DISCLAIMER)
 
@@ -59,6 +65,7 @@ async def chat(req: ChatRequest):
 async def chat_with_file(
     message: str = Form(...),
     history: str = Form("[]"),
+    product_context: str = Form(""),
     file: Optional[UploadFile] = File(default=None),
 ):
     history_parsed = json.loads(history)
@@ -72,7 +79,10 @@ async def chat_with_file(
 
     products = retrieve_relevant_products(message)
     rag_context = format_context(products)
-    context = file_context + rag_context
+    clause_context = format_clause_context(search_clauses(message, limit=6))
+    context = product_context + ("\n\n" if product_context else "") + file_context + rag_context
+    if clause_context:
+        context += "\n\n" + clause_context
 
     reply = await get_advisory_response(message, history_parsed, context)
     return ChatResponse(reply=reply, disclaimer=DISCLAIMER)

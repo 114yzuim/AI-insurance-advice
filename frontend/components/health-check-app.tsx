@@ -6,6 +6,15 @@ import {
   ResponsiveContainer, Tooltip,
 } from "recharts";
 import HealthCheckSidebar from "./health-check-sidebar";
+import {
+  COVERAGE_LABELS,
+  COVERAGE_ORDER,
+  fetchPolicyPortfolio,
+  formatCoverage,
+  getPolicySummary,
+  type CoverageKey,
+  type PolicySummary,
+} from "@/lib/demo-policies";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -80,6 +89,16 @@ const KEY_LABEL: Record<string, string> = {
   life_coverage:      "壽險",
 };
 
+const RECOMMENDATION_TO_COVERAGE: Record<string, CoverageKey> = {
+  accident_coverage: "accident",
+  medical_daily: "daily",
+  disability_monthly: "ltc",
+  cancer_coverage: "cancer",
+  life_coverage: "life",
+};
+
+const DEFAULT_POLICY_SUMMARY = getPolicySummary();
+
 // ─── Root ─────────────────────────────────────────────────────────────────────
 
 type Phase = "browse" | "setup" | "questionnaire" | "assessing";
@@ -93,17 +112,34 @@ export default function HealthCheckApp() {
   const [draftInputs, setDraftInputs] = useState<MemberInput[]>([]);  // collected answers, no results yet
   const [assessError, setAssessError] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [policySummary, setPolicySummary] = useState<PolicySummary>(DEFAULT_POLICY_SUMMARY);
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) setProfiles(JSON.parse(raw));
-    } catch {}
+    queueMicrotask(() => {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) setProfiles(JSON.parse(raw));
+      } catch {}
+    });
   }, []);
 
   useEffect(() => {
     if (profiles.length > 0) localStorage.setItem(STORAGE_KEY, JSON.stringify(profiles));
   }, [profiles]);
+
+  useEffect(() => {
+    let mounted = true;
+    fetchPolicyPortfolio()
+      .then((data) => {
+        if (mounted) setPolicySummary(data.summary);
+      })
+      .catch(() => {
+        if (mounted) setPolicySummary(DEFAULT_POLICY_SUMMARY);
+      });
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   function startSetup() {
     setPhase("setup");
@@ -201,9 +237,9 @@ export default function HealthCheckApp() {
       );
     }
     if (currentProfile) {
-      return <ProfileResultView profile={currentProfile} onNew={startSetup} />;
+      return <ProfileResultView profile={currentProfile} policySummary={policySummary} onNew={startSetup} />;
     }
-    return <WelcomeView onNew={startSetup} />;
+    return <WelcomeView policySummary={policySummary} onNew={startSetup} />;
   })();
 
   return (
@@ -225,7 +261,7 @@ export default function HealthCheckApp() {
 
 // ─── Welcome ──────────────────────────────────────────────────────────────────
 
-function WelcomeView({ onNew }: { onNew: () => void }) {
+function WelcomeView({ policySummary, onNew }: { policySummary: PolicySummary; onNew: () => void }) {
   return (
     <div className="mx-auto max-w-6xl px-5 py-8 md:px-8">
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
@@ -233,36 +269,60 @@ function WelcomeView({ onNew }: { onNew: () => void }) {
           <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-teal-700">
             <ClipboardIcon />
           </div>
-          <p className="mt-6 text-sm font-bold text-teal-700">保障健檢</p>
+          <p className="mt-6 text-sm font-bold text-teal-700">保障健診</p>
           <h1 className="mt-2 max-w-2xl text-3xl font-bold leading-tight text-slate-950 md:text-5xl">
-            <span className="block">用一份問卷</span>
-            <span className="block">看懂家庭保障缺口</span>
+            <span className="block">先看現有保障</span>
+            <span className="block">再算真正缺口</span>
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-            建立顧客或家庭資料後，依序填寫成員狀況，AI 會整理保障優先順序、預算提醒與可參考商品。
+            後續會從我的保單自動彙整身故、癌症、重大傷病、醫療、意外與長照保障，再結合家庭責任與預算評估缺口。
           </p>
           <button
             onClick={onNew}
             className="mt-7 rounded-xl bg-slate-950 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-slate-200 transition hover:bg-slate-800"
           >
-            開始保障健檢
+            開始保障健診
           </button>
         </section>
 
         <aside className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-sm font-bold text-slate-950">評估會看哪些面向</h2>
+          <h2 className="text-sm font-bold text-slate-950">健診會看哪些面向</h2>
           <div className="mt-4 space-y-3">
-            <GuideCard title="家庭責任" text="婚姻、扶養人數與債務。" />
-            <GuideCard title="收入與預算" text="每月收入與可負擔保費。" />
-            <GuideCard title="健康與職業" text="病史、職業風險與意外暴露。" />
+            <GuideCard title="既有保障" text="從已建立保單彙整各類保障額度。" />
+            <GuideCard title="家庭責任" text="婚姻、扶養人數、房貸與重大債務。" />
+            <GuideCard title="缺口排序" text="依收入、預算與風險排出補強順序。" />
           </div>
         </aside>
       </div>
       <div className="mt-6 grid gap-3 md:grid-cols-3">
-        <GuideCard title="1. 建立資料" text="設定個人或家庭成員，讓評估有明確對象。" />
-        <GuideCard title="2. 填寫問卷" text="用選項快速整理收入、責任、健康與預算。" />
-        <GuideCard title="3. 取得建議" text="產出保障優先順序、保費提醒與參考商品。" />
+        <GuideCard title="1. 匯入保單" text="建立每位家庭成員的 Insurance Profile。" />
+        <GuideCard title="2. 補充需求" text="整理收入、責任、健康與預算。" />
+        <GuideCard title="3. 產出缺口" text="用現有保障扣出需要補強的項目。" />
       </div>
+
+      <section className="mt-6 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-bold text-teal-700">我的保障現況</p>
+            <h2 className="mt-1 text-xl font-bold text-slate-950">
+              已讀取 {policySummary.policyCount} 張保單、{policySummary.companyCount} 家保險公司
+            </h2>
+          </div>
+          <p className="text-sm font-bold text-slate-500">
+            年繳保費 {policySummary.premium.toLocaleString("zh-TW")} 元
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+          {COVERAGE_ORDER.map((key) => (
+            <div key={key} className="rounded-2xl bg-slate-50 p-4">
+              <p className="text-xs font-bold text-slate-400">{COVERAGE_LABELS[key].label}</p>
+              <p className="mt-2 text-lg font-bold leading-tight text-slate-900">
+                {formatCoverage(key, policySummary.coverage[key])}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
@@ -507,9 +567,11 @@ function QuestionnaireView({
 
 function ProfileResultView({
   profile,
+  policySummary,
   onNew,
 }: {
   profile: CustomerProfile;
+  policySummary: PolicySummary;
   onNew: () => void;
 }) {
   const [activeMember, setActiveMember] = useState(0);
@@ -559,7 +621,7 @@ function ProfileResultView({
         </div>
       )}
 
-      {member && <MemberResultSection member={member} disclaimer={""} />}
+      {member && <MemberResultSection member={member} policySummary={policySummary} disclaimer={""} />}
 
       <p className="mt-5 text-center text-xs text-slate-400">
         本服務提供資訊參考，非正式保險建議，請諮詢合格業務員。
@@ -568,7 +630,15 @@ function ProfileResultView({
   );
 }
 
-function MemberResultSection({ member, disclaimer }: { member: MemberProfile; disclaimer: string }) {
+function MemberResultSection({
+  member,
+  policySummary,
+  disclaimer,
+}: {
+  member: MemberProfile;
+  policySummary: PolicySummary;
+  disclaimer: string;
+}) {
   const { result } = member;
   const inBudget = result.items.filter((i) => i.within_budget);
   const deferred = result.items.filter((i) => !i.within_budget);
@@ -580,6 +650,8 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
   return (
     <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
       <div className="space-y-5">
+        <CoverageGapPanel items={result.items} policySummary={policySummary} />
+
         <div className="rounded-[1.5rem] border border-amber-200 bg-amber-50 p-4 text-sm leading-7 text-amber-900">
           <span className="font-bold">摘要：</span>{result.summary}
         </div>
@@ -630,6 +702,62 @@ function MemberResultSection({ member, disclaimer }: { member: MemberProfile; di
       </aside>
     </div>
   );
+}
+
+function CoverageGapPanel({ items, policySummary }: { items: RecommendationItem[]; policySummary: PolicySummary }) {
+  const rows = items
+    .map((item) => {
+      const coverageKey = RECOMMENDATION_TO_COVERAGE[item.key];
+      if (!coverageKey) return null;
+      const existing = coverageKey === "ltc" ? policySummary.coverage[coverageKey] * 10000 : policySummary.coverage[coverageKey];
+      const target = item.amount;
+      const gap = Math.max(target - existing, 0);
+      return {
+        key: item.key,
+        label: KEY_LABEL[item.key] ?? item.key,
+        existing,
+        target,
+        gap,
+        unit: item.unit,
+        priority: item.priority,
+      };
+    })
+    .filter((row): row is NonNullable<typeof row> => row !== null)
+    .sort((a, b) => b.gap - a.gap || a.priority - b.priority);
+
+  return (
+    <section className="rounded-[1.5rem] border border-teal-100 bg-white p-4 shadow-sm">
+      <div className="mb-3">
+        <p className="text-sm font-bold text-teal-700">保單健診缺口</p>
+        <h2 className="mt-1 text-xl font-bold text-slate-950">現有保障 - 建議保障</h2>
+      </div>
+      <div className="overflow-hidden rounded-2xl border border-slate-100">
+        <div className="grid grid-cols-[1.1fr_1fr_1fr_1fr] bg-slate-50 px-3 py-2 text-xs font-bold text-slate-500">
+          <span>保障項目</span>
+          <span className="text-right">現有</span>
+          <span className="text-right">建議</span>
+          <span className="text-right">缺口</span>
+        </div>
+        {rows.map((row) => (
+          <div key={row.key} className="grid grid-cols-[1.1fr_1fr_1fr_1fr] border-t border-slate-100 px-3 py-3 text-sm">
+            <span className="font-bold text-slate-800">{row.label}</span>
+            <span className="text-right text-slate-500">{formatGapValue(row.existing, row.unit)}</span>
+            <span className="text-right text-slate-500">{formatGapValue(row.target, row.unit)}</span>
+            <span className={`text-right font-bold ${row.gap > 0 ? "text-rose-600" : "text-emerald-700"}`}>
+              {row.gap > 0 ? formatGapValue(row.gap, row.unit) : "已足額"}
+            </span>
+          </div>
+        ))}
+      </div>
+      <p className="mt-3 text-xs leading-5 text-slate-400">
+        目前先以示範保單資料計算；正式版會依每位家庭成員名下保單、主附約與條款欄位自動彙整。
+      </p>
+    </section>
+  );
+}
+
+function formatGapValue(value: number, unit: string) {
+  return `${value.toLocaleString("zh-TW")} ${unit}`;
 }
 
 function ProductRecommendations({ products }: { products: ProductCard[] }) {

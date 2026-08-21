@@ -1,8 +1,10 @@
 import asyncio
 from typing import List
-from fastapi import APIRouter
+from fastapi import APIRouter, File, UploadFile
 from pydantic import BaseModel
 from services.claims_service import analyze_claim
+from services.claim_document_service import save_claim_document
+from services.claim_rules_service import estimate_claim
 from services.product_service import get_products
 from services.pdf_service import fetch_pdf_text
 
@@ -28,6 +30,11 @@ class HoldingItem(BaseModel):
 class ClaimsRequest(BaseModel):
     scenario: str
     holdings: List[HoldingItem] = []
+
+
+class ClaimEstimateRequest(BaseModel):
+    profile_id: str = "demo-user"
+    scenario: str = ""
 
 
 class CoverageResult(BaseModel):
@@ -132,3 +139,31 @@ async def claims_simulate(req: ClaimsRequest):
         important_notes=result.get("important_notes", ""),
         disclaimer=DISCLAIMER,
     )
+
+
+@router.post("/documents")
+async def upload_claim_documents(
+    diagnosis: UploadFile | None = File(default=None),
+    receipt: UploadFile | None = File(default=None),
+    detail: UploadFile | None = File(default=None),
+):
+    files = {
+        "diagnosis": diagnosis,
+        "receipt": receipt,
+        "detail": detail,
+    }
+    documents = [
+        save_claim_document(key, file)
+        for key, file in files.items()
+        if file is not None and file.filename
+    ]
+    return {
+        "documents": documents,
+        "parsed_count": len([doc for doc in documents if doc["status"] == "parsed"]),
+        "needs_ocr_count": len([doc for doc in documents if doc["status"] == "needs_ocr"]),
+    }
+
+
+@router.post("/estimate")
+async def estimate_claim_by_profile(req: ClaimEstimateRequest):
+    return estimate_claim(profile_id=req.profile_id)

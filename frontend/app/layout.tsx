@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "AI 保險顧問平台",
-  description: "用 AI 協助保單解讀、保障健檢與顧問需求分析。",
+  description: "集中管理個人保單，讓 AI 協助保障健診、理賠判讀與個人化保險諮詢。",
 };
 
 export default function RootLayout({

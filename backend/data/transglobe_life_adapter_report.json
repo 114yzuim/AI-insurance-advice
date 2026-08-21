@@ -1,0 +1,2407 @@
+{
+  "company": "全球人壽",
+  "generated_at": "2026-08-21T04:28:20.301067+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 171,
+    "documents_seen": 171,
+    "products_upserted": 171,
+    "documents_upserted": 171
+  },
+  "items": [
+    {
+      "company": "全球人壽",
+      "product_id": "F25W",
+      "product_name": "全球人壽美億傳承利率變動型美元終身壽險(定額給付型)(F25W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F25W_AAE_1150817.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F26W",
+      "product_name": "全球人壽豪神68利率變動型美元終身壽險(定額給付型)(F26W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F26W_AAE_1150817.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "APB",
+      "product_name": "全球人壽意定罩傷害保險(APB)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=APB_AAE_1150817.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QTR",
+      "product_name": "全球人壽定期壽險附約(QTR)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QTR_AAE_1150817.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "BEM",
+      "product_name": "全球人壽借款人為要保人之保險商品辦理保費融資訂定保險契約相關權利批註條款(BEM)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=BEM_1150629.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QMW",
+      "product_name": "全球人壽豪旺傳家利率變動型終身壽險(定額給付型)(QMW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QMW_AAE_1150629.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LLF",
+      "product_name": "全球人壽樂齡安心定期傷害保險(LLF)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LLF_AAE_1150629.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XAB",
+      "product_name": "全球人壽御守傷害暨兒童傷害失能保險附約(XAB)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XAB_AAE_1150629.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QQW",
+      "product_name": "全球人壽兆得助利率變動型終身壽險(定額給付型)(QQW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QQW_AAE_1150601.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F9W",
+      "product_name": "全球人壽美利12利率變動型美元終身壽險(定額給付型)(F9W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F9W_AAE_1150601.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F22W",
+      "product_name": "全球人壽金滿益利率變動型美元終身壽險(定額給付型)(F22W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F22W_AAE_1150601.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FKP",
+      "product_name": "全球人壽溢美至富利率變動型美元還本終身保險(定額給付型)(FKP)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FKP_AAE_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VCA AAE",
+      "product_name": "全球人壽錢享樂退變額年金保險(VCA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VCA AAE_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VCAU AAE",
+      "product_name": "全球人壽錢享樂退外幣變額年金保險(VCAU)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VCAU AAE_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "RFA",
+      "product_name": "全球人壽人民幣投資標的批註條款(RFA)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=RFA_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0A401",
+      "product_name": "全球人壽共同基金投資標的批註條款(五)(0A4)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0A401_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0A501",
+      "product_name": "全球人壽共同基金投資標的批註條款(六)(0A5)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0A501_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0B101",
+      "product_name": "全球人壽基金連結標的投資標的批註條款(二)(0B1)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0B101_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C1",
+      "product_name": "全球人壽東方明珠變額萬能壽險投資標的異動批註條款(一)(0C1)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C1_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C2",
+      "product_name": "全球人壽彩繪人生變額萬能壽險投資標的異動批註條款(0C2)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C2_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C8",
+      "product_name": "全球人壽投資型保險投資標的批註條款(五)(0C8)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C8_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0A2",
+      "product_name": "全球人壽共同基金投資標的批註條款(三)(0A2)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0A2_1150427.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F8W",
+      "product_name": "全球人壽鑫億68利率變動型美元終身壽險(定額給付型)(F8W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F8W_AAE_1150413.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F6W",
+      "product_name": "全球人壽美滿智富利率變動型美元終身壽險(定額給付型)(F6W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F6W_AAE_1150330.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F7W",
+      "product_name": "全球人壽金美好富貴利率變動型美元終身壽險(定額給付型)(F7W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F7W_AAE_1050330.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XHD AAE",
+      "product_name": "全球人壽實分鑫安醫療費用健康保險附約(XHD)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XHD AAE_1150330.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XHP AAE",
+      "product_name": "全球人壽全心全意2自負額醫療費用健康保險附約(XHP)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XHP AAE_1150330.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "C0006",
+      "product_name": "全球人壽附約延續批註條款(BER)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=C0006_1150330.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F3W",
+      "product_name": "全球人壽尊榮37利率變動型美元終身壽險(定額給付型)(F3W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F3W_AAE_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F5W",
+      "product_name": "全球人壽神力美添旺利率變動型美元終身壽險(定額給付型)(F5W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F5W_AAE_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ALC",
+      "product_name": "全球人壽長期照顧保險分期保險金申領文件調整批註條款(ALC)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ALC_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VLB",
+      "product_name": "全球人壽Pay給利變額萬能壽險(VLB)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VLB_AAE_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VLC",
+      "product_name": "全球人壽鑫卓人生變額萬能壽險(VLC)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VLC_AAE_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ATIT",
+      "product_name": "全球人壽投資型保險貨幣帳戶投資標的轉換批註條款(ATIT)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ATIT_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C001",
+      "product_name": "全球人壽委託全球投顧投資帳戶投資標的批註條款(0C0)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C001_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C701",
+      "product_name": "全球人壽投資型保險投資標的批註條款(四)(0C7)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C701_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0M003",
+      "product_name": "全球人壽收益分配方式批註條款(0M0)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0M003_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0RD03",
+      "product_name": "全球人壽自動提領批註條款(0RD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0RD03_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0RB01",
+      "product_name": "全球人壽投資型保險投資標的自動平衡批註條款(0RB)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0RB01_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0T001",
+      "product_name": "全球人壽投資型保險投資標的價格適用日批註條款(0T0)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0T001_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0S003",
+      "product_name": "全球人壽保險金額批註條款(0S0)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0S003_1150202.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LWL",
+      "product_name": "全球人壽厚利安小額終身壽險(110)(LWL)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LWL_AAE_1150101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LLE",
+      "product_name": "全球人壽樂齡有照長期照顧定期健康保險(LLE)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LLE_AAE_1150101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LCE",
+      "product_name": "全球人壽鑫享照長期照顧終身健康保險(LCE)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LCE_AAE_1150101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ELW",
+      "product_name": "全球人壽保加倍小額終身壽險(ELW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ELW_AAE_1150101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VLZ",
+      "product_name": "全球人壽優享福變額萬能壽險(VLZ)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VLZ_AAE_1150101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VLA",
+      "product_name": "全球人壽金盈智富變額萬能壽險(VLA)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VLA_AAE_1150101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F2W AAD",
+      "product_name": "全球人壽美利長盈利率變動型美元終身壽險(定額給付型)(F2W)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F2W AAD_1141124.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FKD AAD",
+      "product_name": "全球人壽豪美樂利利率變動型美元終身壽險(定額給付型)(FKD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FKD AAD_1141124.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "DCF AAD",
+      "product_name": "全球人壽醫卡好重大傷病終身健康保險(DCF)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=DCF AAD_1141020.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0A3",
+      "product_name": "全球人壽共同基金投資標的批註條款(四)(0A3)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0A3_1141020.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FWW AAD",
+      "product_name": "全球人壽神力美多福利率變動型美元終身壽險(定額給付型)(FWW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FWW AAD_1140915.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QWW AAD",
+      "product_name": "全球人壽神力盈多福利率變動型終身壽險(定額給付型)(QWW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QWW AAD_1140915.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FXW AAD",
+      "product_name": "全球人壽幸福玉守利率變動型美元終身壽險(定額給付型)(FXW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FXW AAD_1140811.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FUW AAD",
+      "product_name": "全球人壽美旺智富利率變動型美元終身壽險(定額給付型)(FUW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FUW AAD_1140714.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FJD AAD",
+      "product_name": "全球人壽美鑫恆盈利率變動型美元終身壽險(定額給付型)(FJD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FJD AAD_1140714.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FMS AAD",
+      "product_name": "全球人壽美滿樂退利率變動型美元終身壽險(定額給付型)(FMS)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FMS AAD_1140623.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0RE01",
+      "product_name": "全球人壽投資型保險外幣自動提領批註條款(0RE)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0RE01_1140623.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QGD AAD",
+      "product_name": "全球人壽飛翔讚利率變動型終身壽險(定額給付型)(QGD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QGD AAD_1140609.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FVW AAD",
+      "product_name": "全球人壽豪美368利率變動型美元終身壽險(定額給付型)(FVW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FVW AAD_1140421.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QVW AAD",
+      "product_name": "全球人壽豪鑫368利率變動型終身壽險(定額給付型)(QVW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QVW AAD_1140421.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "PHE AAD",
+      "product_name": "全球人壽安享醫靠終身醫療健康保險(PHE)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=PHE AAD_1140421.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "PHF AAD",
+      "product_name": "全球人壽全鑫醫靠終身醫療健康保險(PHF)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=PHF AAD_1140421.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0Z0",
+      "product_name": "全球人壽投資型年金保險年金給付開始日批註條款(0Z0)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0Z0_1140421.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FYW AAD",
+      "product_name": "全球人壽美富88利率變動型美元終身壽險(定額給付型)(FYW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FYW AAD_1140331.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FZW AAD",
+      "product_name": "全球人壽鑫美如意利率變動型美元終身壽險(定額給付型)(FZW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FZW AAD_1140331.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QZW AAD",
+      "product_name": "全球人壽鑫心如意利率變動型終身壽險(定額給付型)(QZW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QZW AAD_1140331.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QPW AAD",
+      "product_name": "全球人壽台富88利率變動型終身壽險(定額給付型)(QPW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QPW AAD_1140303.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QNW AAD",
+      "product_name": "全球人壽代代豪旺利率變動型終身壽險(定額給付型)(QNW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QNW AAD_1140303.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QJP AAD",
+      "product_name": "全球人壽年年有利利率變動型還本終身保險(定額給付型)(QJP)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QJP AAD_1140122.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QRS AAD",
+      "product_name": "全球人壽1314金利旺盛利率變動型終身壽險(定額給付型)(QRS)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QRS AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FGD AAD",
+      "product_name": "全球人壽非常美利率變動型美元終身壽險(定額給付型)(FGD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FGD AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FDW AAD",
+      "product_name": "全球人壽88美傳承利率變動型美元終身壽險(定額給付型)(FDW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FDW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QDW AAD",
+      "product_name": "全球人壽88鑫傳承利率變動型終身壽險(定額給付型)(QDW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QDW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QEW AAD",
+      "product_name": "全球人壽金采福旺利率變動型終身壽險(定額給付型)(QEW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QEW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QBW AAD",
+      "product_name": "全球人壽豪威六六利率變動型終身壽險(定額給付型)(QBW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QBW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FHD AAD",
+      "product_name": "全球人壽鑫美富足利率變動型美元增額終身壽險(定額給付型)(FHD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FHD AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FTG AAD",
+      "product_name": "全球人壽鑫情好美利率變動型美元終身壽險(定額給付型)(FTG)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FTG AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FEW AAD",
+      "product_name": "全球人壽金美福旺利率變動型美元終身壽險(定額給付型)(FEW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FEW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FBW AAD",
+      "product_name": "全球人壽豪神六六利率變動型美元終身壽險(定額給付型)(FBW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FBW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FKW AAD",
+      "product_name": "全球人壽豐利富來也利率變動型美元終身壽險(定額給付型)(FKW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FKW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FMW AAD",
+      "product_name": "全球人壽豪旺世代利率變動型美元終身壽險(定額給付型)(FMW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FMW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FAE AAD",
+      "product_name": "全球人壽金美萬事發利率變動型美元養老保險(定額給付型)(FAE)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FAE AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FJP AAD",
+      "product_name": "全球人壽金美美利多利率變動型美元還本終身保險(定額給付型)(FJP)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FJP AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FNW AAD",
+      "product_name": "全球人壽豪利旺利率變動型美元終身壽險(定額給付型)(FNW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FNW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FRW AAD",
+      "product_name": "全球人壽金玉富貴利率變動型美元終身壽險(定額給付型)(FRW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FRW AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "DCE AAD",
+      "product_name": "全球人壽醫卡讚85重大傷病定期健康保險(DCE)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=DCE AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XDE AAD",
+      "product_name": "全球人壽醫卡讚重大傷病一年期健康保險附約(XDE)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XDE AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XDT AAD",
+      "product_name": "全球人壽安心無慮終身壽險附約(實物給付型)(XDT)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XDT AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "PHD AAD",
+      "product_name": "全球人壽好醫靠終身醫療健康保險(PHD)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=PHD AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QFT AAD",
+      "product_name": "全球人壽好福氣定期壽險(定額給付型)(QFT)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QFT AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QDT AAD",
+      "product_name": "全球人壽安心無憂終身壽險(實物給付型)(QDT)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QDT AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "PCG AAD",
+      "product_name": "全球人壽臻惜85 防癌定期健康保險(PCG)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=PCG AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FVS AAD",
+      "product_name": "全球人壽1314美好旺盛利率變動型美元增額終身壽險(定額給付型)(FVS)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FVS AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QFD AAD",
+      "product_name": "全球人壽有GO鑽利率變動型終身壽險(定額給付型)(QFD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QFD AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QHD AAD",
+      "product_name": "全球人壽鑫滿富足利率變動型增額終身壽險(定額給付型)(QHD)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QHD AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XTK AAD",
+      "product_name": "全球人壽守護童心一年期定期壽險附約(XTK)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XTK AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ETL AAD",
+      "product_name": "全球人壽保加倍定期壽險(ETL)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ETL AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "HVA AAD",
+      "product_name": "全球人壽新樂活久久變額年金保險(HVA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=HVA AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "VBA AAD",
+      "product_name": "全球人壽新享樂贏家變額年金保險(VBA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=VBA AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "EVB AAD",
+      "product_name": "全球人壽E利發變額年金保險(EVB)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=EVB AAD_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ETS",
+      "product_name": "全球人壽ｅ路平安海外突發疾病醫療健康保險附加條款(ETS)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ETS_1140101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LLD AAC",
+      "product_name": "全球人壽樂齡臻愛防癌定期健康保險(LLD)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LLD AAC_1131125.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QMS AAC",
+      "product_name": "全球人壽豪享樂退利率變動型終身壽險(定額給付型)(QMS)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QMS AAC_1131125.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FMP AAC",
+      "product_name": "全球人壽美利樂沛利率變動型美元還本終身保險(定額給付型)(FMP)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FMP AAC_1131125.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XSA AAC",
+      "product_name": "全球人壽醫鑫手護一年期手術健康保險附約(XSA)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XSA AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LCD AAC",
+      "product_name": "全球人壽好照85定期健康保險(LCD)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LCD AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "APC AAC",
+      "product_name": "全球人壽青春無距傷害保險(APC)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=APC AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XAN AAC",
+      "product_name": "全球人壽臻平安傷害保險附約(XAN)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XAN AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "NIR AAC",
+      "product_name": "全球人壽健康保險附約(NIR)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=NIR AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "MIR AAC",
+      "product_name": "全球人壽住院醫療保險附約(定額型)(MIR)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=MIR AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XSB AAC",
+      "product_name": "全球人壽5Go術喜一年期手術健康保險附約(XSB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XSB AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XHC AAC",
+      "product_name": "全球人壽實足滿意醫療費用健康保險附約(XHC)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XHC AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XHO AAC",
+      "product_name": "全球人壽全心全意自負額醫療費用健康保險附約(XHO)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XHO AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XCG AAC",
+      "product_name": "全球人壽臻心全意防癌一年期醫療健康保險附約(XCG)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XCG AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "EPA AAC",
+      "product_name": "全球人壽ｅ直安心傷害保險(EPA)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=EPA AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ICG AAC",
+      "product_name": "全球人壽益保微型傷害保險(ICG)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ICG AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ICA AAC",
+      "product_name": "全球人壽個人微型傷害保險(ICA)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ICA AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "OME",
+      "product_name": "全球人壽老年照護住院醫療保險金附加條款(OME)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=OME_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C601",
+      "product_name": "全球人壽投資型保險投資標的批註條款(三)(0C6)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C601_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "KHQA AAC",
+      "product_name": "全球人壽永保平安傷害保險(KHQA)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=KHQA AAC_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0U001",
+      "product_name": "全球人壽投資型保險不定期保險費繳付批註條款(0U0)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0U001_1130930.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XMBN AAB",
+      "product_name": "全球人壽新傷害醫療保險附約(XMBN)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XMBN AAB_1130712.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XHQN AAB",
+      "product_name": "全球人壽新醫療費用健康保險自負額附加條款(XHQN)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XHQN AAB_1130712.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ETA",
+      "product_name": "全球人壽ｅ路平安旅行平安保險(ETA)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ETA_1130701.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "PCF AAA",
+      "product_name": "全球人壽臻惜一生防癌終身健康保險(PCF)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=PCF AAA_1130513.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0L201",
+      "product_name": "全球人壽目標日期基金投資標的批註條款(0L2)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0L201_1130422.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0C3",
+      "product_name": "全球人壽雙鑫報喜變額萬能壽險投資標的異動批註條款(0C3)",
+      "category": "投資型保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0C3_1130422.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XCF",
+      "product_name": "全球人壽臻心一意防癌一年期健康保險附約(XCF)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XCF_AAA_1130325.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ESD Y",
+      "product_name": "全球人壽鑫大戶利率變動型年金保險(ESD)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ESD Y_1121106.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ESE Y",
+      "product_name": "全球人壽增大戶利率變動型年金保險(ESE)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ESE Y_1121106.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LLA Z",
+      "product_name": "全球人壽樂齡有愛定期特定傷病健康保險(LLA)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LLA Z_1120821.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LLB Z",
+      "product_name": "全球人壽樂齡有保定期特定傷病健康保險(LLB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LLB Z_1120821.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "LLC Z",
+      "product_name": "全球人壽樂齡有心定期特定傷病健康保險(LLC)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=LLC Z_1120821.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XLB Z",
+      "product_name": "全球人壽醫定照長期照顧終身健康保險附約(XLB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XLB Z_1120821.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XLC Z",
+      "product_name": "全球人壽醫直照長期照顧終身健康保險附約(XLC)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XLC Z_1120821.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XCC Y",
+      "product_name": "全球人壽臻愛20防癌一年期健康保險附約(XCC)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XCC Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "OIC Y",
+      "product_name": "全球人壽(國際)新全美利利率變動型美元終身壽險(OIC)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=OIC Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "PCH Y",
+      "product_name": "全球人壽臻愛一生防癌終身健康保險(PCH)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=PCH Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "DDB Y",
+      "product_name": "全球人壽重大疾病終身健康保險(乙型)(DDB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=DDB Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FSA Y",
+      "product_name": "全球人壽美元躉繳利率變動型即期年金保險(FSA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FSA Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "RSA Y",
+      "product_name": "全球人壽人民幣躉繳利率變動型即期年金保險(RSA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=RSA Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "EDA Y",
+      "product_name": "全球人壽保加倍一年期重大疾病健康保險(甲型)(EDA)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=EDA Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "EDB",
+      "product_name": "全球人壽保加倍重大疾病定期健康保險(甲型)(EDB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=EDB_Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XPS Y",
+      "product_name": "全球人壽好安心手術醫療終身健康保險附約(105)(XPS)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XPS Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XWA Y",
+      "product_name": "全球人壽臻鑫久久豁免保險費保險附約（A型）(XWA)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XWA Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XWB Y",
+      "product_name": "全球人壽臻鑫久久豁免保險費健康保險附約（B型）(XWB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XWB Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "F18 Y",
+      "product_name": "全球人壽美元豁免保險費健康保險附約(F18)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=F18 Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XTC Y",
+      "product_name": "全球人壽全面醫靠長期照顧一年期健康保險附約(XTC)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XTC Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XCB Y",
+      "product_name": "全球人壽卡有心85特定疾病定期健康保險附約(XCB)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XCB Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "KDR Y",
+      "product_name": "全球人壽幼幼安康健康保險附約(KDR)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=KDR Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XCH Y",
+      "product_name": "全球人壽臻愛一世防癌終身健康保險附約(XCH)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XCH Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XCE Y",
+      "product_name": "全球人壽臻心85防癌定期健康保險附約(XCE)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XCE Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "DSR Y",
+      "product_name": "全球人壽重大疾病及特定傷病健康保險附約(DSR)",
+      "category": "健康醫療",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=DSR Y_1120209.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "C0008",
+      "product_name": "全球人壽保險金額增加批註條款(LWK)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=C0008_1111031.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "XAH P",
+      "product_name": "全球人壽個人傷害住院日額保險給付附加條款(XAH)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=XAH P_1101201.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "GF",
+      "product_name": "全球人壽元氣定期壽險(101A)(GF-原國華人壽商品)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=GF_1100701.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QIA Q",
+      "product_name": "全球人壽富足一生利率變動型即期年金保險(QIA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QIA Q_1090701.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "QSA Q",
+      "product_name": "全球人壽躉繳利率變動型即期年金保險(QSA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=QSA Q_1090701.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "OEA",
+      "product_name": "全球人壽海外急難救助服務簡介(OEA)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=OEA_1090512.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ESA P",
+      "product_name": "全球人壽e路發利率變動型年金保險(ESA)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ESA P_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ESB P",
+      "product_name": "全球人壽e直發利率變動型年金保險(ESB)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ESB P_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ESC P",
+      "product_name": "全球人壽e直發利率變動型年金保險(ESC)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ESC P_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ETM",
+      "product_name": "全球人壽ｅ路平安傷害醫療保險附加條款(ETM)",
+      "category": "意外傷害",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ETM_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "ABE",
+      "product_name": "全球人壽提前給付保險金批註條款(ABE)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=ABE_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "MBE",
+      "product_name": "全球人壽重大燒燙傷保險金附加條款(MBE)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=MBE_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "0F001",
+      "product_name": "全球人壽重大燒燙傷給付附加條款(ZZ4)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=0F001_1090101.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "OPW ",
+      "product_name": "全球人壽(國際)傳統型保險定期提領批註條款(OPW)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=OPW _1060703.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "BENDR J",
+      "product_name": "全球人壽債權債務範圍內受益人指定及其處分權批註條款(BEN)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=BENDR J_1060601.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "FPL",
+      "product_name": "全球人壽外幣保險單借款批註條款(FPL)",
+      "category": "壽險保障",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=FPL_1060601.pdf"
+        }
+      ]
+    },
+    {
+      "company": "全球人壽",
+      "product_id": "RPW",
+      "product_name": "全球人壽利率變動型年金保險定期提領批註條款(RPW)",
+      "category": "年金保險",
+      "source_url": "https://www.transglobe.com.tw/product-clause.html",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.transglobe.com.tw/api/jsp/TransportFile.jsp?type=clause_review&file=RPW_1060601.pdf"
+        }
+      ]
+    }
+  ]
+}

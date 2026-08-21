@@ -5,7 +5,7 @@ import os
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import chat, products, translate, needs_assessment, claims, simulator
+from routers import chat, clauses, companies, policies, products, translate, needs_assessment, claims, simulator
 from routers import clients, balance_sheet, questionnaire
 from allocation.router import router as allocation_router
 from db_init import init_db
@@ -29,6 +29,9 @@ app.add_middleware(
 )
 
 app.include_router(products.router, prefix="/products", tags=["products"])
+app.include_router(companies.router, prefix="/companies", tags=["companies"])
+app.include_router(clauses.router, prefix="/clauses", tags=["clauses"])
+app.include_router(policies.router, prefix="/policies", tags=["policies"])
 app.include_router(chat.router, prefix="/chat", tags=["chat"])
 app.include_router(translate.router, prefix="/translate", tags=["translate"])
 app.include_router(needs_assessment.router, prefix="/needs-assessment", tags=["needs-assessment"])

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useCallback, useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import MarkdownContent from "./markdown-content";
 import type { TranslateRecord } from "./translate-app";
@@ -31,14 +31,7 @@ export default function TranslateContent({
 
   const startedRef = useRef(false);
 
-  // auto-start if URL provided; ref prevents StrictMode double-invoke
-  useEffect(() => {
-    if (!initPdfUrl || record || startedRef.current) return;
-    startedRef.current = true;
-    runUrlTranslate(initPdfUrl, initProductName);
-  }, []);
-
-  async function runUrlTranslate(url: string, name: string) {
+  const runUrlTranslate = useCallback(async function runUrlTranslate(url: string, name: string) {
     setLoading(true);
     setError("");
     try {
@@ -70,7 +63,14 @@ export default function TranslateContent({
     } finally {
       setLoading(false);
     }
-  }
+  }, [onSave]);
+
+  // auto-start if URL provided; ref prevents StrictMode double-invoke
+  useEffect(() => {
+    if (!initPdfUrl || record || startedRef.current) return;
+    startedRef.current = true;
+    runUrlTranslate(initPdfUrl, initProductName);
+  }, [initPdfUrl, initProductName, record, runUrlTranslate]);
 
   async function handleUpload() {
     if (!file) return;

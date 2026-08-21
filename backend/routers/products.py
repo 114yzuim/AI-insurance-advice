@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Query
-from services.product_service import get_products, search_products
+from services.product_service import get_product_inventory_summary, get_products, search_products
 
 router = APIRouter()
 
@@ -35,6 +35,11 @@ def list_companies():
     products = get_products()
     companies = sorted({p["company"] for p in products})
     return {"companies": companies}
+
+
+@router.get("/inventory-summary")
+def inventory_summary():
+    return get_product_inventory_summary()
 
 
 @router.get("/{product_id}")

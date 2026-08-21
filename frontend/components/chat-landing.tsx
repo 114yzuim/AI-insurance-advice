@@ -45,9 +45,9 @@ type TaskCard = {
 
 const TASKS: TaskCard[] = [
   {
-    title: "保障盤點",
-    description: "找出優先補強項目",
-    prompt: "請用白話幫我評估目前最需要補強哪些保險保障。",
+    title: "我的保障",
+    description: "根據保單整理可用保障",
+    prompt: "請根據我的保單資料，幫我整理目前有哪些保障可以使用。",
     icon: "shield",
     accent: "bg-teal-100 text-teal-700",
   },
@@ -75,9 +75,9 @@ const TASKS: TaskCard[] = [
 ];
 
 const SUMMARY_STEPS = [
-  "描述問題或上傳保單",
-  "AI 整理重點與疑問",
-  "依風險與預算排下一步",
+  "讀取我的保單",
+  "比對保障與條款",
+  "整理下一步行動",
 ];
 
 const TOPICS = ["醫療險", "失能險", "壽險", "保費預算", "除外責任", "理賠文件"];
@@ -130,13 +130,13 @@ export default function ChatLanding({ onSend, loading }: Props) {
         <div className="mx-auto grid w-full max-w-[1360px] gap-5 xl:grid-cols-[minmax(0,1fr)_310px]">
           <section className="min-w-0">
             <div className="max-w-4xl">
-              <p className="text-sm font-bold text-teal-700">AI 保險諮詢</p>
+              <p className="text-sm font-bold text-teal-700">AI 保險顧問</p>
               <h1 className="mt-3 text-3xl font-bold leading-tight text-slate-950 md:text-4xl xl:text-5xl">
-                <span className="block">把保險問題說出來</span>
-                <span className="block">我幫你整理下一步</span>
+                <span className="block">問我任何關於</span>
+                <span className="block">我的保障的問題</span>
               </h1>
               <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-                適合用來問保障缺口、看懂保單、整理預算分配，也可以先把理賠情境講清楚。
+                未來 AI 會讀取你的保單資料回答問題。現在可先上傳保單或描述需求，系統會整理條款重點與下一步。
               </p>
             </div>
 

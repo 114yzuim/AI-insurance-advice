@@ -31,18 +31,20 @@ export default function TranslateApp({
   const [pendingName, setPendingName] = useState(initProductName);
 
   useEffect(() => {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      try {
-        const parsed: TranslateRecord[] = JSON.parse(raw);
-        setRecords(parsed);
-        if (!initPdfUrl && parsed.length > 0) {
-          setCurrentId(parsed[0].id);
-        }
-      } catch {}
-    }
-    setInitialized(true);
-  }, []);
+    queueMicrotask(() => {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        try {
+          const parsed: TranslateRecord[] = JSON.parse(raw);
+          setRecords(parsed);
+          if (!initPdfUrl && parsed.length > 0) {
+            setCurrentId(parsed[0].id);
+          }
+        } catch {}
+      }
+      setInitialized(true);
+    });
+  }, [initPdfUrl]);
 
   // only save after initial load — prevents overwriting stored data with []
   useEffect(() => {

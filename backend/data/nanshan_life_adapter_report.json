@@ -1,0 +1,1783 @@
+{
+  "company": "南山人壽",
+  "generated_at": "2026-08-21T04:25:01.419795+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 118,
+    "documents_seen": 118,
+    "products_upserted": 118,
+    "documents_upserted": 118
+  },
+  "items": [
+    {
+      "company": "南山人壽",
+      "product_id": "BPFEB7",
+      "product_name": "南山人壽銀行保險保費融資批註條款(B7)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPFEB7.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BRUE",
+      "product_name": "南山人壽美添樂退美元利率變動型還本終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BRUE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "2BTE6",
+      "product_name": "南山人壽優利成雙利率變動型還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/2BTE6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BPLEB3",
+      "product_name": "南山人壽銀行保險保單融資批註條款(B3)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPLEB3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BPFEB4",
+      "product_name": "南山人壽銀行保險保費融資批註條款(B4)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPFEB4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL15",
+      "product_name": "南山人壽御利臻藏美元利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL15.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "MCVPO",
+      "product_name": "南山人壽月給付型生存還本保險金暨增值回饋分享金選項批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/MCVPO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL17",
+      "product_name": "南山人壽滿福保美元利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL17.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL16",
+      "product_name": "南山人壽豐傳保倍美元利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL16.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "3ATE",
+      "product_name": "南山人壽金佳多利利率變動型還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/3ATE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "2BTE5",
+      "product_name": "南山人壽御享樂活利率變動型還本終身保險(定期給付 型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/2BTE5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SULV",
+      "product_name": "南山人壽御利臻鑽美元利率變動型終身壽險(定期給付 型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SULV.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "2BUE7",
+      "product_name": "南山人壽美年佳利美元利率變動型還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/2BUE7.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BTPL2",
+      "product_name": "南山人壽享多保利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BTPL2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BUL6",
+      "product_name": "南山人壽美滿雙鑽美元利率變動型增額終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BUL6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "2BTE3",
+      "product_name": "南山人壽合利發利率變動型還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/2BTE3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL8",
+      "product_name": "南山人壽添保倍美元利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL8.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "2AUE5",
+      "product_name": "南山人壽美利福滿美元利率變動型還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/2AUE5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL7",
+      "product_name": "南山人壽豐盈保倍美元利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL7.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "MPL3",
+      "product_name": "南山人壽新福愛小額終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/MPL3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL6",
+      "product_name": "南山人壽豐盈滿山美元利率變動型終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "6BFTE2",
+      "product_name": "南山人壽佳利年年還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/6BFTE2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "6AFTE3",
+      "product_name": "南山人壽威利年年 3 還本終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/6AFTE3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SYUL",
+      "product_name": "南山人壽威美鑽美元利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SYUL.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYUPL5",
+      "product_name": "南山人壽吉保倍美元利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYUPL5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "AYUPL",
+      "product_name": "南山人壽美利保倍美元利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/AYUPL.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRMPL",
+      "product_name": "南山人壽Full樂滿愛小額終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRMPL.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "LOAN1",
+      "product_name": "南山人壽外幣保險商品保險單借款批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/LOAN1.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FTSO",
+      "product_name": "南山人壽保險金分期給付(定期給付型)批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FTSO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "TIB",
+      "product_name": "南山人壽生命末期提前給付附加條款",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/TIB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "GIO",
+      "product_name": "南山人壽保險金額增加批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/GIO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "2UI12E",
+      "product_name": "南山人壽美利聚鑫美元利率變動型養老保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/2UI12E.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "U1P10E3",
+      "product_name": "南山人壽美好十光美元養老保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/U1P10E3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BPLEB5",
+      "product_name": "南山人壽銀行保險保單融資批註條款(B5)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPLEB5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BPFEB6",
+      "product_name": "南山人壽銀行保險保費融資批註條款(B6)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPFEB6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BPLEB4",
+      "product_name": "南山人壽銀行保險保單融資批註條款(B4)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPLEB4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BPFEB5",
+      "product_name": "南山人壽銀行保險保費融資批註條款(B5)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BPFEB5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "UXP12E",
+      "product_name": "南山人壽美利臻鑫美元養老保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/UXP12E.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "U2P25E",
+      "product_name": "南山人壽美利 Pay 美元還本養老保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/U2P25E.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "U1P10E2",
+      "product_name": "南山人壽美利 Fun 鑫美元養老保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/U1P10E2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "U1P11E2",
+      "product_name": "南山人壽美滿優利美元養老保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/U1P11E2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "U1P10E",
+      "product_name": "南山人壽美好吉利美元養老保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/U1P10E.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "MSO",
+      "product_name": "南山人壽滿期保險金分期給付(定期給付型)批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/MSO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BMTL2",
+      "product_name": "南山人壽全家幸福定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BMTL2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "DCTEA3",
+      "product_name": "南山人壽債權債務範圍內受益人指定及其處分權批註 條款(A3)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/DCTEA3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "DCTEB3",
+      "product_name": "南山人壽債權債務範圍內受益人指定 批註條款(B3)",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/DCTEB3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRMTL",
+      "product_name": "南山人壽Full 樂一年期微型定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRMTL.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "NTR2",
+      "product_name": "南山人壽新定期壽險附約",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/NTR2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "NTL2",
+      "product_name": "南山人壽新定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/NTL2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRTL",
+      "product_name": "南山人壽Full樂安心定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRTL.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "N1TR",
+      "product_name": "南山人壽不分紅一年期定期壽險附約",
+      "category": "壽險保障",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/854",
+      "source_index_title": "個人人壽保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/N1TR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1HSCO4C",
+      "product_name": "南山人壽實現幸福部分負擔住院醫療健康保險附約更約權批註條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1HSCO4C.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "E3C",
+      "product_name": "南山人壽網路投保iLike3C 特定手術健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/E3C.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HC",
+      "product_name": "南山人壽心滿溢足癌症健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "LTC4C",
+      "product_name": "南山人壽長期照顧分期(長期看護)保險金連續給付達四期後申領文件調整批註條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/LTC4C.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "TSIR3",
+      "product_name": "南山人壽真獻情 3 手術醫療定期健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/TSIR3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HLD",
+      "product_name": "南山人壽心心相惜生活習慣健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HLD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SHI",
+      "product_name": "南山人壽長青安溢醫療定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SHI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "ELTC",
+      "product_name": "南山人壽網路投保 iLike 相守長期照顧健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/ELTC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1CPT",
+      "product_name": "南山人壽癌症特定粒子精準放射治療附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1CPT.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1NHI",
+      "product_name": "南山人壽新日溢幸福住院日額健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1NHI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "EHI",
+      "product_name": "南山人壽網路投保 iLike 依靠住院日額健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/EHI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SC",
+      "product_name": "南山人壽長青滿溢癌症定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SDLR2",
+      "product_name": "南山人壽樂享健康2健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SDLR2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "ZDDR2",
+      "product_name": "南山人壽至尊康祥重大疾病健康保險附約(乙型)",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/ZDDR2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HCAB2",
+      "product_name": "南山人壽滿溢久久2癌症醫療健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HCAB2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HCAR2",
+      "product_name": "南山人壽滿溢久久2癌症醫療健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HCAR2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1RAS",
+      "product_name": "南山人壽癌症特定機械手臂微創切除手術醫療附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1RAS.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FLTC",
+      "product_name": "南山人壽輕鬆陪伴長期照顧健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FLTC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "20HTBC",
+      "product_name": "南山人壽情溢相挺癌症定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/20HTBC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1STT",
+      "product_name": "南山人壽重度癌症標靶治療附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1STT.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1CGT",
+      "product_name": "南山人壽精準醫療癌後基因檢測附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1CGT.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1HIR",
+      "product_name": "南山人壽日臻幸福住院日額健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1HIR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1HSD",
+      "product_name": "南山人壽超實踐幸福自負額住院醫療健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1HSD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1HS",
+      "product_name": "南山人壽實踐幸福住院醫療健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1HS.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRTDD",
+      "product_name": "南山人壽Full樂無憂重大疾病定期健康保險(甲型)",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRTDD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FR1DD",
+      "product_name": "南山人壽Full樂無憂一年期重大疾病健康保險(甲型)",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FR1DD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HLTC",
+      "product_name": "南山人壽溢路守護長期照顧終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HLTC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "20HTSC",
+      "product_name": "南山人壽美力相守癌症定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/20HTSC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HTLTC",
+      "product_name": "南山人壽溢路陪伴長期照顧健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HTLTC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "PHCB",
+      "product_name": "南山人壽防疫保健現金回饋附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/PHCB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1SCT",
+      "product_name": "南山人壽實體癌第四期自體免疫細胞治療附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1SCT.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1HSCO",
+      "product_name": "南山人壽實現幸福部分負擔住院醫療健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1HSCO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "1SIR",
+      "product_name": "南山人壽手握幸福手術醫療健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/1SIR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "CDWP",
+      "product_name": "南山人壽法定傳染病排除等待期間批註條款(適用附表商品)",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/CDWP.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "STCB",
+      "product_name": "南山人壽優樂康護短期照顧終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/STCB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "10TSDD",
+      "product_name": "南山人壽活力洋溢特定重大傷病定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/10TSDD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "10TLTC",
+      "product_name": "南山人壽青年護照長期照顧定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/10TLTC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "HSE",
+      "product_name": "南山人壽愛家保要保人豁免保險費附約",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/HSE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "WOP",
+      "product_name": "南山人壽附約延續附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/915",
+      "source_index_title": "個人健康保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/WOP.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BYAR2",
+      "product_name": "南山人壽珍安康 2 意外傷害保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BYAR2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "ECPA1",
+      "product_name": "南山人壽網路投保 iLike 相挺傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/ECPA1.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRMPA",
+      "product_name": "南山人壽Full樂微型傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRMPA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRMMR",
+      "product_name": "南山人壽Full樂微型傷害醫療保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRMMR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SBB",
+      "product_name": "南山人壽意外骨折及特定手術傷害醫療保險",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SBB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "PAMR",
+      "product_name": "南山人壽成意實足意外傷害醫療保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/PAMR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SBBR",
+      "product_name": "南山人壽意外骨折及特定手術傷害醫療保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SBBR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "BBMR",
+      "product_name": "南山人壽意外骨折暨傷害醫療保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/BBMR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "KPAR",
+      "product_name": "南山人壽陪童長大意外傷害保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/KPAR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "YPAR",
+      "product_name": "南山人壽成心相守意外傷害保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/YPAR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "KPA",
+      "product_name": "南山人壽童心守護傷害保險(僅有意外身故或喪葬費用保險金)",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/KPA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "FRPAR",
+      "product_name": "南山人壽Full樂平安小額傷害保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/FRPAR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "NAI",
+      "product_name": "南山人壽新傷害保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/NAI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "MPA2",
+      "product_name": "南山人壽集體投保型微型傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/MPA2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "MPA",
+      "product_name": "南山人壽一年期微型傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/MPA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SIPA",
+      "product_name": "南山人壽長青傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SIPA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "IDHI_DHI",
+      "product_name": "南山人壽意外傷害醫療日額給付附加條款",
+      "category": "意外傷害",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/919",
+      "source_index_title": "個人傷害保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/IDHI_DHI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "SPA",
+      "product_name": "南山人壽青春動起來保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/923",
+      "source_index_title": "個人傷害險暨健康險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/SPA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "E1DH",
+      "product_name": "南山人壽穩助糖醫療保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/923",
+      "source_index_title": "個人傷害險暨健康險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/E1DH.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "TDH",
+      "product_name": "南山人壽Hold助糖定期醫療保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/923",
+      "source_index_title": "個人傷害險暨健康險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/TDH.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "WOTA",
+      "product_name": "南山人壽海外暢遊保險",
+      "category": "健康醫療",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/923",
+      "source_index_title": "個人傷害險暨健康險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/WOTA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "AUISA2",
+      "product_name": "南山人壽鑫富美利 2 美元利率變動型年金保險(甲型)",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/AUISA2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "UTISA",
+      "product_name": "南山人壽美滿龍益美元利率變動型年金保險(甲型)",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/UTISA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "ECISA3RP",
+      "product_name": "南山人壽 iLike 享富利率變動型年金保險(甲型)",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/ECISA3RP.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "PISA3",
+      "product_name": "南山人壽厚利旺3利率變動型年金保險(甲型)",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/PISA3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "AP",
+      "product_name": "南山人壽利率變動型年金保險年金給付方式附加條款",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/AP.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "UAP",
+      "product_name": "南山人壽美元利率變動型年金保險年金給付方式附加條款",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/UAP.pdf"
+        }
+      ]
+    },
+    {
+      "company": "南山人壽",
+      "product_id": "OUISA",
+      "product_name": "南山人壽美年金采美元利率變動型年金保險(甲型)【OIU】",
+      "category": "年金保險",
+      "source_url": "https://www.nanshanlife.com.tw/nanshanlife/portal-api/File/924",
+      "source_index_title": "個人年金保險商品",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "契約條款",
+          "pdf_url": "https://www.nanshanlife.com.tw/nanshanlife/nanshanlife-info/Products/rule/OUISA.pdf"
+        }
+      ]
+    }
+  ]
+}

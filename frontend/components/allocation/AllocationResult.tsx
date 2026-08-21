@@ -24,28 +24,28 @@ function Donut({ allocation }: { allocation: Allocation }) {
   const r = 54;
   const sw = 18;
   const circ = 2 * Math.PI * r;
-  let offset = 0;
+  const segments = BUCKETS.reduce<Array<{ bucket: Bucket; len: number; offset: number }>>((acc, bucket) => {
+    const offset = acc.reduce((sum, item) => sum + item.len, 0);
+    const len = (allocation[key(bucket)] / 100) * circ;
+    return [...acc, { bucket, len, offset }];
+  }, []);
+
   return (
     <svg viewBox="0 0 140 140" className="alloc-donut">
       <g transform="rotate(-90 70 70)">
-        {BUCKETS.map((b) => {
-          const len = (allocation[key(b)] / 100) * circ;
-          const node = (
+        {segments.map(({ bucket, len, offset }) => (
             <circle
-              key={b}
+              key={bucket}
               cx={70}
               cy={70}
               r={r}
               fill="none"
-              stroke={BUCKET_META[b].cssVar}
+              stroke={BUCKET_META[bucket].cssVar}
               strokeWidth={sw}
               strokeDasharray={`${len} ${circ - len}`}
               strokeDashoffset={-offset}
             />
-          );
-          offset += len;
-          return node;
-        })}
+        ))}
       </g>
       <text x={70} y={66} textAnchor="middle" className="alloc-donut__big" fontSize={26}>
         100%

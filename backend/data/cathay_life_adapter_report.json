@@ -1,0 +1,3168 @@
+{
+  "company": "國泰人壽",
+  "generated_at": "2026-08-21T03:52:47.623740+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 139,
+    "documents_seen": 353,
+    "products_upserted": 139,
+    "documents_upserted": 353
+  },
+  "items": [
+    {
+      "company": "國泰人壽",
+      "product_id": "CFP",
+      "product_name": "自由配一年定期住院日額醫療健康保險（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/cfp",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CFP_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CFP.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFQ",
+      "product_name": "自由配一年定期手術醫療健康保險（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/cfq",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CFQ_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CFQ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFT",
+      "product_name": "自由配一年定期特定處置醫療健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/cft",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CFT_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CFT.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "JHA",
+      "product_name": "宅心安一年定期住院日額暨在宅急症照護醫療健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/jha",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JHA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JHA商品條款.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "B94",
+      "product_name": "新真大心PLUS住院醫療健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/b94",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/B94_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/B94條款.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "HT6",
+      "product_name": "心安PLUS手術醫療定期健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/ht6",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/HTBHT5HT6_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/HT6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "JW4",
+      "product_name": "真安安醫療終身保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/jw4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JW4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JW4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DTFDTG",
+      "product_name": "樂順心手術醫療定期健康保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/dtfdtg",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/DTFDTG_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/DTFDTG.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "AGH",
+      "product_name": "真漾心安住院醫療終身保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/agh",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/AGH_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/AGH.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DCC",
+      "product_name": "樂心安住院醫療定期保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/dcc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/DCCDCD_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/DCCDCD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "HT5",
+      "product_name": "心安PLUS加護燒燙傷病房醫療終身健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/ht5",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/HTBHT5HT6_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/HT5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "HTB",
+      "product_name": "輕漾心安住院醫療終身健康保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/htb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/HTBHT5HT6_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/HTB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DS6",
+      "product_name": "康泰無憂PLUS住院醫療終身健康保險（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/ds6",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/DS6_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/DS6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FV7",
+      "product_name": "真心安住院醫療終身保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/fv7",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/FV7_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/FV7.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "L67",
+      "product_name": "真康順手術醫療終身保險(外溢型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/l67",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/L67_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/L67.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CQ4",
+      "product_name": "真永健PLUS住院日額健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/cq4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CQ4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/CQ4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "JWH",
+      "product_name": "國泰人壽享醫靠醫療終身保險（電話行銷專屬）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/jwh",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JWH_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JWH.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "JWI",
+      "product_name": "國泰人壽醫定安心手術醫療終身保險（電話行銷專屬）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/jwi",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JWI_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JWI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "PP2",
+      "product_name": "睛彩人生PLUS手術醫療健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/pp2",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/PP2_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/PP2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "JWJ",
+      "product_name": "國泰人壽睛彩萬分手術醫療定期健康保險（電話行銷專屬）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-surgery/jwj",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-surgery",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JWJ_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-surgery/JWJ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FG3",
+      "product_name": "倍愛醫靠住院醫療定期保險(外溢型)(A型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-reimbursement-benefits/fg3",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-reimbursement-benefits",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/FG3_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/FG3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FG4",
+      "product_name": "倍愛醫靠住院醫療定期保險(外溢型)(B型)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-reimbursement-benefits/fg4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-reimbursement-benefits",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/FG4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/FG4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CV4",
+      "product_name": "新實全心意PLUS住院醫療健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-reimbursement-benefits/cv4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-reimbursement-benefits",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/CV4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/CV4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CWC",
+      "product_name": "新iHealth一年期住院醫療健康保險（外溢型）(網路投保專屬)",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-reimbursement-benefits/cwc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-reimbursement-benefits",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/CWC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WV4",
+      "product_name": "超實在自負額住院醫療健康保險附約（外溢型）",
+      "category": "健康醫療",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-reimbursement-benefits/wv4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-reimbursement-benefits",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/WV4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-reimbursement-benefits/WV4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DPC",
+      "product_name": "醫護康愛防癌定期健康保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/dpc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DPC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DPC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FMC",
+      "product_name": "好康愛防癌定期保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/fmc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/FMC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/FMC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "LDALDB",
+      "product_name": "睛智守護特定疾病定期保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/ldaldb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/LDALDB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/LDALDB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "MFB",
+      "product_name": "豪康愛防癌定期保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/mfb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/MFB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/MFB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SC2",
+      "product_name": "樂鍾心特定傷病定期健康保險(外溢型)",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/sc2",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/SC2_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/SC2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFR",
+      "product_name": "自由配一年定期初次罹患重大傷病健康保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/cfr",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/CFR_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/CFR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFU",
+      "product_name": "自由配一年定期初次罹患癌症健康保險附約（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/cfu",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/CFU_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/CFU.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DQ1",
+      "product_name": "IN康愛防癌定期健康保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/dq1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DQ1_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DQ1.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DQB",
+      "product_name": "樂康愛防癌定期健康保險（外溢型）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/dqb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DQB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DQB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "ZCO",
+      "product_name": "新鍾心滿福重大傷病定期保險(外溢型)",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/zco",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/ZCO_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/ZCO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DR2",
+      "product_name": "精準康愛防癌定期健康保險(外溢型)",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/dr2",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/國泰人壽_精準康愛防癌定期保險(外溢型)(DR2)_ol_11507.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DR2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "PX5",
+      "product_name": "鍾溢祝福重大疾病健康保險附約(乙型)(外溢型)",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/px5",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/PX5_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/PX5.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "X93",
+      "product_name": "安護一年期保險費豁免附約",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/x93",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/X93_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/X93.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "X94",
+      "product_name": "安家一年期保險費豁免附約",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/x94",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/X94_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/X94.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WRA",
+      "product_name": "國泰人壽真愛平安防癌定期保險（電話行銷專屬）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/wra",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/WRA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/WRA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DP4",
+      "product_name": "國泰人壽樂無憂防癌定期健康保險（電話行銷專屬）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/dp4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DP4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DP4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DP3",
+      "product_name": "國泰人壽鑫溢滿滿防癌定期保險(外溢型)（電話行銷專屬）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/dp3",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DP3_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/DP3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "M27",
+      "product_name": "國泰人壽鍾愛守護防癌定期保險（電話行銷專屬）",
+      "category": "重大疾病",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-illness/m27",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-illness",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/M27_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-illness/M27.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "LCC",
+      "product_name": "樂齡守護長期照顧定期健康保險(外溢型)(實物給付型保險商品)",
+      "category": "長照",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-long-term-care/lcc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-long-term-care",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/LCCLCD_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/LCCLCD.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付相關資訊(含合作廠商資料)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/LCCLCD_partner.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "ZH8",
+      "product_name": "倍心守護公教長期照顧終身健康保險(外溢型)(實物給付型保險商品)",
+      "category": "長照",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-long-term-care/zh8",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-long-term-care",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/public-servants/ZH8_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/public-servants/ZH8.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付相關資訊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/public-servants/ZH8_public_partner.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFV",
+      "product_name": "自由配一年定期健康保險附約（外溢型）",
+      "category": "長照",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-long-term-care/cfv",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-long-term-care",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/CFV_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/CFV.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFW",
+      "product_name": "自由配一年定期長期照顧健康保險（外溢型）",
+      "category": "長照",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-long-term-care/cfw",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-long-term-care",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/CFW_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/CFW.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "VSC",
+      "product_name": "安心守護A型長期照顧終身保險（外溢型）（實物給付型保險商品）",
+      "category": "長照",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-long-term-care/vsc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-long-term-care",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/VSC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/VSC.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付相關資訊(含合作廠商資料)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/VSC_partner.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "VSD",
+      "product_name": "安心守護B型長期照顧終身健康保險（外溢型）（實物給付型保險商品）",
+      "category": "長照",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/health-long-term-care/vsd",
+      "category_url": "https://www.cathaylife.com.tw/official/products/health-long-term-care",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/VSD_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/VSD.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付相關資訊(含合作廠商資料)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/health-long-term-care/VSD_partner.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFD",
+      "product_name": "自由配一年定期意外身故與失能傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/cfd",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/CFD_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/CFD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFJ",
+      "product_name": "自由配一年定期意外住院日額傷害保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/cfj",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/CFJ_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/CFJ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "KB1",
+      "product_name": "享保障小額傷害保險附約(網路投保專屬)(好好退休準備平台專屬)",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/kb1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/KB1KB2KB3KB4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "XB7",
+      "product_name": "超全方位傷害暨兒童傷害失能保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/xb7",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/XB7XB8XB9_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/XB7.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "GI2",
+      "product_name": "樂享平安定期保險",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/gi2",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/GI2_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/GI2_.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "N67",
+      "product_name": "意萬平安傷害暨兒童意外骨折定期保險",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/n67",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/國泰人壽_意萬平安傷害暨兒童意外骨折定期保險_11505.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/N65.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "XN5",
+      "product_name": "超愛寶貝一年定期傷害醫療保險附約(無身故給付)",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/xn5",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/XN5XN6_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/XN5XN6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "XJ2",
+      "product_name": "新金骨力傷害暨兒童意外骨折保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/xj2",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/XJ2_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/XJ2.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FXD",
+      "product_name": "國泰人壽平安保倍定期保險(電話行銷專屬)",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/fxd",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/FXD_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/FXD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FXC",
+      "product_name": "國泰人壽樂活平安定期保險(電話行銷專屬)",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/fxc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/FXC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/FXC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FXE",
+      "product_name": "國泰人壽平安加倍定期保險(電話行銷專屬)",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/fxe",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/FXE_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/FXE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "NI1",
+      "product_name": "新iCarry傷害保險 (網路投保專屬)",
+      "category": "意外傷害",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/accident/ni1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/accident",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/accident/NI1_6.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CFA",
+      "product_name": "自由配一年定期身故及完全失能壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/cfa",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CFA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CFA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "K84",
+      "product_name": "新GO心保障100定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/k84",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/K84K93_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/K84K93.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "KC3",
+      "product_name": "微馨福小額終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/kc3",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/KC3KC4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/KC3KC4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "N66",
+      "product_name": "新GO安心保本定期保險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/n66",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/N66_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/N66.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CCB",
+      "product_name": "吉得利101利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/ccb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CCB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CCB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CCA",
+      "product_name": "繽利101利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/cca",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CCA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CCA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WAU",
+      "product_name": "祿利威登利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wau",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WAU_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WAU.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WZC",
+      "product_name": "豪美利101利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wzc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WZC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WZC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WZD",
+      "product_name": "吉美利101利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wzd",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WZD_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WZD.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "MNC",
+      "product_name": "心iLife一年期定期壽險（網路投保專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/mnc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/MNC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "KAB",
+      "product_name": "新享保障小額終身壽險（網路投保專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/kab",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/KABKACKADKAE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "DX4",
+      "product_name": "IN享愛定期壽險（外溢型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/dx4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/DX4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/DX4.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "ABAABB",
+      "product_name": "美添增鑽利率變動型美元終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/abaabb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/ABAABB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/ABAABB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WQ6WQ7WQ8",
+      "product_name": "美添增鑫利率變動型美元終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wq6wq7wq8",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WQ6WQ7WQ8_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WQ6WQ7WQ8.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WCD",
+      "product_name": "美利雙寶利率變動型美元終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wcd",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCDWCE_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCDWCE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WCG",
+      "product_name": "美利甘心利率變動型美元終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wcg",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCG_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCG.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WD1",
+      "product_name": "美滿雙寶利率變動型美元終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wd1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WD1_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WD1.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WDA",
+      "product_name": "美愛康盈利率變動型美元終身保險（定期給付型）（外溢型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wda",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WDA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WDA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WDB",
+      "product_name": "美滿康愛利率變動型美元終身保險（定期給付型）（外溢型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wdb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WDB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WDB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WE1",
+      "product_name": "滿福寶利率變動型終身保險（定期給付型）（外溢型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/we1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WE1_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WE1.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CTA",
+      "product_name": "樂齡享退利率變動型美元終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/cta",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CTA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CTA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WJA",
+      "product_name": "鑽美鑫利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wja",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WJA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WJA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUQWUR",
+      "product_name": "億美利利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wuqwur",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUQWUR_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUQWUR.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUS",
+      "product_name": "鑽美滿利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wus",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUS_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUS.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WKB",
+      "product_name": "祿利澳翔利率變動型澳幣終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wkb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WKB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WKB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WKC",
+      "product_name": "祿守澳利利率變動型澳幣終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wkc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WKC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WKC.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WKA",
+      "product_name": "澳利成雙利率變動型澳幣終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wka",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WKA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WKA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WSHWSI",
+      "product_name": "旭滿鑫利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wshwsi",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WSHWSI_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WSHWSI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WSJWSK",
+      "product_name": "鑫得利利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wsjwsk",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WSJWSK_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WSJWSK.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WSLWSM",
+      "product_name": "萬得利利率變動型終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wslwsm",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WSLWSM_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WSLWSM.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "C64",
+      "product_name": "祿美富利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/c64",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/C64_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/C64.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WEF",
+      "product_name": "泰美好利率變動型美元終身壽險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wef",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WEFWEG.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUI",
+      "product_name": "瓏來發利率變動型美元終身壽險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wui",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WCH",
+      "product_name": "美利盛讚利率變動型美元終身保險（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wch",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCHWCI.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUN",
+      "product_name": "鑽美利利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wun",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUN_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUN.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUO",
+      "product_name": "鑽美富利率變動型美元終身壽險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wuo",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUOWUP_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUO.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CPEFGHIJKL",
+      "product_name": "穩盈樂活利率變動型美元終身保險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/cpefghijkl",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CPE.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CPMCPNCPOCPPCPQCPR",
+      "product_name": "瓏盈人生利率變動型美元終身保險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/cpmcpncpocppcpqcpr",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CPM.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUZ",
+      "product_name": "萬美富利率變動型美元終身壽險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wuz",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WUZ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WWA",
+      "product_name": "美利豁達利率變動型美元終身保險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wwa",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WWA.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WCJ",
+      "product_name": "美智守護利率變動型美元終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wcj",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCJWCK_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCJ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WJB",
+      "product_name": "萬美裕利率變動型美元終身壽險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wjb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WJB.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WCLWCM",
+      "product_name": "馨美好人生利率變動型美元終身保險（定期給付型）（銀行保代專屬）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/wclwcm",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/WCLWCM.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CAQCQBCQCCQD",
+      "product_name": "萬年美利利率變動型美元終身保險（定期給付型）",
+      "category": "壽險保障",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/life-caring/caqcqbcqccqd",
+      "category_url": "https://www.cathaylife.com.tw/official/products/life-caring",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CQA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/life-caring/CQA條款.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SRA",
+      "product_name": "月享安鑫變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/sra",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SRA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SRA.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SRA_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SRB",
+      "product_name": "月享安鑫外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/srb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SRB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SRB.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SRB_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "STA",
+      "product_name": "樂盈人生變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/sta",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/STA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/STA.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/STA_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "STB",
+      "product_name": "樂盈人生外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/stb",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/STB_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/STB.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/STB_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SFE",
+      "product_name": "超飛揚變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/sfe",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SFE_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SFE.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SFE_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SFF",
+      "product_name": "超飛揚外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/sff",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SFF_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SFF.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SFF_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "GFC",
+      "product_name": "基優人生變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/gfc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GFC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GFC.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GFC_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "GFE",
+      "product_name": "基優人生外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/gfe",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GFE_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GFE.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GFE_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "R8A",
+      "product_name": "真飛Young人生變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/r8a",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/R8A_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/R8A.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/R8A_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "R8B",
+      "product_name": "真飛Young人生外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/r8b",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/R8B_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/R8B.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/R8B_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FIC",
+      "product_name": "月月滿溢變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/fic",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/FIC_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/FIC.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/FIC_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FID",
+      "product_name": "月月滿溢外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/fid",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/FID_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/FID.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/FID_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "GU6",
+      "product_name": "鑫超樂享人生變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/gu6",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GU6_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GU6.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GU6_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "ICA",
+      "product_name": "鑫超樂享人生外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/ica",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/ICA_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/ICA.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/ICA_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "GD4",
+      "product_name": "鑫超澳利富外幣變額年金保險",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/gd4",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GD4_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GD4.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/GD4_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SAA",
+      "product_name": "iFund變額年金保險(網路投保專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/saa",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SAA.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SAA_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "MGL",
+      "product_name": "新豐利888外幣變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/mgl",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/MGL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/MGL_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "MGK",
+      "product_name": "新豐利888變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/mgk",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/MGK.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/MGK_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WC2",
+      "product_name": "新好基利外幣變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/wc2",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/WC2.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/WC2_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SUA_SUC",
+      "product_name": "飛揚一生變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/sua_suc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SUA_SUC.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SUA_SUC_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "SUB_SUD",
+      "product_name": "飛揚一生外幣變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/sub_sud",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SUB_SUD.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/SUB_SUD_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "NOC",
+      "product_name": "月享贏變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/noc",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/NOC.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/NOC_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "NOD",
+      "product_name": "月享贏外幣變額年金保險(銀行保代專屬)",
+      "category": "投資型保險",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/investment-va/nod",
+      "category_url": "https://www.cathaylife.com.tw/official/products/investment-va",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/NOD.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "商品說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/investment-va/NOD_instruction.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "其他投資標的訊息",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/ALL.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "友善閱讀操作手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/product-common/READ.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "CP1",
+      "product_name": "悠享年年終身保險",
+      "category": "儲蓄還本",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/savings-refund/cp1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/savings-refund",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/CP1CP2CP3_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/CP1CP2CP3.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WTW",
+      "product_name": "雙鑫年年利率變動型美元終身保險",
+      "category": "儲蓄還本",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/savings-refund/wtw",
+      "category_url": "https://www.cathaylife.com.tw/official/products/savings-refund",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WTW_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WTW.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WTY",
+      "product_name": "美年佳鑫利率變動型美元終身保險",
+      "category": "儲蓄還本",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/savings-refund/wty",
+      "category_url": "https://www.cathaylife.com.tw/official/products/savings-refund",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WTY_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WTY.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUX",
+      "product_name": "年年佳鑫利率變動型終身保險",
+      "category": "儲蓄還本",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/savings-refund/wux",
+      "category_url": "https://www.cathaylife.com.tw/official/products/savings-refund",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WUX_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WUX.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "WUY",
+      "product_name": "展望年年利率變動型終身保險",
+      "category": "儲蓄還本",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/savings-refund/wuy",
+      "category_url": "https://www.cathaylife.com.tw/official/products/savings-refund",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WUY_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/savings-refund/WUY.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "OIB0",
+      "product_name": "e悠遊旅行平安險",
+      "category": "旅行平安",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/travel/oib0",
+      "category_url": "https://www.cathaylife.com.tw/official/products/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/國泰人壽ｅ悠遊旅行平安保險.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "注意事項",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/e悠遊旅行平安保險 注意事項.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/實物給付說明書.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "信用卡發卡銀行",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/信用卡發卡銀行.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "OIB3",
+      "product_name": "180天留遊學、差旅專案",
+      "category": "旅行平安",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/travel/oib3",
+      "category_url": "https://www.cathaylife.com.tw/official/products/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/oib3.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "注意事項",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/e悠遊旅行平安保險 注意事項.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/實物給付說明書.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "信用卡發卡銀行",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/信用卡發卡銀行.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "OIB1",
+      "product_name": "一日平安專案",
+      "category": "旅行平安",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/travel/oib1",
+      "category_url": "https://www.cathaylife.com.tw/official/products/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/國泰人壽ｅ悠遊旅行平安保險.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "注意事項",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/e悠遊旅行平安保險 注意事項.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "信用卡發卡銀行",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/信用卡發卡銀行.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "AIRPORT",
+      "product_name": "新旅行平安保險",
+      "category": "旅行平安",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/travel/airport",
+      "category_url": "https://www.cathaylife.com.tw/official/products/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "意外險_旅平險主約條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/travel insurance _main.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "意外險_新旅行平安傷害醫療保險(無身故給付)條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/國泰人壽新旅行平安傷害醫療保險(無身故給付).pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "海外突發疾病醫療健康保險附約(丙型)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OHS.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "海外突發疾病醫療健康保險附約(丁型)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OHS丁型.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "海外醫療專機運送附加條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OMTP.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/實物給付說明書.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "保額限制",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/保額限制.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "EASY-CALL",
+      "product_name": "新旅行平安保險",
+      "category": "旅行平安",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/travel/easy-call",
+      "category_url": "https://www.cathaylife.com.tw/official/products/travel",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "自在樂遊旅平險DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/Travel_Insurance_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "意外險_旅平險主約條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/travel insurance _main.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "易CALL保會員權益手冊",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/易Call保會員權益手冊.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "意外險_新旅行平安傷害醫療保險(無身故給付)條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/國泰人壽新旅行平安傷害醫療保險(無身故給付).pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "海外突發疾病醫療健康保險附約(丙型)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OHS.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "海外突發疾病醫療健康保險附約(丁型)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OHS丁型.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "海外醫療專機運送附加條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OMTP.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/實物給付說明書.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "保額限制",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/保額限制.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "旅平險分群行銷DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/旅平險分群行銷DM.pdf"
+        }
+      ]
+    },
+    {
+      "company": "國泰人壽",
+      "product_id": "FAX",
+      "product_name": "新旅行平安保險",
+      "category": "旅行平安",
+      "source_url": "https://www.cathaylife.com.tw/official/content/cathaylife-official/zh-tw/cathaylife/products/travel/fax",
+      "category_url": "https://www.cathaylife.com.tw/official/products/travel",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "自在樂遊旅平險DM",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/Travel_Insurance_DM.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "意外險_旅平險主約條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/travel insurance _main.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "意外險_新旅行平安傷害醫療保險(無身故給付)條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/國泰人壽新旅行平安傷害醫療保險(無身故給付).pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "海外突發疾病醫療健康保險附約(丙型)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OHS.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "海外突發疾病醫療健康保險附約(丁型)",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OHS丁型.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "海外醫療專機運送附加條款",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/OMTP.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "實物給付說明書",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/實物給付說明書.pdf"
+        },
+        {
+          "document_type": "pdf",
+          "title": "保額限制",
+          "pdf_url": "https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/products/travel/保額限制.pdf"
+        }
+      ]
+    }
+  ]
+}

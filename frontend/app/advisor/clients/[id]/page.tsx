@@ -1,7 +1,19 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import {
+  COVERAGE_LABELS,
+  COVERAGE_ORDER,
+  DEMO_POLICIES,
+  fetchPolicyPortfolio,
+  formatCoverage,
+  formatMoney,
+  getPoliciesByCompany,
+  getPolicySummary,
+  type PolicyPortfolio,
+} from "@/lib/demo-policies";
 
 interface Client {
   id: number;
@@ -11,13 +23,7 @@ interface Client {
   phone: string | null;
   gender: string | null;
   occupation: string | null;
-  target_retire_age: number | null;
-  life_expectancy: number | null;
-  risk_tolerance: string | null;
   status: string;
-  monthly_investable: number | null;
-  target_retire_monthly_expense: number | null;
-  current_assets: number | null;
   monthly_income: number | null;
   monthly_expense: number | null;
 }
@@ -26,15 +32,22 @@ const GENDER: Record<string, string> = { M: "男", F: "女" };
 const STATUS_LABEL: Record<string, string> = { new: "新建檔", questionnaire_done: "問卷完成" };
 
 function fmt(n: number | null | undefined): string {
-  if (n == null) return "—";
+  if (n == null) return "待補";
   return n.toLocaleString("zh-TW");
 }
 
 export default function ClientHubPage() {
   const { id } = useParams<{ id: string }>();
   const [client, setClient] = useState<Client | null>(null);
+  const [portfolio, setPortfolio] = useState<PolicyPortfolio>(() => ({
+    profile: null,
+    policies: DEMO_POLICIES,
+    summary: getPolicySummary(DEMO_POLICIES),
+  }));
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const summary = portfolio.summary;
+  const companies = useMemo(() => getPoliciesByCompany(portfolio.policies), [portfolio.policies]);
 
   useEffect(() => {
     fetch(`/api/advisor/clients/${id}`)
@@ -45,94 +58,154 @@ export default function ClientHubPage() {
       .then(setClient)
       .catch(() => setError("找不到此客戶"))
       .finally(() => setLoading(false));
+
+    fetchPolicyPortfolio()
+      .then(setPortfolio)
+      .catch(() =>
+        setPortfolio({
+          profile: null,
+          policies: DEMO_POLICIES,
+          summary: getPolicySummary(DEMO_POLICIES),
+        }),
+      );
   }, [id]);
 
-  if (loading) return <div className="text-center py-16 text-gray-400 text-sm">載入中…</div>;
-  if (error || !client) return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <p className="text-red-500 text-sm">{error}</p>
-      <Link href="/advisor" className="text-blue-500 text-sm">← 返回列表</Link>
-    </div>
-  );
+  if (loading) return <div className="py-16 text-center text-sm text-gray-400">載入中…</div>;
+  if (error || !client) {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-8">
+        <p className="text-sm text-red-500">{error}</p>
+        <Link href="/advisor" className="text-sm text-blue-500">← 返回列表</Link>
+      </div>
+    );
+  }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
+    <div className="mx-auto max-w-6xl px-4 py-8">
       <div className="mb-6">
         <Link href="/advisor" className="text-sm text-gray-400 hover:text-gray-600">← 客戶列表</Link>
-        <div className="flex items-center justify-between mt-2">
-          <h1 className="text-2xl font-bold text-gray-900">{client.name}</h1>
-          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-lg">
+        <div className="mt-3 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-sm font-bold text-amber-700">客戶 Insurance Profile</p>
+            <h1 className="mt-1 text-3xl font-bold text-gray-900">{client.name}</h1>
+            <p className="mt-2 text-sm leading-6 text-gray-500">
+              管理此客戶的保單資料、保障健診、理賠紀錄與追蹤事項。
+            </p>
+          </div>
+          <span className="w-fit rounded-lg bg-gray-100 px-3 py-2 text-xs font-bold text-gray-600">
             {STATUS_LABEL[client.status] ?? client.status}
           </span>
         </div>
       </div>
 
-      {/* Basic info card */}
-      <div className="bg-white border border-gray-200 rounded-xl p-6 mb-4">
-        <h2 className="font-semibold text-gray-700 mb-4 text-sm uppercase tracking-wide">基本資料</h2>
-        <div className="grid grid-cols-3 gap-4 text-sm">
-          <div><span className="text-gray-400">年齡</span><div className="font-medium text-gray-800 mt-0.5">{client.age} 歲</div></div>
-          <div><span className="text-gray-400">性別</span><div className="font-medium text-gray-800 mt-0.5">{GENDER[client.gender ?? ""] ?? "—"}</div></div>
-          <div><span className="text-gray-400">職業</span><div className="font-medium text-gray-800 mt-0.5">{client.occupation || "—"}</div></div>
-          <div><span className="text-gray-400">電話</span><div className="font-medium text-gray-800 mt-0.5">{client.phone || "—"}</div></div>
-          <div><span className="text-gray-400">Email</span><div className="font-medium text-gray-800 mt-0.5">{client.email || "—"}</div></div>
-          <div><span className="text-gray-400">預計退休</span><div className="font-medium text-gray-800 mt-0.5">{client.target_retire_age ? `${client.target_retire_age} 歲` : "—"}</div></div>
-        </div>
+      <section className="mb-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <Metric label="保單總數" value={`${summary.policyCount} 張`} tone="text-teal-700" />
+        <Metric label="保險公司" value={`${summary.companyCount} 家`} tone="text-slate-950" />
+        <Metric label="年繳保費" value={formatMoney(summary.premium)} tone="text-amber-600" />
+        <Metric label="待補資料" value={`${summary.incomplete} 張`} tone="text-rose-600" />
+      </section>
+
+      <div className="mb-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-lg font-bold text-gray-900">保障總覽</h2>
+            <Link href="/policies" className="text-sm font-bold text-teal-700 hover:text-teal-900">
+              查看保單 →
+            </Link>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            {COVERAGE_ORDER.map((key) => (
+              <div key={key} className="rounded-xl bg-gray-50 p-3">
+                <p className="text-xs font-bold text-gray-400">{COVERAGE_LABELS[key].label}</p>
+                <p className="mt-1 text-base font-bold text-gray-900">{formatCoverage(key, summary.coverage[key])}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-bold text-gray-900">基本資料</h2>
+          <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
+            <Info label="年齡" value={`${client.age} 歲`} />
+            <Info label="性別" value={GENDER[client.gender ?? ""] ?? "待補"} />
+            <Info label="職業" value={client.occupation || "待補"} />
+            <Info label="電話" value={client.phone || "待補"} />
+            <Info label="Email" value={client.email || "待補"} wide />
+            <Info label="月收入" value={`${fmt(client.monthly_income)} 元`} />
+            <Info label="月支出" value={`${fmt(client.monthly_expense)} 元`} />
+          </div>
+        </section>
       </div>
 
-      {/* Financial summary */}
-      <div className="bg-white border border-gray-200 rounded-xl p-6 mb-6">
-        <h2 className="font-semibold text-gray-700 mb-4 text-sm uppercase tracking-wide">財務摘要</h2>
-        <div className="grid grid-cols-2 gap-4 text-sm">
-          <div className="bg-gray-50 rounded-lg p-3">
-            <div className="text-gray-400 text-xs mb-1">月收入</div>
-            <div className="font-semibold text-gray-800">{fmt(client.monthly_income)} 元</div>
+      <section className="mb-5 grid gap-3 lg:grid-cols-5">
+        <WorkflowCard title="保單資料" text="新增、上傳、補齊主附約與保障欄位。" href="/policies" />
+        <WorkflowCard title="保障健診" text="用現有保障扣出家庭責任缺口。" href="/health-check" />
+        <WorkflowCard title="理賠紀錄" text="追蹤文件、送件公司與預估金額。" href="/claims" />
+        <WorkflowCard title="家庭保障" text="建立本人、配偶、父母、小孩 Profile。" href="/health-check" />
+        <WorkflowCard title="AI 顧問" text="根據客戶保單回答個人化問題。" href="/chat" />
+      </section>
+
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-bold text-gray-900">保險公司分布</h2>
+          <div className="mt-4 space-y-2">
+            {companies.map((group) => (
+              <div key={group.company} className="flex items-center justify-between rounded-xl bg-gray-50 px-4 py-3 text-sm">
+                <div>
+                  <p className="font-bold text-gray-900">{group.company}</p>
+                  <p className="mt-0.5 text-xs text-gray-400">{group.policies.length} 張保單</p>
+                </div>
+                <p className="text-right font-bold tabular-nums text-gray-700">{formatMoney(group.annualPremium)}</p>
+              </div>
+            ))}
           </div>
-          <div className="bg-gray-50 rounded-lg p-3">
-            <div className="text-gray-400 text-xs mb-1">月支出</div>
-            <div className="font-semibold text-gray-800">{fmt(client.monthly_expense)} 元</div>
+        </section>
+
+        <section className="rounded-xl border border-amber-200 bg-amber-50 p-5">
+          <h2 className="text-lg font-bold text-amber-950">近期追蹤</h2>
+          <div className="mt-4 space-y-3">
+            <Task text="新光人壽意外傷害附約缺少條款 PDF" />
+            <Task text="本月有 1 件理賠文件待補收據正本" />
+            <Task text="建議更新家庭成員與房貸責任資料" />
           </div>
-          <div className="bg-gray-50 rounded-lg p-3">
-            <div className="text-gray-400 text-xs mb-1">現有資產</div>
-            <div className="font-semibold text-gray-800">{fmt(client.current_assets)} 元</div>
-          </div>
-          <div className="bg-gray-50 rounded-lg p-3">
-            <div className="text-gray-400 text-xs mb-1">每月可投入</div>
-            <div className="font-semibold text-gray-800">{fmt(client.monthly_investable)} 元</div>
-          </div>
-        </div>
+        </section>
       </div>
+    </div>
+  );
+}
 
-      {/* Action cards */}
-      <h2 className="font-semibold text-gray-700 mb-3 text-sm">規劃流程</h2>
-      <div className="grid grid-cols-1 gap-3">
-        <Link href={`/advisor/clients/${id}/balance-sheet`}
-          className="bg-white border border-gray-200 hover:border-blue-300 rounded-xl p-5 flex items-center justify-between group transition-colors">
-          <div>
-            <div className="font-medium text-gray-800">資產負債表</div>
-            <div className="text-xs text-gray-400 mt-0.5">填寫資產與負債的詳細項目</div>
-          </div>
-          <span className="text-blue-400 group-hover:translate-x-1 transition-transform">→</span>
-        </Link>
+function Metric({ label, value, tone }: { label: string; value: string; tone: string }) {
+  return (
+    <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+      <p className="text-sm font-medium text-gray-500">{label}</p>
+      <p className={`mt-2 text-2xl font-bold tabular-nums ${tone}`}>{value}</p>
+    </div>
+  );
+}
 
-        <Link href={`/advisor/clients/${id}/questionnaire`}
-          className="bg-white border border-gray-200 hover:border-blue-300 rounded-xl p-5 flex items-center justify-between group transition-colors">
-          <div>
-            <div className="font-medium text-gray-800">退休規劃問卷</div>
-            <div className="text-xs text-gray-400 mt-0.5">了解客戶的退休目標與風險偏好</div>
-          </div>
-          <span className="text-blue-400 group-hover:translate-x-1 transition-transform">→</span>
-        </Link>
+function Info({ label, value, wide = false }: { label: string; value: string; wide?: boolean }) {
+  return (
+    <div className={wide ? "col-span-2" : ""}>
+      <span className="text-gray-400">{label}</span>
+      <div className="mt-0.5 truncate font-medium tabular-nums text-gray-800">{value}</div>
+    </div>
+  );
+}
 
-        <Link href={`/advisor/clients/${id}/retirement`}
-          className="bg-white border border-gray-200 hover:border-blue-300 rounded-xl p-5 flex items-center justify-between group transition-colors">
-          <div>
-            <div className="font-medium text-gray-800">退休規劃試算</div>
-            <div className="text-xs text-gray-400 mt-0.5">A/B/C 配置比例與資產曲線試算，直接套用客戶資料</div>
-          </div>
-          <span className="text-blue-400 group-hover:translate-x-1 transition-transform">→</span>
-        </Link>
-      </div>
+function WorkflowCard({ title, text, href }: { title: string; text: string; href: string }) {
+  return (
+    <Link href={href} className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-teal-300 hover:shadow-md">
+      <p className="font-bold text-gray-900">{title}</p>
+      <p className="mt-2 text-xs leading-5 text-gray-500">{text}</p>
+      <p className="mt-4 text-xs font-bold text-teal-700">進入 →</p>
+    </Link>
+  );
+}
+
+function Task({ text }: { text: string }) {
+  return (
+    <div className="rounded-xl bg-white px-3 py-2 text-sm font-medium leading-6 text-amber-950">
+      {text}
     </div>
   );
 }
