@@ -17,119 +17,61 @@ COVERAGE_META = {
     "accident": {"label": "意外保障", "unit": "萬"},
     "daily": {"label": "住院日額", "unit": "元"},
     "medical": {"label": "實支實付", "unit": "萬"},
-    "ltc": {"label": "長照保障", "unit": "萬元/月"},
+    "ltc": {"label": "長照保障", "unit": "萬/月"},
 }
 
-DEMO_POLICIES = [
-    {
-        "company_name": "國泰人壽",
-        "policy_name": "新守護終身壽險",
-        "policy_no": "CT-2020-0188",
-        "role": "主約",
-        "status": "有效",
-        "annual_premium": 42000,
-        "effective_date": "2020/08/15",
-        "coverages": {"life": 500, "accident": 300},
-        "riders": ["新真全意住院醫療", "好骨力傷害醫療"],
-    },
-    {
-        "company_name": "國泰人壽",
-        "policy_name": "新真全意住院醫療健康保險附約",
-        "policy_no": "CT-2020-HS2",
-        "role": "附約",
-        "status": "有效",
-        "annual_premium": 18500,
-        "effective_date": "2020/08/15",
-        "coverages": {"daily": 2000, "medical": 20},
-        "riders": [],
-    },
-    {
-        "company_name": "富邦人壽",
-        "policy_name": "安心定期壽險",
-        "policy_no": "FB-2019-6621",
-        "role": "主約",
-        "status": "有效",
-        "annual_premium": 28000,
-        "effective_date": "2019/11/02",
-        "coverages": {"life": 700, "critical": 100},
-        "riders": ["防癌一次給付健康保險附約"],
-    },
-    {
-        "company_name": "富邦人壽",
-        "policy_name": "防癌一次給付健康保險附約",
-        "policy_no": "FB-2019-CA1",
-        "role": "附約",
-        "status": "有效",
-        "annual_premium": 21500,
-        "effective_date": "2019/11/02",
-        "coverages": {"cancer": 200},
-        "riders": [],
-    },
-    {
-        "company_name": "全球人壽",
-        "policy_name": "醫卡照重大傷病健康保險",
-        "policy_no": "GL-2021-3107",
-        "role": "主約",
-        "status": "有效",
-        "annual_premium": 23800,
-        "effective_date": "2021/04/20",
-        "coverages": {"critical": 100, "cancer": 100},
-        "riders": [],
-    },
-    {
-        "company_name": "新光人壽",
-        "policy_name": "意外傷害保險附約",
-        "policy_no": "SK-2018-7789",
-        "role": "附約",
-        "status": "待補資料",
-        "annual_premium": 6200,
-        "effective_date": "2018/06/01",
-        "coverages": {"accident": 700},
-        "riders": [],
-    },
-    {
-        "company_name": "台灣人壽",
-        "policy_name": "住院醫療健康保險附約",
-        "policy_no": "TW-2022-0912",
-        "role": "附約",
-        "status": "有效",
-        "annual_premium": 16800,
-        "effective_date": "2022/09/12",
-        "coverages": {"daily": 3000, "medical": 20},
-        "riders": [],
-    },
-    {
-        "company_name": "凱基人壽",
-        "policy_name": "享安心長期照顧健康保險",
-        "policy_no": "KGI-2023-1120",
-        "role": "主約",
-        "status": "有效",
-        "annual_premium": 11200,
-        "effective_date": "2023/01/05",
-        "coverages": {"ltc": 5},
-        "riders": [],
-    },
-]
+LEGACY_DEMO_POLICY_NOS = {
+    "CT-2020-0188",
+    "CT-2020-HS2",
+    "FB-2019-6621",
+    "FB-2019-CA1",
+    "GL-2021-3107",
+    "SK-2018-7789",
+    "TW-2022-0912",
+    "KGI-2023-1120",
+}
 
 
-def ensure_demo_profile() -> None:
+def ensure_default_profile() -> None:
     with get_inventory_connection() as conn:
         conn.execute(
             """
             INSERT INTO insurance_profiles (id, owner_name, relation, updated_at)
-            VALUES (?, '吳芳圳', '本人', datetime('now'))
+            VALUES (?, ?, ?, datetime('now'))
             ON CONFLICT(id) DO NOTHING
             """,
-            (DEFAULT_PROFILE_ID,),
+            (DEFAULT_PROFILE_ID, "預設客戶", "本人"),
         )
-        count = conn.execute(
-            "SELECT COUNT(*) FROM customer_policies WHERE profile_id = ?",
-            (DEFAULT_PROFILE_ID,),
-        ).fetchone()[0]
-        if count:
-            return
-        for policy in DEMO_POLICIES:
-            create_policy({**policy, "profile_id": DEFAULT_PROFILE_ID}, conn=conn)
+        conn.execute(
+            """
+            UPDATE insurance_profiles
+            SET owner_name = ?, relation = ?, updated_at = datetime('now')
+            WHERE id = ? AND owner_name = ?
+            """,
+            ("預設客戶", "本人", DEFAULT_PROFILE_ID, "吳芳圳"),
+        )
+        delete_legacy_demo_policies(conn)
+
+
+def delete_legacy_demo_policies(conn) -> None:
+    placeholders = ", ".join(["?"] * len(LEGACY_DEMO_POLICY_NOS))
+    demo_rows = conn.execute(
+        f"""
+        SELECT id
+        FROM customer_policies
+        WHERE profile_id = ?
+          AND policy_no IN ({placeholders})
+        """,
+        (DEFAULT_PROFILE_ID, *LEGACY_DEMO_POLICY_NOS),
+    ).fetchall()
+
+    if not demo_rows:
+        return
+
+    conn.executemany(
+        "DELETE FROM customer_policies WHERE id = ?",
+        [(row["id"],) for row in demo_rows],
+    )
 
 
 def create_policy(payload: dict, conn=None) -> int:
@@ -151,8 +93,8 @@ def _insert_policy(payload: dict, conn) -> int:
         (
             payload.get("profile_id", DEFAULT_PROFILE_ID),
             payload.get("product_id", ""),
-            payload["company_name"],
-            payload["policy_name"],
+            payload.get("company_name", "").strip() or "未知保險公司",
+            payload.get("policy_name", "").strip() or "未命名保單",
             payload.get("policy_no", ""),
             payload.get("role", "主約"),
             payload.get("status", "有效"),
@@ -191,7 +133,7 @@ def replace_policy_riders(policy_id: int, riders: list[str], conn) -> None:
 
 
 def list_policies(profile_id: str = DEFAULT_PROFILE_ID) -> dict:
-    ensure_demo_profile()
+    ensure_default_profile()
     with get_inventory_connection() as conn:
         profile_row = conn.execute("SELECT * FROM insurance_profiles WHERE id = ?", (profile_id,)).fetchone()
         profile = dict(profile_row) if profile_row else None
@@ -204,7 +146,7 @@ def list_policies(profile_id: str = DEFAULT_PROFILE_ID) -> dict:
 
 
 def list_profiles() -> list[dict]:
-    ensure_demo_profile()
+    ensure_default_profile()
     with get_inventory_connection() as conn:
         rows = conn.execute(
             """
@@ -225,8 +167,8 @@ def list_profiles() -> list[dict]:
 
 def create_profile(payload: dict) -> dict:
     profile_id = payload.get("id") or f"profile-{uuid4().hex[:12]}"
-    owner_name = payload.get("owner_name", "").strip() or "家庭成員"
-    relation = payload.get("relation", "").strip() or "家人"
+    owner_name = payload.get("owner_name", "").strip() or "保單持有人"
+    relation = payload.get("relation", "").strip() or "本人"
     with get_inventory_connection() as conn:
         conn.execute(
             """
@@ -279,14 +221,14 @@ def summarize_policies(policies: list[dict]) -> dict:
 
 
 def get_policy(policy_id: int) -> dict | None:
-    ensure_demo_profile()
+    ensure_default_profile()
     with get_inventory_connection() as conn:
         row = conn.execute("SELECT * FROM customer_policies WHERE id = ?", (policy_id,)).fetchone()
         return policy_to_dict(conn, row) if row else None
 
 
 def update_policy(policy_id: int, payload: dict) -> dict | None:
-    ensure_demo_profile()
+    ensure_default_profile()
     with get_inventory_connection() as conn:
         exists = conn.execute("SELECT id FROM customer_policies WHERE id = ?", (policy_id,)).fetchone()
         if not exists:
@@ -301,8 +243,8 @@ def update_policy(policy_id: int, payload: dict) -> dict | None:
             """,
             (
                 payload.get("product_id", ""),
-                payload["company_name"],
-                payload["policy_name"],
+                payload.get("company_name", "").strip() or "未知保險公司",
+                payload.get("policy_name", "").strip() or "未命名保單",
                 payload.get("policy_no", ""),
                 payload.get("role", "主約"),
                 payload.get("status", "有效"),
@@ -319,14 +261,14 @@ def update_policy(policy_id: int, payload: dict) -> dict | None:
 
 
 def delete_policy(policy_id: int) -> bool:
-    ensure_demo_profile()
+    ensure_default_profile()
     with get_inventory_connection() as conn:
         cursor = conn.execute("DELETE FROM customer_policies WHERE id = ?", (policy_id,))
         return cursor.rowcount > 0
 
 
 def create_policy_from_upload(file, profile_id: str = DEFAULT_PROFILE_ID) -> dict:
-    ensure_demo_profile()
+    ensure_default_profile()
     UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
     original_filename = Path(file.filename or "policy.pdf").name
@@ -341,7 +283,7 @@ def create_policy_from_upload(file, profile_id: str = DEFAULT_PROFILE_ID) -> dic
     policy_name = f"{Path(original_filename).stem}（待 OCR）"
     payload = {
         "profile_id": profile_id,
-        "company_name": "待辨識保險公司",
+        "company_name": "未知保險公司",
         "policy_name": policy_name,
         "policy_no": "",
         "role": "主約",
@@ -382,5 +324,5 @@ def create_policy_from_upload(file, profile_id: str = DEFAULT_PROFILE_ID) -> dic
         "policy": get_policy(policy_id),
         "upload": upload,
         "ocr_status": "pending",
-        "message": "已建立待補資料保單，後續可接 OCR 回填保單欄位。",
+        "message": "已建立保單資料，後續可接 OCR 解析保單內容。",
     }

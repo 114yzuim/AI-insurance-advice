@@ -38,7 +38,7 @@ class PolicyPayload(BaseModel):
 class ProfilePayload(BaseModel):
     id: str | None = None
     owner_name: str
-    relation: str = "家人"
+    relation: str = "本人"
 
 
 @router.get("")

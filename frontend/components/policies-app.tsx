@@ -96,7 +96,7 @@ export default function PoliciesApp() {
         })
         .catch(() => {
           if (mounted) {
-            setProfiles([{ id: "demo-user", owner_name: "吳芳圳", relation: "本人", policy_count: DEMO_POLICIES.length }]);
+            setProfiles([{ id: "demo-user", owner_name: "預設客戶", relation: "本人", policy_count: DEMO_POLICIES.length }]);
           }
         });
 
@@ -137,7 +137,7 @@ export default function PoliciesApp() {
     try {
       setProfiles(await fetchInsuranceProfiles());
     } catch {
-      setProfiles([{ id: "demo-user", owner_name: "吳芳圳", relation: "本人", policy_count: portfolio.policies.length }]);
+      setProfiles([{ id: "demo-user", owner_name: "預設客戶", relation: "本人", policy_count: portfolio.policies.length }]);
     }
   }
 
