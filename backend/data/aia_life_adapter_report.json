@@ -1,0 +1,1761 @@
+{
+  "company": "友邦人壽",
+  "generated_at": "2026-08-21T10:47:47.649854+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 87,
+    "documents_seen": 88,
+    "errors": 0,
+    "products_upserted": 87,
+    "documents_upserted": 88
+  },
+  "errors": [],
+  "items": [
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NED",
+      "product_name": "友邦人壽友利人生養老保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽友利人生養老保險 L-331(NED).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-331(NED).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-WLPA",
+      "product_name": "友邦人壽快意人生終身傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽快意人生終身傷害保險 P-149(WLPA).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/P-149(WLPA).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NAHC",
+      "product_name": "友邦人壽友醫靠定期保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽友醫靠定期保險 C-248(NAHC).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-248(NAHC).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-SHI2",
+      "product_name": "友邦人壽老有所醫定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽老有所醫定期健康保險 C-249(SHI2).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-249(SHI2).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-SCI",
+      "product_name": "友邦人壽老當醫壯定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽老當醫壯定期健康保險 C-246(SCI).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-246(SCI).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NSRPA",
+      "product_name": "友邦人壽樂長青定期保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽樂長青定期保險 C-253(NSRPA).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-253(NSRPA).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-AHS",
+      "product_name": "友邦人壽醫路友保定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽醫路友保定期健康保險 C-250(AHS).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-250(AHS).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NRCAN",
+      "product_name": "友邦人壽友保心安防癌保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽友保心安防癌保險 C-244(NRCAN).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-244(NRCAN).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NRPFH",
+      "product_name": "友邦人壽醫諾千金還本醫療保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽醫諾千金還本醫療保險 C-254(NRPFH).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-254(NRPFH).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-CPCAN",
+      "product_name": "友邦人壽友我靶關防癌保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽友我靶關防癌保險 C-243(CPCAN).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-243(CPCAN).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NWLRPA",
+      "product_name": "友邦人壽滿意人生傷害還本終身保險",
+      "category": "意外傷害",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽滿意人生傷害還本終身保險 C-245(NWLRPA).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-245(NWLRPA).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NRTHI",
+      "product_name": "友邦人壽醫身守護定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽醫身守護定期健康保險 C-251(NRTHI).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-251(NRTHI).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-SHI3",
+      "product_name": "友邦人壽長友守護定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽長友守護定期健康保險 C-252(SHI3).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-252(SHI3).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-CI",
+      "product_name": "友邦人壽醫世無憂定期保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽醫世無憂定期保險 C-242(CI).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-242(CI).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-ADHL",
+      "product_name": "友邦人壽憶起守護定期保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽憶起守護定期保險 C-255(ADHL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-255(ADHL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-JTL",
+      "product_name": "友邦人壽平安定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽平安定期壽險 L-317(JTL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-317(JTL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-JTLR",
+      "product_name": "友邦人壽平安定期壽險附約",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽平安定期壽險附約 L-330(JTLR).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-330(JTLR).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-WPB",
+      "product_name": "友邦人壽愛家保險費豁免附約",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽愛家保險費豁免附約 H-168(WPB).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/H-168(WPB).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-YTL",
+      "product_name": "友邦人壽佑你定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽佑你定期壽險 L-316(YTL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-316(YTL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NRI",
+      "product_name": "友邦人壽5599還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽5599還本終身保險 L-332(NRI).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-332(NRI).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-WLCPCAN",
+      "product_name": "友邦人壽醫靶照防癌終身保險",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽醫靶照防癌終身保險 C-247(WLCPCAN).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/C-247(WLCPCAN).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UISWL",
+      "product_name": "友邦人壽三富人生美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽三富人生美元利率變動型終身壽險 L-322(UISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-322(UISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UDISWL",
+      "product_name": "友邦人壽守富人生美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽守富人生美元利率變動型終身壽險 L-336(UDISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-336(UDISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UDISRI",
+      "product_name": "友邦人壽樂退699美元利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽樂退699美元利率變動型還本終身保險 L-335(UDISRI).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-335(UDISRI).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-URO",
+      "product_name": "友邦人壽永富99美元利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽永富99美元利率變動型還本終身保險 L-337(URO).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-337(URO).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UED",
+      "product_name": "友邦人壽享福人生美元利率變動型養老保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽享福人生美元利率變動型養老保險 L-320(UED).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-320(UED).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UFISWL",
+      "product_name": "友邦人壽金創富人生美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽金創富人生美元利率變動型終身壽險 L-321(UFISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-321(UFISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLA",
+      "product_name": "友邦人壽新世代美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽新世代美元利率變動型終身壽險 L-323(USWLA).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-323(USWLA).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLB",
+      "product_name": "友邦人壽薪富人生美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽薪富人生美元利率變動型終身壽險 L-324(USWLB).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-324(USWLB).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLD",
+      "product_name": "友邦人壽欣友相傳美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽欣友相傳美元利率變動型終身壽險 L-338(USWLD).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-338(USWLD).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UWLS",
+      "product_name": "友邦人壽富利優沛美元利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽富利優沛美元利率變動型還本終身保險 L-339(UWLS).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-339(UWLS).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UHISWL",
+      "product_name": "友邦人壽峰富人生美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽峰富人生美元利率變動型終身壽險 L-325(UHISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-325(UHISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UWLV",
+      "product_name": "友邦人壽富利豐沛美元利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽富利豐沛美元利率變動型還本終身保險 L-328(UWLV).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-328(UWLV).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLE",
+      "product_name": "友邦人壽三采人生美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽三采人生美元利率變動型終身壽險 L-315(USWLE).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-315(USWLE).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UKISWL",
+      "product_name": "友邦人壽傳璽永富美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽傳璽永富美元利率變動型終身壽險 L-341(UKISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-341(UKISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLF",
+      "product_name": "友邦人壽富傳世代美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽富傳世代美元利率變動型終身壽險 L-342(USWLF).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-342(USWLF).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLG",
+      "product_name": "友邦人壽富傳世家美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽富傳世家美元利率變動型終身壽險 L-343(USWLG).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-343(USWLG).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UWHL",
+      "product_name": "友邦人壽鑫柑保倍美元利率變動型終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽鑫柑保倍美元利率變動型終身保險 L-344(UWHL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-344(UWHL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-USWLH",
+      "product_name": "友邦人壽友利雙盈美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽友利雙盈美元利率變動型終身壽險 L-345(USWLH)_20250902.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-345(USWLH)_20250902.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UW3L",
+      "product_name": "友邦人壽豐安守護美元利率變動型終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽豐安守護美元利率變動型終身保險 UW3L_條款.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/UW3L_%E6%A2%9D%E6%AC%BE.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UWLC",
+      "product_name": "友邦人壽鍾愛一生美元利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽鍾愛一生美元利率變動型還本終身保險 L-347(UWLC).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-347(UWLC).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-ULISWL",
+      "product_name": "友邦人壽萬寶富利美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽萬寶富利美元利率變動型終身壽險 L-348(ULISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-348(ULISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NLISWL",
+      "product_name": "友邦人壽萬寶富裕利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽萬寶富裕利率變動型終身壽險 L-350(NLISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-350(NLISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NISWL",
+      "product_name": "友邦人壽傳世富足利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽傳世富足利率變動型終身壽險 L-318(NISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-318(NISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-BMW7PIS2",
+      "product_name": "友邦人壽鑫滿扶保利率變動型終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽鑫滿扶保利率變動型終身保險 L-327(BMW7PIS2).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-327(BMW7PIS2).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NISL",
+      "product_name": "友邦人壽增利High利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽增利High利率變動型終身壽險 L-319(NISL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-319(NISL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NWLCA",
+      "product_name": "友邦人壽雙享保利率變動型終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽雙享保利率變動型終身保險 L-333(NWLCA).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-333(NWLCA).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NHISWL",
+      "product_name": "友邦人壽聚富人生利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽聚富人生利率變動型終身壽險 L-326(NHISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-326(NHISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NWLS",
+      "product_name": "友邦人壽鴻利優沛利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽鴻利優沛利率變動型還本終身保險 L-334(NWLS).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-334(NWLS).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NWLV",
+      "product_name": "友邦人壽鴻利豐沛利率變動型還本終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽鴻利豐沛利率變動型還本終身保險 L-329(NWLV).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-329(NWLV).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-LC520",
+      "product_name": "友邦人壽樂扶照護利率變動型終身保險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽樂扶照護利率變動型終身保險 L-340(LC520).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/20241227/L-340(LC520).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-NKISWL",
+      "product_name": "友邦人壽傳璽富足利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽傳璽富足利率變動型終身壽險 L-349(NKISWL).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/L-349(NKISWL).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCNISDA",
+      "product_name": "友邦人壽金富裕利率變動型年金保險（甲型）",
+      "category": "年金保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽金富裕利率變動型年金保險（甲型） tnc_nisda.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/our-products/longtermsaving/docs/tnc_nisda.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-WPA",
+      "product_name": "友邦人壽愛己保險費豁免附約",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽愛己保險費豁免附約 H-167(WPA).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/H-167(WPA).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-HTBR",
+      "product_name": "友邦人壽醫應援終身醫療健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽醫應援終身醫療健康保險附約 H-171(HTBR).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/H-171(HTBR).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCSPA",
+      "product_name": "友邦人壽如意常青傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽如意常青傷害保險 tnc_spa.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_spa.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-AHIR",
+      "product_name": "友邦人壽傷害住院保險附約",
+      "category": "意外傷害",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽傷害住院保險附約 P-146(AHIR).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/P-146(AHIR).pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC085",
+      "product_name": "友邦人壽附約延續批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽附約延續批註條款 tnc_085.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/our-products/life/docs/tnc_085.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCYRE",
+      "product_name": "友邦人壽一年期附約延續批註條款",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽一年期附約延續批註條款 tnc_yre.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_yre.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-UPLE",
+      "product_name": "友邦人壽美元保險單借款利率附加條款",
+      "category": "壽險保障",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽美元保險單借款利率附加條款 uple.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/our-products/life/docs/uple.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-FE",
+      "product_name": "友邦人壽投資標的異動批註條款",
+      "category": "投資型保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽投資標的異動批註條款 fe.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/fe.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-E030NHIME",
+      "product_name": "友邦人壽因應全民健康保險醫療服務給付項目及支付標準修正批註條款",
+      "category": "健康醫療",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽因應全民健康保險醫療服務給付項目及支付標準修正批註條款 E-030(nhime).pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/E-030(nhime).pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "友邦人壽因應全民健康保險醫療服務給付項目及支付標準修正批註條款 E-030(nhime).pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/E-030(nhime).pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "individual_terms_table",
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-GL",
+      "product_name": "友邦人壽幸福團體一年定期壽險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期壽險 G-171(GL).pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/G-171(GL).pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC089",
+      "product_name": "友邦人壽幸福團體一年定期住院手術健康保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期住院手術健康保險 tnc_089.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_089.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGCAN",
+      "product_name": "友邦人壽幸福團體一年定期癌症健康保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期癌症健康保險 tnc_gcan.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gcan.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGCI",
+      "product_name": "友邦人壽幸福團體一年定期重大疾病健康保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期重大疾病健康保險 tnc_gci.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gci.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-GACI",
+      "product_name": "友邦人壽新團體一年定期重大疾病保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽新團體一年定期重大疾病保險 G-172(GACI).pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/G-172(GACI).pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGNCAN",
+      "product_name": "友邦人壽新團體一年定期癌症健康保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽新團體一年定期癌症健康保險 tnc_gncan.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gncan.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGHI",
+      "product_name": "友邦人壽團體一年定期綜合醫療保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽團體一年定期綜合醫療保險 tnc_ghi.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_ghi.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGHMR",
+      "product_name": "友邦人壽團體一年定期醫療限額健康保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽團體一年定期醫療限額健康保險 tnc_ghmr.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_ghmr.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGOP",
+      "product_name": "友邦人壽幸福團體一年定期醫療門診給付健康保險附約",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期醫療門診給付健康保險附約 tnc_gop.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gop.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGMAT",
+      "product_name": "友邦人壽幸福團體一年定期生育給付健康保險附約",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期生育給付健康保險附約 tnc_gmat.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gmat.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGA",
+      "product_name": "友邦人壽幸福團體一年定期傷害保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期傷害保險 tnc_ga.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_ga.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGOH",
+      "product_name": "友邦人壽幸福團體一年定期職業災害給付傷害保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期職業災害給付傷害保險 tnc_goh.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_goh.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGOC",
+      "product_name": "友邦人壽幸福團體一年定期職業傷害保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期職業傷害保險 tnc_goc.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_goc.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC099V2",
+      "product_name": "友邦人壽幸福團體一年定期傷害住院醫療保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期傷害住院醫療保險 tnc_099-v2.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_099-v2.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGDA",
+      "product_name": "友邦人壽團體一年定期特定意外加倍傷害保險",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽團體一年定期特定意外加倍傷害保險 tnc_gda.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gda.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC103V2",
+      "product_name": "友邦人壽幸福團體一年定期傷害醫療保險附約",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體一年定期傷害醫療保險附約 tnc_103-v2.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_103-v2.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGDIR",
+      "product_name": "友邦人壽團體意外傷害失能給付保險附約",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽團體意外傷害失能給付保險附約 tnc_gdir.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gdir.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC105V2",
+      "product_name": "友邦人壽團體意外傷害醫療保險給付附加條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽團體意外傷害醫療保險給付附加條款 tnc_105-v2.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_105-v2.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGPT",
+      "product_name": "友邦人壽大眾運輸團體傷害保險給付附加條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽大眾運輸團體傷害保險給付附加條款 tnc_gpt.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gpt.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC107V2",
+      "product_name": "友邦人壽幸福團體傷害骨折未住院給付附加條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體傷害骨折未住院給付附加條款 tnc_107-v2.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_107-v2.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC109V2",
+      "product_name": "友邦人壽幸福團體身故保險金或喪葬費用保險金受益人指定及變更批註條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體身故保險金或喪葬費用保險金受益人指定及變更批註條款 tnc_109-v2.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_109-v2.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGICE",
+      "product_name": "友邦人壽幸福團體被保險人異動批註條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體被保險人異動批註條款 tnc_gice.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gice.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNCGICNE",
+      "product_name": "友邦人壽幸福團體被保險人異動加退保方式批註條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體被保險人異動加退保方式批註條款 tnc_gicne.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_gicne.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-TNC113",
+      "product_name": "友邦人壽幸福團體健康保險無疾病等待期批註條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽幸福團體健康保險無疾病等待期批註條款 tnc_113.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/tnc_113.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    },
+    {
+      "company": "友邦人壽",
+      "product_id": "AIA-G081GATSE",
+      "product_name": "友邦人壽團體一年定期創傷縫合處置批註條款",
+      "category": "團體保險",
+      "source_url": "https://www.aia.com.tw/zh-tw/help-and-support/important-info/clauses",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "友邦人壽團體一年定期創傷縫合處置批註條款 g_081_gatse.pdf.coredownload.inline.pdf",
+          "pdf_url": "https://www.aia.com.tw/content/dam/tw-wise/zh-tw/help-and-support/important-info/docs/g_081_gatse.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source_sections": [
+          "group_terms_downloads"
+        ],
+        "source": "official_clauses_page"
+      }
+    }
+  ]
+}

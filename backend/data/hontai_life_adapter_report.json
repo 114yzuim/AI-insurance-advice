@@ -1,0 +1,2140 @@
+{
+  "company": "宏泰人壽",
+  "generated_at": "2026-08-21T10:24:25.613929+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 73,
+    "documents_seen": 151,
+    "products_upserted": 73,
+    "documents_upserted": 151
+  },
+  "items": [
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-THG",
+      "product_name": "泰好康團體保險優惠專案",
+      "category": "團體商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615102094",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_THG.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/tremTHG.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "THG",
+        "categories": [
+          "團體商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615102094"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-TSG",
+      "product_name": "泰順心團體保險優惠專案",
+      "category": "團體商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615102094",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_TSG.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termTSG.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "TSG",
+        "categories": [
+          "團體商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615102094"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-CIA",
+      "product_name": "宏泰人壽長照一生終身健康保險附約",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_CIA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termCIA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "CIA",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-DMA",
+      "product_name": "宏泰人壽樂齡寶終身健康保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_DMA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termDMA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "DMA",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCE",
+      "product_name": "宏泰人壽樂齡速健康防癌定期健康保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCE.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCE.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCE",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-HCB",
+      "product_name": "宏泰人壽健康一世終身醫療健康保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/HCB商品DM_202302_1_1校.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termHCB.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_HCB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "HCB",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-LR",
+      "product_name": "宏泰人壽瑪麗亞長期照顧終身健康保險附約",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_LR.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termLR.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "LR",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-LTC",
+      "product_name": "宏泰人壽瑪麗亞長期照顧終身保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_LTC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termLTC.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "LTC",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-LTD",
+      "product_name": "宏泰人壽友溢健康長期照顧終身保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_LTD.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termLTD.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "LTD",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-LTE",
+      "product_name": "宏泰人壽友溢健康長期照顧終身保險附約",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_LTE.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termLTE.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "LTE",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-VAH",
+      "product_name": "宏泰人壽豐碩年年變額年金保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_VAH.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termVAH.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "VAH",
+        "categories": [
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-VAJ",
+      "product_name": "宏泰人壽鑫樂一生變額年金保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_VAJ.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termVAJ.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "VAJ",
+        "categories": [
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WHB",
+      "product_name": "宏泰人壽金健康醫療終身保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WHB.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWHB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WHB",
+        "categories": [
+          "保障型商品",
+          "健保協同商保",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WHC",
+      "product_name": "宏泰人壽金滿溢健康醫療終身保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WHC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWHC.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WHC",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WL1-6",
+      "product_name": "宏泰人壽佳倍優醫療終身保險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WL1-6.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWL.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WL1-6",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WLG",
+      "product_name": "宏泰人壽新真心小額終身壽險",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WLG.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWLG.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/WLG商品簡介.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WLG",
+        "categories": [
+          "保障型商品",
+          "小額終老保險",
+          "金融友善服務商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/21050410125796",
+          "https://www.hontai.com.tw/18pages/products/21110915085278"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WLH",
+      "product_name": "宏泰人壽健康一生醫療型終身保險 (不分紅保單)",
+      "category": "銀髮族商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060614144241",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WLH.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWLH.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WLH",
+        "categories": [
+          "保障型商品",
+          "銀髮族商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060614144241",
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-DDR",
+      "product_name": "宏泰人壽重大疾病終身健康保險附約(乙型)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_DDR.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termDDR.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "DDR",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCA",
+      "product_name": "宏泰人壽真健康一年期癌症健康保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCA",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCC",
+      "product_name": "宏泰人壽真健康防癌終身健康保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCC.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/FCC商品DM_202302_1_1校.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCC",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCD",
+      "product_name": "宏泰人壽好健康防癌醫療終身健康保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCD.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCD.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/FCD商品DM_202302_1_1校.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCD",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCF",
+      "product_name": "宏泰人壽速勇健防癌定期保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCF.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCF.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCF",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCG",
+      "product_name": "宏泰人壽速勇健防癌定期保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCG.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCG.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCG",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-FCP",
+      "product_name": "宏泰人壽全心關懷防癌終身健康保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_FCP.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termFCP.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FCP",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-HI",
+      "product_name": "宏泰人壽住院醫療保險附約(乙型)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_HI.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termHSI.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "HI",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-HSB",
+      "product_name": "宏泰人壽三倍防護住院醫療定期保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_HSB.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termHSB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "HSB",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-HSC",
+      "product_name": "宏泰人壽三倍守護住院醫療定期保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_HSC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termHSC.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "HSC",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-HSF",
+      "product_name": "宏泰人壽泰實在醫療健康保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_HSF.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termHSF.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "HSF",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-IPA",
+      "product_name": "宏泰人壽意外傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_IPA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termIPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "IPA",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITH",
+      "product_name": "宏泰人壽多多福利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITH.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITH.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITH",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITI",
+      "product_name": "宏泰人壽美添富美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITI.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITI.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITI",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITJ",
+      "product_name": "宏泰人壽泰貼鑫利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITJ.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITJ.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITJ",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITK",
+      "product_name": "宏泰人壽美金旺美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITK.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITK.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITK",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITO",
+      "product_name": "宏泰人壽金添利利率變動型終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITO.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITO.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITO",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITU",
+      "product_name": "宏泰人壽滿福雙寶利率變動型終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITU.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITU.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITU",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITV",
+      "product_name": "宏泰人壽泰得利利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITV.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITV.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITV",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITW",
+      "product_name": "宏泰人壽天天享利利率變動型還本終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITW.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITW.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITW",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITX",
+      "product_name": "宏泰人壽泰多利利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITX.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITX.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITX",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-ITY",
+      "product_name": "宏泰人壽泰福利利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_ITY.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termITY.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ITY",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MADD",
+      "product_name": "宏泰人壽新多倍型傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MADD.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMADD.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MADD",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MIPA",
+      "product_name": "宏泰人壽多倍型傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MIPA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMIPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MIPA",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MIPCMRC",
+      "product_name": "宏泰人壽多元型傷害保險／宏泰人壽每次傷害醫療保險金限額",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MIPC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMIPC.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MIPC／MRC",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MIPDMRD",
+      "product_name": "宏泰人壽多元型傷害失能保險／宏泰人壽每次傷害醫療保險金限額",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MIPD.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMIPD.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MIPD／MRD",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MPA",
+      "product_name": "宏泰人壽微型傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MPA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MPA",
+        "categories": [
+          "保障型商品",
+          "微型保險"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/17060615085378"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MTCMTDMTF",
+      "product_name": "宏泰人壽泰欣安定期壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MTCDF.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMTCDF.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MTC/MTD/MTF",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NCI",
+      "product_name": "宏泰人壽新重大疾病及嚴重特定傷病終身保險(不分紅保單)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NCI.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNCI.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NCI",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NDD",
+      "product_name": "宏泰人壽卡安心重大傷病健康保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NDD.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNDD.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NDD",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NDP",
+      "product_name": "宏泰人壽新重大疾病及嚴重特定傷病終身健康保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NDP.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNDP.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NDP",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NPE",
+      "product_name": "宏泰人壽超吉棒終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NPE.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNPE.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NPE",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NPF",
+      "product_name": "宏泰人壽超滿意定期保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NPF.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNPF.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NPF",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NPG",
+      "product_name": "宏泰人壽意路安終身傷害暨兒童傷害失能保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NPG.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNPG.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NPG",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NT",
+      "product_name": "宏泰人壽定期壽險(不分紅保單)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NT.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNT.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NT",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-NTR",
+      "product_name": "宏泰人壽定期壽險附約(不分紅保單)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_NTR.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termNTR.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NTR",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-RPEMREAHIE",
+      "product_name": "宏泰人壽新意外傷害保險附約／宏泰人壽每次傷害醫療保險金限額／宏泰人壽意外傷害醫療保險金日額",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_RPE.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termRPE.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "RPE／MRE／AHIE",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-RPBAHIB",
+      "product_name": "宏泰人壽意外傷害失能保險附約／宏泰人壽意外傷害醫療保險金日額",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_RPB.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termRPB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "RPB／AHIB",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-SUB",
+      "product_name": "宏泰人壽超健康手術醫療終身健康保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_SUB.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termSUB.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/SUB商品DM_202302_1_1校.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "SUB",
+        "categories": [
+          "保障型商品",
+          "健保協同商保"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/23050915145930"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-SUC",
+      "product_name": "宏泰人壽金術適醫療健康保險附約",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_SUC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termSUC.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "SUC",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-SUR",
+      "product_name": "宏泰人壽全方位手術醫療終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_SUR.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termSUR.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "SUR",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-TA",
+      "product_name": "宏泰人壽旅行平安保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_TA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termTA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "TA",
+        "categories": [
+          "保障型商品",
+          "旅平險"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/17060615090762"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-TMADD",
+      "product_name": "宏泰人壽保倍心安傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_TMADD.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termTMADD.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "TMADD",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-URB",
+      "product_name": "宏泰人壽泰享樂65美元利率變動型還本保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_URB.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termURB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "URB",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-UPE",
+      "product_name": "宏泰人壽可樂美美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_UPE.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termUPE.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UPE",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-UPF",
+      "product_name": "宏泰人壽美滿佳倍美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_UPF.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termUPF.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UPF",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WHA",
+      "product_name": "宏泰人壽享好康終身醫療健康保險",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WHA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWHA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WHA",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WLA",
+      "product_name": "宏泰人壽宏觀人生終身壽險(不分紅保單)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WLA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWLA.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/WLA商品簡介.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WLA",
+        "categories": [
+          "保障型商品",
+          "金融友善服務商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706",
+          "https://www.hontai.com.tw/18pages/products/21110915085278"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WRAWRB",
+      "product_name": "宏泰人壽豁免保險費附約(甲型／乙型)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WRAB.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWRAB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WRA／WRB",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WRF",
+      "product_name": "宏泰人壽美元豁免保險費附約(甲型)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WRF.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWRF.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WRF",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WRG",
+      "product_name": "宏泰人壽美元豁免保險費附約(乙型)",
+      "category": "保障型商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615083706",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WRG.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWRG.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WRG",
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615083706"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-GMPA",
+      "product_name": "宏泰人壽團體微型傷害保險",
+      "category": "微型保險",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615085378",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MP／GMPA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termGMPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "GMPA",
+        "categories": [
+          "微型保險"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615085378"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-OUA",
+      "product_name": "宏泰人壽OIU環球致富外幣變額萬能壽險",
+      "category": "OIU商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615093568",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_OUA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termOUA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "OUA",
+        "categories": [
+          "OIU商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615093568"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-OUB",
+      "product_name": "宏泰人壽OIU國際旺富外幣變額萬能壽險",
+      "category": "OIU商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/17060615093568",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termOUB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "OUB",
+        "categories": [
+          "OIU商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/17060615093568"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-WLC",
+      "product_name": "宏泰人壽安心終身壽險(實物給付型)",
+      "category": "實物給付",
+      "source_url": "https://www.hontai.com.tw/18pages/products/18100417143978",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_WLC.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termWLC.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "WLC",
+        "categories": [
+          "實物給付"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/18100417143978"
+        ]
+      }
+    },
+    {
+      "company": "宏泰人壽",
+      "product_id": "HONTAI-MPAGMPA",
+      "product_name": "宏泰人壽微型保險簡介",
+      "category": "金融友善服務商品",
+      "source_url": "https://www.hontai.com.tw/18pages/products/21110915085278",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/DM_MP／GMPA.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.hontai.com.tw/18pages/_upload/files/termMPAGMPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "MPA／GMPA",
+        "categories": [
+          "金融友善服務商品"
+        ],
+        "source_pages": [
+          "https://www.hontai.com.tw/18pages/products/21110915085278"
+        ]
+      }
+    }
+  ]
+}

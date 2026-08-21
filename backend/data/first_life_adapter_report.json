@@ -1,0 +1,3542 @@
+{
+  "company": "第一金人壽",
+  "generated_at": "2026-08-21T10:17:43.284880+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 133,
+    "documents_seen": 236,
+    "products_upserted": 133,
+    "documents_upserted": 236
+  },
+  "items": [
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-708DB625BCD0",
+      "product_name": "第一金人壽環球領航變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10444"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11085"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-132CA77C147E",
+      "product_name": "第一金人壽環球領航外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10445"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11084"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B8167E0D380E",
+      "product_name": "第一金人壽長青富足變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9569"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11214"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-84B953F5324B",
+      "product_name": "第一金人壽長青富足外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9570"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11215"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-E71C9C02E5A9",
+      "product_name": "第一金人壽富活人生外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11061"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11062"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7769"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-8D037BE79EBC",
+      "product_name": "第一金人壽富活人生變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11067"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11068"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7764"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-12D69E6A8101",
+      "product_name": "第一金人壽富活100外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11069"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11070"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7770"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-1A03189862E1",
+      "product_name": "第一金人壽富活100變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11071"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11072"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7766"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-DEE2486099C7",
+      "product_name": "第一金人壽鴻利100變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10494"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11083"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7284"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-4D811A95A7A5",
+      "product_name": "第一金人壽鴻利100外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10489"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11082"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7285"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-A4A7CC9F1E7E",
+      "product_name": "第一金人壽新領航人生變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11080"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11081"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6359"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-6154DC35077E",
+      "product_name": "第一金人壽新領航人生外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11078"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11079"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6360"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-7FDFD90FAC23",
+      "product_name": "第一金人壽悠活退變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10476"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11091"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5208"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-76C2356D98A8",
+      "product_name": "第一金人壽悠活退外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10475"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11089"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5209"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-2C29F08C0186",
+      "product_name": "第一金人壽富悅100變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11077"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11093"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4055"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-15AE72CAD02C",
+      "product_name": "第一金人壽富悅100外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11076"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11094"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4053"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B4B2F2C37F4F",
+      "product_name": "第一金人壽富悅人生變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11075"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11095"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4054"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-08610ECD16BA",
+      "product_name": "第一金人壽富悅人生外幣變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11074"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11096"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4052"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-C587B5D6C833",
+      "product_name": "第一金人壽富悅一生變額萬能壽險",
+      "category": "投資型壽險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11073"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11092"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1603"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型壽險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/1"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-424B3B8277C4",
+      "product_name": "第一金人壽環球領航變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10446"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11066"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-A565FBFDF1E8",
+      "product_name": "第一金人壽環球領航外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10447"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11065"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-72631F7C2B97",
+      "product_name": "第一金人壽富活人生外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11040"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11041"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7774"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-BE368406134A",
+      "product_name": "第一金人壽富活人生變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11042"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11043"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7772"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-49F865B36EF9",
+      "product_name": "第一金人壽富活100外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11044"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11045"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7775"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-29F826E88C3B",
+      "product_name": "第一金人壽富活100變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11046"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11047"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7773"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-46544B7E5DE0",
+      "product_name": "第一金人壽鴻利100變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10531"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11064"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7286"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-AA3F6C38F352",
+      "product_name": "第一金人壽鴻利100外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10532"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11063"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7287"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-3752B9403FE6",
+      "product_name": "第一金人壽新領航人生變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11059"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11060"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6361"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-8A1800729FAC",
+      "product_name": "第一金人壽新領航人生外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11057"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11058"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6362"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-6A7367718ED9",
+      "product_name": "第一金人壽富利得利外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11055"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11097"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5838"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金",
+          "高齡化保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/15",
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-D86FC47F8688",
+      "product_name": "第一金人壽富利得利變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11056"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11098"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5837"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金",
+          "高齡化保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/15",
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-36A8DBE6E846",
+      "product_name": "第一金人壽悠活退變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10467"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11090"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5210"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-18D78C610575",
+      "product_name": "第一金人壽悠活退外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10465"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11088"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5211"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-0F2024A9439B",
+      "product_name": "第一金人壽富悅100變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11054"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11099"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4057"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-1966455A6E7E",
+      "product_name": "第一金人壽富悅100外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11053"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11100"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4059"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-AB9AF50702C2",
+      "product_name": "第一金人壽富悅人生變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11051"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11101"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4056"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-035D69282DA2",
+      "product_name": "第一金人壽富悅人生外幣變額年金保險",
+      "category": "投資型年金",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/2",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11050"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商品說明書",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11102"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4058"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型年金"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/2"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-73085D7BD4F9",
+      "product_name": "第一金人壽全心加倍防癌定期保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "15年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10337"
+        },
+        {
+          "document_type": "supporting",
+          "title": "20年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10338"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9550"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/8818"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-A88505CCE679",
+      "product_name": "第一金人壽好鑫意定期保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "15年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10335"
+        },
+        {
+          "document_type": "supporting",
+          "title": "20年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10336"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9551"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/8819"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-CAD270E45760",
+      "product_name": "第一金人壽好安心終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "15年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10349"
+        },
+        {
+          "document_type": "supporting",
+          "title": "20年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10350"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/8405"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/8406"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-1C6F7CFA5A11",
+      "product_name": "第一金人壽安心重大特定傷病保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "example",
+          "title": "範例說明",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10347"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5163"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5160"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-E2FBBB6A87D1",
+      "product_name": "第一金人壽臻還本終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10455"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5143"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-D0532F6D3668",
+      "product_name": "第一金人壽真守護防癌定期保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "example",
+          "title": "範例說明",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10348"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4296"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4294"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-0914CE1B4886",
+      "product_name": "第一金人壽鑫守護保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "example",
+          "title": "範例說明",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10339"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4067"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4060"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B1018CC6E74B",
+      "product_name": "第一金人壽全馨防癌保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "example",
+          "title": "範例說明",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10344"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/3887"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/3864"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-104FEEF6329E",
+      "product_name": "第一金人壽醫定安心定期健康保險(108)",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "example",
+          "title": "範例說明",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10345"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/221"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1673"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-DCCF3998EBDE",
+      "product_name": "第一金人壽珍愛小額終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10452"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1659"
+        },
+        {
+          "document_type": "example",
+          "title": "範例說明",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10346"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1751"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "小額終老保險",
+          "電銷專屬商品",
+          "高齡化保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/15",
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/8"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-AF3F2E5ABD59",
+      "product_name": "第一金人壽新照護九九長期照顧終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10453"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1669"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "高齡化保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/15",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-D25B90F980CF",
+      "product_name": "第一金人壽第一金讚利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11030"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-4CFABF2517F0",
+      "product_name": "第一金人壽金美傳家美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11032"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-BA09D056A15F",
+      "product_name": "第一金人壽第一賓利利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11031"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-10B366562A6B",
+      "product_name": "第一金人壽美金多多美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11033"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-5027F7A768BA",
+      "product_name": "第一金人壽豪傳家美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10942"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-A3504B8AC4E8",
+      "product_name": "第一金人壽美旺旺美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10943"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-002C9C871D70",
+      "product_name": "第一金人壽愛傳家利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10940"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B6F42ADA416D",
+      "product_name": "第一金人壽金旺旺利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10941"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-44E686320DB0",
+      "product_name": "第一金人壽第一喜樂美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10767"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-65040A0F2DA0",
+      "product_name": "第一金人壽美緻光亮美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10231"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-06A2377F0D57",
+      "product_name": "第一金人壽美利贏家美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10230"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-C50AD54954C5",
+      "product_name": "第一金人壽享樂盈家美元利率變動型還本終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10229"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-538A3A88DB5F",
+      "product_name": "第一金人壽美勝傳家美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9995"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-7205D54A7597",
+      "product_name": "第一金人壽第一美盛美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9833"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-E80AEDCD7FA9",
+      "product_name": "第一金人壽美金樂樂美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9834"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-154F411485D2",
+      "product_name": "第一金人壽第一豐盛利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9835"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-96785BC5AB48",
+      "product_name": "第一金人壽金多樂利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9836"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-50B6E622A1F5",
+      "product_name": "第一金人壽美樂鑫美元利率變動型還本終身保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9832"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-31580DF9F912",
+      "product_name": "第一金人壽金豪旺利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9566"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-8AF73410359A",
+      "product_name": "第一金人壽第一傳富利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9567"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-E5AF15636021",
+      "product_name": "第一金人壽美金發發美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9565"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-FF39DBAD570C",
+      "product_name": "第一金人壽第一美富美元利率變動型終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9564"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-47D9FBC39849",
+      "product_name": "第一金人壽e日安一年定期住院醫療",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/8466"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-A0C070AE95A5",
+      "product_name": "第一金人壽第e珍愛小額終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7583"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-256FC0AFD6FB",
+      "product_name": "第一金人壽e微型個人定期壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6775"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-9B3ACC0F1187",
+      "product_name": "第一金人壽e微型個人傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6776"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-93985921D4D4",
+      "product_name": "第一金人壽e安行傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6726"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "海外度假打工保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/17",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-3D6C4E388AB7",
+      "product_name": "第一金人壽e定好定期壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5937"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-1F56C75BEA76",
+      "product_name": "第一金人壽e把罩重大疾病定期健康保險(甲型)(1年期)",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5938"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B8FB7334B421",
+      "product_name": "第一金人壽e把罩重大疾病定期健康保險(甲型)(20年期)",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5939"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-221F6C39369A",
+      "product_name": "第一金人壽享健康終身醫療保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "15年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10340"
+        },
+        {
+          "document_type": "supporting",
+          "title": "20年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10341"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5551"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5489"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-0FAA7B26B2E3",
+      "product_name": "第一金人壽珍愛e起小額終身壽險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4084"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "小額終老保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3",
+          "https://www.firstlife.com.tw/FirstWeb/product/8"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-975682058799",
+      "product_name": "第一金人壽醫老永逸定期健康保險(108)",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "15年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10342"
+        },
+        {
+          "document_type": "supporting",
+          "title": "20年期",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10343"
+        },
+        {
+          "document_type": "notice",
+          "title": "人壽投保人須知",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/2279"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/2281"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品",
+          "電銷專屬商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/18",
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-C8AF5E5DA2F4",
+      "product_name": "第一金人壽微型傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1684"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-F12164F3ACA9",
+      "product_name": "第一金人壽集體投保型微型傷害保險",
+      "category": "保障型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1685"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/3"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-9EE90FC51E75",
+      "product_name": "第一金人壽幸福安家定期壽險",
+      "category": "貸款衍生商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/4",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9563"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10333"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "貸款衍生商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/4"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-56FD6AC8B30A",
+      "product_name": "第一金人壽好安家定期壽險",
+      "category": "貸款衍生商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/4",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10334"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7447"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "貸款衍生商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/4"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-70DFE853F4DC",
+      "product_name": "第一金人壽信福贏家美元利率變動型終身壽險",
+      "category": "利率變動型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11221"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款",
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B70AC6AE9AB2",
+      "product_name": "第一金人壽e保得利利率變動型年金保險甲型",
+      "category": "利率變動型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6401"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-167B1F81DEE3",
+      "product_name": "第一金人壽E刷得利利率變動型年金保險甲型",
+      "category": "利率變動型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5391"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "利率變動型商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-D6CE82B44CB4",
+      "product_name": "第一金人壽E享利利率變動型年金保險甲型",
+      "category": "利率變動型商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/5",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/2065"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "利率變動型商品",
+          "高齡化保險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/15",
+          "https://www.firstlife.com.tw/FirstWeb/product/5"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-993889AD0F12",
+      "product_name": "第一金人壽e遊保旅行平安保險",
+      "category": "旅行平安險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/6",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5261"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "旅行平安險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/6"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-85ECF0FBFBA3",
+      "product_name": "第一金人壽旅行平安保險",
+      "category": "旅行平安險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/6",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9507"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1680"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "旅行平安險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/6"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-81A82D226AC4",
+      "product_name": "第一金人壽Easy Go旅行平安保險(網路投保)",
+      "category": "旅行平安險",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/6",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1681"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "旅行平安險"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/6"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-12853E188C98",
+      "product_name": "第一金人壽鑫享福團體利率變動型年金保險",
+      "category": "團體保險商品",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/7",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10432"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10431"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體保險商品"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/7"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-435E689F5EE9",
+      "product_name": "第一金人壽環球領航投資標的批註條款",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10448"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B147DCD789E3",
+      "product_name": "第一金人壽投資型保險投資標的交易批註條款",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10449"
+        },
+        {
+          "document_type": "supporting",
+          "title": "投資標的適用一覽表",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/11052"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-4E90FEB4DE37",
+      "product_name": "第一金人壽投資型保險投資標的收益分配方式批註條款",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10450"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-7DF5559B0514",
+      "product_name": "第一金人壽投資標的批註條款(十三)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/9568"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-3D163CBB479E",
+      "product_name": "第一金人壽投資型保險投資標的收益分配再投入批註條款",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/8653"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-82E0097E6D84",
+      "product_name": "第一金人壽投資標的批註條款(十一)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7776"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B06D0D6120EB",
+      "product_name": "第一金人壽投資標的批註條款(十二)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7777"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-EFA84BE40BE4",
+      "product_name": "第一金人壽全權委託投資帳戶投資標的批註條款(C)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7288"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-30519A6BDFCD",
+      "product_name": "第一金人壽投資標的批註條款(十)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6367"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-8F4DB9BAB52B",
+      "product_name": "第一金人壽投資標的批註條款(九)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5212"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-4BCEE0A8FE72",
+      "product_name": "第一金人壽投資標的批註條款(一)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1710"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-60501A4BC829",
+      "product_name": "第一金人壽全權委託投資帳戶投資標的批註條款(A)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1708"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-B3DFA44AA8F9",
+      "product_name": "第一金人壽全權委託投資帳戶投資標的批註條款(B)",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1709"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-0FC3B266DA48",
+      "product_name": "第一金人壽投資型保險投資標的定期定額轉換批註條款",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1714"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-09242C2D546C",
+      "product_name": "第一金人壽首年度增額給付傷害保險附加條款",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1703"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-A485B873DFB4",
+      "product_name": "第一金人壽一年期住院醫療日額保險附約",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1691"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款",
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20",
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-12F2F0AE04A2",
+      "product_name": "第一金人壽一年期傷害保險附約",
+      "category": "投資型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/20",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1695"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款",
+          "投資型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/20",
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-E73FC36D7553",
+      "product_name": "第一金人壽增加基本保險金額選擇權批註條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10014"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-FD39A502C254",
+      "product_name": "第一金人壽被保險人職業或職務變更批註條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7960"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-0017808063AB",
+      "product_name": "第一金人壽大吉美元豁免保險費健康保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10800"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-97876707FF3A",
+      "product_name": "第一金人壽大吉豁免保險費健康保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10798"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-D0790E1A4FFA",
+      "product_name": "第一金人壽順利美元豁免保險費保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10799"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-6B8B35457621",
+      "product_name": "第一金人壽順利豁免保險費保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保單條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/10797"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-9239C0D706FE",
+      "product_name": "第一金人壽新旅行平安保險海外突發疾病醫療健康保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7503"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-CCC602DE385A",
+      "product_name": "第一金人壽e遊保旅行平安保險新海外突發疾病醫療健康保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7504"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-C6F42F083993",
+      "product_name": "第一金人壽e遊保旅行平安保險傷害醫療保險金附加條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5262"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-00EC06CD334C",
+      "product_name": "第一金人壽第e珍愛小額傷害保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7584"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-91DEB3B7CD01",
+      "product_name": "第一金人壽一年期加倍保傷害保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7449"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-6BA30B152749",
+      "product_name": "第一金人壽一年期重大疾病健康保險附約(甲型)",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7450"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-8E2B652F906B",
+      "product_name": "第一金人壽新Easy Go旅行平安保險海外突發疾病醫療健康保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/7029"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-6F57323A5F83",
+      "product_name": "第一金人壽e微型個人傷害醫療保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6777"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-1815E6305E9C",
+      "product_name": "第一金人壽房屋貸款債權債務範圍內受益人指定及其處分權批註條款(一)",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/6621"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-30232509987C",
+      "product_name": "第一金人壽法定傳染病排除等待期間批註條款(暫停銷售)",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5747"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-3898EFF3FF93",
+      "product_name": "第一金人壽房屋貸款債權債務範圍內受益人指定及其處分權批註條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5410"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-3AEDCBED22F5",
+      "product_name": "第一金人壽珍愛e起小額傷害保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/5347"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-D160E8E51321",
+      "product_name": "第一金人壽提前給付批註條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4825"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-163F9219E137",
+      "product_name": "第一金人壽新債權債務範圍內受益人指定及其處分權批註條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/4140"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-98C5D8167037",
+      "product_name": "第一金人壽旅行平安保險傷害醫療保險金附加條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1705"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-000CBF7CD962",
+      "product_name": "第一金人壽Easy Go旅行平安保險傷害醫療保險金附加條款",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1701"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    },
+    {
+      "company": "第一金人壽",
+      "product_id": "FIRST-079A93189D82",
+      "product_name": "第一金人壽一年期傷害醫療住院日額保險附約",
+      "category": "保障型附約批註條款",
+      "source_url": "https://www.firstlife.com.tw/FirstWeb/product/21",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款",
+          "pdf_url": "https://www.firstlife.com.tw/FirstWeb/product/file/DOCUMENT/1698"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型附約批註條款"
+        ],
+        "source_pages": [
+          "https://www.firstlife.com.tw/FirstWeb/product/21"
+        ]
+      }
+    }
+  ]
+}

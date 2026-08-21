@@ -1,0 +1,1782 @@
+{
+  "company": "安達人壽",
+  "generated_at": "2026-08-21T10:52:03.507207+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 93,
+    "documents_seen": 93,
+    "errors": 0,
+    "products_upserted": 93,
+    "documents_upserted": 93
+  },
+  "errors": [],
+  "items": [
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-HE-JIA-HUAN-PROSPECTUS",
+      "product_name": "安達人壽新闔家歡變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新闔家歡變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-he-jia-huan-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-he-jia-huan-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHI-BIAO-LING-HANG-PROSPECTUS",
+      "product_name": "安達人壽新指標領航變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新指標領航變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhi-biao-ling-hang-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhi-biao-ling-hang-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHI-BIAO-LING-HANG-FOREIGN-CURRENCY-PR",
+      "product_name": "安達人壽新指標領航外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新指標領航外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhi-biao-ling-hang-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhi-biao-ling-hang-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-NEW-HO-DE-LI-PROSPECTUS",
+      "product_name": "安達人壽新好得利變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新好得利變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-new-ho-de-li-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-new-ho-de-li-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-NEW-HO-DE-LI-FOREIGN-CURRENCY-PROSPECT",
+      "product_name": "安達人壽新好得利外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新好得利外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-new-ho-de-li-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-new-ho-de-li-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-TEN-SHENG-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽鑫天生贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫天生贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ten-sheng-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ten-sheng-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-TEN-SHENG-YING-JIA-FOREIGN-CURRENCY-PR",
+      "product_name": "安達人壽鑫天生贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫天生贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ten-sheng-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ten-sheng-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHAN-LUE-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽新戰略贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新戰略贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhan-lue-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhan-lue-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHAN-LUE-YING-JIA-FOREIGN-CURRENCY-PRO",
+      "product_name": "安達人壽新戰略贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新戰略贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhan-lue-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhan-lue-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XIN-LONG-XING-PROSPECTUS",
+      "product_name": "安達人壽新鑫龍星變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鑫龍星變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xin-long-xing-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xin-long-xing-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JU-XIN-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽新鉅鑫贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鉅鑫贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ju-xin-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ju-xin-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JU-XIN-YING-JIA-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽新鉅鑫贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鉅鑫贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ju-xin-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ju-xin-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-YING-LI-KAO-SHOU-PROSPECTUS",
+      "product_name": "安達人壽新贏利高手變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新贏利高手變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ying-li-kao-shou-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ying-li-kao-shou-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-YING-LI-KAO-SHOU-USD-CURRENCY-PROSPECT",
+      "product_name": "安達人壽新贏利高手美元變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新贏利高手美元變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ying-li-kao-shou-usd-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ying-li-kao-shou-usd-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-DE-LI-100-PROSPECTUS",
+      "product_name": "安達人壽新得利100變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新得利100變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-de-li-100-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-de-li-100-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-DE-LI-100-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽新得利100外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新得利100外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-de-li-100-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-de-li-100-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JU-FU-REN-SHENG-PROSPECTUS",
+      "product_name": "安達人壽新聚富人生變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新聚富人生變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ju-fu-ren-sheng-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ju-fu-ren-sheng-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-TIEN-SHENG-YING-JIA-PLUS-PROSPECTUS",
+      "product_name": "安達人壽新天生贏家Plus變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新天生贏家Plus變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-tien-sheng-ying-jia-plus-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-tien-sheng-ying-jia-plus-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-TIEN-SHENG-YING-JIA-PLUS-FOREIGN-CURRE",
+      "product_name": "安達人壽新天生贏家Plus外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新天生贏家Plus外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-tien-sheng-ying-jia-plus-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-tien-sheng-ying-jia-plus-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JU-FU-CHUAN-JIA-PROSPECTUS",
+      "product_name": "安達人壽新聚富傳家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新聚富傳家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ju-fu-chuan-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ju-fu-chuan-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JU-FU-CHUAN-JIA-USD-CURRENCY-PROSPECTU",
+      "product_name": "安達人壽新聚富傳家美元變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新聚富傳家美元變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ju-fu-chuan-jia-usd-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ju-fu-chuan-jia-usd-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-TSAI-HUA-MAN-YI-PROSPECTUS",
+      "product_name": "安達人壽財華滿意變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華滿意變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-tsai-hua-man-yi-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-tsai-hua-man-yi-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-TSAI-HUA-MAN-YI-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽財華滿意外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華滿意外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-tsai-hua-man-yi-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-tsai-hua-man-yi-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-AI-JIA-PROSPECTUS",
+      "product_name": "安達人壽新愛家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新愛家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ai-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ai-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-AI-JIA-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽新愛家美元變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新愛家美元變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ai-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ai-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XING-FU-CHENG-SHUANG-PROSPECTUS",
+      "product_name": "安達人壽新幸福成雙變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新幸福成雙變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xing-fu-cheng-shuang-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xing-fu-cheng-shuang-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XING-FU-CHENG-SHUANG-FOREIGN-CURRENCY-",
+      "product_name": "安達人壽新幸福成雙美元變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新幸福成雙美元變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xing-fu-cheng-shuang-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xing-fu-cheng-shuang-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XIN-XIANG-SHI-CHENG-PROSPECTUS",
+      "product_name": "安達人壽新鑫享勢成變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鑫享勢成變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xin-xiang-shi-cheng-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xin-xiang-shi-cheng-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XIN-XIANG-SHI-CHENG-FOREIGN-CURRENCY-P",
+      "product_name": "安達人壽新鑫享勢成外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鑫享勢成外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xin-xiang-shi-cheng-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xin-xiang-shi-cheng-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-AN-XIN-XIANG-FU-PROSPECTUS",
+      "product_name": "安達人壽安薪享富變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽安薪享富變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-an-xin-xiang-fu-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-an-xin-xiang-fu-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-AN-XIN-XIANG-FU-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽安薪享富外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽安薪享富外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-an-xin-xiang-fu-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-an-xin-xiang-fu-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-CAI-HUA-YING-XIN-PROSPECTUS",
+      "product_name": "安達人壽財華贏鑫變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華贏鑫變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-cai-hua-ying-xin-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-cai-hua-ying-xin-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-CAI-HUA-YING-XIN-FOREIGN-CURRENCY-PROS",
+      "product_name": "安達人壽財華贏鑫外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華贏鑫外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-cai-hua-ying-xin-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-cai-hua-ying-xin-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-HUO-LI-99-PROSPECTUS",
+      "product_name": "安達人壽活力99變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽活力99變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-huo-li-99-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-huo-li-99-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-HUO-LI-99-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽活力99外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽活力99外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-huo-li-99-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-huo-li-99-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JIN-DE-YI-PROSPECTUS",
+      "product_name": "安達人壽金得益變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽金得益變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-jin-de-yi-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-jin-de-yi-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-JIN-DE-YI-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽金得益美元變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽金得益美元變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-jin-de-yi-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-jin-de-yi-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-HONG-LI-XIN-XI-PROSPECTUS",
+      "product_name": "安達人壽鴻利鑫喜變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鴻利鑫喜變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-hong-li-xin-xi-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-hong-li-xin-xi-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-HONG-LI-XIN-XI-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽鴻利鑫喜美元變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鴻利鑫喜美元變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-hong-li-xin-xi-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-hong-li-xin-xi-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XING-MAN-YI-ZU-PROSPECTUS",
+      "product_name": "安達人壽星滿益足變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽星滿益足變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xing-man-yi-zu-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xing-man-yi-zu-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XING-MAN-YI-ZU-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽星滿益足外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽星滿益足外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xing-man-yi-zu-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xing-man-yi-zu-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XING-DONG-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽星動盈家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽星動盈家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xing-dong-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xing-dong-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XING-DONG-YING-JIA-FOREIGN-CURRENCY-PR",
+      "product_name": "安達人壽星動盈家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽星動盈家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xing-dong-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xing-dong-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-AI-BAO-BEI-PROSPECTUS",
+      "product_name": "安達人壽愛保倍變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽愛保倍變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-ai-bao-bei-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-ai-bao-bei-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-FU-QUI-DA-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽富貴大贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽富貴大贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-fu-qui-da-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-fu-qui-da-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-FU-QUI-DA-YING-JIA-FOREIGN-CURRENCY-PR",
+      "product_name": "安達人壽富貴大贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽富貴大贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-fu-qui-da-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-fu-qui-da-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XIN-LI-100-PROSPECTUS",
+      "product_name": "安達人壽鑫利100變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫利100變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xin-li-100-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xin-li-100-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-XIN-LI-100-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽鑫利100外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫利100外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-xin-li-100-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-xin-li-100-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHI-FU-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽智富贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智富贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhi-fu-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhi-fu-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHI-FU-YING-JIA-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽智富贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智富贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhi-fu-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhi-fu-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-WUN-FU-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽穩富贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽穩富贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-wun-fu-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-wun-fu-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-WUN-FU-YING-JIA-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽穩富贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽穩富贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-wun-fu-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-wun-fu-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHI-HUI-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽智匯贏家變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智匯贏家變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhi-hui-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhi-hui-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VUL-ZHI-HUI-YING-JIA-FOREIGN-CURRENCY-PROS",
+      "product_name": "安達人壽智匯贏家外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智匯贏家外幣變額萬能壽險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/vul-zhi-hui-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "vul-zhi-hui-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-HE-JIA-HUAN-PROSPECTUS",
+      "product_name": "安達人壽新闔家歡變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新闔家歡變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-he-jia-huan-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-he-jia-huan-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHI-BIAO-LING-HANG-PROSPECTUS",
+      "product_name": "安達人壽新指標領航變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新指標領航變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhi-biao-ling-hang-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhi-biao-ling-hang-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHI-BIAO-LING-HANG-FOREIGN-CURRENCY-PRO",
+      "product_name": "安達人壽新指標領航外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新指標領航外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhi-biao-ling-hang-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhi-biao-ling-hang-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-NEW-HO-DE-LI-PROSPECTUS",
+      "product_name": "安達人壽新好得利變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新好得利變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-new-ho-de-li-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-new-ho-de-li-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-NEW-HO-DE-LI-FOREIGN-CURRENCY-PROSPECTU",
+      "product_name": "安達人壽新好得利外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新好得利外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-new-ho-de-li-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-new-ho-de-li-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-TEN-SHENG-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽鑫天生贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫天生贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-ten-sheng-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-ten-sheng-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-TEN-SHENG-YING-JIA-FOREIGN-CURRENCY-PRO",
+      "product_name": "安達人壽鑫天生贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫天生贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-ten-sheng-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-ten-sheng-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHAN-LUE-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽新戰略贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新戰略贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhan-lue-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhan-lue-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHAN-LUE-YING-JIA-FOREIGN-CURRENCY-PROS",
+      "product_name": "安達人壽新戰略贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新戰略贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhan-lue-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhan-lue-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-YOU-YUE-PROSPECTUS",
+      "product_name": "安達人壽新優越變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新優越變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-you-yue-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-you-yue-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-YOU-YUE-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽新優越外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新優越外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-you-yue-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-you-yue-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-JU-XIN-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽新鉅鑫贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鉅鑫贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-ju-xin-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-ju-xin-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-JU-XIN-YING-JIA-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽新鉅鑫贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鉅鑫贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-ju-xin-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-ju-xin-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-JU-BAO-PEN-PROSPECTUS",
+      "product_name": "安達人壽新聚寶盆變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新聚寶盆變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-ju-bao-pen-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-ju-bao-pen-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-JU-BAO-PEN-USD-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽新聚寶盆美元變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新聚寶盆美元變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-ju-bao-pen-usd-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-ju-bao-pen-usd-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-DE-LI-100-PROSPECTUS",
+      "product_name": "安達人壽新得利100變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新得利100變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-de-li-100-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-de-li-100-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-DE-LI-100-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽新得利100外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新得利100外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-de-li-100-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-de-li-100-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-TIEN-SHENG-YING-JIA-PLUS-PROSPECTUS",
+      "product_name": "安達人壽新天生贏家Plus變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新天生贏家Plus變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-tien-sheng-ying-jia-plus-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-tien-sheng-ying-jia-plus-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-TIEN-SHENG-YING-JIA-PLUS-FOREIGN-CURREN",
+      "product_name": "安達人壽新天生贏家Plus外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新天生贏家Plus外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-tien-sheng-ying-jia-plus-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-tien-sheng-ying-jia-plus-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-TSAI-HUA-MAN-YI-PROSPECTUS",
+      "product_name": "安達人壽財華滿意變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華滿意變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-tsai-hua-man-yi-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-tsai-hua-man-yi-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-TSAI-HUA-MAN-YI-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽財華滿意外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華滿意外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-tsai-hua-man-yi-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-tsai-hua-man-yi-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-XIN-XIANG-SHI-CHENG-PROSPECTUS",
+      "product_name": "安達人壽新鑫享勢成變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鑫享勢成變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-xin-xiang-shi-cheng-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-xin-xiang-shi-cheng-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-XIN-XIANG-SHI-CHENG-FOREIGN-CURRENCY-PR",
+      "product_name": "安達人壽新鑫享勢成外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽新鑫享勢成外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-xin-xiang-shi-cheng-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-xin-xiang-shi-cheng-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-AN-XIN-XIANG-FU-PROSPECTUS",
+      "product_name": "安達人壽安薪享富變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽安薪享富變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-an-xin-xiang-fu-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-an-xin-xiang-fu-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-AN-XIN-XIANG-FU-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽安薪享富外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽安薪享富外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-an-xin-xiang-fu-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-an-xin-xiang-fu-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-CAI-HUA-YING-XIN-PROSPECTUS",
+      "product_name": "安達人壽財華贏鑫變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華贏鑫變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-cai-hua-ying-xin-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-cai-hua-ying-xin-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-CAI-HUA-YING-XIN-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽財華贏鑫外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽財華贏鑫外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-cai-hua-ying-xin-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-cai-hua-ying-xin-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-JIN-DE-YI-PROSPECTUS",
+      "product_name": "安達人壽金得益變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽金得益變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-jin-de-yi-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-jin-de-yi-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-JIN-DE-YI-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽金得益美元變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽金得益美元變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-jin-de-yi-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-jin-de-yi-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-FU-QUI-DA-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽富貴大贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽富貴大贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-fu-qui-da-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-fu-qui-da-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-FU-QUI-DA-YING-JIA-FOREIGN-CURRENCY-PRO",
+      "product_name": "安達人壽富貴大贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽富貴大贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-fu-qui-da-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-fu-qui-da-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-XIN-LI-100-PROSPECTUS",
+      "product_name": "安達人壽鑫利100變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫利100變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-xin-li-100-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-xin-li-100-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-XIN-LI-100-FOREIGN-CURRENCY-PROSPECTUS",
+      "product_name": "安達人壽鑫利100外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽鑫利100外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-xin-li-100-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-xin-li-100-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHI-FU-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽智富贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智富贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhi-fu-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhi-fu-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHI-FU-YING-JIA-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽智富贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智富贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhi-fu-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhi-fu-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-WUN-FU-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽穩富贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽穩富贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-wun-fu-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-wun-fu-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-WUN-FU-YING-JIA-FOREIGN-CURRENCY-PROSPE",
+      "product_name": "安達人壽穩富贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽穩富贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-wun-fu-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-wun-fu-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHI-HUI-YING-JIA-PROSPECTUS",
+      "product_name": "安達人壽智匯贏家變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智匯贏家變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhi-hui-ying-jia-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhi-hui-ying-jia-prospectus.pdf"
+      }
+    },
+    {
+      "company": "安達人壽",
+      "product_id": "CHUBB-VA-ZHI-HUI-YING-JIA-FOREIGN-CURRENCY-PROSP",
+      "product_name": "安達人壽智匯贏家外幣變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://life.chubb.com/tw-zh/products/investing/prospectus.html",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "安達人壽智匯贏家外幣變額年金保險 商品說明書",
+          "pdf_url": "https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/va-zhi-hui-ying-jia-foreign-currency-prospectus.pdf"
+        }
+      ],
+      "metadata": {
+        "source_section": "投資型商品說明書",
+        "source": "official_prospectus_page",
+        "filename": "va-zhi-hui-ying-jia-foreign-currency-prospectus.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+{
+  "company": "保誠人壽",
+  "generated_at": "2026-08-21T10:54:59.770479+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 26,
+    "documents_seen": 50,
+    "errors": 0,
+    "products_upserted": 26,
+    "documents_upserted": 50
+  },
+  "errors": [],
+  "items": [
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-CLPEN38",
+      "product_name": "保誠人壽富享年年終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽富享年年終身保險(定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpen38-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽富享年年終身保險(定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpen38.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-clpen38-dm.pdf",
+          "mm-clpen38.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-RLPLN8",
+      "product_name": "保誠人壽金世代終身壽險(定額給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽金世代終身壽險(定額給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlpln8-dm.pdf.coredownload.inline.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽金世代終身壽險(定額給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlpln8.pdf.coredownload.inline.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-rlpln8-dm.pdf.coredownload.inline.pdf",
+          "mm-rlpln8.pdf.coredownload.inline.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-RLNN001",
+      "product_name": "保誠人壽鑫意加倍養老保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽鑫意加倍養老保險(定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlnn001-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽鑫意加倍養老保險(定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlnn001.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-rlnn001-dm.pdf",
+          "mm-rlnn001.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-RLPEN1",
+      "product_name": "保誠人壽鑫享富足終身保險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽鑫享富足終身保險(定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlpen1_dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽鑫享富足終身保險(定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlpen1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-rlpen1_dm.pdf",
+          "mm-rlpen1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-CLPEN32",
+      "product_name": "保誠人壽金會旺終身保險(113)( 定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽金會旺終身保險(113)( 定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpen32-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽金會旺終身保險(113)( 定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpen32.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-clpen32-dm.pdf",
+          "mm-clpen32.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-RLPLN10",
+      "product_name": "保誠人壽福安滿利終身壽險(113)(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽福安滿利終身壽險(113)(定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlpln10-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽福安滿利終身壽險(113)(定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlpln10.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-rlpln10-dm.pdf",
+          "mm-rlpln10.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-CLPEN31",
+      "product_name": "保誠人壽樂享雙收終身保險(113)(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽樂享雙收終身保險(113)(定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpen31-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽樂享雙收終身保險(113)(定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpen31.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-clpen31-dm.pdf",
+          "mm-clpen31.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-RLPLU60",
+      "product_name": "保誠人壽鑫發達外幣終身壽險(定額給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽鑫發達外幣終身壽險(定額給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlplu60-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽鑫發達外幣終身壽險(定額給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlplu60.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-rlplu60-dm.pdf",
+          "mm-rlplu60.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-RLPLU64",
+      "product_name": "保誠人壽鑫傳富外幣終身壽險(定額給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽鑫傳富外幣終身壽險(定額給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlplu64-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽鑫傳富外幣終身壽險(定額給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-rlplu64.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-rlplu64-dm.pdf",
+          "mm-rlplu64.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-CLPEU25",
+      "product_name": "保誠人壽美年鑽外幣終身壽險(定期給付型)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽美年鑽外幣終身壽險(定期給付型)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpeu25-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽美年鑽外幣終身壽險(定期給付型)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-clpeu25.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-clpeu25-dm.pdf",
+          "mm-clpeu25.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-ARVL3",
+      "product_name": "保誠人壽鑫富守護變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽鑫富守護變額萬能壽險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-arvl3-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽鑫富守護變額萬能壽險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-arvl3.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-arvl3-dm.pdf",
+          "mm-arvl3.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-CINLB1",
+      "product_name": "保誠人壽保心肝重大傷病終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽保心肝重大傷病終身健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/cinlb1-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽保心肝重大傷病終身健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/cinlb1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "cinlb1-dm.pdf",
+          "cinlb1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-CCRTB1",
+      "product_name": "保誠人壽誠心防癌2.0健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽誠心防癌2.0健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-ccrtb1-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽誠心防癌2.0健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-ccrtb1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-ccrtb1-dm.pdf",
+          "mm-ccrtb1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-SGNLB4",
+      "product_name": "保誠人壽睛彩守護終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽睛彩守護終身健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-sgnlb4_dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽睛彩守護終身健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-sgnlb4.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-sgnlb4_dm.pdf",
+          "mm-sgnlb4.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-HIRLB2",
+      "product_name": "保誠人壽富御守護醫療終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽富御守護醫療終身健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/hirlb2-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽富御守護醫療終身健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/hirlb2.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "hirlb2-dm.pdf",
+          "hirlb2.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-SGNLB3",
+      "product_name": "保誠人壽樂齡安康手術醫療終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽樂齡安康手術醫療終身健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-sgnlb3_dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽樂齡安康手術醫療終身健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-sgnlb3.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-sgnlb3_dm.pdf",
+          "mm-sgnlb3.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-PARLB1",
+      "product_name": "保誠人壽意鑫平安保險",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽意鑫平安保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-parlb1_dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽意鑫平安保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-parlb1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-parlb1_dm.pdf",
+          "mm-parlb1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-HIRLB1",
+      "product_name": "保誠人壽倍感安心終身醫療健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽倍感安心終身醫療健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-hirlb1_dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽倍感安心終身醫療健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-hirlb1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-hirlb1_dm.pdf",
+          "mm-hirlb1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-PARTB3",
+      "product_name": "保誠人壽金滿意保險",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽金滿意保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-partb3-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽金滿意保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-partb3.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-partb3-dm.pdf",
+          "mm-partb3.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-DDNLB1",
+      "product_name": "保誠人壽安康保終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽安康保終身健康保險商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-ddnlb1_dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽安康保終身健康保險條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-ddnlb1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-ddnlb1_dm.pdf",
+          "mm-ddnlb1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-MM-ML",
+      "product_name": "保誠人壽人身意外傷害住院醫療定額給付附加條款",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保誠人壽人身意外傷害住院醫療定額給付附加條款商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-ml-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽人身意外傷害住院醫療定額給付附加條款條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/mm-ml.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "mm-ml-dm.pdf",
+          "mm-ml.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-CINTR1",
+      "product_name": "保誠人壽保心肝重大傷病健康保險附約",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽保心肝重大傷病健康保險附約商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/cintr1-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽保心肝重大傷病健康保險附約條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/cintr1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "cintr1-dm.pdf",
+          "cintr1.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-WPNTR6",
+      "product_name": "保誠人壽一年期失能豁免保險費健康保險附約乙型",
+      "category": "健康醫療",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽一年期失能豁免保險費健康保險附約乙型商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/wpntr6-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽一年期失能豁免保險費健康保險附約乙型條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/wpntr6.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "wpntr6-dm.pdf",
+          "wpntr6.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-PAA-ML",
+      "product_name": "保誠人壽人身意外傷害保險附約(111)",
+      "category": "意外傷害",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽人身意外傷害保險附約(111)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/paa-ml-dm.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "paa-ml-dm.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-PAA",
+      "product_name": "保誠人壽人身意外傷害保險附約(111)",
+      "category": "意外傷害",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "保誠人壽人身意外傷害保險附約(111)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/paa.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "paa.pdf"
+        ]
+      }
+    },
+    {
+      "company": "保誠人壽",
+      "product_id": "PCA-WPD",
+      "product_name": "保誠人壽關心豁免保險費附約(96)",
+      "category": "壽險保障",
+      "source_url": "https://www.pcalife.com.tw/zh/products/mm/explore-all/",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "保誠人壽關心豁免保險費附約(96)商品簡介",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/wpd-dm.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "保誠人壽關心豁免保險費附約(96)條款樣張",
+          "pdf_url": "https://www.pcalife.com.tw/content/dam/prudential-aem-lbu/pcalt/zh_TW/products/mm/wpd.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_mm_product_page",
+        "filenames": [
+          "wpd-dm.pdf",
+          "wpd.pdf"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3838 @@
+{
+  "company": "三商美邦人壽",
+  "generated_at": "2026-08-21T10:32:36.639668+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 149,
+    "documents_seen": 246,
+    "errors": 0,
+    "products_upserted": 149,
+    "documents_upserted": 246
+  },
+  "errors": [],
+  "items": [
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GTJL",
+      "product_name": "三商美邦人壽金增吉利美元利率變動型增額終身壽險(定期給付型)(GTJL)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087256550&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311341&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GZDL",
+      "product_name": "三商美邦人壽金增多利美元利率變動型增額終身壽險(定期給付型)(GZDL)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087256598&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311363&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TJL",
+      "product_name": "三商美邦人壽增吉利美元利率變動型增額終身壽險(定期給付型)(TJL)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087226150&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311229&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ZDL",
+      "product_name": "三商美邦人壽增多利美元利率變動型增額終身壽險(定期給付型)(ZDL)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087226142&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311251&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TGZ",
+      "product_name": "三商美邦人壽增夠利美元利率變動型終身壽險(定期給付型)(TGZ)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240480&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311185&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-BFL",
+      "product_name": "三商美邦人壽寶富利美元利率變動型終身壽險(定期給付型)(BFL)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087299709&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311427&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-XFL",
+      "product_name": "三商美邦人壽祥富利利率變動型終身壽險(定期給付型)(XFL)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087325076&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087326083&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HPA",
+      "product_name": "三商美邦人壽好平安終身保險(HPA)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239856&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311163&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IHIA",
+      "product_name": "三商美邦人壽珍愛醫靠住院醫療健康保險(A型)(IHIA)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087300929&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087301095&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "住院醫療險",
+          "保障型商品專區",
+          "高齡化商品"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/aging",
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-area"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IHIB",
+      "product_name": "三商美邦人壽珍愛醫靠住院醫療健康保險(B型)(IHIB)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087300934&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087301116&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-XSSI",
+      "product_name": "三商美邦人壽心守健康手術醫療終身健康保險(XSSI)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240423&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087241106&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-YHIW",
+      "product_name": "三商美邦人壽漾健康終身醫療健康保險(YHIW)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240378&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240099&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IKC",
+      "product_name": "三商美邦人壽愛關心重大傷病終身健康保險(IKC)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240443&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351613&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IEC",
+      "product_name": "三商美邦人壽愛依靠重大傷病終身健康保險(IEC)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240465&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351593&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ZAC",
+      "product_name": "三商美邦人壽增安康防癌終身健康保險(ZAC)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087294980&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087296394&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-JLTC",
+      "product_name": "三商美邦人壽珍愛樂活長期照顧終身保險(JLTC)",
+      "category": "人氣商品",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/popularity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240428&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240138&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "人氣商品",
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+          "https://www.mli.com.tw/sites/mliportal/insurance/popularity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NSTR",
+      "product_name": "三商美邦人壽新祥順定期壽險附約(NSTR)",
+      "category": "定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240383&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312984&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOSTR",
+      "product_name": "Go祥順一年定期壽險附約(GOSTR)",
+      "category": "定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239836&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240643&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-XRTL",
+      "product_name": "三商美邦人壽享安心五年定期壽險(XRTL)【網路投保-保障型保險商品平台專售】",
+      "category": "定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239846&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-XTL",
+      "product_name": "三商美邦人壽享安心定期壽險(XTL)【網路投保-保障型保險商品平台專售】",
+      "category": "定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239841&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MLZA",
+      "product_name": "三商美邦人壽美利智愛美元利率變動型終身保險(定期給付型)(MLZA)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087350174&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087356263&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品專區",
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-area",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HTL",
+      "product_name": "三商美邦人壽好多利利率變動型終身壽險(定期給付型)(HTL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087306763&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087307349&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-YDL",
+      "product_name": "三商美邦人壽溢多利美元利率變動型增額終身壽險(定期給付型)(YDL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087278323&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087322866&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TMY",
+      "product_name": "三商美邦人壽增滿溢美元利率變動型終身壽險(定期給付型)(TMY)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240485&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311207&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TYL",
+      "product_name": "三商美邦人壽增優利美元利率變動型終身壽險(定期給付型)(TYL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240448&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312426&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NXWL",
+      "product_name": "三商美邦人壽祥安心終身壽險(定期給付型)(NXWL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240413&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087313389&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NXSA",
+      "product_name": "三商美邦人壽祥心安利率變動型終身壽險(定期給付型)(NXSA)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240408&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312384&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NZSWL",
+      "product_name": "三商美邦人壽鑫威利利率變動型增額終身壽險(定期給付型)(NZSWL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240398&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087313002&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NZMTD",
+      "product_name": "三商美邦人壽鑽美元利率變動型增額終身壽險(定期給付型)(NZMTD)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240403&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312362&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-PWL",
+      "product_name": "三商美邦人壽祥平安終身保險(PWL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240373&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087313348&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GWL",
+      "product_name": "三商美邦人壽金享福小額終身壽險(GWL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087303664&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087303608&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "小額終老保險",
+          "終身壽險",
+          "高齡化商品"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/aging",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+          "https://www.mli.com.tw/sites/mliportal/insurance/smallwholelife"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MFWL",
+      "product_name": "三商美邦人壽美好人生外幣終身壽險(MFWL)",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240368&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087313327&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ISAL",
+      "product_name": "三商美邦人壽享安心小額終身壽險(ISAL)【網路投保-保障型保險商品平台專售】",
+      "category": "終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087303669&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-YGML",
+      "product_name": "三商美邦人壽盈聚美利美元利率變動型終身保險(定期給付型)(YGML)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087347802&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087348556&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-YFML",
+      "product_name": "三商美邦人壽盈富美利美元利率變動型終身保險(定期給付型)(YFML)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087347794&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087348584&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TDS",
+      "product_name": "三商美邦人壽增多鑫美元利率變動型終身保險(定期給付型)(TDS)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087247993&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311295&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-CDS",
+      "product_name": "三商美邦人壽超多鑫美元利率變動型終身保險(定期給付型)(CDS)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087248001&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311318&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HJB",
+      "product_name": "三商美邦人壽好加倍終身保險(定期給付型)(HJB)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239876&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311078&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TJB",
+      "product_name": "三商美邦人壽增加倍終身保險(定期給付型)(TJB)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239871&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311100&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TDL",
+      "product_name": "三商美邦人壽增得利美元利率變動型終身保險(定期給付型)(TDL)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240438&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087313409&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TGL",
+      "product_name": "三商美邦人壽增給利美元利率變動型終身保險(TGL)",
+      "category": "還本型終身保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240388&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312339&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型終身保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GDS",
+      "product_name": "三商美邦人壽金多鑫美元養老保險(定期給付型)(GDS)",
+      "category": "還本型養老保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-pension",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087306755&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087307325&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "還本型養老保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/reimbursement-pension"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-CSIA",
+      "product_name": "三商美邦人壽長鑫即期年金保險(CSIA)",
+      "category": "即期年金",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/spot-annuity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086827074&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "即期年金"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/spot-annuity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SYISAA",
+      "product_name": "三商美邦人壽享優利美元利率變動型年金保險(甲型)(SYISAA)",
+      "category": "遞延年金",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/deferred-annuity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087285736&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311408&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "遞延年金"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/deferred-annuity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-RGISAA",
+      "product_name": "三商美邦人壽增如意利率變動型年金保險(A型)(RGISAA)",
+      "category": "遞延年金",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/deferred-annuity",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086826880&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "遞延年金"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/deferred-annuity"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AHIA",
+      "product_name": "三商美邦人壽安心醫靠住院醫療定期健康保險(A型)(AHIA)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087257875&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087258930&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AHIB",
+      "product_name": "三商美邦人壽安心醫靠住院醫療定期健康保險(B型)(AHIB)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087257919&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087258951&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MJHI",
+      "product_name": "三商美邦人壽滿健康終身醫療健康保險(MJHI)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087235170&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087311273&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NSEHI",
+      "product_name": "三商美邦人壽新33醫靠醫療定期健康保險(NSEHI)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087257870&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312405&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NFHIR",
+      "product_name": "三商美邦人壽新護健康終身醫療健康保險附約(NFHIR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216285&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215496&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NLHIR",
+      "product_name": "三商美邦人壽新樂健康終身醫療健康保險附約(NLHIR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216290&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215516&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SJHI",
+      "product_name": "三商美邦人壽鑫真健康終身醫療健康保險(104)(SJHI)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240363&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240035&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HYSI",
+      "product_name": "三商美邦人壽好漾手術醫療終身健康保險(HYSI)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239826&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240661&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SYJR",
+      "product_name": "三商美邦人壽享優值終身健康保險附約(SYJR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215735&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215049&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-CHHIR",
+      "product_name": "三商美邦人壽心好健康終身醫療健康保險附約(CHHIR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216265&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351351&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HSCR",
+      "product_name": "三商美邦人壽常青住院醫療健康保險附約(HSCR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215951&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215114&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NBHSR",
+      "product_name": "三商美邦人壽新保健康住院醫療健康保險附約(NBHSR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087213519&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215076&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-DBHSR",
+      "product_name": "三商美邦人壽增保健康自負額住院醫療健康保險附約(DBHSR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216295&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087236459&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-DZHSR",
+      "product_name": "三商美邦人壽增正健康自負額住院醫療健康保險附約(DZHSR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216250&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087236484&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-DHSR",
+      "product_name": "三商美邦人壽增新住院自負額住院醫療健康保險附約(DHSR)",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216245&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087236524&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-JHIRT",
+      "product_name": "三商美邦人壽珍愛一年期健康保險附約(JHIRT)【電銷通路專售】",
+      "category": "住院醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216050&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087217055&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "住院醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-hospitalization"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-EASD",
+      "product_name": "三商美邦人壽溢安享特定傷病定期健康保險(EASD)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087280115&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351472&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "外溢保單專區",
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+          "https://www.mli.com.tw/sites/mliportal/insurance/spillover-policy"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-EAXD",
+      "product_name": "三商美邦人壽溢安心特定傷病定期健康保險(EAXD)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087280123&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351452&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-EAWD",
+      "product_name": "三商美邦人壽溢安穩特定傷病定期健康保險(EAWD)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087280131&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351432&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IJSA",
+      "product_name": "三商美邦人壽愛真心重大傷病終身健康保險(A型)(IJSA)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087266295&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351553&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IJSB",
+      "product_name": "三商美邦人壽愛真心重大傷病終身健康保險(B型)(IJSB)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087266303&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351534&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-YAC",
+      "product_name": "三商美邦人壽祥安康防癌定期健康保險(YAC)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216040&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087266178&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SSA",
+      "product_name": "三商美邦人壽心享安防癌定期健康保險(SSA)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216045&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087266159&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IYC",
+      "product_name": "三商美邦人壽愛勇健重大傷病終身健康保險(IYC)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240470&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351572&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MAC",
+      "product_name": "三商美邦人壽超安康防癌定期健康保險(MAC)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215996&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087296368&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-CAC",
+      "product_name": "三商美邦人壽守安康防癌終身健康保險(CAC)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239831&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087313369&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TKCR",
+      "product_name": "三商美邦人壽增康泰防癌終身健康保險附約(TKCR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087305837&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087307375&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOACR",
+      "product_name": "三商美邦人壽Go安康防癌定期健康保險附約(GOACR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215745&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087265856&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOFCR",
+      "product_name": "三商美邦人壽Go福康一年定期防癌健康保險附約(GOFCR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215740&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087265948&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOMACR",
+      "product_name": "三商美邦人壽Go健康一年定期防癌健康保險附約(GOMACR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215785&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087265874&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NGODCR",
+      "product_name": "三商美邦人壽新Go大心一年定期重大傷病健康保險附約(NGODCR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240418&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087351633&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-JSDR",
+      "product_name": "三商美邦人壽增安心特定傷病終身健康保險附約(JSDR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216230&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ZDDBR",
+      "product_name": "三商美邦人壽重大疾病終身健康保險附約(乙型)(107)(ZDDBR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216220&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-NDDBR",
+      "product_name": "三商美邦人壽新重大疾病終身健康保險附約(甲型)(NDDBR)",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215916&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SRDDB",
+      "product_name": "三商美邦人壽享安心一年期重大疾病健康保險(甲型)(SRDDB) 【網路投保-保障型保險商品平台專售】",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216025&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SDDB",
+      "product_name": "三商美邦人壽享安心定期重大疾病健康保險(甲型)(SDDB) 【網路投保-保障型保險商品平台專售】",
+      "category": "癌症重疾險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216030&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "癌症重疾險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-cancer"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SLTC",
+      "product_name": "三商美邦人壽心享樂活長期照顧定期健康保險(SLTC)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087172317&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087266196&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ELTC",
+      "product_name": "三商美邦人壽溢起樂活長期照顧終身保險(ELTC)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240490&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240286&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ILTC",
+      "product_name": "三商美邦人壽愛樂活長期照顧終身健康保險(ILTC)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087175525&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087229215&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ZLTC",
+      "product_name": "三商美邦人壽自在樂活長期照顧終身健康保險(ZLTC)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087061020&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087229075&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ALTC",
+      "product_name": "三商美邦人壽安心樂活長期照顧終身保險(109)(ALTC)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087240353&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087265815&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOLHR",
+      "product_name": "三商美邦人壽Go樂活一年定期長期照顧健康保險附約(GOLHR)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087202901&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087203843&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ULI",
+      "product_name": "三商美邦人壽智由人生認知功能障礙定期健康保險(ULI)",
+      "category": "長照失能險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-broken",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087060964&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087229034&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "長照失能險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-broken"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-OWPR",
+      "product_name": "三商美邦人壽好安心豁免保險費健康保險附約(OWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216275&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品專區",
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-area"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ZWPR",
+      "product_name": "三商美邦人壽鑫慈愛豁免保險費健康保險附約(ZWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216280&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AWPR",
+      "product_name": "三商美邦人壽好心安豁免保險費健康保險附約(AWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216255&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MJWPR",
+      "product_name": "三商美邦人壽金安心美元豁免保險費健康保險附約(MJWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216240&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-JWPR",
+      "product_name": "三商美邦人壽金安心豁免保險費健康保險附約(JWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216235&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MSWPR",
+      "product_name": "三商美邦人壽享慈愛美元豁免保險費健康保險附約(MSWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215986&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SWPR",
+      "product_name": "三商美邦人壽享慈愛豁免保險費健康保險附約(SWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215981&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GWPR",
+      "product_name": "三商美邦人壽金愛護豁免保險費附約(新)(GWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215900&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MKWPR",
+      "product_name": "三商美邦人壽真慈愛美元豁免保險費附約(新)(MKWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216225&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-KWPR",
+      "product_name": "三商美邦人壽真慈愛豁免保險費附約(新)(KWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215936&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-MCWPR",
+      "product_name": "三商美邦人壽安心美元豁免保險費附約(104)(MCWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215926&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-CWPR",
+      "product_name": "三商美邦人壽安心豁免保險費附約(107)(CWPR)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215921&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SER",
+      "product_name": "三商美邦人壽溢步附加條款(SER)",
+      "category": "豁免保險費",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087305830&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "豁免保險費"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/health-exemption"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-XSAX",
+      "product_name": "三商美邦人壽心享安心定期傷害保險(XSAX)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087317341&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087318709&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "保障型商品專區",
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+          "https://www.mli.com.tw/sites/mliportal/insurance/protection-area"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-XSPA",
+      "product_name": "三商美邦人壽心享平安定期傷害保險(XSPA)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087285744&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087286600&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SPA",
+      "product_name": "三商美邦人壽享平安定期傷害保險(SPA)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215750&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215191&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SAMR",
+      "product_name": "三商美邦人壽享順心傷害醫療保險附約(SAMR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215775&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216566&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SDHIR",
+      "product_name": "三商美邦人壽享放心傷害醫療住院日額保險附約(SDHIR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216035&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215267&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SFDR",
+      "product_name": "三商美邦人壽享扶持定期傷害失能保險附約(SFDR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215765&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215249&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-SFR",
+      "product_name": "三商美邦人壽享骨力骨折及脫臼手術傷害保險附約(SFR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216001&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087216527&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ADD",
+      "product_name": "三商美邦人壽個人傷害保險(ADD)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215730&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險",
+          "海外度假青年打工"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+          "https://www.mli.com.tw/sites/mliportal/insurance/working-overseas"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ADDR",
+      "product_name": "三商美邦人壽個人傷害保險附約(ADDR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215725&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087285971&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HADDR",
+      "product_name": "三商美邦人壽好寶貝傷害保險附約(HADDR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215755&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087286118&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-HPDR",
+      "product_name": "三商美邦人壽好寶護傷害失能保險附約(HPDR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215760&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087286006&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AMR",
+      "product_name": "三商美邦人壽每次實支實付傷害醫療保險金限額(AMR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215730&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AMRR",
+      "product_name": "三商美邦人壽每次實支實付傷害醫療保險金限額(AMRR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215725&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-DHI",
+      "product_name": "三商美邦人壽傷害醫療保險金日額(DHI)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215730&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-DHIR",
+      "product_name": "三商美邦人壽傷害醫療保險金日額(DHIR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215725&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AFR",
+      "product_name": "三商美邦人壽骨折及脫臼手術傷害保險金附加條款(AFR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086953283&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AFRR",
+      "product_name": "三商美邦人壽骨折及脫臼手術傷害保險金附加條款(AFRR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086953288&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215442&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TADD",
+      "product_name": "三商美邦人壽大眾運輸傷害保險金附加條款(TADD)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086913488&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TADDR",
+      "product_name": "三商美邦人壽大眾運輸傷害保險金附加條款(TADDR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086913441&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GODR",
+      "product_name": "三商美邦人壽Go罩一年期傷害失能附加條款(GODR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087175310&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-WADD",
+      "product_name": "三商美邦人壽微型傷害保險(WADD)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215971&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "微型保險",
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+          "https://www.mli.com.tw/sites/mliportal/insurance/micro"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-PWPR",
+      "product_name": "三商美邦人壽真平安豁免保險費附約(PWPR)",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215931&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-JADDRT",
+      "product_name": "三商美邦人壽真好運傷害保險附約(JADDRT)【電銷通路專售】",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215991&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IAD",
+      "product_name": "三商美邦人壽騎士保傷害保險(IAD)【網路投保專售】",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215941&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IASD",
+      "product_name": "三商美邦人壽騎士安心保傷害保險(IASD)【網路投保專售】",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215961&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-IAMR",
+      "product_name": "三商美邦人壽傷害醫療保險附約(IAMR)【網路投保專售】",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215966&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-ISPR",
+      "product_name": "三商美邦人壽享安心小額傷害保險附約(ISPR)【網路投保-保障型保險商品平台專售】",
+      "category": "意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087215770&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-TA",
+      "product_name": "三商美邦人壽旅行平安保險(TA)",
+      "category": "旅行平安險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087203017&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "旅行平安險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/travel"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AMC",
+      "product_name": "三商美邦人壽兒童旅行平安傷害醫療保險(AMC)",
+      "category": "旅行平安險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087202090&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "旅行平安險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/travel"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-OHS",
+      "product_name": "三商美邦人壽海外突發疾病醫療健康保險附約(OHS)",
+      "category": "旅行平安險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/travel",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087247948&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "旅行平安險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/travel"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-CFDL",
+      "product_name": "三商美邦人壽安心福貸遞減型定期壽險(CFDL)",
+      "category": "銀行通路定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239866&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087304459&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-AFTL",
+      "product_name": "三商美邦人壽安家福貸平準型定期壽險(AFTL)",
+      "category": "銀行通路定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087239861&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087303851&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-PAL",
+      "product_name": "三商美邦人壽平安貸定期壽險(PAL)",
+      "category": "銀行通路定期壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-regular",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087349578&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087354789&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GMYD",
+      "product_name": "三商美邦人壽吉美永達美元利率變動型終身壽險(定期給付型) (GMYD)",
+      "category": "銀行通路終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087327363&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087327597&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GMYS",
+      "product_name": "三商美邦人壽吉美永盛美元利率變動型終身壽險(定期給付型) (GMYS)",
+      "category": "銀行通路終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087312898&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087327666&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GMKC",
+      "product_name": "三商美邦人壽吉美甘心美元利率變動型終身保險(GMKC)",
+      "category": "銀行通路終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087350118&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087354806&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-FYJB",
+      "product_name": "三商美邦人壽馥御臻寶美元利率變動型終身壽險(定期給付型) (FYJB)",
+      "category": "銀行通路終身壽險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087349570&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087354828&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路終身壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-lifetime"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GMCT",
+      "product_name": "三商美邦人壽吉美承泰美元養老保險(GMCT)",
+      "category": "銀行通路養老保險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/bank-pension",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087308987&ssbinary=true"
+        },
+        {
+          "document_type": "dm",
+          "title": "商品DM",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087309035&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "銀行通路養老保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/bank-pension"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-POFE",
+      "product_name": "三商美邦人壽保單融資批註條款 (POFE)",
+      "category": "批註條款",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/endorsements",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087349000&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "批註條款"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/endorsements"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GTL",
+      "product_name": "三商美邦人壽安家團體一年定期壽險(GTL)",
+      "category": "團險專區",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087332985&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團險專區",
+          "團體定期壽險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group",
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-regular"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GNHI",
+      "product_name": "三商美邦人壽團體新住院醫療日額型保險(GNHI)",
+      "category": "團險專區",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087270580&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團險專區",
+          "團體健康醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group",
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-health"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GPA",
+      "product_name": "三商美邦人壽安家團體傷害保險(GPA)",
+      "category": "團險專區",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087061751&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團險專區",
+          "團體意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group",
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GNHS",
+      "product_name": "三商美邦人壽團體新住院醫療保險(GNHS)",
+      "category": "團體健康醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group-health",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087270583&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體健康醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-health"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GACB",
+      "product_name": "三商美邦人壽團體安康防癌健康保險(GACB)",
+      "category": "團體健康醫療險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group-health",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087061757&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體健康醫療險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-health"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GDHIS",
+      "product_name": "三商美邦人壽團體傷害醫療保險金定額給付附加條款(GDHIS)",
+      "category": "團體意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086958599&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GWPA",
+      "product_name": "三商美邦人壽微型團體傷害保險(GWPA)",
+      "category": "團體意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087061817&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體意外傷害險",
+          "微型保險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental",
+          "https://www.mli.com.tw/sites/mliportal/insurance/micro"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOPA",
+      "product_name": "三商美邦人壽團體職業傷害保險給付附加條款(GOPA)",
+      "category": "團體意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555086927554&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental"
+        ]
+      }
+    },
+    {
+      "company": "三商美邦人壽",
+      "product_id": "MLI-GOH",
+      "product_name": "三商美邦人壽團體職業災害保險(GOH)",
+      "category": "團體意外傷害險",
+      "source_url": "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "條款下載",
+          "pdf_url": "https://www.mli.com.tw/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1555087061823&ssbinary=true"
+        }
+      ],
+      "metadata": {
+        "categories": [
+          "團體意外傷害險"
+        ],
+        "source_pages": [
+          "https://www.mli.com.tw/sites/mliportal/insurance/group-accidental"
+        ]
+      }
+    }
+  ]
+}

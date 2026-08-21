@@ -1,0 +1,1155 @@
+{
+  "company": "合作金庫人壽",
+  "generated_at": "2026-08-21T10:36:48.809243+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 49,
+    "documents_seen": 81,
+    "errors": 0,
+    "products_upserted": 49,
+    "documents_upserted": 81
+  },
+  "errors": [],
+  "items": [
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-DDR",
+      "product_name": "增安心保險",
+      "category": "健康醫療",
+      "source_url": "https://my.tcb-life.com.tw/product/DDR",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "DDR_20260101.pdf",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/8c86d442-013d-460b-b674-bf2b62ee0902/DDR_20260101.pdf.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "DDR",
+        "keywords": "健康險，醫療險，電銷保險",
+        "description": "17項常見特定傷病保障，最低金額即可擁有這份安心！用銅板價，為自己和家人建立實質的健康防護網。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-EPA",
+      "product_name": "合作金庫人壽網路投保傷害保險",
+      "category": "意外傷害",
+      "source_url": "https://my.tcb-life.com.tw/product/EPA",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-EPA_20241001",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/9672cd50-90da-4408-882a-f797e4b4356e/Provision-EPA_20241001.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "EPA",
+        "keywords": "傷害保險，意外險，外送員保險，網路投保",
+        "description": "通勤族、外送員必備的全方位保護。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-FDD1",
+      "product_name": "合作金庫人壽金富通重大疾病定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://my.tcb-life.com.tw/product/FDD1",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "JV_FDD1",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/30b7bd93-ac67-40c4-9a94-ad50245bd27a/JV_FDD1.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FDD1",
+        "keywords": "重大疾病保險，健康險，醫療險，網路投保",
+        "description": "7項常見重大疾病保障，免體檢，最低平均每日不到新臺幣1元即可擁有這份安心！用銅板價，為自己和家人建立實質的健康防護網。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-FTL1",
+      "product_name": "合作金庫人壽金富通定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/FTL1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-FTL1_20250101",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/7e1a38d9-5c76-4a9c-87f9-f59139abe8f5/Provision-FTL1_20250101.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "FTL1",
+        "keywords": "定期壽險，網路投保",
+        "description": "用相對實惠的保費，在人生特定階段建構壽險保障。定期壽險提供您彈性選擇保障年期，為您提供充足的身故或完全失能保障，為您和家人打造穩固的經濟後盾。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-IDD",
+      "product_name": "真美傳富美元利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/IDD",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM_合作金庫人壽醫療補充包保險專案_IHI1+IDD+IDD02+NTL",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/90c9f8a5-70c8-4d03-8408-0f9958139e82/DM_合作金庫人壽醫療補充包保險專案_IHI1+IDD+IDD02+NTL.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "IDD",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "多種費率折扣，符合條件最高可達約 4.0%。繳費7年，擁有終身壽險保障。指定保險金可選擇分期定期給付。美元收付，資產配置多元化。提供生命末期提前給付。有機會享增值回饋分享金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-IHAB",
+      "product_name": "馨健康醫靠終身健康保險",
+      "category": "健康醫療",
+      "source_url": "https://my.tcb-life.com.tw/product/IHAB",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-IHAB_20250101",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/216fdf84-e765-4bb0-a169-36b20b73d6e2/Provision-IHAB_20250101.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_IHAB",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/a9dc9810-e73d-49fb-8fb1-e3467246384f/DM_IHAB.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_IHAB",
+          "pdf_url": "https://my.tcb-life.com.tw/file/26000126/DM_IHAB.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_IHAB",
+          "pdf_url": "https://my.tcb-life.com.tw/file/26000138/DM_IHAB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "IHAB",
+        "keywords": "壽險，健康險，醫療險，電銷保險",
+        "description": "高醫療帳戶、保障極大化，全方位醫療保障。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-IHI02",
+      "product_name": "鑫守護保險",
+      "category": "意外傷害",
+      "source_url": "https://my.tcb-life.com.tw/product/IHI02",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-IHI02_20241001",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/1a84ab18-499e-4d81-a1b7-c17bd30ad6d2/Provision-IHI02_20241001.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_IHI02",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/9c50934a-68ee-469d-bf29-ddd415bb0810/DM_IHI02.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "IHI02",
+        "keywords": "意外險,健康險,醫療險,電銷保險",
+        "description": "住院日額醫療照顧，1年1約不綁約，最高可保證續保至 65 歲喔！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-IPA",
+      "product_name": "安心加倍保險",
+      "category": "意外傷害",
+      "source_url": "https://my.tcb-life.com.tw/product/IPA",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM_IPA",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/e0247aff-de16-4d61-bf78-77b79f38841b/DM_IPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "IPA",
+        "keywords": "意外險，電銷保險",
+        "description": "完善的意外險保障，包含骨折未住院給付。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-IXL02",
+      "product_name": "合家幸福定期壽險",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/IXL02",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽合家幸福定期壽險_IXL02",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/69c22296-6a4f-4734-afc2-fc96197a42a9/商品條款_合作金庫人壽合家幸福定期壽險_IXL02.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "IXL02",
+        "keywords": "壽險，房貸險，定期壽險",
+        "description": "房貸搭保險，繳別彈性自由選！留愛不留債，闔家幸福有保障！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-NISL1",
+      "product_name": "合利旺旺利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/NISL1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽合利旺旺利率變動型終身壽險_NISL1",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/fcf7bd87-8b1c-4858-b056-69a4bd091f5c/商品條款_合作金庫人壽合利旺旺利率變動型終身壽險_NISL1.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NISL1",
+        "keywords": "壽險，終身壽險，定期給付",
+        "description": "享有高保費折扣，符合條件最高可達約1.8%。有機會享有增值回饋分享金。指定保險金可選擇分期定期給付。生命末期提前給付，協助完成生前夢想。可依人生不同階段需求增加基本保障。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-NISL2",
+      "product_name": "合利超旺利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/NISL2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽合利超旺利率變動型終身壽險_NISL2",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/159c5fd0-0460-4398-adef-a61c52cfab81/商品條款_合作金庫人壽合利超旺利率變動型終身壽險_NISL2.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "NISL2",
+        "keywords": "壽險，終身壽險",
+        "description": "額外提供特定意外身故保障，出外旅遊更安心。保險年齡到達16歲起。提供增加基本保險金額選擇權，可依人生各階段需求增加保障。指定保險金可選擇分期定期給付，守護心愛家人不中斷。生命末期提前給付，實現生前夢想。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-RCA",
+      "product_name": "安心防癌保險",
+      "category": "健康醫療",
+      "source_url": "https://my.tcb-life.com.tw/product/RCA",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "09_RCA_合作金庫人壽一年定期癌症健康保險附約(甲型、乙型)_橫式條款",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/5541adff-3555-4fec-adcc-e502fac82b58/09_RCA_合作金庫人壽一年定期癌症健康保險附約(甲型、乙型)_橫式條款.pdf"
+        },
+        {
+          "document_type": "supporting",
+          "title": "JV_RCA",
+          "pdf_url": "https://my.tcb-life.com.tw/file/24/JV_RCA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "RCA",
+        "keywords": "健康險，醫療險，癌症險，電銷保險",
+        "description": "每天只要一點零用錢，讓你的癌症保障大大提升，癌症整筆給付。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-ROPSI",
+      "product_name": "ROPSI",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/ROPSI",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "DM_ROPSI",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/3b68072f-7fcb-4da2-a6f9-f51ce89383e1/DM_ROPSI.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "Provision_ROPSI",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/a6f15af6-c697-4be0-9b56-1fa1c3a86afe/Provision_ROPSI.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "ROPSI",
+        "keywords": "",
+        "description": "",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-RPAB",
+      "product_name": "新超優退保險",
+      "category": "意外傷害",
+      "source_url": "https://my.tcb-life.com.tw/product/RPAB",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-RPAB_20250101",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/735682ee-63b6-4328-a514-66bbf8bee804/Provision-RPAB_20250101.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_RPAB",
+          "pdf_url": "https://my.tcb-life.com.tw/file/26000126/DM_RPAB.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_RPAB",
+          "pdf_url": "https://my.tcb-life.com.tw/file/26000138/DM_RPAB.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "RPAB",
+        "keywords": "壽險，意外險，電銷保險",
+        "description": "保險期間屆滿仍生存且本契約仍有效，領回保險金額110%滿期保險金，領回後本契約效力即行終止，讓您輕鬆優退！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-RPCB",
+      "product_name": "有保安康防癌保險",
+      "category": "健康醫療",
+      "source_url": "https://my.tcb-life.com.tw/product/RPCB",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-RPCB_20250101",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/3d57245e-b7fc-402a-895b-a185d556c405/Provision-RPCB_20250101.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "RPCB",
+        "keywords": "壽險，健康險，醫療險，癌症險，電銷保險",
+        "description": "面對癌症罹患率居高不下，讓保額隨年紀長大，提供罹癌整筆給付，期滿平安健康領回滿期金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-SAWL",
+      "product_name": "輕鬆守護小額終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/SAWL",
+      "documents": [
+        {
+          "document_type": "supporting",
+          "title": "SAWL_20260101",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/57dbe09a-ebaa-4085-b698-316ac4b93cc3/SAWL_20260101.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "SAWL",
+        "keywords": "小額壽險、壽險",
+        "description": "輕鬆享有終身壽險。響應政策，保費優惠。建立基本保障，愛留家人有依靠。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-THSMD",
+      "product_name": "關鍵守護定期健康保險",
+      "category": "健康醫療",
+      "source_url": "https://my.tcb-life.com.tw/product/THSMD",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "THSMD_合作金庫人壽關鍵守護定期健康保險_橫式條款_1141128",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/8c1dd0e2-f916-4a26-91dc-b1290060734f/THSMD_合作金庫人壽關鍵守護定期健康保險_橫式條款_1141128.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "THSMD",
+        "keywords": "壽險，健康險，醫療險，電銷保險",
+        "description": "用相對實惠的保費，在人生特定階段建構四項指定醫材購置補助及定期全方位醫療照顧，為日後家庭打造穩固的醫療經濟後盾。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-TLPA",
+      "product_name": "加倍守護 123 定期保險",
+      "category": "意外傷害",
+      "source_url": "https://my.tcb-life.com.tw/product/TLPA",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "Provision-TLPA_20250101",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/59ccbc2f-8a06-49d2-9190-9903b7b404ef/Provision-TLPA_20250101.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_TLPA",
+          "pdf_url": "https://my.tcb-life.com.tw/file/26000126/DM_TLPA.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_TLPA",
+          "pdf_url": "https://my.tcb-life.com.tw/file/26000138/DM_TLPA.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "TLPA",
+        "keywords": "壽險，意外險，電銷保險",
+        "description": "不論晴雨，都為您提供一把全方位意外傷害保障的優質保護傘。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UA0029",
+      "product_name": "超鑽小金庫變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UA0029",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "UA0029_Provision",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/25ac3816-3d94-41dd-aeed-50d9b1b801ef/UA0029_Provision.pdf"
+        },
+        {
+          "document_type": "supporting",
+          "title": "JV_UA0029-合作金庫人壽超鑽小金庫變額年金保險_商品説明書",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/79bb6b3d-c9fc-45c1-a199-09ef4ed95d90/JV_UA0029-合作金庫人壽超鑽小金庫變額年金保險_商品説明書.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UA0029",
+        "keywords": "投資型保險，網路投保",
+        "description": "連結精選投資標的，每年享有12次免費投資標的轉換，無保單管理費，定期定額持續投入輕鬆規劃財富自由之路。累積期間十年（含）起，期滿後每年享有年金給付。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UA0030",
+      "product_name": "福貴人生變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UA0030",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_福貴人生_UA0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/83383659-6f9f-4963-8b8c-6e3238a135e8/商說書_福貴人生_UA0030.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_福貴人生_UA0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/bd0def09-a145-4a5c-83b1-ba55b59b684b/商品條款_福貴人生_UA0030.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UA0030",
+        "keywords": "年金保險,投資型保險",
+        "description": "轉換優惠，每年４次平台上所有投資標的免費轉換（ETF需收取投資標的申購手續費）。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UA0032",
+      "product_name": "享鑽100變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UA0032",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_享鑽100_UA0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/8636380f-146f-45fe-8b97-d5d7e2ac9637/商說書_享鑽100_UA0032.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_享鑽100_UA0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/ce214171-5aaa-4efb-af9f-2961d5b3bea4/商品條款_享鑽100_UA0032.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UA0032",
+        "keywords": "年金保險，投資型保險",
+        "description": "轉換優惠，每年4次平台上所有投資標的免費轉換（ETF需收取投資標的申購手續費）。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UA0037",
+      "product_name": "樂活人生變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UA0037",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_樂活人生_UA0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/8486e255-3af6-4345-8506-10fc1537c242/商說書_樂活人生_UA0037.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_樂活人生_UA0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/94a69d20-e071-4267-837b-7e332a1576aa/商品條款_樂活人生_UA0037.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UA0037",
+        "keywords": "年金保險，投資型保險",
+        "description": "保費費用採12期零利率分期付款，高度參與投資表現。適用第六回生命表。第6保單週年日起享有加值給付金，放越久領越久。投資帳戶委託全球資產管理領導專家操作，參與市場最放心。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UA0038",
+      "product_name": "合益圓滿變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UA0038",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合益圓滿_UA0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/0190137e-f20e-40bb-aa05-ea659956e2c8/商品條款_合益圓滿_UA0038.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_合益圓滿_UA0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/9baaf2f7-339e-4297-b64f-fb3553cfed4f/商說書_合益圓滿_UA0038.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UA0038",
+        "keywords": "年金保險，投資型保險",
+        "description": "零保費費用，高度參與標的投資，贏得投資先機。保單年度第3年起，免解約費用，費用優惠最給力。投資標的包含市場多檔熱門基金＋投資帳戶！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UA0039",
+      "product_name": "龍合100變額年金保險",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UA0039",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_龍合100_UA0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/a13a8803-35b4-48ad-8edf-ce6ac71ed67c/商說書_龍合100_UA0039.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_龍合100_UA0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/c0ddc2cb-f686-471f-8547-f0763e975d99/商品條款_龍合100_UA0039.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UA0039",
+        "keywords": "年金保險，投資型保險",
+        "description": "零保費費用率，高度參與標的投資。免收每月保單維護費用。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UEI1",
+      "product_name": "美利安心美元養老保險-定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UEI1",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽美利安心美元養老保險_UEI1",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/81695557-a81c-4e31-9c16-2c0b59219a71/商品條款_合作金庫人壽美利安心美元養老保險_UEI1.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UEI1",
+        "keywords": "壽險，定期給付，美元保單",
+        "description": "美元收付，資產配置多元化。躉繳享10年保障，滿期生存可領滿期保險金。指定保險金可選擇分期定期給付。生命末期提前給付，協助完成生前夢想。高保費折扣，符合條件最高可達約 2.5%。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UEI2",
+      "product_name": "美好安心美元養老保險-定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UEI2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽美好安心美元養老保險_UEI2",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/75110df5-ab36-465d-aea4-c78ba1e36fd8/商品條款_合作金庫人壽美好安心美元養老保險_UEI2.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UEI2",
+        "keywords": "壽險，定期給付，美元保單",
+        "description": "美元收付，資產配置多元化。躉繳享7年保障，滿期生存可領滿期保險金。指定保險金可選擇分期定期給付。生命末期提前給付，協助完成生前夢想。高保費折扣，符合條件最高可達約 2.1%。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UEI3",
+      "product_name": "好安心美元養老保險",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UEI3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽好安心美元養老保險_UEI3",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/5637feca-fbe8-4493-b6e6-f467f30b5b64/商品條款_合作金庫人壽好安心美元養老保險_UEI3.pdf"
+        },
+        {
+          "document_type": "dm",
+          "title": "DM_合作金庫人壽好安心美元養老保險_UEI3",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/9fc55202-a396-4f52-8798-ea5139e6ac9c/DM_合作金庫人壽好安心美元養老保險_UEI3.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UEI3",
+        "keywords": "壽險，美元保單",
+        "description": "美元收付，資產配置多元化。 繳費1次，享有7年保障，滿期生存可領取滿期保險金。提供高保費折扣，符合條件最高可達約 2.1%。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL10",
+      "product_name": "真美傳富美元利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL10",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "UISL10_合作金庫人壽美保堅利美元利率變動型終身壽險_橫式條款_20260410",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/e31c3e0c-9dbd-4674-bf82-27a867731e08/UISL10_合作金庫人壽美保堅利美元利率變動型終身壽險_橫式條款_20260410.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL10",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "多種費率折扣，符合條件最高可達約 4.0%。繳費7年，擁有終身壽險保障。指定保險金可選擇分期定期給付。美元收付，資產配置多元化。提供生命末期提前給付。有機會享增值回饋分享金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL2",
+      "product_name": "真美多多美元利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL2",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽真美多多美元利率變動型終身壽險_UISL2",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/ced1c9e2-b9e3-4544-bdc0-318c696e129e/商品條款_合作金庫人壽真美多多美元利率變動型終身壽險_UISL2.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL2",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "多種費率折扣，符合條件最高可達約3.2%。二至九級失能豁免保費。選擇2或4年繳費，擁有終身壽險保障。美元收付，資產配置多元化。提供生命末期提前給付。有機會享增值回饋分享金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL3",
+      "product_name": "真美傳富美元利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL3",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽真美傳富美元利率變動型終身壽險_UISL3",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/52a7ad5e-3da5-412d-8a8e-6510b7d348a0/商品條款_合作金庫人壽真美傳富美元利率變動型終身壽險_UISL3.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL3",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "多種費率折扣，符合條件最高可達約 4.0%。繳費7年，擁有終身壽險保障。指定保險金可選擇分期定期給付。美元收付，資產配置多元化。提供生命末期提前給付。有機會享增值回饋分享金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL4",
+      "product_name": "美利年年美元利率變動型還本終身保險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL4",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽美利年年美元利率變動型還本終身保險_UISL4",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/34fbcd41-eb0e-40a8-b7f0-d7bec4daff9e/商品條款_合作金庫人壽美利年年美元利率變動型還本終身保險_UISL4.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL4",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "美元收付，資產配置多元化。市場參與，有機會享有增值回饋分享金。生存保險金可選擇年給付或月給付。生命末期提前給付，協助完成生前夢想。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL7",
+      "product_name": "真美富利美元利率變動型終身壽險",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL7",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽真美富利美元利率變動型終身壽險_UISL7",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/165425ef-c157-47c4-958f-5782cb927b38/商品條款_合作金庫人壽真美富利美元利率變動型終身壽險_UISL7.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL7",
+        "keywords": "壽險，美元保單，終身壽險",
+        "description": "美元收付，資產配置多元化。市場參與，有機會享有增值回饋分享金。指定保險金可選擇分期定期給付，守護心愛家人不中斷。生命末期提前給付，協助完成生前夢想。提供多種費率折扣， 符合條件最高可達1.5% 。0~88歲皆可投保，終身享有壽險保障。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL8",
+      "product_name": "真美傳富美元利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL8",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽真美傳家美元利率變動型終身壽險－定期給付型_UISL8",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/cf510c49-fc76-4eef-986f-9aa9a39a91ca/商品條款_合作金庫人壽真美傳家美元利率變動型終身壽險－定期給付型_UISL8.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL8",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "多種費率折扣，符合條件最高可達約 4.0%。繳費7年，擁有終身壽險保障。指定保險金可選擇分期定期給付。美元收付，資產配置多元化。提供生命末期提前給付。有機會享增值回饋分享金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UISL9",
+      "product_name": "真美傳富美元利率變動型終身壽險–定期給付型",
+      "category": "壽險保障",
+      "source_url": "https://my.tcb-life.com.tw/product/UISL9",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合作金庫人壽真美豐華美元利率變動型終身壽險－定期給付型_UISL9",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/594a2324-271f-4bba-94e1-a1c06e52923e/商品條款_合作金庫人壽真美豐華美元利率變動型終身壽險－定期給付型_UISL9.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UISL9",
+        "keywords": "壽險，終身壽險，定期給付，美元保單",
+        "description": "多種費率折扣，符合條件最高可達約 4.0%。繳費7年，擁有終身壽險保障。指定保險金可選擇分期定期給付。美元收付，資產配置多元化。提供生命末期提前給付。有機會享增值回饋分享金。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UL0030",
+      "product_name": "福貴人生變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UL0030",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_福貴人生_UL0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/3acd0285-3fe9-4006-ba40-521e2e197c4c/商說書_福貴人生_UL0030.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_福貴人生_UL0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/f5047f4a-7bf4-44ba-9a55-c4830cc9ba86/商品條款_福貴人生_UL0030.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UL0030",
+        "keywords": "壽險，投資型保險",
+        "description": "轉換優惠，每年４次平台上所有投資標的免費轉換。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UL0032",
+      "product_name": "享鑽100變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UL0032",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_享鑽100_UL0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/7db822fd-8903-495b-ac03-ea8f68868841/商品條款_享鑽100_UL0032.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_享鑽100_UL0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/d454310f-5822-41e0-989e-713ed38d2b06/商說書_享鑽100_UL0032.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UL0032",
+        "keywords": "壽險，投資型保險",
+        "description": "轉換優惠，每年4次平台上所有投資標的免費轉換。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UL0037",
+      "product_name": "樂活人生變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UL0037",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_樂活人生_UL0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/095955cf-4732-4057-ad35-3459ace70b85/商品條款_樂活人生_UL0037.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_樂活人生_UL0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/fd1faa48-7aec-4f89-a244-384c1707a3e9/商說書_樂活人生_UL0037.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UL0037",
+        "keywords": "壽險，投資型保險",
+        "description": "保費費用採12期零利率分期付款，高度參與投資表現。適用第六回生命表。第6保單週年日起享有加值給付金，放越久領越久。投資帳戶委託全球資產管理領導專家操作，參與市場最放心。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UL0038",
+      "product_name": "合益圓滿變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UL0038",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合益圓滿_UL0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/73bf65cb-2452-42ac-a97d-867cc51f602e/商品條款_合益圓滿_UL0038.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_合益圓滿_UL0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/f0a1613b-2a08-4199-8131-97a1901e95a5/商說書_合益圓滿_UL0038.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UL0038",
+        "keywords": "壽險，投資型保險",
+        "description": "零保費費用，高度參與標的投資，贏得投資先機。保單年度第3年起，免解約費用，費用優惠最給力。投資標的包含市場多檔熱門基金＋投資帳戶！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-UL0039",
+      "product_name": "龍合100變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/UL0039",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_龍合100_UL0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/1f4d1485-6050-447f-b9c4-fbe7bfe5cb64/商說書_龍合100_UL0039.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_龍合100_UL0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/84b8c352-3918-46cc-855a-0959524145db/商品條款_龍合100_UL0039.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "UL0039",
+        "keywords": "壽險，投資型保險",
+        "description": "零保費費用率，高度參與標的投資。免收每月保單維護費用。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XA0030",
+      "product_name": "福貴人生外幣變額年金保險(乙型)",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XA0030",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_福貴人生_XA0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/4bf05b3e-9db5-4823-889e-ecb24013dc46/商說書_福貴人生_XA0030.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_福貴人生_XA0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/ca887710-6e74-41bc-a5b4-65de1d5d08ad/商品條款_福貴人生_XA0030.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XA0030",
+        "keywords": "年金保險，外幣保單，投資型保險",
+        "description": "轉換優惠，每年４次平台上所有投資標的免費轉換。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XA0032",
+      "product_name": "享鑽100外幣變額年金保險(乙型)",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XA0032",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_享鑽100_XA0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/797a1f25-9bad-44be-87a1-e5cefb6fda74/商品條款_享鑽100_XA0032.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_享鑽100_XA0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/de39f378-9bca-4ae7-a213-42c032ebba1f/商說書_享鑽100_XA0032.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XA0032",
+        "keywords": "年金保險，外幣保單，投資型保險",
+        "description": "轉換優惠，每年４次平台上所有投資標的免費轉換。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XA0037",
+      "product_name": "樂活人生外幣變額年金保險(乙型)",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XA0037",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_樂活人生_XA0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/8c42e9e1-d674-481f-aafc-b1c9b4c4850b/商說書_樂活人生_XA0037.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_樂活人生_XA0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/ac8c383a-0dfb-4f19-940b-fd4bf88eefa4/商品條款_樂活人生_XA0037.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XA0037",
+        "keywords": "年金保險，外幣保單，投資型保險",
+        "description": "保費費用採12期零利率分期付款，高度參與投資表現。適用第六回生命表。第6保單週年日起享有加值給付金，放越久領越久。投資帳戶委託全球資產管理領導專家操作，參與市場最放心。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XA0038",
+      "product_name": "合益圓滿外幣變額年金保險(乙型)",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XA0038",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合益圓滿_XA0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/31917c85-4aa8-4922-9564-7905c0df22f0/商品條款_合益圓滿_XA0038.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_合益圓滿_XA0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/5ffe2dbb-33b0-470c-bd17-45e4a19c8996/商說書_合益圓滿_XA0038.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XA0038",
+        "keywords": "年金保險，外幣保單，投資型保險",
+        "description": "零保費費用，高度參與標的投資，贏得投資先機。保單年度第3年起，免解約費用，費用優惠最給力。投資標的包含市場多檔熱門基金＋投資帳戶！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XA0039",
+      "product_name": "龍合100外幣變額年金保險(乙型)",
+      "category": "年金保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XA0039",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_龍合100_XA0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/71781313-92eb-4672-b5b6-ef661791c7b7/商說書_龍合100_XA0039.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_龍合100_XA0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/bd928814-9b35-4626-a01a-dad1525fc780/商品條款_龍合100_XA0039.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XA0039",
+        "keywords": "年金保險，外幣保單，投資型保險",
+        "description": "零保費費用率，高度參與標的投資。免收每月保單維護費用。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XL0030",
+      "product_name": "福貴人生外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XL0030",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_福貴人生_XL0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/03fc37a3-2bc5-460e-a575-c7ac3122a06c/商品條款_福貴人生_XL0030.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_福貴人生_XL0030",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/25f85be3-b6fb-4e2f-92b8-43f132f88ac0/商說書_福貴人生_XL0030.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XL0030",
+        "keywords": "壽險，外幣保單，投資型保險",
+        "description": "轉換優惠，每年４次平台上所有投資標的免費轉換。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XL0032",
+      "product_name": "享鑽100外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XL0032",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_享鑽100_XL0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/880814f8-de5a-488b-aabd-812cf2568164/商說書_享鑽100_XL0032.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_享鑽100_XL0032",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/cdbd5597-b597-42c7-8a22-71c13e11e90e/商品條款_享鑽100_XL0032.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XL0032",
+        "keywords": "壽險，外幣保單，投資型保險",
+        "description": "轉換優惠，每年4次平台上所有投資標的免費轉換。數百檔國內外基金及指數股票型基金，超豐富的投資管道。投資．保障雙效合一。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XL0037",
+      "product_name": "樂活人生外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XL0037",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_樂活人生_XL0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/024b8dd3-599d-4bc2-9a80-b0f00b256910/商說書_樂活人生_XL0037.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_樂活人生_XL0037",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/a01e141a-838d-440f-a343-c4defbd40b1a/商品條款_樂活人生_XL0037.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XL0037",
+        "keywords": "壽險，外幣保單，投資型保險",
+        "description": "保費費用採12期零利率分期付款，高度參與投資表現。適用第六回生命表。第6保單週年日起享有加值給付金，放越久領越久。投資帳戶委託全球資產管理領導專家操作，參與市場最放心。",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XL0038",
+      "product_name": "合益圓滿外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XL0038",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "商品條款_合益圓滿_XL0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/3d28db11-3fbc-4868-a83e-58a0e7498f53/商品條款_合益圓滿_XL0038.pdf"
+        },
+        {
+          "document_type": "brochure",
+          "title": "商說書_合益圓滿_XL0038",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/cc97218d-b4aa-4a29-9624-0db8efee7b34/商說書_合益圓滿_XL0038.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XL0038",
+        "keywords": "壽險，外幣保單，投資型保險",
+        "description": "零保費費用，高度參與標的投資，贏得投資先機。保單年度第3年起，免解約費用，費用優惠最給力。投資標的包含市場多檔熱門基金＋投資帳戶！",
+        "source": "sitemap"
+      }
+    },
+    {
+      "company": "合作金庫人壽",
+      "product_id": "TCB-XL0039",
+      "product_name": "龍合 100 外幣變額萬能壽險",
+      "category": "投資型保險",
+      "source_url": "https://my.tcb-life.com.tw/product/XL0039",
+      "documents": [
+        {
+          "document_type": "brochure",
+          "title": "商說書_龍合100_XL0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/0dc1dc10-96cc-4f6a-833c-5f989efde5a1/商說書_龍合100_XL0039.pdf"
+        },
+        {
+          "document_type": "terms",
+          "title": "商品條款_龍合100_XL0039",
+          "pdf_url": "https://my.tcb-life.com.tw/api/assets/738e67d7-b2a8-4320-9039-87485eebb29b/商品條款_龍合100_XL0039.pdf"
+        }
+      ],
+      "metadata": {
+        "code": "XL0039",
+        "keywords": "壽險，外幣保單，投資型保險",
+        "description": "零保費費用率，高度參與標的投資。免收每月保單維護費用。",
+        "source": "sitemap"
+      }
+    }
+  ]
+}
