@@ -58,7 +58,7 @@ export default function ClientHubPage() {
       try {
         const [clientRes, portfolioData] = await Promise.all([
           fetch(`/api/advisor/clients/${id}`, { cache: "no-store" }),
-          fetchPolicyPortfolio().catch(() => ({
+          fetchPolicyPortfolio(`advisor-client-${id}`).catch(() => ({
             profile: null,
             policies: DEMO_POLICIES,
             summary: getPolicySummary(DEMO_POLICIES),

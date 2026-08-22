@@ -4,13 +4,12 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import {
-  COVERAGE_LABELS,
-  COVERAGE_ORDER,
   fetchPolicyPortfolio,
   formatCoverage,
   formatMoney,
   getPoliciesByCompany,
   getPolicySummary,
+  type CoverageKey,
   type PolicyPortfolio,
 } from "@/lib/demo-policies";
 import { analyzePolicyCheck, formatGapValue, type CheckStatus } from "@/lib/policy-check";
@@ -21,6 +20,7 @@ interface Client {
   age: number;
   occupation: string | null;
   monthly_income: number | null;
+  monthly_expense: number | null;
 }
 
 const STATUS_STYLE: Record<CheckStatus, string> = {
@@ -34,6 +34,15 @@ const STATUS_LABEL: Record<CheckStatus, string> = {
   gap: "有缺口",
   missing: "未建立",
 };
+
+const REPORT_SECTIONS: Array<{ key: CoverageKey; title: string }> = [
+  { key: "life", title: "壽險" },
+  { key: "medical", title: "醫療險" },
+  { key: "accident", title: "意外險" },
+  { key: "cancer", title: "癌症險" },
+  { key: "critical", title: "重大傷病險" },
+  { key: "ltc", title: "失能 / 長照" },
+];
 
 export default function PolicyCheckPage() {
   const { id } = useParams<{ id: string }>();
@@ -76,7 +85,14 @@ export default function PolicyCheckPage() {
     };
   }, [id]);
 
-  const checkResult = useMemo(() => analyzePolicyCheck(portfolio.policies), [portfolio.policies]);
+  const checkResult = useMemo(() => {
+    return analyzePolicyCheck(portfolio.policies, {
+      age: client?.age,
+      monthlyIncome: client?.monthly_income,
+      monthlyExpense: client?.monthly_expense,
+      occupation: client?.occupation,
+    });
+  }, [client?.age, client?.monthly_expense, client?.monthly_income, client?.occupation, portfolio.policies]);
   const companies = useMemo(() => getPoliciesByCompany(portfolio.policies), [portfolio.policies]);
 
   if (loading) return <div className="py-16 text-center text-sm text-gray-400">載入中...</div>;
@@ -95,8 +111,8 @@ export default function PolicyCheckPage() {
   const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&relation=${encodeURIComponent("本人")}`;
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
-      <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+    <div className="mx-auto max-w-6xl px-4 py-8 print:max-w-none print:bg-white print:px-0 print:py-0">
+      <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between print:hidden">
         <div>
           <Link href={`/advisor/clients/${client.id}`} className="text-sm text-gray-400 hover:text-gray-600">
             返回客戶 360
@@ -114,99 +130,39 @@ export default function PolicyCheckPage() {
           >
             編輯保單
           </Link>
-          <a
-            href="#report"
+          <button
+            onClick={() => window.print()}
             className="rounded-lg bg-slate-950 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-slate-800"
+            type="button"
           >
-            查看報告
-          </a>
+            列印 / 另存 PDF
+          </button>
         </div>
       </div>
 
-      <section className="mb-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      <section className="mb-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5 print:hidden">
         <Metric label="健診分數" value={`${checkResult.score} 分`} tone="text-rose-600" />
         <Metric label="保單總數" value={`${checkResult.policyCount} 張`} tone="text-teal-700" />
         <Metric label="保險公司" value={`${checkResult.companyCount} 家`} tone="text-slate-950" />
         <Metric label="年繳保費" value={formatMoney(checkResult.annualPremium)} tone="text-amber-600" />
-        <Metric label="待補資料" value={`${checkResult.incompleteCount} 張`} tone="text-sky-700" />
+        <Metric label="保費收入比" value={checkResult.premiumRatio === null ? "待補" : `${Math.round(checkResult.premiumRatio * 100)}%`} tone="text-sky-700" />
       </section>
 
-      {checkResult.warnings.length > 0 && (
-        <section className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-4">
-          <h2 className="text-sm font-bold text-amber-950">健診提醒</h2>
-          <div className="mt-3 grid gap-2">
-            {checkResult.warnings.map((warning) => (
-              <p key={warning} className="rounded-lg bg-white px-3 py-2 text-sm font-medium text-amber-900">
-                {warning}
-              </p>
-            ))}
+      <section className="mb-5 rounded-xl border border-gray-200 bg-white p-5 shadow-sm print:hidden">
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-gray-900">保障缺口分析</h2>
+            <p className="mt-1 text-xs font-bold text-gray-400">{checkResult.targetBasis.join("・")}</p>
           </div>
-        </section>
-      )}
-
-      <section className="mb-5 rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-lg font-bold text-gray-900">保障缺口分析</h2>
-          <span className="text-xs font-bold text-gray-400">目標值可在下一階段改為依家庭責任計算</span>
+          <span className="text-xs font-bold text-gray-400">建議基準已依客戶資料動態估算</span>
         </div>
-        <div className="overflow-hidden rounded-xl border border-gray-100">
-          <div className="grid grid-cols-[1.1fr_1fr_1fr_1fr_110px] bg-gray-50 px-4 py-3 text-xs font-bold text-gray-500">
-            <span>保障項目</span>
-            <span className="text-right">現有保障</span>
-            <span className="text-right">建議基準</span>
-            <span className="text-right">缺口</span>
-            <span className="text-right">狀態</span>
-          </div>
-          {checkResult.checks.map((check) => (
-            <div
-              key={check.key}
-              className="grid grid-cols-[1.1fr_1fr_1fr_1fr_110px] items-center border-t border-gray-100 px-4 py-3 text-sm"
-            >
-              <div>
-                <p className="font-bold text-gray-900">{check.label}</p>
-                <p className="mt-1 text-xs leading-5 text-gray-400">{check.suggestion}</p>
-              </div>
-              <span className="text-right tabular-nums text-gray-600">{formatCoverage(check.key, check.current)}</span>
-              <span className="text-right tabular-nums text-gray-600">{formatCoverage(check.key, check.target)}</span>
-              <span className={`text-right font-bold tabular-nums ${check.gap > 0 ? "text-rose-600" : "text-emerald-700"}`}>
-                {check.gap > 0 ? formatGapValue(check) : "無缺口"}
-              </span>
-              <span className="text-right">
-                <span className={`inline-flex rounded px-2 py-1 text-xs font-bold ${STATUS_STYLE[check.status]}`}>
-                  {STATUS_LABEL[check.status]}
-                </span>
-              </span>
-            </div>
-          ))}
-        </div>
+        <CoverageTable checkResult={checkResult} />
       </section>
 
-      <div className="mb-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
+      <div className="mb-6 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px] print:hidden">
         <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
           <h2 className="text-lg font-bold text-gray-900">投保內容整理</h2>
-          <div className="mt-4 space-y-2">
-            {companies.length === 0 && (
-              <div className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-center text-sm text-gray-400">
-                尚未建立保單資料
-              </div>
-            )}
-            {companies.map((group) => (
-              <div key={group.company} className="rounded-xl bg-gray-50 px-4 py-3">
-                <div className="flex items-center justify-between text-sm">
-                  <p className="font-bold text-gray-900">{group.company}</p>
-                  <p className="font-bold tabular-nums text-gray-700">{formatMoney(group.annualPremium)}</p>
-                </div>
-                <div className="mt-2 space-y-1">
-                  {group.policies.map((policy) => (
-                    <div key={policy.id} className="flex items-center justify-between text-xs text-gray-500">
-                      <span className="truncate">{policy.name}</span>
-                      <span className="shrink-0">{policy.status}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <CompanyList companies={companies} />
         </section>
 
         <section className="rounded-xl border border-rose-200 bg-rose-50 p-5">
@@ -223,50 +179,184 @@ export default function PolicyCheckPage() {
         </section>
       </div>
 
-      <section id="report" className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-        <div className="mb-5 flex flex-col gap-2 border-b border-gray-100 pb-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-sm font-bold text-teal-700">報告預覽</p>
-            <h2 className="text-2xl font-bold text-gray-900">保單健診報告</h2>
+      <section id="report" className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm print:rounded-none print:border-0 print:p-8 print:shadow-none">
+        <div className="mb-6 border-b border-gray-200 pb-5">
+          <p className="text-sm font-bold text-teal-700">Insurance Policy Review</p>
+          <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-950">保單健診報告</h2>
+              <p className="mt-2 text-sm text-gray-500">報告日期：{new Date().toLocaleDateString("zh-TW")}</p>
+            </div>
+            <div className="rounded-xl bg-slate-950 px-5 py-4 text-white">
+              <p className="text-xs font-bold text-slate-300">健診分數</p>
+              <p className="mt-1 text-3xl font-bold tabular-nums">{checkResult.score}</p>
+            </div>
           </div>
-          <span className="text-xs font-bold text-gray-400">PDF 匯出會在下一階段接上</span>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
-          <aside className="rounded-xl bg-gray-50 p-4 text-sm">
+        <div className="grid gap-5 lg:grid-cols-[280px_minmax(0,1fr)]">
+          <aside className="rounded-xl bg-gray-50 p-4 text-sm print:border print:border-gray-200">
             <Info label="客戶姓名" value={client.name} />
             <Info label="年齡" value={`${client.age} 歲`} />
             <Info label="職業" value={client.occupation || "待補"} />
             <Info label="年收入估算" value={client.monthly_income ? formatMoney(client.monthly_income * 12) : "待補"} />
             <Info label="保單張數" value={`${checkResult.policyCount} 張`} />
+            <Info label="保險公司" value={`${checkResult.companyCount} 家`} />
             <Info label="年繳保費" value={formatMoney(checkResult.annualPremium)} />
+            <Info label="保費收入比" value={checkResult.premiumRatio === null ? "待補" : `${Math.round(checkResult.premiumRatio * 100)}%`} />
           </aside>
 
           <main>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {COVERAGE_ORDER.map((key) => {
+              {REPORT_SECTIONS.map(({ key, title }) => {
                 const check = checkResult.checks.find((item) => item.key === key);
                 return (
                   <div key={key} className="rounded-xl border border-gray-100 p-4">
-                    <p className="text-xs font-bold text-gray-400">{COVERAGE_LABELS[key].label}</p>
+                    <p className="text-xs font-bold text-gray-400">{title}</p>
                     <p className="mt-2 text-xl font-bold text-gray-900">{formatCoverage(key, portfolio.summary.coverage[key])}</p>
                     {check && (
-                      <p className={`mt-2 text-xs font-bold ${check.status === "ok" ? "text-emerald-700" : "text-rose-600"}`}>
-                        {STATUS_LABEL[check.status]}
-                      </p>
+                      <>
+                        <p className={`mt-2 text-xs font-bold ${check.status === "ok" ? "text-emerald-700" : "text-rose-600"}`}>
+                          {STATUS_LABEL[check.status]}
+                        </p>
+                        <p className="mt-2 text-xs leading-5 text-gray-400">建議基準：{formatCoverage(key, check.target)}</p>
+                      </>
                     )}
                   </div>
                 );
               })}
             </div>
 
-            <div className="mt-5 rounded-xl bg-slate-950 p-4 text-sm leading-6 text-white">
-              本次健診根據已輸入的 {checkResult.policyCount} 張保單進行初步分析。若要作為正式建議，需再確認保單條款、
-              除外責任、續保條件、實支實付限額與客戶家庭責任。
-            </div>
+            <section className="mt-6">
+              <h3 className="text-lg font-bold text-gray-900">健診摘要</h3>
+              <div className="mt-3 grid gap-2">
+                {checkResult.warnings.length === 0 ? (
+                  <p className="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-medium leading-6 text-emerald-900">
+                    目前資料可進行初步健診，後續仍需確認條款限制與客戶最新家庭責任。
+                  </p>
+                ) : (
+                  checkResult.warnings.map((warning) => (
+                    <p key={warning} className="rounded-xl bg-amber-50 px-4 py-3 text-sm font-medium leading-6 text-amber-900">
+                      {warning}
+                    </p>
+                  ))
+                )}
+              </div>
+            </section>
+
+            <section className="mt-6">
+              <h3 className="text-lg font-bold text-gray-900">優先處理項目</h3>
+              <div className="mt-3 grid gap-2">
+                {checkResult.priorities.length === 0 ? (
+                  <p className="rounded-xl bg-gray-50 px-4 py-3 text-sm leading-6 text-gray-600">
+                    六大保障未見明顯缺口，建議進一步檢查重複投保、實支實付條款與理賠文件可取得性。
+                  </p>
+                ) : (
+                  checkResult.priorities.map((item) => (
+                    <p key={item.key} className="rounded-xl bg-gray-50 px-4 py-3 text-sm leading-6 text-gray-700">
+                      {item.label}：現有 {formatCoverage(item.key, item.current)}，建議 {formatCoverage(item.key, item.target)}，
+                      缺口 {formatGapValue(item)}。
+                    </p>
+                  ))
+                )}
+              </div>
+            </section>
           </main>
         </div>
+
+        <section className="mt-6">
+          <h3 className="text-lg font-bold text-gray-900">保障明細表</h3>
+          <div className="mt-3">
+            <CoverageTable checkResult={checkResult} compact />
+          </div>
+        </section>
+
+        <section className="mt-6">
+          <h3 className="text-lg font-bold text-gray-900">投保內容</h3>
+          <CompanyList companies={companies} compact />
+        </section>
+
+        <p className="mt-6 rounded-xl bg-slate-950 p-4 text-xs leading-6 text-white">
+          本報告為依已輸入保單資料產生之初步保單健診，正式建議仍需由持證業務員確認保單條款、除外責任、
+          續保條件、實支實付限額、家庭責任與客戶最新財務狀況。
+        </p>
       </section>
+    </div>
+  );
+}
+
+function CoverageTable({
+  checkResult,
+  compact = false,
+}: {
+  checkResult: ReturnType<typeof analyzePolicyCheck>;
+  compact?: boolean;
+}) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-gray-100">
+      <div className="grid grid-cols-[1.1fr_1fr_1fr_1fr_110px] bg-gray-50 px-4 py-3 text-xs font-bold text-gray-500">
+        <span>保障項目</span>
+        <span className="text-right">現有保障</span>
+        <span className="text-right">建議基準</span>
+        <span className="text-right">缺口</span>
+        <span className="text-right">狀態</span>
+      </div>
+      {checkResult.checks.map((check) => (
+        <div
+          key={check.key}
+          className="grid grid-cols-[1.1fr_1fr_1fr_1fr_110px] items-center border-t border-gray-100 px-4 py-3 text-sm"
+        >
+          <div>
+            <p className="font-bold text-gray-900">{check.label}</p>
+            {!compact && <p className="mt-1 text-xs leading-5 text-gray-400">{check.targetReason}</p>}
+          </div>
+          <span className="text-right tabular-nums text-gray-600">{formatCoverage(check.key, check.current)}</span>
+          <span className="text-right tabular-nums text-gray-600">{formatCoverage(check.key, check.target)}</span>
+          <span className={`text-right font-bold tabular-nums ${check.gap > 0 ? "text-rose-600" : "text-emerald-700"}`}>
+            {check.gap > 0 ? formatGapValue(check) : "無缺口"}
+          </span>
+          <span className="text-right">
+            <span className={`inline-flex rounded px-2 py-1 text-xs font-bold ${STATUS_STYLE[check.status]}`}>
+              {STATUS_LABEL[check.status]}
+            </span>
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function CompanyList({
+  companies,
+  compact = false,
+}: {
+  companies: ReturnType<typeof getPoliciesByCompany>;
+  compact?: boolean;
+}) {
+  return (
+    <div className="space-y-2">
+      {companies.length === 0 && (
+        <div className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-center text-sm text-gray-400">
+          尚未建立保單資料
+        </div>
+      )}
+      {companies.map((group) => (
+        <div key={group.company} className="rounded-xl bg-gray-50 px-4 py-3">
+          <div className="flex items-center justify-between text-sm">
+            <p className="font-bold text-gray-900">{group.company}</p>
+            <p className="font-bold tabular-nums text-gray-700">{formatMoney(group.annualPremium)}</p>
+          </div>
+          <div className="mt-2 space-y-1">
+            {group.policies.map((policy) => (
+              <div key={policy.id} className="grid grid-cols-[minmax(0,1fr)_80px_90px] gap-2 text-xs text-gray-500">
+                <span className="truncate">{policy.name}</span>
+                <span>{policy.status}</span>
+                {!compact && <span className="text-right">{formatMoney(policy.annualPremium)}</span>}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

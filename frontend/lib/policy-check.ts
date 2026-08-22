@@ -10,6 +10,18 @@ import {
 
 export type CheckStatus = "missing" | "gap" | "ok";
 
+export type ClientRiskProfile = {
+  age?: number | null;
+  monthlyIncome?: number | null;
+  monthlyExpense?: number | null;
+  occupation?: string | null;
+};
+
+export type CoverageTarget = {
+  amount: number;
+  reason: string;
+};
+
 export type CoverageCheck = {
   key: CoverageKey;
   label: string;
@@ -19,38 +31,111 @@ export type CoverageCheck = {
   unit: string;
   status: CheckStatus;
   suggestion: string;
+  targetReason: string;
 };
 
 export type PolicyCheckResult = {
   score: number;
   annualPremium: number;
+  annualIncome: number;
+  premiumRatio: number | null;
   policyCount: number;
   companyCount: number;
   incompleteCount: number;
   checks: CoverageCheck[];
   warnings: string[];
   priorities: CoverageCheck[];
+  targetBasis: string[];
 };
 
-export const DEFAULT_COVERAGE_TARGETS: Record<CoverageKey, number> = {
-  life: 1000,
-  cancer: 300,
-  critical: 200,
-  accident: 500,
-  daily: 3000,
-  medical: 20,
-  ltc: 5,
+export const DEFAULT_COVERAGE_TARGETS: Record<CoverageKey, CoverageTarget> = {
+  life: { amount: 1000, reason: "未提供收入時，先以一般家庭責任基準估算。" },
+  cancer: { amount: 300, reason: "癌症一次金以 300 萬作為初步檢視基準。" },
+  critical: { amount: 200, reason: "重大傷病以 200 萬作為醫療與收入中斷緩衝。" },
+  accident: { amount: 500, reason: "意外保障以 500 萬作為基本風險承接。" },
+  daily: { amount: 3000, reason: "住院日額以每日 3,000 元作為基本住院支出補貼。" },
+  medical: { amount: 20, reason: "實支實付以 20 萬作為初步雜費額度基準。" },
+  ltc: { amount: 5, reason: "長照給付以每月 5 萬作為基本照護現金流。" },
 };
 
 const SUGGESTIONS: Record<CoverageKey, string> = {
-  life: "壽險保障主要用來承接家庭責任、房貸與未成年子女照顧責任。",
-  cancer: "癌症保障建議確認一次給付額度，避免只剩療程型保障。",
+  life: "壽險保障主要承接家庭責任、房貸、負債與未成年子女照顧責任。",
+  cancer: "癌症保障建議確認一次給付額度，避免只有療程型或日額型保障。",
   critical: "重大傷病保障可補足重大疾病初期的收入中斷與自費醫療壓力。",
-  accident: "意外保障需搭配職業風險與通勤型態檢視。",
+  accident: "意外保障需搭配職業風險、通勤型態與家庭責任檢視。",
   daily: "住院日額可作為住院期間固定支出的補償，但不應取代實支實付。",
   medical: "實支實付是理賠服務最常用的核心資料，需確認額度、雜費與手術限制。",
   ltc: "長照保障需確認每月給付金額與啟動條件，避免只看保額不看條款。",
 };
+
+function roundTo(value: number, unit: number) {
+  return Math.max(0, Math.round(value / unit) * unit);
+}
+
+function getAnnualIncome(profile: ClientRiskProfile) {
+  return Number(profile.monthlyIncome || 0) * 12;
+}
+
+function isHigherRiskOccupation(occupation?: string | null) {
+  if (!occupation) return false;
+  return ["工地", "工程", "司機", "外送", "機械", "消防", "警察", "高空", "業務"].some((keyword) =>
+    occupation.includes(keyword),
+  );
+}
+
+export function buildCoverageTargets(profile: ClientRiskProfile = {}): Record<CoverageKey, CoverageTarget> {
+  const age = Number(profile.age || 0);
+  const annualIncome = getAnnualIncome(profile);
+  const hasIncome = annualIncome > 0;
+  const highRiskJob = isHigherRiskOccupation(profile.occupation);
+  const lifeMultiplier = age >= 55 ? 5 : age >= 45 ? 8 : 10;
+  const incomeInWan = annualIncome / 10000;
+
+  const lifeTarget = hasIncome ? Math.max(500, roundTo(incomeInWan * lifeMultiplier, 50)) : DEFAULT_COVERAGE_TARGETS.life.amount;
+  const criticalTarget = hasIncome ? Math.max(200, roundTo(incomeInWan * 2, 50)) : DEFAULT_COVERAGE_TARGETS.critical.amount;
+  const accidentTarget = hasIncome
+    ? Math.max(highRiskJob ? 800 : 500, roundTo(incomeInWan * (highRiskJob ? 8 : 5), 50))
+    : highRiskJob
+      ? 800
+      : DEFAULT_COVERAGE_TARGETS.accident.amount;
+  const dailyTarget = age >= 55 ? 4000 : age >= 40 ? 3500 : DEFAULT_COVERAGE_TARGETS.daily.amount;
+  const medicalTarget = age >= 55 ? 30 : DEFAULT_COVERAGE_TARGETS.medical.amount;
+  const cancerTarget = age >= 45 ? 300 : 200;
+  const ltcTarget = age >= 50 ? 6 : DEFAULT_COVERAGE_TARGETS.ltc.amount;
+
+  return {
+    life: {
+      amount: lifeTarget,
+      reason: hasIncome
+        ? `以年收入 ${formatMoney(annualIncome)} 的 ${lifeMultiplier} 倍估算家庭責任。`
+        : DEFAULT_COVERAGE_TARGETS.life.reason,
+    },
+    cancer: {
+      amount: cancerTarget,
+      reason: age >= 45 ? "45 歲以上先以 300 萬癌症一次金檢視。" : "45 歲以下先以 200 萬癌症一次金檢視。",
+    },
+    critical: {
+      amount: criticalTarget,
+      reason: hasIncome ? "以約 2 年收入作為重大傷病初期現金流緩衝。" : DEFAULT_COVERAGE_TARGETS.critical.reason,
+    },
+    accident: {
+      amount: accidentTarget,
+      reason: highRiskJob ? "職業風險較高，意外保障基準提高。" : DEFAULT_COVERAGE_TARGETS.accident.reason,
+    },
+    daily: {
+      amount: dailyTarget,
+      reason: age >= 40 ? "年齡提高後，住院期間固定支出風險同步提高。" : DEFAULT_COVERAGE_TARGETS.daily.reason,
+    },
+    medical: {
+      amount: medicalTarget,
+      reason: age >= 55 ? "55 歲以上建議提高實支實付雜費檢視基準。" : DEFAULT_COVERAGE_TARGETS.medical.reason,
+    },
+    ltc: {
+      amount: ltcTarget,
+      reason: age >= 50 ? "50 歲以上先提高長照現金流檢視基準。" : DEFAULT_COVERAGE_TARGETS.ltc.reason,
+    },
+  };
+}
 
 function getStatus(current: number, target: number): CheckStatus {
   if (current <= 0) return "missing";
@@ -69,11 +154,16 @@ function getScore(checks: CoverageCheck[], incompleteCount: number) {
   return Math.max(0, Math.min(100, Math.round(statusScore / checks.length) - penalty));
 }
 
-export function analyzePolicyCheck(policies: Policy[], targets = DEFAULT_COVERAGE_TARGETS): PolicyCheckResult {
+export function analyzePolicyCheck(
+  policies: Policy[],
+  profile: ClientRiskProfile = {},
+  targets = buildCoverageTargets(profile),
+): PolicyCheckResult {
   const summary = getPolicySummary(policies);
+  const annualIncome = getAnnualIncome(profile);
   const checks = COVERAGE_ORDER.map((key) => {
     const current = Number(summary.coverage[key] || 0);
-    const target = targets[key];
+    const target = targets[key].amount;
     const gap = Math.max(target - current, 0);
     const status = getStatus(current, target);
 
@@ -86,20 +176,28 @@ export function analyzePolicyCheck(policies: Policy[], targets = DEFAULT_COVERAG
       unit: COVERAGE_LABELS[key].unit,
       status,
       suggestion: SUGGESTIONS[key],
+      targetReason: targets[key].reason,
     };
   });
+  const premiumRatio = annualIncome > 0 ? summary.premium / annualIncome : null;
 
   const warnings = [
     ...(summary.policyCount === 0 ? ["尚未輸入現有保單，無法進行有效健診。"] : []),
     ...(summary.incomplete > 0 ? [`有 ${summary.incomplete} 張保單資料待補，健診結果需等資料補齊後再確認。`] : []),
+    ...(annualIncome <= 0 ? ["客戶收入尚未建立，目前建議額度採用一般基準，精準度有限。"] : []),
+    ...(premiumRatio !== null && premiumRatio > 0.15
+      ? [`年繳保費約占年收入 ${Math.round(premiumRatio * 100)}%，建議檢查是否有重複保障或保費壓力。`]
+      : []),
     ...(summary.premium > 0 && summary.policyCount > 0
-      ? [`目前年繳保費為 ${formatMoney(summary.premium)}，需搭配收入與家庭責任判斷是否合理。`]
+      ? [`目前年繳保費為 ${formatMoney(summary.premium)}，需搭配家庭責任與現金流確認是否合理。`]
       : []),
   ];
 
   return {
     score: getScore(checks, summary.incomplete),
     annualPremium: summary.premium,
+    annualIncome,
+    premiumRatio,
     policyCount: summary.policyCount,
     companyCount: summary.companyCount,
     incompleteCount: summary.incomplete,
@@ -109,6 +207,11 @@ export function analyzePolicyCheck(policies: Policy[], targets = DEFAULT_COVERAG
       .filter((check) => check.status !== "ok")
       .sort((a, b) => b.gap - a.gap)
       .slice(0, 3),
+    targetBasis: [
+      annualIncome > 0 ? `年收入：${formatMoney(annualIncome)}` : "年收入：待補，採一般基準",
+      profile.age ? `年齡：${profile.age} 歲` : "年齡：待補",
+      profile.occupation ? `職業：${profile.occupation}` : "職業：待補",
+    ],
   };
 }
 
