@@ -13,11 +13,11 @@ const CUSTOMER_LINKS: NavLink[] = [
   { href: "/policies", label: "我的保單" },
   { href: "/health-check", label: "保障健診" },
   { href: "/claims", label: "理賠中心" },
-  { href: "/chat", label: "AI顧問" },
+  { href: "/chat", label: "AI 顧問" },
 ];
 
 const ADVISOR_LINKS: NavLink[] = [
-  { href: "/advisor", label: "顧問工作台", exact: true },
+  { href: "/advisor", label: "客戶 CRM", exact: true },
   { href: "/advisor/inventory", label: "產品資料庫" },
 ];
 
@@ -48,10 +48,10 @@ export default function NavLinks() {
       <div className="ml-auto shrink-0">
         {isAdvisor ? (
           <Link
-            href="/chat"
+            href="/policies"
             className="rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-500 transition hover:border-teal-300 hover:text-teal-700"
           >
-            切換客戶模式
+            保單資料
           </Link>
         ) : (
           <Link

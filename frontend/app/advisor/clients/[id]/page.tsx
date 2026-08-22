@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import {
   COVERAGE_LABELS,
   COVERAGE_ORDER,
@@ -14,6 +14,7 @@ import {
   getPolicySummary,
   type PolicyPortfolio,
 } from "@/lib/demo-policies";
+import { analyzePolicyCheck } from "@/lib/policy-check";
 
 interface Client {
   id: number;
@@ -29,7 +30,7 @@ interface Client {
 }
 
 const GENDER: Record<string, string> = { M: "男", F: "女" };
-const STATUS_LABEL: Record<string, string> = { new: "新建檔", questionnaire_done: "問卷完成" };
+const STATUS_LABEL: Record<string, string> = { new: "新客戶", questionnaire_done: "健診完成" };
 
 function fmt(n: number | null | undefined): string {
   if (n == null) return "待補";
@@ -47,49 +48,70 @@ export default function ClientHubPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const summary = portfolio.summary;
+  const checkResult = useMemo(() => analyzePolicyCheck(portfolio.policies), [portfolio.policies]);
   const companies = useMemo(() => getPoliciesByCompany(portfolio.policies), [portfolio.policies]);
 
   useEffect(() => {
-    fetch(`/api/advisor/clients/${id}`)
-      .then((r) => {
-        if (!r.ok) throw new Error("not found");
-        return r.json();
-      })
-      .then(setClient)
-      .catch(() => setError("找不到此客戶"))
-      .finally(() => setLoading(false));
+    let mounted = true;
 
-    fetchPolicyPortfolio()
-      .then(setPortfolio)
-      .catch(() =>
-        setPortfolio({
-          profile: null,
-          policies: DEMO_POLICIES,
-          summary: getPolicySummary(DEMO_POLICIES),
-        }),
-      );
+    async function load() {
+      try {
+        const [clientRes, portfolioData] = await Promise.all([
+          fetch(`/api/advisor/clients/${id}`, { cache: "no-store" }),
+          fetchPolicyPortfolio().catch(() => ({
+            profile: null,
+            policies: DEMO_POLICIES,
+            summary: getPolicySummary(DEMO_POLICIES),
+          })),
+        ]);
+
+        if (!clientRes.ok) throw new Error("not found");
+        const clientData = await clientRes.json();
+
+        if (!mounted) return;
+        setClient(clientData);
+        setPortfolio(portfolioData);
+      } catch {
+        if (mounted) setError("找不到此客戶");
+      } finally {
+        if (mounted) setLoading(false);
+      }
+    }
+
+    load();
+
+    return () => {
+      mounted = false;
+    };
   }, [id]);
 
-  if (loading) return <div className="py-16 text-center text-sm text-gray-400">載入中…</div>;
+  if (loading) return <div className="py-16 text-center text-sm text-gray-400">載入中...</div>;
   if (error || !client) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-8">
         <p className="text-sm text-red-500">{error}</p>
-        <Link href="/advisor" className="text-sm text-blue-500">← 返回列表</Link>
+        <Link href="/advisor" className="text-sm text-blue-500">
+          返回客戶列表
+        </Link>
       </div>
     );
   }
 
+  const profileId = `advisor-client-${client.id}`;
+  const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&relation=${encodeURIComponent("本人")}`;
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <div className="mb-6">
-        <Link href="/advisor" className="text-sm text-gray-400 hover:text-gray-600">← 客戶列表</Link>
+        <Link href="/advisor" className="text-sm text-gray-400 hover:text-gray-600">
+          返回客戶列表
+        </Link>
         <div className="mt-3 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-bold text-amber-700">客戶 Insurance Profile</p>
+            <p className="text-sm font-bold text-amber-700">客戶 360</p>
             <h1 className="mt-1 text-3xl font-bold text-gray-900">{client.name}</h1>
             <p className="mt-2 text-sm leading-6 text-gray-500">
-              管理此客戶的保單資料、保障健診、理賠紀錄與追蹤事項。
+              管理此客戶的既有保單、保單健診、報告紀錄與理賠服務。
             </p>
           </div>
           <span className="w-fit rounded-lg bg-gray-100 px-3 py-2 text-xs font-bold text-gray-600">
@@ -102,15 +124,15 @@ export default function ClientHubPage() {
         <Metric label="保單總數" value={`${summary.policyCount} 張`} tone="text-teal-700" />
         <Metric label="保險公司" value={`${summary.companyCount} 家`} tone="text-slate-950" />
         <Metric label="年繳保費" value={formatMoney(summary.premium)} tone="text-amber-600" />
-        <Metric label="待補資料" value={`${summary.incomplete} 張`} tone="text-rose-600" />
+        <Metric label="健診分數" value={`${checkResult.score} 分`} tone="text-rose-600" />
       </section>
 
       <div className="mb-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
         <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-lg font-bold text-gray-900">保障總覽</h2>
-            <Link href="/policies" className="text-sm font-bold text-teal-700 hover:text-teal-900">
-              查看保單 →
+            <h2 className="text-lg font-bold text-gray-900">六大保障總覽</h2>
+            <Link href={`/advisor/clients/${client.id}/policy-check`} className="text-sm font-bold text-teal-700 hover:text-teal-900">
+              查看健診
             </Link>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
@@ -124,7 +146,7 @@ export default function ClientHubPage() {
         </section>
 
         <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-bold text-gray-900">基本資料</h2>
+          <h2 className="text-lg font-bold text-gray-900">客戶資料</h2>
           <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
             <Info label="年齡" value={`${client.age} 歲`} />
             <Info label="性別" value={GENDER[client.gender ?? ""] ?? "待補"} />
@@ -137,18 +159,33 @@ export default function ClientHubPage() {
         </section>
       </div>
 
-      <section className="mb-5 grid gap-3 lg:grid-cols-5">
-        <WorkflowCard title="保單資料" text="新增、上傳、補齊主附約與保障欄位。" href="/policies" />
-        <WorkflowCard title="保障健診" text="用現有保障扣出家庭責任缺口。" href="/health-check" />
-        <WorkflowCard title="理賠紀錄" text="追蹤文件、送件公司與預估金額。" href="/claims" />
-        <WorkflowCard title="家庭保障" text="建立本人、配偶、父母、小孩 Profile。" href="/health-check" />
-        <WorkflowCard title="AI 顧問" text="根據客戶保單回答個人化問題。" href="/chat" />
+      <section className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-5">
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-bold text-amber-800">保單健診流程</p>
+            <h2 className="text-lg font-bold text-amber-950">先整理既有保單，再判斷缺口與理賠可用性</h2>
+          </div>
+          <span className="text-xs font-bold text-amber-700">
+            {summary.policyCount > 0 ? "可進行初步健診" : "請先建立保單資料"}
+          </span>
+        </div>
+        <div className="grid gap-3 md:grid-cols-4">
+          <WorkflowCard title="保單資料" text="上傳或手動輸入客戶現有保單。" href={policyHref} />
+          <WorkflowCard title="保單健診" text="統整保障、缺口、保費與待補欄位。" href={`/advisor/clients/${client.id}/policy-check`} />
+          <WorkflowCard title="健診報告" text="產出可給客戶說明的報告預覽。" href={`/advisor/clients/${client.id}/policy-check#report`} />
+          <WorkflowCard title="理賠服務" text="以既有保單比對可申請項目。" href="/claims" />
+        </div>
       </section>
 
       <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
         <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-bold text-gray-900">保險公司分布</h2>
+          <h2 className="text-lg font-bold text-gray-900">保險公司與保費</h2>
           <div className="mt-4 space-y-2">
+            {companies.length === 0 && (
+              <div className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-center text-sm text-gray-400">
+                尚未建立保單資料
+              </div>
+            )}
             {companies.map((group) => (
               <div key={group.company} className="flex items-center justify-between rounded-xl bg-gray-50 px-4 py-3 text-sm">
                 <div>
@@ -162,11 +199,17 @@ export default function ClientHubPage() {
         </section>
 
         <section className="rounded-xl border border-amber-200 bg-amber-50 p-5">
-          <h2 className="text-lg font-bold text-amber-950">近期追蹤</h2>
+          <h2 className="text-lg font-bold text-amber-950">優先待辦</h2>
           <div className="mt-4 space-y-3">
-            <Task text="新光人壽意外傷害附約缺少條款 PDF" />
-            <Task text="本月有 1 件理賠文件待補收據正本" />
-            <Task text="建議更新家庭成員與房貸責任資料" />
+            {checkResult.priorities.length === 0 && summary.policyCount > 0 ? (
+              <Task text="目前六大保障沒有明顯缺口，可進一步檢查條款限制與重複保障。" />
+            ) : (
+              checkResult.priorities.map((item) => (
+                <Task key={item.key} text={`${item.label}缺口 ${formatCoverage(item.key, item.gap)}，建議優先確認。`} />
+              ))
+            )}
+            {summary.policyCount === 0 && <Task text="請先輸入客戶現有保單，否則無法產生有效健診。" />}
+            {summary.incomplete > 0 && <Task text={`${summary.incomplete} 張保單資料待補，需補齊保額、保費或保單號碼。`} />}
           </div>
         </section>
       </div>
@@ -194,10 +237,10 @@ function Info({ label, value, wide = false }: { label: string; value: string; wi
 
 function WorkflowCard({ title, text, href }: { title: string; text: string; href: string }) {
   return (
-    <Link href={href} className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-teal-300 hover:shadow-md">
+    <Link href={href} className="rounded-xl border border-amber-200 bg-white p-4 shadow-sm transition hover:border-amber-400 hover:shadow-md">
       <p className="font-bold text-gray-900">{title}</p>
       <p className="mt-2 text-xs leading-5 text-gray-500">{text}</p>
-      <p className="mt-4 text-xs font-bold text-teal-700">進入 →</p>
+      <p className="mt-4 text-xs font-bold text-amber-700">進入</p>
     </Link>
   );
 }

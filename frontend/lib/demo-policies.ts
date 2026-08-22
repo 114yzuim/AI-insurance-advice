@@ -134,7 +134,7 @@ export function getPoliciesByCompany(policies: Policy[] = []) {
 }
 
 export function formatMoney(value: number) {
-  return `NT$ ${value.toLocaleString("zh-TW")}`;
+  return `NT$ ${Number(value || 0).toLocaleString("zh-TW")}`;
 }
 
 export function formatCoverage(key: CoverageKey, value: number) {

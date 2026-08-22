@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import {
   COVERAGE_LABELS,
   COVERAGE_ORDER,
@@ -55,8 +56,12 @@ function makeEmptyForm(): PolicyFormState {
 }
 
 export default function PoliciesApp() {
+  const searchParams = useSearchParams();
+  const requestedProfileId = searchParams.get("profile_id") ?? "demo-user";
+  const requestedOwnerName = searchParams.get("owner_name") ?? "預設客戶";
+  const requestedRelation = searchParams.get("relation") ?? "本人";
   const [activeCompany, setActiveCompany] = useState("全部");
-  const [activeProfileId, setActiveProfileId] = useState("demo-user");
+  const [activeProfileId, setActiveProfileId] = useState(requestedProfileId);
   const [profiles, setProfiles] = useState<InsuranceProfile[]>([]);
   const [portfolio, setPortfolio] = useState<PolicyPortfolio>(() => ({
     profile: null,
@@ -91,8 +96,24 @@ export default function PoliciesApp() {
     let mounted = true;
     queueMicrotask(() => {
       fetchInsuranceProfiles()
-        .then((data) => {
-          if (mounted) setProfiles(data);
+        .then(async (data) => {
+          let nextProfiles = data;
+          if (!data.some((profile) => profile.id === requestedProfileId)) {
+            const res = await fetch("/api/policies/profiles", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                id: requestedProfileId,
+                owner_name: requestedOwnerName,
+                relation: requestedRelation,
+              }),
+            });
+            if (res.ok) {
+              const created = await res.json();
+              nextProfiles = [created, ...data];
+            }
+          }
+          if (mounted) setProfiles(nextProfiles);
         })
         .catch(() => {
           if (mounted) {
@@ -100,7 +121,7 @@ export default function PoliciesApp() {
           }
         });
 
-      fetchPolicyPortfolio("demo-user")
+      fetchPolicyPortfolio(requestedProfileId)
         .then((data) => {
           if (mounted) setPortfolio(data);
         })
@@ -120,7 +141,7 @@ export default function PoliciesApp() {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [requestedOwnerName, requestedProfileId, requestedRelation]);
 
   const totals = portfolio.summary;
   const companies = useMemo(() => getPoliciesByCompany(portfolio.policies), [portfolio.policies]);
