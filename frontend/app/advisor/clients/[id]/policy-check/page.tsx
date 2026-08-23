@@ -7,6 +7,7 @@ import {
   fetchPolicyPortfolio,
   formatCoverage,
   formatMoney,
+  getPolicyCompleteness,
   getPoliciesByCompany,
   getPolicySummary,
   type CoverageKey,
@@ -154,6 +155,8 @@ export default function PolicyCheckPage() {
         <Metric label="年繳保費" value={formatMoney(checkResult.annualPremium)} tone="text-amber-600" />
         <Metric label="保費收入比" value={checkResult.premiumRatio === null ? "待補" : `${Math.round(checkResult.premiumRatio * 100)}%`} tone="text-sky-700" />
       </section>
+
+      <PolicyCompletenessPanel policies={portfolio.policies} policyHref={policyHref} />
 
       <section className="mb-5 rounded-xl border border-gray-200 bg-white p-5 shadow-sm print:hidden">
         <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -330,6 +333,78 @@ function CoverageTable({
         </div>
       ))}
     </div>
+  );
+}
+
+function PolicyCompletenessPanel({
+  policies,
+  policyHref,
+}: {
+  policies: PolicyPortfolio["policies"];
+  policyHref: string;
+}) {
+  const items = policies
+    .map((policy) => ({ policy, completeness: getPolicyCompleteness(policy) }))
+    .filter((item) => item.completeness.missing_count > 0)
+    .sort((a, b) => a.completeness.score - b.completeness.score);
+
+  if (policies.length === 0) {
+    return (
+      <section className="mb-5 rounded-xl border border-rose-200 bg-rose-50 p-5 print:hidden">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-rose-950">保單資料尚未建立</h2>
+            <p className="mt-1 text-sm leading-6 text-rose-800">請先輸入客戶既有保單，否則健診分析與理賠比對都沒有可用基礎。</p>
+          </div>
+          <Link href={policyHref} className="w-fit rounded-lg bg-rose-700 px-4 py-2 text-sm font-bold text-white hover:bg-rose-800">
+            建立保單資料
+          </Link>
+        </div>
+      </section>
+    );
+  }
+
+  if (items.length === 0) {
+    return (
+      <section className="mb-5 rounded-xl border border-emerald-200 bg-emerald-50 p-5 print:hidden">
+        <h2 className="text-lg font-bold text-emerald-950">保單資料完整度良好</h2>
+        <p className="mt-1 text-sm leading-6 text-emerald-800">目前已輸入保單可支援初步健診，後續仍建議確認條款限制與最新保單批註。</p>
+      </section>
+    );
+  }
+
+  return (
+    <section className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-5 print:hidden">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 className="text-lg font-bold text-amber-950">保單資料完整度檢查</h2>
+          <p className="mt-1 text-sm leading-6 text-amber-800">以下保單資料不足，補齊後健診與理賠試算會更準。</p>
+        </div>
+        <Link href={policyHref} className="w-fit rounded-lg bg-white px-4 py-2 text-sm font-bold text-amber-800 ring-1 ring-amber-200 hover:ring-amber-400">
+          前往補資料
+        </Link>
+      </div>
+      <div className="grid gap-3 md:grid-cols-2">
+        {items.slice(0, 4).map(({ policy, completeness }) => (
+          <div key={policy.id} className="rounded-xl bg-white p-4 ring-1 ring-amber-100">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="truncate text-sm font-bold text-gray-950">{policy.name}</p>
+                <p className="mt-1 text-xs text-gray-400">{policy.company}</p>
+              </div>
+              <span className="rounded-lg bg-amber-100 px-2 py-1 text-xs font-bold text-amber-700">{completeness.score}%</span>
+            </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {completeness.missing.slice(0, 5).map((item) => (
+                <span key={item.key} className="rounded-lg bg-amber-50 px-2 py-1 text-xs font-bold text-amber-800">
+                  {item.label}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

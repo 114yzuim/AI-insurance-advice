@@ -10,6 +10,7 @@ import {
   fetchPolicyPortfolio,
   formatCoverage,
   formatMoney,
+  getPolicyCompleteness,
   getPoliciesByCompany,
   getPolicySummary,
   type PolicyPortfolio,
@@ -100,6 +101,13 @@ export default function ClientHubPage() {
   const profileId = `advisor-client-${client.id}`;
   const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&relation=${encodeURIComponent("本人")}`;
   const claimsHref = `/claims?profile_id=${encodeURIComponent(profileId)}&client_id=${client.id}&owner_name=${encodeURIComponent(client.name)}`;
+  const familyProfiles = [
+    { relation: "本人", name: client.name, profileId },
+    { relation: "配偶", name: `${client.name}的配偶`, profileId: `${profileId}-spouse` },
+    { relation: "父親", name: `${client.name}的父親`, profileId: `${profileId}-father` },
+    { relation: "母親", name: `${client.name}的母親`, profileId: `${profileId}-mother` },
+    { relation: "子女", name: `${client.name}的子女`, profileId: `${profileId}-child` },
+  ];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -125,7 +133,32 @@ export default function ClientHubPage() {
         <Metric label="保單總數" value={`${summary.policyCount} 張`} tone="text-teal-700" />
         <Metric label="保險公司" value={`${summary.companyCount} 家`} tone="text-slate-950" />
         <Metric label="年繳保費" value={formatMoney(summary.premium)} tone="text-amber-600" />
-        <Metric label="健診分數" value={`${checkResult.score} 分`} tone="text-rose-600" />
+        <Metric label="資料完整度" value={`${summary.averageCompleteness}%`} tone="text-sky-700" />
+      </section>
+
+      <PolicyReadinessPanel policies={portfolio.policies} policyHref={policyHref} />
+
+      <section className="mb-5 rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-gray-900">家庭保障 Profile</h2>
+            <p className="mt-1 text-sm leading-6 text-gray-500">每位家庭成員可建立自己的保單資料，後續健診與理賠可分人管理。</p>
+          </div>
+          <span className="text-xs font-bold text-gray-400">本人 / 配偶 / 父母 / 子女</span>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {familyProfiles.map((member) => (
+            <Link
+              key={member.profileId}
+              href={`/policies?profile_id=${encodeURIComponent(member.profileId)}&owner_name=${encodeURIComponent(member.name)}&relation=${encodeURIComponent(member.relation)}`}
+              className="rounded-xl border border-gray-200 bg-gray-50 p-4 transition hover:border-teal-300 hover:bg-teal-50"
+            >
+              <p className="text-xs font-bold text-gray-400">{member.relation}</p>
+              <p className="mt-1 truncate text-sm font-bold text-gray-950">{member.name}</p>
+              <p className="mt-3 text-xs font-bold text-teal-700">管理保單</p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <div className="mb-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
@@ -224,6 +257,75 @@ function Metric({ label, value, tone }: { label: string; value: string; tone: st
       <p className="text-sm font-medium text-gray-500">{label}</p>
       <p className={`mt-2 text-2xl font-bold tabular-nums ${tone}`}>{value}</p>
     </div>
+  );
+}
+
+function PolicyReadinessPanel({
+  policies,
+  policyHref,
+}: {
+  policies: PolicyPortfolio["policies"];
+  policyHref: string;
+}) {
+  const incompletePolicies = policies
+    .map((policy) => ({ policy, completeness: getPolicyCompleteness(policy) }))
+    .filter((item) => item.completeness.missing_count > 0)
+    .sort((a, b) => a.completeness.score - b.completeness.score);
+
+  if (policies.length === 0) {
+    return (
+      <section className="mb-5 rounded-xl border border-rose-200 bg-rose-50 p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-bold text-rose-800">資料不足</p>
+            <h2 className="text-lg font-bold text-rose-950">尚未建立既有保單</h2>
+            <p className="mt-1 text-sm leading-6 text-rose-800">請先輸入客戶現有保單，才能進行有效保單健診與理賠服務。</p>
+          </div>
+          <Link href={policyHref} className="w-fit rounded-lg bg-rose-700 px-4 py-2 text-sm font-bold text-white hover:bg-rose-800">
+            建立保單
+          </Link>
+        </div>
+      </section>
+    );
+  }
+
+  if (incompletePolicies.length === 0) {
+    return (
+      <section className="mb-5 rounded-xl border border-emerald-200 bg-emerald-50 p-5">
+        <p className="text-sm font-bold text-emerald-800">資料可用</p>
+        <h2 className="mt-1 text-lg font-bold text-emerald-950">保單資料已可支援初步健診</h2>
+      </section>
+    );
+  }
+
+  return (
+    <section className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-5">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p className="text-sm font-bold text-amber-800">待補資料</p>
+          <h2 className="text-lg font-bold text-amber-950">{incompletePolicies.length} 張保單需要補齊欄位</h2>
+        </div>
+        <Link href={policyHref} className="w-fit rounded-lg bg-white px-4 py-2 text-sm font-bold text-amber-800 ring-1 ring-amber-200 hover:ring-amber-400">
+          前往補資料
+        </Link>
+      </div>
+      <div className="grid gap-3 md:grid-cols-2">
+        {incompletePolicies.slice(0, 4).map(({ policy, completeness }) => (
+          <div key={policy.id} className="rounded-xl bg-white p-4 ring-1 ring-amber-100">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="truncate text-sm font-bold text-gray-950">{policy.name}</p>
+                <p className="mt-1 text-xs text-gray-400">{policy.company}</p>
+              </div>
+              <span className="rounded-lg bg-amber-100 px-2 py-1 text-xs font-bold text-amber-700">{completeness.score}%</span>
+            </div>
+            <p className="mt-3 text-xs font-bold text-amber-800">
+              缺：{completeness.missing.slice(0, 4).map((item) => item.label).join("、")}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

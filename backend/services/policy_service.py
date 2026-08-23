@@ -148,21 +148,30 @@ def list_policies(profile_id: str = DEFAULT_PROFILE_ID) -> dict:
 def list_profiles() -> list[dict]:
     ensure_default_profile()
     with get_inventory_connection() as conn:
-        rows = conn.execute(
+        profile_rows = conn.execute(
             """
-            SELECT
-                p.*,
-                COUNT(cp.id) AS policy_count
+            SELECT p.*
             FROM insurance_profiles p
-            LEFT JOIN customer_policies cp ON cp.profile_id = p.id
-            GROUP BY p.id
             ORDER BY
                 CASE WHEN p.id = ? THEN 0 ELSE 1 END,
                 p.created_at
             """,
             (DEFAULT_PROFILE_ID,),
         ).fetchall()
-        return [dict(row) for row in rows]
+        profiles: list[dict] = []
+        for row in profile_rows:
+            profile = dict(row)
+            policy_rows = conn.execute(
+                "SELECT * FROM customer_policies WHERE profile_id = ? ORDER BY company_name, id",
+                (profile["id"],),
+            ).fetchall()
+            policies = [policy_to_dict(conn, policy_row) for policy_row in policy_rows]
+            summary = summarize_policies(policies)
+            profile["policy_count"] = summary["policyCount"]
+            profile["incomplete_policy_count"] = summary["incomplete"]
+            profile["average_completeness"] = summary["averageCompleteness"]
+            profiles.append(profile)
+        return profiles
 
 
 def create_profile(payload: dict) -> dict:
@@ -202,7 +211,61 @@ def policy_to_dict(conn, row) -> dict:
             (policy["id"],),
         ).fetchall()
     ]
+    policy["completeness"] = evaluate_policy_completeness(policy)
     return policy
+
+
+def evaluate_policy_completeness(policy: dict) -> dict:
+    checks = [
+        {
+            "key": "company_name",
+            "label": "保險公司",
+            "ok": has_meaningful_value(policy.get("company_name")) and policy.get("company_name") != "未知保險公司",
+        },
+        {
+            "key": "policy_name",
+            "label": "商品 / 保單名稱",
+            "ok": has_meaningful_value(policy.get("policy_name")) and "待 OCR" not in str(policy.get("policy_name")),
+        },
+        {"key": "policy_no", "label": "保單號碼", "ok": has_meaningful_value(policy.get("policy_no"))},
+        {"key": "role", "label": "主約 / 附約", "ok": has_meaningful_value(policy.get("role"))},
+        {"key": "status", "label": "保單狀態", "ok": has_meaningful_value(policy.get("status")) and policy.get("status") != "待補資料"},
+        {"key": "annual_premium", "label": "年繳保費", "ok": float(policy.get("annual_premium") or 0) > 0},
+        {"key": "effective_date", "label": "生效日 / 保單期間", "ok": has_meaningful_value(policy.get("effective_date"))},
+        {
+            "key": "coverages",
+            "label": "保障額度",
+            "ok": any(float(amount or 0) > 0 for amount in (policy.get("coverages") or {}).values()),
+        },
+        {
+            "key": "terms_source",
+            "label": "條款 / 來源商品",
+            "ok": has_meaningful_value(policy.get("product_id")) or bool(policy.get("source_document_id")),
+        },
+    ]
+    missing = [{"key": item["key"], "label": item["label"]} for item in checks if not item["ok"]]
+    score = round(((len(checks) - len(missing)) / len(checks)) * 100) if checks else 0
+    if score >= 90:
+        level = "complete"
+        label = "可直接健診"
+    elif score >= 65:
+        level = "partial"
+        label = "仍待補強"
+    else:
+        level = "insufficient"
+        label = "資料不足"
+    return {
+        "score": score,
+        "level": level,
+        "label": label,
+        "missing": missing,
+        "missing_count": len(missing),
+        "total_checks": len(checks),
+    }
+
+
+def has_meaningful_value(value) -> bool:
+    return value is not None and str(value).strip() != ""
 
 
 def summarize_policies(policies: list[dict]) -> dict:
@@ -211,11 +274,22 @@ def summarize_policies(policies: list[dict]) -> dict:
         for key, amount in policy.get("coverages", {}).items():
             if key in coverage:
                 coverage[key] += float(amount or 0)
+    incomplete = [
+        policy
+        for policy in policies
+        if (policy.get("completeness") or {}).get("missing_count", 0) > 0
+    ]
+    average_completeness = (
+        round(sum((policy.get("completeness") or {}).get("score", 0) for policy in policies) / len(policies))
+        if policies
+        else 0
+    )
     return {
         "policyCount": len(policies),
         "companyCount": len({policy["company_name"] for policy in policies}),
         "premium": sum(float(policy.get("annual_premium") or 0) for policy in policies),
-        "incomplete": len([policy for policy in policies if policy.get("status") == "待補資料"]),
+        "incomplete": len(incomplete),
+        "averageCompleteness": average_completeness,
         "coverage": coverage,
     }
 

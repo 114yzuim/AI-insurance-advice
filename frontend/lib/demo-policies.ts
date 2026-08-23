@@ -9,8 +9,20 @@ export type Policy = {
   status: string;
   annualPremium: number;
   effectiveDate: string;
+  productId?: string;
+  sourceDocumentId?: number | null;
   coverages: Partial<Record<CoverageKey, number>>;
   riders: string[];
+  completeness?: PolicyCompleteness;
+};
+
+export type PolicyCompleteness = {
+  score: number;
+  level: "complete" | "partial" | "insufficient";
+  label: string;
+  missing: Array<{ key: string; label: string }>;
+  missing_count: number;
+  total_checks: number;
 };
 
 export type CoverageMeta = {
@@ -23,6 +35,7 @@ export type PolicySummary = {
   companyCount: number;
   premium: number;
   incomplete: number;
+  averageCompleteness: number;
   coverage: Record<CoverageKey, number>;
 };
 
@@ -32,6 +45,8 @@ export type PolicyPortfolio = {
     owner_name?: string;
     relation?: string;
     policy_count?: number;
+    incomplete_policy_count?: number;
+    average_completeness?: number;
   } | null;
   policies: Policy[];
   summary: PolicySummary;
@@ -61,11 +76,15 @@ export function getCoverageTotals(policies: Policy[] = []): Record<CoverageKey, 
 }
 
 export function getPolicySummary(policies: Policy[] = []): PolicySummary {
+  const completenessScores = policies.map((policy) => getPolicyCompleteness(policy).score);
   return {
     policyCount: policies.length,
     companyCount: new Set(policies.map((policy) => policy.company).filter(Boolean)).size,
     premium: policies.reduce((sum, policy) => sum + (Number(policy.annualPremium) || 0), 0),
-    incomplete: policies.filter((policy) => policy.status === "待補資料").length,
+    incomplete: policies.filter((policy) => getPolicyCompleteness(policy).missing_count > 0).length,
+    averageCompleteness: completenessScores.length
+      ? Math.round(completenessScores.reduce((sum, score) => sum + score, 0) / completenessScores.length)
+      : 0,
     coverage: getCoverageTotals(policies),
   };
 }
@@ -80,8 +99,54 @@ export function normalizePolicy(raw: Record<string, unknown>): Policy {
     status: String(raw.status ?? "有效"),
     annualPremium: Number(raw.annual_premium ?? raw.annualPremium ?? 0),
     effectiveDate: String(raw.effective_date ?? raw.effectiveDate ?? ""),
+    productId: String(raw.product_id ?? raw.productId ?? ""),
+    sourceDocumentId: raw.source_document_id || raw.sourceDocumentId ? Number(raw.source_document_id ?? raw.sourceDocumentId) : null,
     coverages: (raw.coverages ?? {}) as Partial<Record<CoverageKey, number>>,
     riders: Array.isArray(raw.riders) ? raw.riders.map(String) : [],
+    completeness: normalizeCompleteness(raw.completeness),
+  };
+}
+
+export function normalizeCompleteness(raw: unknown): PolicyCompleteness | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const data = raw as Partial<PolicyCompleteness>;
+  return {
+    score: Number(data.score ?? 0),
+    level: data.level ?? "insufficient",
+    label: String(data.label ?? "資料不足"),
+    missing: Array.isArray(data.missing)
+      ? data.missing.map((item) => ({
+          key: String((item as { key?: unknown }).key ?? ""),
+          label: String((item as { label?: unknown }).label ?? ""),
+        }))
+      : [],
+    missing_count: Number(data.missing_count ?? 0),
+    total_checks: Number(data.total_checks ?? 0),
+  };
+}
+
+export function getPolicyCompleteness(policy: Policy): PolicyCompleteness {
+  if (policy.completeness) return policy.completeness;
+  const checks = [
+    { key: "company", label: "保險公司", ok: Boolean(policy.company && policy.company !== "未知保險公司") },
+    { key: "name", label: "商品 / 保單名稱", ok: Boolean(policy.name && !policy.name.includes("待 OCR")) },
+    { key: "policyNo", label: "保單號碼", ok: Boolean(policy.policyNo) },
+    { key: "role", label: "主約 / 附約", ok: Boolean(policy.role) },
+    { key: "status", label: "保單狀態", ok: Boolean(policy.status && policy.status !== "待補資料") },
+    { key: "annualPremium", label: "年繳保費", ok: Number(policy.annualPremium || 0) > 0 },
+    { key: "effectiveDate", label: "生效日 / 保單期間", ok: Boolean(policy.effectiveDate) },
+    { key: "coverages", label: "保障額度", ok: Object.values(policy.coverages).some((amount) => Number(amount || 0) > 0) },
+    { key: "termsSource", label: "條款 / 來源商品", ok: Boolean(policy.productId || policy.sourceDocumentId) },
+  ];
+  const missing = checks.filter((item) => !item.ok).map(({ key, label }) => ({ key, label }));
+  const score = checks.length ? Math.round(((checks.length - missing.length) / checks.length) * 100) : 0;
+  return {
+    score,
+    level: score >= 90 ? "complete" : score >= 65 ? "partial" : "insufficient",
+    label: score >= 90 ? "可直接健診" : score >= 65 ? "仍待補強" : "資料不足",
+    missing,
+    missing_count: missing.length,
+    total_checks: checks.length,
   };
 }
 

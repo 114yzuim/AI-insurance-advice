@@ -13,27 +13,50 @@ interface Client {
   monthly_investable: number | null;
 }
 
-interface PolicyRecord {
-  id?: number | string;
-  policy_no?: string | null;
-  policyNo?: string | null;
-  company_name?: string | null;
-  companyName?: string | null;
-  policy_name?: string | null;
-  productName?: string | null;
-  annual_premium?: number | null;
-  annualPremium?: number | null;
-}
-
 interface PolicyMetrics {
   policyCount: number;
   incompletePolicies: number;
+  averageCompleteness: number;
 }
 
 const EMPTY_POLICY_METRICS: PolicyMetrics = {
   policyCount: 0,
   incompletePolicies: 0,
+  averageCompleteness: 0,
 };
+
+interface InsuranceProfile {
+  id: string;
+  owner_name?: string;
+  policy_count?: number;
+  incomplete_policy_count?: number;
+  average_completeness?: number;
+}
+
+interface ClaimCase {
+  id: number;
+  owner_name: string;
+  status: string;
+  estimated_total: number;
+  next_follow_up_date: string;
+  updated_at: string;
+}
+
+interface ClaimMetrics {
+  openClaims: number;
+  followUpClaims: number;
+  cases: ClaimCase[];
+}
+
+const EMPTY_CLAIM_METRICS: ClaimMetrics = {
+  openClaims: 0,
+  followUpClaims: 0,
+  cases: [],
+};
+
+function formatDashboardMoney(value: number) {
+  return `NT$ ${Number(value || 0).toLocaleString("zh-TW")}`;
+}
 
 const STATUS_LABEL: Record<string, string> = {
   new: "新客戶",
@@ -45,38 +68,45 @@ const STATUS_COLOR: Record<string, string> = {
   questionnaire_done: "bg-green-100 text-green-700",
 };
 
-function hasValue(value: unknown) {
-  return typeof value === "string" ? value.trim().length > 0 : value !== null && value !== undefined;
-}
-
-function isPolicyIncomplete(policy: PolicyRecord) {
-  const policyNo = policy.policy_no ?? policy.policyNo;
-  const companyName = policy.company_name ?? policy.companyName;
-  const policyName = policy.policy_name ?? policy.productName;
-  const annualPremium = Number(policy.annual_premium ?? policy.annualPremium ?? 0);
-
-  return !hasValue(policyNo) || !hasValue(companyName) || !hasValue(policyName) || annualPremium <= 0;
-}
-
 async function fetchPolicyMetrics(): Promise<PolicyMetrics> {
-  const res = await fetch("/api/policies?profile_id=demo-user", { cache: "no-store" });
+  const res = await fetch("/api/policies/profiles", { cache: "no-store" });
 
   if (!res.ok) {
     throw new Error("Failed to load policies");
   }
 
-  const data = await res.json();
-  const policies: PolicyRecord[] = Array.isArray(data?.policies) ? data.policies : [];
+  const profiles: InsuranceProfile[] = await res.json();
+  const policyCount = profiles.reduce((sum, profile) => sum + Number(profile.policy_count || 0), 0);
+  const incompletePolicies = profiles.reduce((sum, profile) => sum + Number(profile.incomplete_policy_count || 0), 0);
+  const weightedCompleteness = profiles.reduce(
+    (sum, profile) => sum + Number(profile.average_completeness || 0) * Number(profile.policy_count || 0),
+    0,
+  );
 
   return {
-    policyCount: policies.length,
-    incompletePolicies: policies.filter(isPolicyIncomplete).length,
+    policyCount,
+    incompletePolicies,
+    averageCompleteness: policyCount ? Math.round(weightedCompleteness / policyCount) : 0,
+  };
+}
+
+async function fetchClaimMetrics(): Promise<ClaimMetrics> {
+  const res = await fetch("/api/claims/cases?profile_id=all", { cache: "no-store" });
+  if (!res.ok) throw new Error("Failed to load claim cases");
+  const cases: ClaimCase[] = await res.json();
+  const openCases = cases.filter((claimCase) => claimCase.status !== "已結案");
+  const today = new Date().toISOString().slice(0, 10);
+  return {
+    openClaims: openCases.length,
+    followUpClaims: openCases.filter((claimCase) => claimCase.next_follow_up_date && claimCase.next_follow_up_date <= today).length,
+    cases: openCases.slice(0, 5),
   };
 }
 
 export default function AdvisorPage() {
   const [clients, setClients] = useState<Client[]>([]);
   const [policyMetrics, setPolicyMetrics] = useState<PolicyMetrics>(EMPTY_POLICY_METRICS);
+  const [claimMetrics, setClaimMetrics] = useState<ClaimMetrics>(EMPTY_CLAIM_METRICS);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -85,9 +115,10 @@ export default function AdvisorPage() {
 
     async function loadDashboard() {
       try {
-        const [clientsRes, metrics] = await Promise.all([
+        const [clientsRes, metrics, claims] = await Promise.all([
           fetch("/api/advisor/clients", { cache: "no-store" }),
           fetchPolicyMetrics().catch(() => EMPTY_POLICY_METRICS),
+          fetchClaimMetrics().catch(() => EMPTY_CLAIM_METRICS),
         ]);
 
         if (!clientsRes.ok) {
@@ -100,10 +131,12 @@ export default function AdvisorPage() {
 
         setClients(Array.isArray(clientsData) ? clientsData : clientsData.items ?? []);
         setPolicyMetrics(metrics);
+        setClaimMetrics(claims);
       } catch {
         if (isMounted) {
           setError("資料載入失敗，請稍後再試。");
           setPolicyMetrics(EMPTY_POLICY_METRICS);
+          setClaimMetrics(EMPTY_CLAIM_METRICS);
         }
       } finally {
         if (isMounted) {
@@ -136,8 +169,8 @@ export default function AdvisorPage() {
     { label: "保單總數", value: `${policyMetrics.policyCount} 張`, tone: "text-teal-700" },
     { label: "待完成保單健診", value: `${pendingHealthChecks} 人`, tone: "text-amber-600" },
     { label: "保單資料不完整", value: `${policyMetrics.incompletePolicies} 張`, tone: "text-sky-700" },
-    { label: "本月待處理理賠", value: "0 件", tone: "text-rose-600" },
-    { label: "待產出健診報告", value: `${pendingHealthChecks} 份`, tone: "text-violet-700" },
+    { label: "待處理理賠", value: `${claimMetrics.openClaims} 件`, tone: "text-rose-600" },
+    { label: "平均資料完整度", value: `${policyMetrics.averageCompleteness}%`, tone: "text-violet-700" },
   ];
 
   const workflowItems = [
@@ -161,6 +194,39 @@ export default function AdvisorPage() {
       text: "健診完成後，理賠中心才能依客戶保單比對可申請項目。",
       href: "/claims",
     },
+  ];
+
+  const advisorTodos = [
+    ...(policyMetrics.incompletePolicies > 0
+      ? [
+          {
+            title: "補齊保單資料",
+            text: `${policyMetrics.incompletePolicies} 張保單缺少保單號、保費、保障額度或條款來源。`,
+            href: "/policies",
+            tone: "amber" as const,
+          },
+        ]
+      : []),
+    ...(claimMetrics.followUpClaims > 0
+      ? [
+          {
+            title: "追蹤理賠案件",
+            text: `${claimMetrics.followUpClaims} 件理賠已到追蹤日，請確認補件或保險公司審核狀態。`,
+            href: "/claims",
+            tone: "rose" as const,
+          },
+        ]
+      : []),
+    ...(pendingHealthChecks > 0
+      ? [
+          {
+            title: "完成客戶健診",
+            text: `${pendingHealthChecks} 位客戶尚未完成保單健診流程。`,
+            href: clients[0] ? `/advisor/clients/${clients[0].id}/policy-check` : "/advisor",
+            tone: "sky" as const,
+          },
+        ]
+      : []),
   ];
 
   return (
@@ -211,6 +277,57 @@ export default function AdvisorPage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="mb-8 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+        <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-bold text-slate-700">今日待追蹤</p>
+            <h2 className="text-lg font-bold text-gray-950">依保單完整度、健診與理賠進度產生待辦</h2>
+          </div>
+          <span className="text-xs font-bold text-gray-400">{advisorTodos.length || 0} 項待辦</span>
+        </div>
+        {advisorTodos.length === 0 ? (
+          <div className="rounded-lg bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-800">
+            目前沒有急需處理的補件、健診或理賠追蹤。
+          </div>
+        ) : (
+          <div className="grid gap-3 md:grid-cols-3">
+            {advisorTodos.map((todo) => (
+              <Link
+                key={todo.title}
+                href={todo.href}
+                className={`rounded-lg border p-3 transition hover:shadow-sm ${
+                  todo.tone === "rose"
+                    ? "border-rose-200 bg-rose-50 hover:border-rose-300"
+                    : todo.tone === "sky"
+                      ? "border-sky-200 bg-sky-50 hover:border-sky-300"
+                      : "border-amber-200 bg-amber-50 hover:border-amber-300"
+                }`}
+              >
+                <p className="text-sm font-bold text-gray-950">{todo.title}</p>
+                <p className="mt-1 text-xs leading-5 text-gray-600">{todo.text}</p>
+              </Link>
+            ))}
+          </div>
+        )}
+        {claimMetrics.cases.length > 0 && (
+          <div className="mt-4 overflow-hidden rounded-lg border border-gray-100">
+            {claimMetrics.cases.map((claimCase) => (
+              <div key={claimCase.id} className="grid grid-cols-[1fr_auto] gap-3 border-t border-gray-100 px-3 py-2 first:border-t-0">
+                <div>
+                  <p className="text-sm font-bold text-gray-900">{claimCase.owner_name || "未命名客戶"} 理賠案件 #{claimCase.id}</p>
+                  <p className="mt-0.5 text-xs text-gray-400">
+                    {claimCase.status}・預估 {formatDashboardMoney(claimCase.estimated_total)}
+                  </p>
+                </div>
+                <span className="text-right text-xs font-bold text-gray-500">
+                  {claimCase.next_follow_up_date || "未排追蹤"}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
       </section>
 
       <div className="mb-3 flex items-center justify-between">

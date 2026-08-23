@@ -10,6 +10,7 @@ import {
   fetchPolicyPortfolio,
   formatCoverage,
   formatMoney,
+  getPolicyCompleteness,
   getPoliciesByCompany,
   getPolicySummary,
   type CoverageKey,
@@ -301,11 +302,12 @@ export default function PoliciesApp() {
           </div>
         )}
 
-        <section className="grid gap-3 md:grid-cols-4">
+        <section className="grid gap-3 md:grid-cols-5">
           <SummaryTile label="已建立保單" value={`${totals.policyCount} 張`} />
           <SummaryTile label="保險公司" value={`${totals.companyCount} 家`} />
           <SummaryTile label="年繳保費" value={formatMoney(totals.premium)} />
           <SummaryTile label="待補資料" value={`${totals.incomplete} 張`} tone="amber" />
+          <SummaryTile label="平均完整度" value={`${totals.averageCompleteness}%`} tone="sky" />
         </section>
 
         <section className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
@@ -426,11 +428,12 @@ export default function PoliciesApp() {
   );
 }
 
-function SummaryTile({ label, value, tone = "teal" }: { label: string; value: string; tone?: "teal" | "amber" }) {
+function SummaryTile({ label, value, tone = "teal" }: { label: string; value: string; tone?: "teal" | "amber" | "sky" }) {
+  const toneClass = tone === "amber" ? "text-amber-600" : tone === "sky" ? "text-sky-700" : "text-teal-700";
   return (
     <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 shadow-sm">
       <p className="text-sm font-bold text-slate-500">{label}</p>
-      <p className={`mt-2 text-2xl font-bold ${tone === "amber" ? "text-amber-600" : "text-teal-700"}`}>{value}</p>
+      <p className={`mt-2 text-2xl font-bold ${toneClass}`}>{value}</p>
     </div>
   );
 }
@@ -482,6 +485,13 @@ function PolicyRow({
     label: COVERAGE_LABELS[key].label,
     value: formatCoverage(key, policy.coverages[key] ?? 0),
   }));
+  const completeness = getPolicyCompleteness(policy);
+  const completenessTone =
+    completeness.level === "complete"
+      ? "bg-emerald-100 text-emerald-700"
+      : completeness.level === "partial"
+        ? "bg-amber-100 text-amber-700"
+        : "bg-rose-100 text-rose-700";
 
   return (
     <article className="rounded-2xl border border-slate-100 bg-slate-50/70 p-4">
@@ -497,6 +507,9 @@ function PolicyRow({
               }`}
             >
               {policy.status}
+            </span>
+            <span className={`rounded-lg px-2 py-1 text-xs font-bold ${completenessTone}`}>
+              完整度 {completeness.score}%
             </span>
           </div>
           <h3 className="mt-2 truncate text-base font-bold text-slate-950">{policy.name}</h3>
@@ -537,6 +550,18 @@ function PolicyRow({
           </div>
         ))}
       </div>
+      {completeness.missing.length > 0 && (
+        <div className="mt-4 rounded-xl border border-amber-100 bg-amber-50 px-3 py-2">
+          <p className="text-xs font-bold text-amber-800">待補欄位</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {completeness.missing.slice(0, 6).map((item) => (
+              <span key={item.key} className="rounded-lg bg-white px-2 py-1 text-xs font-bold text-amber-700 ring-1 ring-amber-100">
+                {item.label}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </article>
   );
 }

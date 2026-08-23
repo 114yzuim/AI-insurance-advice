@@ -20,18 +20,22 @@ JSON_FIELDS = {"document_summary", "required_documents", "companies"}
 
 def list_claim_cases(profile_id: str = DEFAULT_PROFILE_ID, client_id: str = "") -> list[dict[str, Any]]:
     ensure_default_profile()
-    clauses = ["profile_id = ?"]
-    params: list[Any] = [profile_id]
+    clauses: list[str] = []
+    params: list[Any] = []
+    if profile_id and profile_id != "all":
+        clauses.append("profile_id = ?")
+        params.append(profile_id)
     if client_id:
         clauses.append("client_id = ?")
         params.append(client_id)
+    where_sql = f"WHERE {' AND '.join(clauses)}" if clauses else ""
 
     with get_inventory_connection() as conn:
         rows = conn.execute(
             f"""
             SELECT *
             FROM claim_cases
-            WHERE {" AND ".join(clauses)}
+            {where_sql}
             ORDER BY datetime(updated_at) DESC, id DESC
             """,
             params,
