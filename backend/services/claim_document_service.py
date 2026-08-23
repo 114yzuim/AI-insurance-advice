@@ -7,6 +7,7 @@ from pathlib import Path
 from uuid import uuid4
 
 import pdfplumber
+from PIL import Image
 
 CLAIM_UPLOAD_DIR = Path(__file__).resolve().parents[1] / "data" / "claim_documents"
 
@@ -50,25 +51,44 @@ def save_claim_document(key: str, file) -> dict:
         "chars": 0,
         "preview": "",
         "message": "文件已儲存。",
+        "ocr_engine": "",
         "extracted": empty_claim_fields(),
     }
 
     if content_type == "application/pdf" or suffix == ".pdf":
         text = extract_pdf_text(local_path)
+        ocr_text = ""
+        if not text.strip():
+            ocr_text, ocr_message = extract_pdf_ocr_text(local_path)
+            result["ocr_engine"] = "tesseract"
+            if ocr_text.strip():
+                text = ocr_text
+                result["status"] = "ocr_parsed"
+                result["message"] = "掃描 PDF 已透過 OCR 辨識文字。"
+            else:
+                result["status"] = "needs_ocr"
+                result["message"] = ocr_message
+        else:
+            result["status"] = "parsed"
+            result["message"] = "PDF 已抽取文字。"
+
+        result["chars"] = len(text)
+        result["preview"] = text[:800]
+        result["extracted"] = extract_claim_fields(text, key)
+        return result
+
+    if content_type.startswith("image/") or suffix in {".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff"}:
+        text, ocr_message = extract_image_ocr_text(local_path)
+        result["ocr_engine"] = "tesseract"
         result["chars"] = len(text)
         result["preview"] = text[:800]
         result["extracted"] = extract_claim_fields(text, key)
         if text.strip():
-            result["status"] = "parsed"
-            result["message"] = "PDF 已抽取文字。"
+            result["status"] = "ocr_parsed"
+            result["message"] = "圖片已透過 OCR 辨識文字。"
         else:
             result["status"] = "needs_ocr"
-            result["message"] = "PDF 可能是掃描檔，需要 OCR。"
-        return result
-
-    if content_type.startswith("image/") or suffix in {".jpg", ".jpeg", ".png"}:
-        result["status"] = "needs_ocr"
-        result["message"] = "圖片已儲存，等待 OCR 引擎辨識。"
+            result["message"] = ocr_message
         return result
 
     result["status"] = "unsupported"
@@ -135,6 +155,78 @@ def summarize_claim_documents(documents: list[dict]) -> dict:
     summary["medical_expense_total"] = max(totals) if totals else None
     summary["self_pay_total"] = max(self_pay_totals) if self_pay_totals else None
     return summary
+
+
+def extract_pdf_text(path: Path, max_pages: int = 5) -> str:
+    pages: list[str] = []
+    try:
+        with pdfplumber.open(path) as pdf:
+            for index, page in enumerate(pdf.pages[:max_pages], 1):
+                text = (page.extract_text(x_tolerance=1, y_tolerance=3) or "").strip()
+                if text:
+                    pages.append(f"[第 {index} 頁]\n{text}")
+    except Exception:
+        return ""
+    return "\n\n".join(pages).strip()
+
+
+def extract_pdf_ocr_text(path: Path, max_pages: int = 3) -> tuple[str, str]:
+    try:
+        import fitz
+    except Exception:
+        return "", "PDF 是掃描檔，但目前缺少 PyMuPDF，無法轉圖 OCR。"
+
+    try:
+        import pytesseract
+    except Exception:
+        return "", "PDF 是掃描檔，但目前缺少 pytesseract 套件。"
+
+    pages: list[str] = []
+    try:
+        document = fitz.open(path)
+        for page_index in range(min(max_pages, document.page_count)):
+            page = document.load_page(page_index)
+            pixmap = page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=False)
+            image = Image.frombytes("RGB", [pixmap.width, pixmap.height], pixmap.samples)
+            text = pytesseract.image_to_string(image, lang=get_ocr_languages())
+            if text.strip():
+                pages.append(f"[第 {page_index + 1} 頁 OCR]\n{text.strip()}")
+    except pytesseract.TesseractNotFoundError:
+        return "", "PDF 是掃描檔，但伺服器尚未安裝 Tesseract OCR 引擎。"
+    except Exception as exc:
+        return "", f"OCR 解析失敗：{exc}"
+    finally:
+        try:
+            document.close()
+        except Exception:
+            pass
+
+    if not pages:
+        return "", "OCR 未辨識到文字，請確認檔案清晰度或改上傳可複製文字的 PDF。"
+    return "\n\n".join(pages), "OCR 已完成。"
+
+
+def extract_image_ocr_text(path: Path) -> tuple[str, str]:
+    try:
+        import pytesseract
+    except Exception:
+        return "", "圖片已儲存，但目前缺少 pytesseract 套件。"
+
+    try:
+        image = Image.open(path)
+        text = pytesseract.image_to_string(image, lang=get_ocr_languages())
+    except pytesseract.TesseractNotFoundError:
+        return "", "圖片已儲存，但伺服器尚未安裝 Tesseract OCR 引擎。"
+    except Exception as exc:
+        return "", f"OCR 解析失敗：{exc}"
+
+    if not text.strip():
+        return "", "OCR 未辨識到文字，請確認圖片清晰度。"
+    return text.strip(), "OCR 已完成。"
+
+
+def get_ocr_languages() -> str:
+    return "chi_tra+eng"
 
 
 def normalize_text(text: str) -> str:
@@ -295,16 +387,3 @@ def is_meaningful_medical_text(value: str) -> bool:
     if any(label in value for label in ["醫師", "醫院", "地址", "電話", "身分證"]):
         return False
     return True
-
-
-def extract_pdf_text(path: Path, max_pages: int = 5) -> str:
-    pages: list[str] = []
-    try:
-        with pdfplumber.open(path) as pdf:
-            for index, page in enumerate(pdf.pages[:max_pages], 1):
-                text = (page.extract_text(x_tolerance=1, y_tolerance=3) or "").strip()
-                if text:
-                    pages.append(f"[第 {index} 頁]\n{text}")
-    except Exception:
-        return ""
-    return "\n\n".join(pages).strip()

@@ -189,7 +189,7 @@ async def upload_claim_documents(
     return {
         "documents": documents,
         "summary": summarize_claim_documents(documents),
-        "parsed_count": len([doc for doc in documents if doc["status"] == "parsed"]),
+        "parsed_count": len([doc for doc in documents if doc["status"] in {"parsed", "ocr_parsed"}]),
         "needs_ocr_count": len([doc for doc in documents if doc["status"] == "needs_ocr"]),
     }
 

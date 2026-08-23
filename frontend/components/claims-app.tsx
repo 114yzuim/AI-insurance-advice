@@ -51,7 +51,7 @@ type ClaimDocumentResult = {
   key: UploadKey;
   title: string;
   filename: string;
-  status: "parsed" | "needs_ocr" | "stored" | "unsupported";
+  status: "parsed" | "ocr_parsed" | "needs_ocr" | "stored" | "unsupported";
   chars: number;
   preview: string;
   message: string;
@@ -569,8 +569,10 @@ function DocumentParsePanel({
                 <p className="text-sm font-bold text-slate-900">{doc.title}</p>
                 <p className="mt-0.5 text-xs text-slate-400">{doc.filename}</p>
               </div>
-              <span className={`w-fit rounded-lg px-2 py-1 text-xs font-bold ${doc.status === "parsed" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
-                {doc.status === "parsed" ? `已讀取 ${doc.chars.toLocaleString("zh-TW")} 字` : doc.message}
+              <span className={`w-fit rounded-lg px-2 py-1 text-xs font-bold ${doc.status === "parsed" || doc.status === "ocr_parsed" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
+                {doc.status === "parsed" || doc.status === "ocr_parsed"
+                  ? `${doc.status === "ocr_parsed" ? "OCR 已讀取" : "已讀取"} ${doc.chars.toLocaleString("zh-TW")} 字`
+                  : doc.message}
               </span>
             </div>
             {doc.preview && (

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from fastapi import APIRouter, File, Form, HTTPException, Query, UploadFile
+from fastapi import APIRouter, File, Form, HTTPException, Query, Response, UploadFile
 from pydantic import BaseModel, Field
 
 from services.policy_service import (
@@ -16,6 +16,7 @@ from services.policy_service import (
     list_policies,
     update_policy,
 )
+from services.policy_report_service import build_policy_report_pdf
 
 router = APIRouter()
 
@@ -75,6 +76,29 @@ def profiles() -> list[dict[str, Any]]:
 @router.post("/profiles", status_code=201)
 def store_profile(payload: ProfilePayload) -> dict[str, Any]:
     return create_profile(payload.model_dump())
+
+
+@router.get("/report/pdf")
+def policy_report_pdf(
+    profile_id: str = Query(default=DEFAULT_PROFILE_ID),
+    owner_name: str = Query(default=""),
+    age: int | None = Query(default=None),
+    occupation: str = Query(default=""),
+    monthly_income: float | None = Query(default=None),
+) -> Response:
+    pdf = build_policy_report_pdf(
+        profile_id=profile_id,
+        owner_name=owner_name,
+        age=age,
+        occupation=occupation,
+        monthly_income=monthly_income,
+    )
+    filename = f"policy-review-{profile_id}.pdf"
+    return Response(
+        content=pdf,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
 
 
 @router.get("/{policy_id}")

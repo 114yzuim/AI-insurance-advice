@@ -111,6 +111,7 @@ export default function PolicyCheckPage() {
   const profileId = `advisor-client-${client.id}`;
   const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&relation=${encodeURIComponent("本人")}`;
   const claimsHref = `/claims?profile_id=${encodeURIComponent(profileId)}&client_id=${client.id}&owner_name=${encodeURIComponent(client.name)}`;
+  const reportPdfHref = `/api/policies/report/pdf?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&age=${client.age}&occupation=${encodeURIComponent(client.occupation || "")}&monthly_income=${client.monthly_income || 0}`;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 print:max-w-none print:bg-white print:px-0 print:py-0">
@@ -138,6 +139,12 @@ export default function PolicyCheckPage() {
           >
             理賠服務
           </Link>
+          <a
+            href={reportPdfHref}
+            className="rounded-lg bg-teal-700 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-teal-800"
+          >
+            下載正式 PDF
+          </a>
           <button
             onClick={() => window.print()}
             className="rounded-lg bg-slate-950 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-slate-800"
@@ -203,6 +210,27 @@ export default function PolicyCheckPage() {
             </div>
           </div>
         </div>
+
+        <section className="mb-6 grid gap-3 md:grid-cols-3">
+          <div className="rounded-xl border border-teal-100 bg-teal-50 p-4">
+            <p className="text-xs font-bold text-teal-700">總評</p>
+            <p className="mt-2 text-sm font-bold leading-6 text-teal-950">
+              {checkResult.score >= 80 ? "保障架構大致完整" : checkResult.score >= 50 ? "保障與資料仍需補強" : "目前資料不足，需先整理既有保單"}
+            </p>
+          </div>
+          <div className="rounded-xl border border-amber-100 bg-amber-50 p-4">
+            <p className="text-xs font-bold text-amber-700">優先處理</p>
+            <p className="mt-2 text-sm font-bold leading-6 text-amber-950">
+              {checkResult.priorities[0] ? `${checkResult.priorities[0].label}缺口 ${formatGapValue(checkResult.priorities[0])}` : "檢查條款限制與重複投保"}
+            </p>
+          </div>
+          <div className="rounded-xl border border-sky-100 bg-sky-50 p-4">
+            <p className="text-xs font-bold text-sky-700">理賠前置</p>
+            <p className="mt-2 text-sm font-bold leading-6 text-sky-950">
+              {portfolio.summary.incomplete > 0 ? `${portfolio.summary.incomplete} 張保單需補齊資料` : "可進入理賠文件比對流程"}
+            </p>
+          </div>
+        </section>
 
         <div className="grid gap-5 lg:grid-cols-[280px_minmax(0,1fr)]">
           <aside className="rounded-xl bg-gray-50 p-4 text-sm print:border print:border-gray-200">
