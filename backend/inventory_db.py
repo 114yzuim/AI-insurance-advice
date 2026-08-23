@@ -157,6 +157,29 @@ CREATE TABLE IF NOT EXISTS customer_policy_uploads (
 CREATE INDEX IF NOT EXISTS idx_customer_policies_profile ON customer_policies(profile_id);
 CREATE INDEX IF NOT EXISTS idx_customer_policies_company ON customer_policies(company_name);
 CREATE INDEX IF NOT EXISTS idx_customer_policy_uploads_profile ON customer_policy_uploads(profile_id);
+
+CREATE TABLE IF NOT EXISTS claim_cases (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    profile_id TEXT NOT NULL REFERENCES insurance_profiles(id) ON DELETE CASCADE,
+    client_id TEXT DEFAULT '',
+    owner_name TEXT DEFAULT '',
+    scenario TEXT DEFAULT '',
+    status TEXT NOT NULL DEFAULT '文件整理中',
+    medical_expense_total REAL NOT NULL DEFAULT 0,
+    estimated_total REAL NOT NULL DEFAULT 0,
+    high_confidence_total REAL NOT NULL DEFAULT 0,
+    review_total REAL NOT NULL DEFAULT 0,
+    document_summary TEXT NOT NULL DEFAULT '{}',
+    required_documents TEXT NOT NULL DEFAULT '[]',
+    companies TEXT NOT NULL DEFAULT '[]',
+    notes TEXT DEFAULT '',
+    next_follow_up_date TEXT DEFAULT '',
+    created_at TEXT DEFAULT (datetime('now')),
+    updated_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_claim_cases_profile ON claim_cases(profile_id, updated_at);
+CREATE INDEX IF NOT EXISTS idx_claim_cases_client ON claim_cases(client_id, updated_at);
 """
 
 

@@ -1,7 +1,9 @@
 import asyncio
 from typing import List
 from fastapi import APIRouter, File, UploadFile
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from fastapi import HTTPException, Query
+from services.claim_case_service import create_claim_case, list_claim_cases, update_claim_case
 from services.claims_service import analyze_claim
 from services.claim_document_service import save_claim_document, summarize_claim_documents
 from services.claim_rules_service import estimate_claim
@@ -35,6 +37,33 @@ class ClaimsRequest(BaseModel):
 class ClaimEstimateRequest(BaseModel):
     profile_id: str = "demo-user"
     scenario: str = ""
+
+
+class ClaimCasePayload(BaseModel):
+    profile_id: str = "demo-user"
+    client_id: str = ""
+    owner_name: str = ""
+    scenario: str = ""
+    status: str = "文件整理中"
+    medical_expense_total: float = 0
+    estimated_total: float = 0
+    high_confidence_total: float = 0
+    review_total: float = 0
+    document_summary: dict = Field(default_factory=dict)
+    required_documents: list[dict] = Field(default_factory=list)
+    companies: list[dict] = Field(default_factory=list)
+    notes: str = ""
+    next_follow_up_date: str = ""
+
+
+class ClaimCaseUpdatePayload(BaseModel):
+    status: str | None = None
+    notes: str | None = None
+    next_follow_up_date: str | None = None
+    medical_expense_total: float | None = None
+    estimated_total: float | None = None
+    high_confidence_total: float | None = None
+    review_total: float | None = None
 
 
 class CoverageResult(BaseModel):
@@ -163,6 +192,30 @@ async def upload_claim_documents(
         "parsed_count": len([doc for doc in documents if doc["status"] == "parsed"]),
         "needs_ocr_count": len([doc for doc in documents if doc["status"] == "needs_ocr"]),
     }
+
+
+@router.get("/cases")
+async def claim_cases_index(
+    profile_id: str = Query(default="demo-user"),
+    client_id: str = Query(default=""),
+):
+    return list_claim_cases(profile_id=profile_id, client_id=client_id)
+
+
+@router.post("/cases", status_code=201)
+async def claim_cases_store(payload: ClaimCasePayload):
+    return create_claim_case(payload.model_dump())
+
+
+@router.patch("/cases/{case_id}")
+async def claim_cases_update(case_id: int, payload: ClaimCaseUpdatePayload):
+    claim_case = update_claim_case(
+        case_id,
+        {key: value for key, value in payload.model_dump().items() if value is not None},
+    )
+    if not claim_case:
+        raise HTTPException(status_code=404, detail="Claim case not found")
+    return claim_case
 
 
 @router.post("/estimate")

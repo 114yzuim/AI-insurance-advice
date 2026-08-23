@@ -58,6 +58,28 @@ type ClaimDocumentResult = {
   extracted?: ClaimDocumentExtraction;
 };
 
+type ClaimCaseStatus = "文件整理中" | "待送件" | "已送件" | "保險公司審核中" | "已補件" | "已結案";
+
+type ClaimCase = {
+  id: number;
+  profile_id: string;
+  client_id: string;
+  owner_name: string;
+  scenario: string;
+  status: ClaimCaseStatus;
+  medical_expense_total: number;
+  estimated_total: number;
+  high_confidence_total: number;
+  review_total: number;
+  document_summary: ClaimDocumentExtraction;
+  required_documents: Array<{ name: string; count: number }>;
+  companies: CompanyClaim[];
+  notes: string;
+  next_follow_up_date: string;
+  created_at: string;
+  updated_at: string;
+};
+
 const EMPTY_DOCUMENT_SUMMARY: ClaimDocumentExtraction = {
   diagnoses: [],
   surgeries: [],
@@ -88,6 +110,8 @@ const CLAIM_FACTORS: Partial<Record<CoverageKey, { factor: number; confidence: C
   cancer: { factor: 350, confidence: "需保險公司確認" },
 };
 
+const CLAIM_CASE_STATUSES: ClaimCaseStatus[] = ["文件整理中", "待送件", "已送件", "保險公司審核中", "已補件", "已結案"];
+
 export default function ClaimsApp() {
   const searchParams = useSearchParams();
   const profileId = searchParams.get("profile_id") ?? "demo-user";
@@ -100,6 +124,8 @@ export default function ClaimsApp() {
   const [documentSummary, setDocumentSummary] = useState<ClaimDocumentExtraction>(EMPTY_DOCUMENT_SUMMARY);
   const [documentError, setDocumentError] = useState("");
   const [claimEstimate, setClaimEstimate] = useState<ClaimEstimate | null>(null);
+  const [claimCases, setClaimCases] = useState<ClaimCase[]>([]);
+  const [caseError, setCaseError] = useState("");
   const [portfolio, setPortfolio] = useState<PolicyPortfolio>(EMPTY_PORTFOLIO);
 
   useEffect(() => {
@@ -115,6 +141,11 @@ export default function ClaimsApp() {
       mounted = false;
     };
   }, [profileId]);
+
+  useEffect(() => {
+    loadClaimCases();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [profileId, clientId]);
 
   const policySummary = portfolio.summary;
   const companies = useMemo(() => getPoliciesByCompany(portfolio.policies), [portfolio.policies]);
@@ -157,6 +188,20 @@ export default function ClaimsApp() {
     }
   }
 
+  async function loadClaimCases() {
+    setCaseError("");
+    try {
+      const params = new URLSearchParams({ profile_id: profileId });
+      if (clientId) params.set("client_id", clientId);
+      const res = await fetch(`/api/claims/cases?${params.toString()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error(await res.text());
+      setClaimCases(await res.json());
+    } catch {
+      setCaseError("理賠案件讀取失敗。");
+      setClaimCases([]);
+    }
+  }
+
   if (phase === "analyzing") {
     return (
       <div className="flex min-h-full items-center justify-center bg-[#f7faf8] px-5 text-center">
@@ -180,6 +225,11 @@ export default function ClaimsApp() {
         estimate={claimEstimate}
         documents={documentResults}
         documentSummary={documentSummary}
+        profileId={profileId}
+        clientId={clientId ?? ""}
+        claimCases={claimCases}
+        caseError={caseError}
+        onCasesChanged={loadClaimCases}
         documentError={documentError}
         onReset={() => setPhase("input")}
       />
@@ -296,6 +346,11 @@ function ClaimResultView({
   estimate,
   documents,
   documentSummary,
+  profileId,
+  clientId,
+  claimCases,
+  caseError,
+  onCasesChanged,
   documentError,
   onReset,
 }: {
@@ -305,9 +360,16 @@ function ClaimResultView({
   estimate: ClaimEstimate | null;
   documents: ClaimDocumentResult[];
   documentSummary: ClaimDocumentExtraction;
+  profileId: string;
+  clientId: string;
+  claimCases: ClaimCase[];
+  caseError: string;
+  onCasesChanged: () => Promise<void>;
   documentError: string;
   onReset: () => void;
 }) {
+  const [savingCase, setSavingCase] = useState(false);
+  const [caseMessage, setCaseMessage] = useState("");
   const fallbackClaims = buildClaimEstimate(companies);
   const companyClaims = estimate?.companies ?? fallbackClaims;
   const estimatedTotal = estimate?.estimated_total ?? companyClaims.reduce((sum, company) => sum + company.total, 0);
@@ -323,6 +385,54 @@ function ClaimResultView({
   const medicalExpenseLabel = documentSummary.medical_expense_total
     ? formatMoney(documentSummary.medical_expense_total)
     : "待文件辨識";
+
+  async function createCase() {
+    setSavingCase(true);
+    setCaseMessage("");
+    try {
+      const res = await fetch("/api/claims/cases", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          profile_id: profileId,
+          client_id: clientId,
+          owner_name: ownerName,
+          scenario,
+          status: "文件整理中",
+          medical_expense_total: documentSummary.medical_expense_total ?? 0,
+          estimated_total: estimatedTotal,
+          high_confidence_total: highConfidenceTotal,
+          review_total: reviewTotal,
+          document_summary: documentSummary,
+          required_documents: requiredDocuments,
+          companies: companyClaims,
+        }),
+      });
+      if (!res.ok) throw new Error(await res.text());
+      await onCasesChanged();
+      setCaseMessage("已建立理賠案件。");
+    } catch {
+      setCaseMessage("理賠案件建立失敗，請稍後再試。");
+    } finally {
+      setSavingCase(false);
+    }
+  }
+
+  async function updateCase(caseId: number, patch: Partial<ClaimCase>) {
+    setCaseMessage("");
+    try {
+      const res = await fetch(`/api/claims/cases/${caseId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+      });
+      if (!res.ok) throw new Error(await res.text());
+      await onCasesChanged();
+      setCaseMessage("案件進度已更新。");
+    } catch {
+      setCaseMessage("案件進度更新失敗。");
+    }
+  }
 
   return (
     <div className="min-h-full bg-[#f7faf8] px-5 py-8 text-slate-900 md:px-8">
@@ -417,6 +527,15 @@ function ClaimResultView({
                 ))}
               </div>
             </section>
+
+            <ClaimCasePanel
+              cases={claimCases}
+              caseError={caseError}
+              caseMessage={caseMessage}
+              saving={savingCase}
+              onCreate={createCase}
+              onUpdate={updateCase}
+            />
           </aside>
         </div>
 
@@ -468,6 +587,93 @@ function DocumentParsePanel({
                 ))}
               </div>
             )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ClaimCasePanel({
+  cases,
+  caseError,
+  caseMessage,
+  saving,
+  onCreate,
+  onUpdate,
+}: {
+  cases: ClaimCase[];
+  caseError: string;
+  caseMessage: string;
+  saving: boolean;
+  onCreate: () => void;
+  onUpdate: (caseId: number, patch: Partial<ClaimCase>) => void;
+}) {
+  return (
+    <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h2 className="text-sm font-bold text-slate-950">理賠案件進度</h2>
+          <p className="mt-1 text-xs leading-5 text-slate-500">建立案件後可追蹤送件狀態、補件與下次聯繫。</p>
+        </div>
+        <button
+          onClick={onCreate}
+          disabled={saving}
+          className="shrink-0 rounded-xl bg-teal-700 px-3 py-2 text-xs font-bold text-white transition hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {saving ? "建立中" : "+ 建立案件"}
+        </button>
+      </div>
+
+      {(caseMessage || caseError) && (
+        <p className={`mt-3 text-xs font-bold ${caseError ? "text-rose-600" : "text-teal-700"}`}>
+          {caseError || caseMessage}
+        </p>
+      )}
+
+      <div className="mt-4 space-y-3">
+        {cases.length === 0 && (
+          <div className="rounded-2xl border border-dashed border-slate-200 px-3 py-5 text-center text-sm text-slate-400">
+            尚未建立理賠案件
+          </div>
+        )}
+
+        {cases.map((claimCase) => (
+          <div key={claimCase.id} className="rounded-2xl bg-slate-50 p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="text-sm font-bold text-slate-950">案件 #{claimCase.id}</p>
+                <p className="mt-1 text-xs text-slate-500">預估 {formatMoney(claimCase.estimated_total)}</p>
+              </div>
+              <select
+                value={claimCase.status}
+                onChange={(event) => onUpdate(claimCase.id, { status: event.target.value as ClaimCaseStatus })}
+                className="rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-bold text-slate-700 outline-none focus:border-teal-300"
+              >
+                {CLAIM_CASE_STATUSES.map((status) => (
+                  <option key={status} value={status}>
+                    {status}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <label className="mt-3 block text-xs font-bold text-slate-500">下次追蹤日</label>
+            <input
+              type="date"
+              defaultValue={claimCase.next_follow_up_date}
+              onBlur={(event) => onUpdate(claimCase.id, { next_follow_up_date: event.target.value })}
+              className="mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 outline-none focus:border-teal-300"
+            />
+
+            <label className="mt-3 block text-xs font-bold text-slate-500">案件備註</label>
+            <textarea
+              defaultValue={claimCase.notes}
+              rows={3}
+              onBlur={(event) => onUpdate(claimCase.id, { notes: event.target.value })}
+              placeholder="例如：已請客戶補收據正本，預計下週送件。"
+              className="mt-1 w-full resize-none rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm leading-6 text-slate-700 outline-none placeholder:text-slate-300 focus:border-teal-300"
+            />
           </div>
         ))}
       </div>
