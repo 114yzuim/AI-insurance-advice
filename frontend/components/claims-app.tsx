@@ -33,6 +33,20 @@ type ClaimEstimate = {
   policy_count: number;
 };
 
+type ClaimDocumentExtraction = {
+  diagnoses: string[];
+  surgeries: string[];
+  hospital_stay: {
+    start_date: string;
+    end_date: string;
+    days: number | null;
+  };
+  medical_expense_total: number | null;
+  self_pay_total: number | null;
+  self_pay_items: string[];
+  matched_signals: string[];
+};
+
 type ClaimDocumentResult = {
   key: UploadKey;
   title: string;
@@ -41,6 +55,17 @@ type ClaimDocumentResult = {
   chars: number;
   preview: string;
   message: string;
+  extracted?: ClaimDocumentExtraction;
+};
+
+const EMPTY_DOCUMENT_SUMMARY: ClaimDocumentExtraction = {
+  diagnoses: [],
+  surgeries: [],
+  hospital_stay: { start_date: "", end_date: "", days: null },
+  medical_expense_total: null,
+  self_pay_total: null,
+  self_pay_items: [],
+  matched_signals: [],
 };
 
 const EMPTY_PORTFOLIO: PolicyPortfolio = {
@@ -72,6 +97,7 @@ export default function ClaimsApp() {
   const [scenario, setScenario] = useState("");
   const [phase, setPhase] = useState<"input" | "analyzing" | "result">("input");
   const [documentResults, setDocumentResults] = useState<ClaimDocumentResult[]>([]);
+  const [documentSummary, setDocumentSummary] = useState<ClaimDocumentExtraction>(EMPTY_DOCUMENT_SUMMARY);
   const [documentError, setDocumentError] = useState("");
   const [claimEstimate, setClaimEstimate] = useState<ClaimEstimate | null>(null);
   const [portfolio, setPortfolio] = useState<PolicyPortfolio>(EMPTY_PORTFOLIO);
@@ -112,8 +138,10 @@ export default function ClaimsApp() {
         if (!res.ok) throw new Error(await res.text());
         const data = await res.json();
         setDocumentResults(data.documents ?? []);
+        setDocumentSummary(data.summary ?? EMPTY_DOCUMENT_SUMMARY);
       } else {
         setDocumentResults([]);
+        setDocumentSummary(EMPTY_DOCUMENT_SUMMARY);
       }
       const estimateRes = await fetch("/api/claims/estimate", {
         method: "POST",
@@ -151,6 +179,7 @@ export default function ClaimsApp() {
         companies={companies}
         estimate={claimEstimate}
         documents={documentResults}
+        documentSummary={documentSummary}
         documentError={documentError}
         onReset={() => setPhase("input")}
       />
@@ -266,6 +295,7 @@ function ClaimResultView({
   companies,
   estimate,
   documents,
+  documentSummary,
   documentError,
   onReset,
 }: {
@@ -274,6 +304,7 @@ function ClaimResultView({
   companies: CompanyPolicyGroup[];
   estimate: ClaimEstimate | null;
   documents: ClaimDocumentResult[];
+  documentSummary: ClaimDocumentExtraction;
   documentError: string;
   onReset: () => void;
 }) {
@@ -289,6 +320,9 @@ function ClaimResultView({
     );
   const reviewTotal = estimate?.review_total ?? estimatedTotal - highConfidenceTotal;
   const requiredDocuments = buildRequiredDocuments(companyClaims.length);
+  const medicalExpenseLabel = documentSummary.medical_expense_total
+    ? formatMoney(documentSummary.medical_expense_total)
+    : "待文件辨識";
 
   return (
     <div className="min-h-full bg-[#f7faf8] px-5 py-8 text-slate-900 md:px-8">
@@ -310,14 +344,19 @@ function ClaimResultView({
         </div>
 
         <section className="grid gap-3 md:grid-cols-3">
-          <MetricCard label="本次醫療費用" value="待文件辨識" tone="text-slate-950" />
+          <MetricCard label="本次醫療費用" value={medicalExpenseLabel} tone="text-slate-950" />
           <MetricCard label="AI 預估可申請理賠" value={formatMoney(estimatedTotal)} tone="text-teal-700" />
           <MetricCard label="涉及保險公司" value={`${companyClaims.length} 家`} tone="text-amber-600" />
         </section>
 
         <div className="mt-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
           <main className="space-y-4">
-            {documents.length > 0 && <DocumentParsePanel documents={documents} documentError={documentError} />}
+            {documents.length > 0 && (
+              <>
+                <DocumentSummaryPanel summary={documentSummary} />
+                <DocumentParsePanel documents={documents} documentError={documentError} />
+              </>
+            )}
             {documentError && documents.length === 0 && (
               <section className="rounded-[1.5rem] border border-rose-200 bg-rose-50 p-5 text-sm font-bold text-rose-700">
                 {documentError}
@@ -420,9 +459,73 @@ function DocumentParsePanel({
                 {doc.preview}
               </p>
             )}
+            {doc.extracted?.matched_signals && doc.extracted.matched_signals.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {doc.extracted.matched_signals.map((signal) => (
+                  <span key={signal} className="rounded-lg bg-white px-2 py-1 text-xs font-bold text-teal-700 ring-1 ring-teal-100">
+                    {signal}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
+    </section>
+  );
+}
+
+function DocumentSummaryPanel({ summary }: { summary: ClaimDocumentExtraction }) {
+  const stay = summary.hospital_stay;
+  const stayText =
+    stay.days || stay.start_date || stay.end_date
+      ? [stay.start_date && stay.end_date ? `${stay.start_date} - ${stay.end_date}` : "", stay.days ? `${stay.days} 天` : ""]
+          .filter(Boolean)
+          .join(" / ")
+      : "待辨識";
+  const rows = [
+    { label: "診斷疾病", value: summary.diagnoses.length ? summary.diagnoses.join("、") : "待辨識" },
+    { label: "住院期間", value: stayText },
+    { label: "手術名稱", value: summary.surgeries.length ? summary.surgeries.join("、") : "待辨識" },
+    {
+      label: "自費金額",
+      value: summary.self_pay_total ? formatMoney(summary.self_pay_total) : "待辨識",
+    },
+  ];
+
+  return (
+    <section className="rounded-[1.5rem] border border-teal-200 bg-white p-5 shadow-sm">
+      <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-sm font-bold text-teal-700">AI 文件判讀摘要</p>
+          <h2 className="mt-1 text-xl font-bold text-slate-950">理賠文件已轉成可比對欄位</h2>
+        </div>
+        <span className="w-fit rounded-lg bg-teal-50 px-2.5 py-1 text-xs font-bold text-teal-700">
+          {summary.matched_signals.length ? `${summary.matched_signals.length} 項訊號` : "待補文件"}
+        </span>
+      </div>
+
+      <div className="grid gap-3 md:grid-cols-2">
+        {rows.map((row) => (
+          <div key={row.label} className="rounded-2xl bg-slate-50 p-4">
+            <p className="text-xs font-bold text-slate-400">{row.label}</p>
+            <p className="mt-2 text-sm font-bold leading-6 text-slate-900">{row.value}</p>
+          </div>
+        ))}
+      </div>
+
+      {summary.self_pay_items.length > 0 && (
+        <div className="mt-4 rounded-2xl bg-amber-50 p-4">
+          <p className="text-xs font-bold text-amber-700">自費或需確認項目</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {summary.self_pay_items.map((item) => (
+              <span key={item} className="rounded-lg bg-white px-2.5 py-1 text-xs font-bold text-amber-800 ring-1 ring-amber-100">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }

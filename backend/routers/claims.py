@@ -3,7 +3,7 @@ from typing import List
 from fastapi import APIRouter, File, UploadFile
 from pydantic import BaseModel
 from services.claims_service import analyze_claim
-from services.claim_document_service import save_claim_document
+from services.claim_document_service import save_claim_document, summarize_claim_documents
 from services.claim_rules_service import estimate_claim
 from services.product_service import get_products
 from services.pdf_service import fetch_pdf_text
@@ -159,6 +159,7 @@ async def upload_claim_documents(
     ]
     return {
         "documents": documents,
+        "summary": summarize_claim_documents(documents),
         "parsed_count": len([doc for doc in documents if doc["status"] == "parsed"]),
         "needs_ocr_count": len([doc for doc in documents if doc["status"] == "needs_ocr"]),
     }
