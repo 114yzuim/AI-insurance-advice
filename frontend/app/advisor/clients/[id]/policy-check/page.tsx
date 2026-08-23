@@ -109,6 +109,7 @@ export default function PolicyCheckPage() {
 
   const profileId = `advisor-client-${client.id}`;
   const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&relation=${encodeURIComponent("本人")}`;
+  const claimsHref = `/claims?profile_id=${encodeURIComponent(profileId)}&client_id=${client.id}&owner_name=${encodeURIComponent(client.name)}`;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 print:max-w-none print:bg-white print:px-0 print:py-0">
@@ -129,6 +130,12 @@ export default function PolicyCheckPage() {
             className="rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-bold text-gray-700 transition hover:border-teal-300 hover:text-teal-700"
           >
             編輯保單
+          </Link>
+          <Link
+            href={claimsHref}
+            className="rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-bold text-gray-700 transition hover:border-amber-300 hover:text-amber-700"
+          >
+            理賠服務
           </Link>
           <button
             onClick={() => window.print()}

@@ -6,8 +6,8 @@ CLAIM_RULES = {
     "daily": {"label": "住院日額", "factor": 6, "confidence": "高度符合"},
     "medical": {"label": "實支實付", "factor": 5000, "confidence": "高度符合"},
     "accident": {"label": "意外保障", "factor": 120, "confidence": "高度符合"},
-    "critical": {"label": "重大傷病", "factor": 500, "confidence": "需確認"},
-    "cancer": {"label": "癌症保障", "factor": 350, "confidence": "需確認"},
+    "critical": {"label": "重大傷病", "factor": 500, "confidence": "需保險公司確認"},
+    "cancer": {"label": "癌症保障", "factor": 350, "confidence": "需保險公司確認"},
 }
 
 

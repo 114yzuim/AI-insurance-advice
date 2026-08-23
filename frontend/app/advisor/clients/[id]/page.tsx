@@ -99,6 +99,7 @@ export default function ClientHubPage() {
 
   const profileId = `advisor-client-${client.id}`;
   const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(client.name)}&relation=${encodeURIComponent("本人")}`;
+  const claimsHref = `/claims?profile_id=${encodeURIComponent(profileId)}&client_id=${client.id}&owner_name=${encodeURIComponent(client.name)}`;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -173,7 +174,7 @@ export default function ClientHubPage() {
           <WorkflowCard title="保單資料" text="上傳或手動輸入客戶現有保單。" href={policyHref} />
           <WorkflowCard title="保單健診" text="統整保障、缺口、保費與待補欄位。" href={`/advisor/clients/${client.id}/policy-check`} />
           <WorkflowCard title="健診報告" text="產出可給客戶說明的報告預覽。" href={`/advisor/clients/${client.id}/policy-check#report`} />
-          <WorkflowCard title="理賠服務" text="以既有保單比對可申請項目。" href="/claims" />
+          <WorkflowCard title="理賠服務" text="以既有保單比對可申請項目。" href={claimsHref} />
         </div>
       </section>
 

@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import {
   COVERAGE_LABELS,
-  DEMO_POLICIES,
   fetchPolicyPortfolio,
   formatMoney,
   getPoliciesByCompany,
@@ -14,9 +15,8 @@ import {
 
 type UploadKey = "diagnosis" | "receipt" | "detail";
 type UploadedFiles = Record<UploadKey, File | null>;
-
 type CompanyPolicyGroup = ReturnType<typeof getPoliciesByCompany>[number];
-type Confidence = "高度符合" | "需確認";
+type Confidence = "高度符合" | "需保險公司確認";
 
 type CompanyClaim = {
   company: string;
@@ -43,63 +43,57 @@ type ClaimDocumentResult = {
   message: string;
 };
 
-const UPLOADS: Array<{ key: UploadKey; title: string; text: string }> = [
-  { key: "diagnosis", title: "診斷證明", text: "疾病名稱、住院期間、手術名稱" },
-  { key: "receipt", title: "醫療收據", text: "本次醫療費用與自費金額" },
-  { key: "detail", title: "費用明細", text: "病房、手術、藥材與處置項目" },
-];
+const EMPTY_PORTFOLIO: PolicyPortfolio = {
+  profile: null,
+  policies: [],
+  summary: getPolicySummary([]),
+};
 
-const DOCUMENTS = [
-  { name: "診斷證明", count: 2 },
-  { name: "收據正本", count: 1 },
-  { name: "醫療費用明細", count: 1 },
-  { name: "理賠申請書", count: 3 },
+const UPLOADS: Array<{ key: UploadKey; title: string; text: string }> = [
+  { key: "diagnosis", title: "診斷證明", text: "用來判斷疾病、手術名稱、住院期間與診療項目。" },
+  { key: "receipt", title: "醫療收據", text: "用來辨識本次支出、健保與自費金額。" },
+  { key: "detail", title: "醫療費用明細", text: "用來比對實支實付、手術與雜費項目。" },
 ];
 
 const CLAIM_FACTORS: Partial<Record<CoverageKey, { factor: number; confidence: Confidence }>> = {
   daily: { factor: 6, confidence: "高度符合" },
   medical: { factor: 5000, confidence: "高度符合" },
   accident: { factor: 120, confidence: "高度符合" },
-  critical: { factor: 500, confidence: "需確認" },
-  cancer: { factor: 350, confidence: "需確認" },
+  critical: { factor: 500, confidence: "需保險公司確認" },
+  cancer: { factor: 350, confidence: "需保險公司確認" },
 };
 
 export default function ClaimsApp() {
+  const searchParams = useSearchParams();
+  const profileId = searchParams.get("profile_id") ?? "demo-user";
+  const ownerName = searchParams.get("owner_name") ?? "客戶";
+  const clientId = searchParams.get("client_id");
   const [files, setFiles] = useState<UploadedFiles>({ diagnosis: null, receipt: null, detail: null });
-  const [scenario, setScenario] = useState("右膝韌帶斷裂住院 6 天，進行關節鏡重建手術，醫療費用含自費耗材。");
+  const [scenario, setScenario] = useState("");
   const [phase, setPhase] = useState<"input" | "analyzing" | "result">("input");
   const [documentResults, setDocumentResults] = useState<ClaimDocumentResult[]>([]);
   const [documentError, setDocumentError] = useState("");
   const [claimEstimate, setClaimEstimate] = useState<ClaimEstimate | null>(null);
-  const [portfolio, setPortfolio] = useState<PolicyPortfolio>(() => ({
-    profile: null,
-    policies: DEMO_POLICIES,
-    summary: getPolicySummary(DEMO_POLICIES),
-  }));
+  const [portfolio, setPortfolio] = useState<PolicyPortfolio>(EMPTY_PORTFOLIO);
 
   useEffect(() => {
     let mounted = true;
-    fetchPolicyPortfolio()
+    fetchPolicyPortfolio(profileId)
       .then((data) => {
         if (mounted) setPortfolio(data);
       })
       .catch(() => {
-        if (mounted) {
-          setPortfolio({
-            profile: null,
-            policies: DEMO_POLICIES,
-            summary: getPolicySummary(DEMO_POLICIES),
-          });
-        }
+        if (mounted) setPortfolio(EMPTY_PORTFOLIO);
       });
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [profileId]);
 
   const policySummary = portfolio.summary;
   const companies = useMemo(() => getPoliciesByCompany(portfolio.policies), [portfolio.policies]);
   const uploadedCount = Object.values(files).filter(Boolean).length;
+  const policyHref = `/policies?profile_id=${encodeURIComponent(profileId)}&owner_name=${encodeURIComponent(ownerName)}&relation=${encodeURIComponent("本人")}`;
 
   function setFile(key: UploadKey, file: File | null) {
     setFiles((prev) => ({ ...prev, [key]: file }));
@@ -124,18 +118,14 @@ export default function ClaimsApp() {
       const estimateRes = await fetch("/api/claims/estimate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ profile_id: "demo-user", scenario }),
+        body: JSON.stringify({ profile_id: profileId, scenario }),
       });
-      if (estimateRes.ok) {
-        setClaimEstimate(await estimateRes.json());
-      } else {
-        setClaimEstimate(null);
-      }
+      setClaimEstimate(estimateRes.ok ? await estimateRes.json() : null);
     } catch {
-      setDocumentError("文件上傳或辨識失敗，仍可先用情境描述進行估算。");
+      setDocumentError("文件解析或理賠估算失敗，請稍後再試。");
       setClaimEstimate(null);
     } finally {
-      window.setTimeout(() => setPhase("result"), 700);
+      window.setTimeout(() => setPhase("result"), 500);
     }
   }
 
@@ -144,9 +134,9 @@ export default function ClaimsApp() {
       <div className="flex min-h-full items-center justify-center bg-[#f7faf8] px-5 text-center">
         <div>
           <SpinnerIcon />
-          <h1 className="mt-5 text-2xl font-bold text-slate-950">AI 正在分析本次理賠資料</h1>
+          <h1 className="mt-5 text-2xl font-bold text-slate-950">AI 正在比對理賠資料</h1>
           <p className="mt-3 text-sm leading-6 text-slate-500">
-            正在儲存文件、抽取 PDF 文字，並比對你目前的 {policySummary.policyCount} 張保單。
+            正在解析文件，並比對 {ownerName} 目前系統中的 {policySummary.policyCount} 張保單。
           </p>
         </div>
       </div>
@@ -156,6 +146,7 @@ export default function ClaimsApp() {
   if (phase === "result") {
     return (
       <ClaimResultView
+        ownerName={ownerName}
         scenario={scenario}
         companies={companies}
         estimate={claimEstimate}
@@ -171,27 +162,37 @@ export default function ClaimsApp() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-bold text-teal-700">理賠中心</p>
+            <p className="text-sm font-bold text-teal-700">理賠服務中心</p>
             <h1 className="mt-2 text-3xl font-bold leading-tight text-slate-950 md:text-5xl">
-              上傳診斷書與收據，AI 自動比對我的保單
+              {ownerName} 的理賠試算
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-7 text-slate-600">
-              使用者不需要知道該選哪張保單。系統會先辨識文件，再從已建立的保單資料中找出可能能申請的保障與文件。
+              上傳診斷證明、收據與醫療明細後，系統會依此客戶現有保單比對可能理賠項目、預估金額與應備文件。
             </p>
           </div>
-          <div className="rounded-2xl border border-teal-100 bg-white px-4 py-3 shadow-sm">
-            <p className="text-xs font-bold text-slate-400">目前可比對保單</p>
-            <p className="mt-1 text-lg font-bold text-teal-700">
-              {policySummary.policyCount} 張・{policySummary.companyCount} 家公司
-            </p>
+          <div className="flex flex-wrap gap-2">
+            {clientId && (
+              <Link
+                href={`/advisor/clients/${clientId}`}
+                className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-700 transition hover:border-amber-300 hover:text-amber-700"
+              >
+                返回客戶 360
+              </Link>
+            )}
+            <Link
+              href={policyHref}
+              className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-700 transition hover:border-teal-300 hover:text-teal-700"
+            >
+              編輯保單
+            </Link>
           </div>
         </div>
 
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
           <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
             <div className="mb-4">
-              <h2 className="text-xl font-bold text-slate-950">本次理賠文件</h2>
-              <p className="mt-1 text-sm text-slate-500">PDF 會先抽取文字；圖片會先儲存並標記待 OCR。</p>
+              <h2 className="text-xl font-bold text-slate-950">上傳理賠文件</h2>
+              <p className="mt-1 text-sm text-slate-500">第一版會先保存並擷取可讀文字，後續可接 OCR 與醫療費用自動辨識。</p>
             </div>
 
             <div className="grid gap-3 md:grid-cols-3">
@@ -206,12 +207,13 @@ export default function ClaimsApp() {
               ))}
             </div>
 
-            <label className="mt-5 block text-sm font-bold text-slate-700">補充情境</label>
+            <label className="mt-5 block text-sm font-bold text-slate-700">事故或疾病補充說明</label>
             <textarea
               value={scenario}
               onChange={(e) => setScenario(e.target.value)}
               rows={5}
-              className="mt-3 w-full resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-7 text-slate-800 outline-none transition focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
+              placeholder="例如：因疾病住院 6 天，期間有手術與自費醫材，想確認哪些保單可能可以申請。"
+              className="mt-3 w-full resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-7 text-slate-800 outline-none transition placeholder:text-slate-300 focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
             />
 
             <button
@@ -219,14 +221,21 @@ export default function ClaimsApp() {
               disabled={uploadedCount === 0 && !scenario.trim()}
               className="mt-5 w-full rounded-xl bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
             >
-              開始 AI 理賠分析
+              開始理賠比對
             </button>
           </section>
 
           <aside className="space-y-4">
             <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
-              <h2 className="text-sm font-bold text-slate-950">AI 比對範圍</h2>
-              <div className="mt-3 space-y-2">
+              <h2 className="text-sm font-bold text-slate-950">客戶保單摘要</h2>
+              <p className="mt-2 text-2xl font-bold text-teal-700">{policySummary.policyCount} 張</p>
+              <p className="mt-1 text-sm text-slate-500">{policySummary.companyCount} 家保險公司</p>
+              <div className="mt-4 space-y-2">
+                {companies.length === 0 && (
+                  <div className="rounded-xl border border-dashed border-slate-200 px-3 py-5 text-center text-sm text-slate-400">
+                    尚未建立保單資料
+                  </div>
+                )}
                 {companies.map((group) => (
                   <div key={group.company} className="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2">
                     <span className="text-sm font-bold text-slate-700">{group.company}</span>
@@ -237,12 +246,11 @@ export default function ClaimsApp() {
             </section>
 
             <section className="rounded-[1.5rem] border border-amber-200 bg-amber-50 p-5">
-              <h2 className="text-sm font-bold text-amber-900">會先辨識的內容</h2>
+              <h2 className="text-sm font-bold text-amber-900">理賠前置條件</h2>
               <div className="mt-3 grid gap-2 text-sm leading-6 text-amber-900">
-                <p>診斷名稱與就診日期</p>
-                <p>住院天數與手術名稱</p>
-                <p>醫療費用總額與自費項目</p>
-                <p>需要送件的保險公司與文件份數</p>
+                <p>需先建立客戶既有保單。</p>
+                <p>診斷證明、收據、費用明細越完整，判讀越準。</p>
+                <p>預估金額仍需以保險公司核定與條款為準。</p>
               </div>
             </section>
           </aside>
@@ -253,6 +261,7 @@ export default function ClaimsApp() {
 }
 
 function ClaimResultView({
+  ownerName,
   scenario,
   companies,
   estimate,
@@ -260,6 +269,7 @@ function ClaimResultView({
   documentError,
   onReset,
 }: {
+  ownerName: string;
   scenario: string;
   companies: CompanyPolicyGroup[];
   estimate: ClaimEstimate | null;
@@ -278,16 +288,17 @@ function ClaimResultView({
       0,
     );
   const reviewTotal = estimate?.review_total ?? estimatedTotal - highConfidenceTotal;
+  const requiredDocuments = buildRequiredDocuments(companyClaims.length);
 
   return (
     <div className="min-h-full bg-[#f7faf8] px-5 py-8 text-slate-900 md:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mb-5 flex flex-col gap-4 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <p className="text-sm font-bold text-teal-700">AI 理賠判讀</p>
-            <h1 className="mt-1 text-3xl font-bold text-slate-950">本次可申請理賠預估</h1>
+            <p className="text-sm font-bold text-teal-700">理賠比對結果</p>
+            <h1 className="mt-1 text-3xl font-bold text-slate-950">{ownerName} 的預估理賠</h1>
             <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-500">
-              <span className="font-bold text-slate-700">情境：</span>{scenario}
+              <span className="font-bold text-slate-700">補充說明：</span>{scenario || "未填寫"}
             </p>
           </div>
           <button
@@ -299,9 +310,9 @@ function ClaimResultView({
         </div>
 
         <section className="grid gap-3 md:grid-cols-3">
-          <MetricCard label="本次醫療費用" value={formatMoney(186320)} tone="text-slate-950" />
+          <MetricCard label="本次醫療費用" value="待文件辨識" tone="text-slate-950" />
           <MetricCard label="AI 預估可申請理賠" value={formatMoney(estimatedTotal)} tone="text-teal-700" />
-          <MetricCard label="需送件保險公司" value={`${companyClaims.length} 家`} tone="text-amber-600" />
+          <MetricCard label="涉及保險公司" value={`${companyClaims.length} 家`} tone="text-amber-600" />
         </section>
 
         <div className="mt-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
@@ -313,6 +324,13 @@ function ClaimResultView({
               </section>
             )}
 
+            {companyClaims.length === 0 && (
+              <section className="rounded-[1.5rem] border border-dashed border-slate-300 bg-white p-8 text-center">
+                <p className="text-sm font-bold text-slate-500">目前沒有可比對的保障項目</p>
+                <p className="mt-2 text-sm text-slate-400">請先補齊客戶保單，或確認本次事故是否與現有保障相關。</p>
+              </section>
+            )}
+
             {companyClaims.map((company) => (
               <section key={company.company} className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
                 <div className="mb-4 flex items-center justify-between border-b border-slate-100 pb-3">
@@ -321,7 +339,7 @@ function ClaimResultView({
                 </div>
                 <div className="space-y-2">
                   {company.items.map((item) => (
-                    <div key={item.name} className="grid grid-cols-[1fr_auto_auto] items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm">
+                    <div key={`${item.name}-${item.source_policy}`} className="grid grid-cols-[1fr_auto_auto] items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm">
                       <span className="font-bold text-slate-800">{item.name}</span>
                       <span className={`rounded-lg px-2 py-1 text-xs font-bold ${item.confidence === "高度符合" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
                         {item.confidence}
@@ -341,18 +359,18 @@ function ClaimResultView({
 
           <aside className="space-y-4">
             <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
-              <h2 className="text-sm font-bold text-slate-950">判讀摘要</h2>
+              <h2 className="text-sm font-bold text-slate-950">AI 理賠判讀</h2>
               <div className="mt-3 grid gap-2">
                 <ConfidenceRow label="高度符合" value={highConfidenceTotal} tone="green" />
-                <ConfidenceRow label="需要保險公司確認" value={reviewTotal} tone="amber" />
+                <ConfidenceRow label="需保險公司確認" value={reviewTotal} tone="amber" />
                 <ConfidenceRow label="可能不符合" value={0} tone="gray" />
               </div>
             </section>
 
             <section className="rounded-[1.5rem] border border-sky-200 bg-sky-50 p-5">
-              <h2 className="text-sm font-bold text-sky-900">你現在需要準備</h2>
+              <h2 className="text-sm font-bold text-sky-900">現在需要準備</h2>
               <div className="mt-3 space-y-2">
-                {DOCUMENTS.map((doc) => (
+                {requiredDocuments.map((doc) => (
                   <div key={doc.name} className="flex items-center justify-between rounded-xl bg-white px-3 py-2">
                     <span className="text-sm font-bold text-slate-700">{doc.name}</span>
                     <span className="text-sm font-bold text-sky-700">x {doc.count}</span>
@@ -364,7 +382,7 @@ function ClaimResultView({
         </div>
 
         <p className="mt-5 text-center text-xs text-slate-400">
-          預估結果僅供準備理賠文件參考，實際給付仍以保險公司審核、條款與醫療文件為準。
+          理賠估算僅供顧問服務前置判讀，實際結果仍以保險公司審核、條款、診斷證明與收據文件為準。
         </p>
       </div>
     </div>
@@ -381,8 +399,8 @@ function DocumentParsePanel({
   return (
     <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
       <div className="mb-4">
-        <p className="text-sm font-bold text-teal-700">文件辨識結果</p>
-        <h2 className="mt-1 text-xl font-bold text-slate-950">已上傳 {documents.length} 份文件</h2>
+        <p className="text-sm font-bold text-teal-700">文件解析結果</p>
+        <h2 className="mt-1 text-xl font-bold text-slate-950">已收到 {documents.length} 份文件</h2>
         {documentError && <p className="mt-2 text-sm font-bold text-rose-600">{documentError}</p>}
       </div>
       <div className="grid gap-3">
@@ -394,7 +412,7 @@ function DocumentParsePanel({
                 <p className="mt-0.5 text-xs text-slate-400">{doc.filename}</p>
               </div>
               <span className={`w-fit rounded-lg px-2 py-1 text-xs font-bold ${doc.status === "parsed" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
-                {doc.status === "parsed" ? `已抽取 ${doc.chars.toLocaleString("zh-TW")} 字` : doc.message}
+                {doc.status === "parsed" ? `已讀取 ${doc.chars.toLocaleString("zh-TW")} 字` : doc.message}
               </span>
             </div>
             {doc.preview && (
@@ -422,6 +440,7 @@ function buildClaimEstimate(companies: CompanyPolicyGroup[]): CompanyClaim[] {
               name: COVERAGE_LABELS[coverageKey].label,
               amount: Math.round(amount * rule.factor),
               confidence: rule.confidence,
+              source_policy: policy.name,
             },
           ];
         }),
@@ -433,6 +452,15 @@ function buildClaimEstimate(companies: CompanyPolicyGroup[]): CompanyClaim[] {
       };
     })
     .filter((company) => company.total > 0);
+}
+
+function buildRequiredDocuments(companyCount: number) {
+  return [
+    { name: "診斷證明", count: Math.max(1, companyCount || 1) },
+    { name: "收據正本", count: 1 },
+    { name: "醫療費用明細", count: 1 },
+    { name: "理賠申請書", count: Math.max(1, companyCount || 1) },
+  ];
 }
 
 function UploadCard({
@@ -459,7 +487,7 @@ function UploadCard({
         type="file"
         accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/*"
         className="hidden"
-        onChange={(e) => onChange(e.target.files?.[0] ?? null)}
+        onChange={(event) => onChange(event.target.files?.[0] ?? null)}
       />
     </label>
   );
