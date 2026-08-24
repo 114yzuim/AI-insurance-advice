@@ -45,6 +45,25 @@ const REPORT_SECTIONS: Array<{ key: CoverageKey; title: string }> = [
   { key: "ltc", title: "失能 / 長照" },
 ];
 
+const CLAIM_STATUS_STYLE = {
+  ready: "bg-emerald-100 text-emerald-700",
+  partial: "bg-amber-100 text-amber-700",
+  missing: "bg-rose-100 text-rose-700",
+};
+
+const CLAIM_STATUS_LABEL = {
+  ready: "可進入理賠比對",
+  partial: "需補齊資料",
+  missing: "尚無可用保障",
+};
+
+const PREMIUM_STYLE = {
+  ok: "border-emerald-200 bg-emerald-50 text-emerald-900",
+  review: "border-amber-200 bg-amber-50 text-amber-900",
+  high: "border-rose-200 bg-rose-50 text-rose-900",
+  unknown: "border-slate-200 bg-slate-50 text-slate-700",
+};
+
 export default function PolicyCheckPage() {
   const { id } = useParams<{ id: string }>();
   const [client, setClient] = useState<Client | null>(null);
@@ -175,6 +194,8 @@ export default function PolicyCheckPage() {
         </div>
         <CoverageTable checkResult={checkResult} />
       </section>
+
+      <PolicyCheckInsightPanels checkResult={checkResult} />
 
       <div className="mb-6 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px] print:hidden">
         <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
@@ -310,6 +331,11 @@ export default function PolicyCheckPage() {
         </section>
 
         <section className="mt-6">
+          <h3 className="text-lg font-bold text-gray-900">健診重點判讀</h3>
+          <PolicyCheckInsightPanels checkResult={checkResult} inReport />
+        </section>
+
+        <section className="mt-6">
           <h3 className="text-lg font-bold text-gray-900">投保內容</h3>
           <CompanyList companies={companies} compact />
         </section>
@@ -320,6 +346,61 @@ export default function PolicyCheckPage() {
         </p>
       </section>
     </div>
+  );
+}
+
+function PolicyCheckInsightPanels({
+  checkResult,
+  inReport = false,
+}: {
+  checkResult: ReturnType<typeof analyzePolicyCheck>;
+  inReport?: boolean;
+}) {
+  const duplicateWarnings = checkResult.duplicateWarnings;
+  const claimReadyCount = checkResult.claimReadiness.filter((item) => item.status === "ready").length;
+
+  return (
+    <section className={`${inReport ? "mt-3" : "mb-6 print:hidden"} grid gap-4 lg:grid-cols-3`}>
+      <div className={`rounded-xl border p-5 ${PREMIUM_STYLE[checkResult.premiumReview.status]}`}>
+        <p className="text-xs font-bold opacity-75">保費檢查</p>
+        <h3 className="mt-2 text-lg font-bold">{checkResult.premiumReview.label}</h3>
+        <p className="mt-2 text-sm leading-6">{checkResult.premiumReview.message}</p>
+      </div>
+
+      <div className="rounded-xl border border-violet-100 bg-violet-50 p-5 text-violet-950">
+        <p className="text-xs font-bold text-violet-700">重複保障提醒</p>
+        <h3 className="mt-2 text-lg font-bold">{duplicateWarnings.length} 項需檢查</h3>
+        <div className="mt-3 space-y-2">
+          {duplicateWarnings.length === 0 ? (
+            <p className="text-sm leading-6 text-violet-800">目前沒有明顯超過建議基準的保障，後續可檢查條款限制與保費結構。</p>
+          ) : (
+            duplicateWarnings.slice(0, 3).map((warning) => (
+              <p key={warning} className="rounded-lg bg-white/70 px-3 py-2 text-sm leading-6 text-violet-900">
+                {warning}
+              </p>
+            ))
+          )}
+        </div>
+      </div>
+
+      <div className="rounded-xl border border-sky-100 bg-sky-50 p-5 text-sky-950">
+        <p className="text-xs font-bold text-sky-700">理賠可用性</p>
+        <h3 className="mt-2 text-lg font-bold">{claimReadyCount} / {checkResult.claimReadiness.length} 項可比對</h3>
+        <div className="mt-3 space-y-2">
+          {checkResult.claimReadiness.slice(0, inReport ? 6 : 4).map((item) => (
+            <div key={item.key} className="rounded-lg bg-white/80 px-3 py-2">
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-sm font-bold text-sky-950">{item.label}</p>
+                <span className={`shrink-0 rounded px-2 py-1 text-xs font-bold ${CLAIM_STATUS_STYLE[item.status]}`}>
+                  {CLAIM_STATUS_LABEL[item.status]}
+                </span>
+              </div>
+              <p className="mt-1 text-xs leading-5 text-sky-800">{item.nextStep}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 

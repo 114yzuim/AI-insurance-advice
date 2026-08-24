@@ -11,6 +11,7 @@ import {
   COVERAGE_ORDER,
   fetchPolicyPortfolio,
   formatCoverage,
+  formatMoney,
   getPolicySummary,
   type CoverageKey,
   type PolicySummary,
@@ -885,6 +886,8 @@ function MemberResultSection({
     <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
       <div className="space-y-5">
         <CoverageGapPanel items={result.items} policySummary={policySummary} />
+        <PolicyCheckSummaryCards items={result.items} policySummary={policySummary} />
+        <ClaimReadinessPanel items={result.items} policySummary={policySummary} />
 
         <div className="rounded-[1.5rem] border border-amber-200 bg-amber-50 p-4 text-sm leading-7 text-amber-900">
           <span className="font-bold">摘要：</span>{result.summary}
@@ -938,8 +941,8 @@ function MemberResultSection({
   );
 }
 
-function CoverageGapPanel({ items, policySummary }: { items: RecommendationItem[]; policySummary: PolicySummary }) {
-  const rows = items
+function buildCoverageRows(items: RecommendationItem[], policySummary: PolicySummary) {
+  return items
     .map((item) => {
       const coverageKey = RECOMMENDATION_TO_COVERAGE[item.key];
       if (!coverageKey) return null;
@@ -958,6 +961,10 @@ function CoverageGapPanel({ items, policySummary }: { items: RecommendationItem[
     })
     .filter((row): row is NonNullable<typeof row> => row !== null)
     .sort((a, b) => b.gap - a.gap || a.priority - b.priority);
+}
+
+function CoverageGapPanel({ items, policySummary }: { items: RecommendationItem[]; policySummary: PolicySummary }) {
+  const rows = buildCoverageRows(items, policySummary);
 
   return (
     <section className="rounded-[1.5rem] border border-teal-100 bg-white p-4 shadow-sm">
@@ -987,6 +994,89 @@ function CoverageGapPanel({ items, policySummary }: { items: RecommendationItem[
         目前先以示範保單資料計算；正式版會依每位家庭成員名下保單、主附約與條款欄位自動彙整。
       </p>
     </section>
+  );
+}
+
+function PolicyCheckSummaryCards({ items, policySummary }: { items: RecommendationItem[]; policySummary: PolicySummary }) {
+  const rows = buildCoverageRows(items, policySummary);
+  const gapCount = rows.filter((row) => row.gap > 0).length;
+  const duplicateCount = rows.filter((row) => row.target > 0 && row.existing >= row.target * 1.5).length;
+  const readyCount = rows.filter((row) => row.existing > 0).length;
+  const score = rows.length ? Math.max(0, Math.round(((rows.length - gapCount) / rows.length) * 100) - policySummary.incomplete * 4) : 0;
+
+  return (
+    <section className="grid gap-3 md:grid-cols-4">
+      <ResultMetric label="健診分數" value={`${score} 分`} tone="text-rose-600" />
+      <ResultMetric label="保障缺口" value={`${gapCount} 項`} tone="text-amber-600" />
+      <ResultMetric label="理賠可用保障" value={`${readyCount} 項`} tone="text-sky-700" />
+      <ResultMetric label="重複檢查" value={`${duplicateCount} 項`} tone="text-violet-700" />
+    </section>
+  );
+}
+
+function ClaimReadinessPanel({ items, policySummary }: { items: RecommendationItem[]; policySummary: PolicySummary }) {
+  const rows = buildCoverageRows(items, policySummary);
+  const claimRows = rows.filter((row) => ["medical_daily", "accident_coverage", "cancer_coverage", "disability_monthly"].includes(row.key));
+  const premiumMessage = policySummary.premium > 0
+    ? `目前已輸入保單年繳保費 ${formatMoney(policySummary.premium)}，建議搭配收入與家庭責任檢查保費是否合理。`
+    : "尚未取得年繳保費，無法判斷保費是否過高或是否有重複支出。";
+  const duplicates = rows.filter((row) => row.target > 0 && row.existing >= row.target * 1.5);
+
+  return (
+    <section className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="rounded-[1.5rem] border border-sky-100 bg-sky-50 p-4">
+        <p className="text-sm font-bold text-sky-700">理賠可用性</p>
+        <h2 className="mt-1 text-lg font-bold text-sky-950">發生事故時，先看哪些保障可比對</h2>
+        <div className="mt-3 grid gap-2">
+          {claimRows.map((row) => {
+            const hasCoverage = row.existing > 0;
+            return (
+              <div key={row.key} className="rounded-2xl bg-white px-4 py-3">
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-bold text-slate-900">{row.label}</p>
+                  <span className={`rounded-lg px-2 py-1 text-xs font-bold ${hasCoverage ? "bg-emerald-100 text-emerald-700" : "bg-rose-100 text-rose-700"}`}>
+                    {hasCoverage ? "可初步比對" : "尚未建立"}
+                  </span>
+                </div>
+                <p className="mt-1 text-xs leading-5 text-slate-500">
+                  {hasCoverage ? "理賠時請準備診斷證明、收據與醫療明細，系統可再比對條款。" : "先確認是否有舊保單、附約或紙本資料尚未輸入。"}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <aside className="space-y-4">
+        <div className="rounded-[1.5rem] border border-amber-100 bg-amber-50 p-4 text-amber-950">
+          <p className="text-sm font-bold text-amber-700">保費檢查</p>
+          <p className="mt-2 text-sm leading-6">{premiumMessage}</p>
+        </div>
+        <div className="rounded-[1.5rem] border border-violet-100 bg-violet-50 p-4 text-violet-950">
+          <p className="text-sm font-bold text-violet-700">重複保障提醒</p>
+          {duplicates.length === 0 ? (
+            <p className="mt-2 text-sm leading-6">目前沒有明顯超過建議基準的保障，下一步可檢查條款限制與資料完整度。</p>
+          ) : (
+            <div className="mt-2 space-y-2">
+              {duplicates.slice(0, 3).map((row) => (
+                <p key={row.key} className="text-sm leading-6">
+                  {row.label}高於建議基準，建議確認是否有重複投保或保費效率問題。
+                </p>
+              ))}
+            </div>
+          )}
+        </div>
+      </aside>
+    </section>
+  );
+}
+
+function ResultMetric({ label, value, tone }: { label: string; value: string; tone: string }) {
+  return (
+    <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 shadow-sm">
+      <p className="text-xs font-bold text-slate-400">{label}</p>
+      <p className={`mt-2 text-2xl font-bold tabular-nums ${tone}`}>{value}</p>
+    </div>
   );
 }
 

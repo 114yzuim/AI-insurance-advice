@@ -34,6 +34,22 @@ export type CoverageCheck = {
   targetReason: string;
 };
 
+export type ClaimReadinessStatus = "ready" | "partial" | "missing";
+
+export type ClaimReadinessItem = {
+  key: CoverageKey;
+  label: string;
+  status: ClaimReadinessStatus;
+  reason: string;
+  nextStep: string;
+};
+
+export type PremiumReview = {
+  status: "ok" | "review" | "high" | "unknown";
+  label: string;
+  message: string;
+};
+
 export type PolicyCheckResult = {
   score: number;
   annualPremium: number;
@@ -46,6 +62,9 @@ export type PolicyCheckResult = {
   warnings: string[];
   priorities: CoverageCheck[];
   targetBasis: string[];
+  claimReadiness: ClaimReadinessItem[];
+  duplicateWarnings: string[];
+  premiumReview: PremiumReview;
 };
 
 export const DEFAULT_COVERAGE_TARGETS: Record<CoverageKey, CoverageTarget> = {
@@ -154,6 +173,86 @@ function getScore(checks: CoverageCheck[], incompleteCount: number) {
   return Math.max(0, Math.min(100, Math.round(statusScore / checks.length) - penalty));
 }
 
+function buildClaimReadiness(checks: CoverageCheck[], incompleteCount: number): ClaimReadinessItem[] {
+  const claimCoreKeys: CoverageKey[] = ["medical", "daily", "accident", "cancer", "critical", "ltc"];
+
+  return claimCoreKeys.map((key) => {
+    const check = checks.find((item) => item.key === key);
+    const hasCoverage = Number(check?.current || 0) > 0;
+    const label = check?.label || COVERAGE_LABELS[key].label;
+
+    if (!hasCoverage) {
+      return {
+        key,
+        label,
+        status: "missing",
+        reason: "目前未看到可用保障，發生事故時可能無法進入自動比對。",
+        nextStep: "先確認是否有紙本保單、附約或舊保單尚未輸入。",
+      };
+    }
+
+    if (incompleteCount > 0) {
+      return {
+        key,
+        label,
+        status: "partial",
+        reason: "已有保障額度，但部分保單缺少條款、保費、保單號或保障明細。",
+        nextStep: "補齊缺漏資料後，再用診斷書、收據與醫療明細做理賠比對。",
+      };
+    }
+
+    return {
+      key,
+      label,
+      status: "ready",
+      reason: "已有可比對的保障資料，可作為理賠服務前置資料。",
+      nextStep: "發生理賠時上傳診斷證明、收據與醫療費用明細。",
+    };
+  });
+}
+
+function buildDuplicateWarnings(checks: CoverageCheck[]) {
+  return checks
+    .filter((check) => check.target > 0 && check.current >= check.target * 1.5)
+    .map((check) => `${check.label}現有保障約為建議基準的 ${Math.round((check.current / check.target) * 100)}%，建議檢查是否有重複投保、保費效率或條款重疊。`);
+}
+
+function buildPremiumReview(premiumRatio: number | null, annualPremium: number): PremiumReview {
+  if (annualPremium <= 0) {
+    return {
+      status: "unknown",
+      label: "保費資料待補",
+      message: "尚未取得年繳保費，無法判斷保費是否過高或是否有重複支出。",
+    };
+  }
+  if (premiumRatio === null) {
+    return {
+      status: "unknown",
+      label: "收入資料待補",
+      message: `目前年繳保費為 ${formatMoney(annualPremium)}，請補上收入後再判斷保費收入比。`,
+    };
+  }
+  if (premiumRatio > 0.15) {
+    return {
+      status: "high",
+      label: "保費壓力偏高",
+      message: `年繳保費約占年收入 ${Math.round(premiumRatio * 100)}%，建議優先檢查重複保障、儲蓄型保單占比與可調整附約。`,
+    };
+  }
+  if (premiumRatio > 0.1) {
+    return {
+      status: "review",
+      label: "建議檢查保費效率",
+      message: `年繳保費約占年收入 ${Math.round(premiumRatio * 100)}%，可進一步確認保障是否集中在醫療、失能、重大傷病等高用途項目。`,
+    };
+  }
+  return {
+    status: "ok",
+    label: "保費比例可接受",
+    message: `年繳保費約占年收入 ${Math.round(premiumRatio * 100)}%，下一步可聚焦保障缺口與理賠可用性。`,
+  };
+}
+
 export function analyzePolicyCheck(
   policies: Policy[],
   profile: ClientRiskProfile = {},
@@ -180,6 +279,9 @@ export function analyzePolicyCheck(
     };
   });
   const premiumRatio = annualIncome > 0 ? summary.premium / annualIncome : null;
+  const claimReadiness = buildClaimReadiness(checks, summary.incomplete);
+  const duplicateWarnings = buildDuplicateWarnings(checks);
+  const premiumReview = buildPremiumReview(premiumRatio, summary.premium);
 
   const warnings = [
     ...(summary.policyCount === 0 ? ["尚未輸入現有保單，無法進行有效健診。"] : []),
@@ -212,6 +314,9 @@ export function analyzePolicyCheck(
       profile.age ? `年齡：${profile.age} 歲` : "年齡：待補",
       profile.occupation ? `職業：${profile.occupation}` : "職業：待補",
     ],
+    claimReadiness,
+    duplicateWarnings,
+    premiumReview,
   };
 }
 
