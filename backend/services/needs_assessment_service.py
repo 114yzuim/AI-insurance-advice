@@ -28,14 +28,27 @@ def _extract_json(text: str) -> dict | None:
 
 
 QUESTION_LABELS = {
-    "age":     "年齡",
+    "age": "精確年齡",
+    "relation": "家庭角色",
+    "monthly_income": "每月收入",
+    "monthly_expense": "家庭每月必要支出",
+    "dependents_count": "扶養人數",
+    "mortgage_balance": "房貸或主要負債餘額",
+    "current_policy_status": "既有保單資料狀態",
+    "current_policy_types": "已知保單類型",
+    "health_status": "健康狀況",
+    "family_medical_history": "家族重大疾病史",
+    "monthly_insurance_budget": "每月可接受保費預算",
+    "report_focus": "保單健診重點",
+    "claim_service_need": "理賠服務需求",
+    "notes": "補充說明",
     "marital": "婚姻狀況",
-    "children":"扶養小孩",
-    "income":  "每月收入",
-    "job":     "工作性質",
-    "debt":    "房貸/重大債務",
-    "health":  "健康狀況",
-    "budget":  "每月保險預算",
+    "children": "扶養小孩",
+    "income": "每月收入",
+    "job": "工作性質",
+    "debt": "房貸/重大債務",
+    "health": "健康狀況",
+    "budget": "每月保險預算",
 }
 
 _FALLBACK_ITEMS = [

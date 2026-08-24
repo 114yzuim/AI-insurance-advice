@@ -70,15 +70,130 @@ export interface CustomerProfile {
 
 const STORAGE_KEY = "insurance_customer_profiles";
 
-const QUESTIONS = [
-  { id: "age",      question: "幾歲？",                   options: ["20–30 歲", "31–40 歲", "41–50 歲", "51 歲以上"] },
-  { id: "marital",  question: "婚姻狀況？",               options: ["單身", "已婚 / 有伴侶"] },
-  { id: "children", question: "有需要扶養的小孩嗎？",     options: ["沒有", "1 個", "2 個以上"] },
-  { id: "income",   question: "每月收入大約是多少？",     options: ["3 萬以下", "3–5 萬", "5–10 萬", "10 萬以上"] },
-  { id: "job",      question: "工作性質？",               options: ["辦公室 / 內勤", "需外出或現場作業", "高危險行業（工地、高空、漁業等）"] },
-  { id: "debt",     question: "目前有房貸或重大債務嗎？", options: ["有", "沒有"] },
-  { id: "health",   question: "健康狀況如何？",           options: ["良好", "有慢性病或特定病史"] },
-  { id: "budget",   question: "每月能用於保險的預算？",   options: ["1,000 元以下", "1,000–2,000 元", "2,000–4,000 元", "4,000 元以上"] },
+type QuestionType = "number" | "single" | "multi" | "textarea";
+
+interface HealthQuestion {
+  id: string;
+  question: string;
+  type: QuestionType;
+  help?: string;
+  options?: string[];
+  placeholder?: string;
+  min?: number;
+  max?: number;
+  step?: number;
+  unit?: string;
+}
+
+const QUESTIONS: HealthQuestion[] = [
+  {
+    id: "age",
+    question: "請輸入精確年齡",
+    type: "number",
+    help: "保單健診需要用實際年齡判斷保障需求與保費合理性。",
+    placeholder: "例如 38",
+    min: 1,
+    max: 120,
+    unit: "歲",
+  },
+  {
+    id: "relation",
+    question: "這位成員在家庭中的角色是？",
+    type: "single",
+    options: ["本人", "配偶", "子女", "父母", "其他家人"],
+  },
+  {
+    id: "monthly_income",
+    question: "每月收入是多少？",
+    type: "number",
+    help: "請填稅後可支配收入，若沒有固定收入可填 0。",
+    placeholder: "例如 80000",
+    min: 0,
+    step: 1000,
+    unit: "元",
+  },
+  {
+    id: "monthly_expense",
+    question: "家庭每月必要支出是多少？",
+    type: "number",
+    help: "包含房租或房貸、生活費、教育費與照顧支出。",
+    placeholder: "例如 55000",
+    min: 0,
+    step: 1000,
+    unit: "元",
+  },
+  {
+    id: "dependents_count",
+    question: "目前需要扶養幾位家人？",
+    type: "number",
+    placeholder: "例如 2",
+    min: 0,
+    max: 20,
+    unit: "位",
+  },
+  {
+    id: "mortgage_balance",
+    question: "房貸或主要負債餘額是多少？",
+    type: "number",
+    help: "沒有房貸或重大負債可填 0。",
+    placeholder: "例如 8000000",
+    min: 0,
+    step: 10000,
+    unit: "元",
+  },
+  {
+    id: "current_policy_status",
+    question: "既有保單資料目前整理到什麼程度？",
+    type: "single",
+    help: "保單健診的核心是先彙整現有保單，再分析缺口與理賠可用性。",
+    options: ["已上傳完整保單", "只有部分保單", "只有紙本保單", "只知道保險公司", "完全不清楚"],
+  },
+  {
+    id: "current_policy_types",
+    question: "目前已知有哪些保單類型？",
+    type: "multi",
+    options: ["壽險", "醫療險", "實支實付", "意外險", "癌症險", "重大傷病險", "失能／長照險", "儲蓄／年金險", "不清楚"],
+  },
+  {
+    id: "health_status",
+    question: "目前健康狀況如何？",
+    type: "single",
+    options: ["良好", "有慢性病", "曾住院或手術", "正在追蹤治療", "不方便填寫"],
+  },
+  {
+    id: "family_medical_history",
+    question: "家族是否有重大疾病史？",
+    type: "single",
+    options: ["沒有", "癌症", "心血管疾病", "糖尿病或慢性病", "不清楚"],
+  },
+  {
+    id: "monthly_insurance_budget",
+    question: "每月可接受的保費預算是多少？",
+    type: "number",
+    help: "用來判斷現有保費是否過高，以及缺口補強的優先順序。",
+    placeholder: "例如 10000",
+    min: 0,
+    step: 1000,
+    unit: "元",
+  },
+  {
+    id: "report_focus",
+    question: "這次保單健診最想確認哪些事？",
+    type: "multi",
+    options: ["保障缺口", "重複投保", "保費是否過高", "理賠時能不能用", "家庭保障分配", "條款限制或除外責任"],
+  },
+  {
+    id: "claim_service_need",
+    question: "近期是否有理賠服務需求？",
+    type: "single",
+    options: ["沒有", "想先了解可申請項目", "已有診斷書／收據", "正在申請理賠", "曾被拒賠想確認"],
+  },
+  {
+    id: "notes",
+    question: "有沒有其他想讓顧問知道的狀況？",
+    type: "textarea",
+    placeholder: "例如：覺得保費太高、保單很多看不懂、最近家人住院、想幫小孩整理保障等。",
+  },
 ];
 
 const KEY_LABEL: Record<string, string> = {
@@ -449,18 +564,146 @@ function QuestionnaireView({
   const defaultName =
     memberIndex === 0 ? "本人" : (["配偶", "小孩", "父母"][memberIndex - 1] ?? `成員 ${memberIndex + 1}`);
 
-  function handleOption(option: string) {
-    const q = QUESTIONS[step];
-    const next = { ...answers, [q.id]: option };
-    setAnswers(next);
-
+  function finishQuestion(nextAnswers: Record<string, string>) {
     if (step < QUESTIONS.length - 1) {
       setStep(step + 1);
       return;
     }
 
-    // Last question — hand off to parent (no API call here)
-    onMemberDone({ name: memberName || defaultName, answers: next });
+    onMemberDone({ name: memberName || defaultName, answers: nextAnswers });
+  }
+
+  function saveAnswer(value: string) {
+    const q = QUESTIONS[step];
+    const next = { ...answers, [q.id]: value };
+    setAnswers(next);
+    finishQuestion(next);
+  }
+
+  function setCurrentValue(value: string) {
+    const q = QUESTIONS[step];
+    setAnswers((prev) => ({ ...prev, [q.id]: value }));
+  }
+
+  function toggleMulti(option: string) {
+    const q = QUESTIONS[step];
+    const current = (answers[q.id] || "").split("、").filter(Boolean);
+    const nextValues = current.includes(option)
+      ? current.filter((item) => item !== option)
+      : [...current, option];
+    setAnswers((prev) => ({ ...prev, [q.id]: nextValues.join("、") }));
+  }
+
+  function isValidAnswer(q: HealthQuestion, value: string) {
+    if (q.type === "textarea") return true;
+    if (!value.trim()) return false;
+    if (q.type !== "number") return true;
+    const num = Number(value);
+    if (!Number.isFinite(num)) return false;
+    if (q.min !== undefined && num < q.min) return false;
+    if (q.max !== undefined && num > q.max) return false;
+    return true;
+  }
+
+  function renderQuestionInput(q: HealthQuestion) {
+    const value = answers[q.id] || "";
+    const canContinue = isValidAnswer(q, value);
+
+    if (q.type === "single") {
+      return (
+        <div className="grid gap-2.5 sm:grid-cols-2">
+          {q.options?.map((opt) => (
+            <button
+              key={opt}
+              onClick={() => saveAnswer(opt)}
+              className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-left text-sm font-bold text-slate-700 transition hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800"
+            >
+              {opt}
+            </button>
+          ))}
+        </div>
+      );
+    }
+
+    if (q.type === "multi") {
+      const selected = value.split("、").filter(Boolean);
+      return (
+        <div className="space-y-5">
+          <div className="grid gap-2.5 sm:grid-cols-2">
+            {q.options?.map((opt) => (
+              <button
+                key={opt}
+                onClick={() => toggleMulti(opt)}
+                className={`w-full rounded-2xl border px-4 py-3 text-left text-sm font-bold transition ${
+                  selected.includes(opt)
+                    ? "border-teal-500 bg-teal-50 text-teal-800"
+                    : "border-slate-200 text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800"
+                }`}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => saveAnswer(value)}
+            disabled={!canContinue}
+            className="w-full rounded-xl bg-slate-950 py-3 text-sm font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-300"
+          >
+            下一題
+          </button>
+        </div>
+      );
+    }
+
+    if (q.type === "textarea") {
+      return (
+        <div className="space-y-4">
+          <textarea
+            value={value}
+            onChange={(e) => setCurrentValue(e.target.value)}
+            rows={4}
+            placeholder={q.placeholder}
+            className="w-full resize-none rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-300 focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
+          />
+          <button
+            onClick={() => saveAnswer(value || "無")}
+            className="w-full rounded-xl bg-slate-950 py-3 text-sm font-bold text-white transition hover:bg-slate-800"
+          >
+            完成
+          </button>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <input
+            autoFocus
+            type="number"
+            inputMode="numeric"
+            min={q.min}
+            max={q.max}
+            step={q.step}
+            value={value}
+            onChange={(e) => setCurrentValue(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && canContinue) saveAnswer(value);
+            }}
+            placeholder={q.placeholder}
+            className="min-w-0 flex-1 rounded-2xl border border-slate-200 px-4 py-3 text-right text-lg font-bold text-slate-900 outline-none transition placeholder:text-slate-300 focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
+          />
+          {q.unit && <span className="text-sm font-bold text-slate-500">{q.unit}</span>}
+        </div>
+        <button
+          onClick={() => saveAnswer(value)}
+          disabled={!canContinue}
+          className="w-full rounded-xl bg-slate-950 py-3 text-sm font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-300"
+        >
+          下一題
+        </button>
+      </div>
+    );
   }
 
   if (nameStep) {
@@ -508,7 +751,7 @@ function QuestionnaireView({
         <p className="text-sm font-bold text-teal-700">
           {memberName}・第 {memberIndex + 1} 位 / 共 {totalMembers} 位
         </p>
-        <h1 className="mt-2 text-3xl font-bold text-slate-950">保障需求評估</h1>
+        <h1 className="mt-2 text-3xl font-bold text-slate-950">保單健診補充資料</h1>
         {isLastMember && isLastQuestion && (
           <p className="mt-2 text-sm font-bold text-amber-600">填完後將送出所有成員資料進行評估</p>
         )}
@@ -529,17 +772,8 @@ function QuestionnaireView({
 
       <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-teal-100/70">
         <p className="mb-5 text-xl font-bold text-slate-950">{q.question}</p>
-        <div className="grid gap-2.5 sm:grid-cols-2">
-          {q.options.map((opt) => (
-            <button
-              key={opt}
-              onClick={() => handleOption(opt)}
-              className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-left text-sm font-bold text-slate-700 transition hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800"
-            >
-              {opt}
-            </button>
-          ))}
-        </div>
+        {q.help && <p className="mb-5 text-sm leading-6 text-slate-500">{q.help}</p>}
+        {renderQuestionInput(q)}
       </div>
 
       {step > 0 && (
@@ -556,7 +790,7 @@ function QuestionnaireView({
         <p className="text-sm font-bold text-slate-950">目前進度</p>
         <p className="mt-3 text-4xl font-bold text-teal-700">{progress}%</p>
         <p className="mt-2 text-sm leading-6 text-slate-500">
-          回答會暫存在本頁，最後一位成員完成後才會送出評估。
+          先補齊既有保單與家庭責任資料，系統才會把現有保障、缺口與理賠服務串在一起。
         </p>
       </aside>
     </div>
