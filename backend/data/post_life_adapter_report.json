@@ -1,0 +1,1398 @@
+{
+  "company": "中華郵政",
+  "generated_at": "2026-08-26T07:06:45.387258+00:00",
+  "applied": true,
+  "summary": {
+    "products_seen": 65,
+    "active_products": 16,
+    "discontinued_products": 49,
+    "documents_seen": 65,
+    "errors": 0,
+    "products_upserted": 65,
+    "documents_upserted": 65
+  },
+  "errors": [],
+  "items": [
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-005FE0CF-F457-4F39-9ACD-A8D7A37B546E",
+      "product_name": "守護小額終身壽險",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=005FE0CF-F457-4F39-9ACD-A8D7A37B546E",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "守護小額終身壽險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/7565FAB2-63DB-4707-8B0C-C9933521A94D.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "005FE0CF-F457-4F39-9ACD-A8D7A37B546E",
+        "sale_date": "115年01月28日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-0DAD2B0C-04ED-49B4-B551-145D669D1CC3",
+      "product_name": "珍愛015保險",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=0DAD2B0C-04ED-49B4-B551-145D669D1CC3",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "珍愛015保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/2D9862E5-FC65-4DDE-9DC2-5684D7BF5277.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "0DAD2B0C-04ED-49B4-B551-145D669D1CC3",
+        "sale_date": "113年09月05日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-18B4E843-8763-4BC8-B662-B26F39A96DF8",
+      "product_name": "金幸福保險",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=18B4E843-8763-4BC8-B662-B26F39A96DF8",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "金幸福保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/F65550F5-37F3-4AC7-BA05-843C84192212.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "18B4E843-8763-4BC8-B662-B26F39A96DF8",
+        "sale_date": "111年05月20日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-57BF0D7E-0A82-4736-92E3-372340AF3E1C",
+      "product_name": "一年期定期壽險",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=57BF0D7E-0A82-4736-92E3-372340AF3E1C",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "一年期定期壽險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/8F781379-3630-4DAB-88F1-5DDFF9764882.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "57BF0D7E-0A82-4736-92E3-372340AF3E1C",
+        "sale_date": "103年12月23日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-5A1FC3BD-A130-4C7C-A8A5-D97D3A991D69",
+      "product_name": "常樂增額保險",
+      "category": "儲蓄還本",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=5A1FC3BD-A130-4C7C-A8A5-D97D3A991D69",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "常樂增額保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/C801472C-644A-4BCE-ACD8-8BB9294E5B17.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "5A1FC3BD-A130-4C7C-A8A5-D97D3A991D69",
+        "sale_date": "110年07月01日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-5F45392F-621A-4858-9A03-F4FA7A0DB2E0",
+      "product_name": "郵e靠保險(網路投保商品)",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=5F45392F-621A-4858-9A03-F4FA7A0DB2E0",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "郵e靠保險(網路投保商品) 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/474166C3-520A-48A0-A3D1-613052B38BD1.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "5F45392F-621A-4858-9A03-F4FA7A0DB2E0",
+        "sale_date": "111年11月01日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-6492ADDE-A986-4346-B243-9AC2007E74EB",
+      "product_name": "心e88定期壽險(網路投保商品)",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=6492ADDE-A986-4346-B243-9AC2007E74EB",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "心e88定期壽險(網路投保商品) 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/D2D58EE4-B260-4CD2-90F5-7F5BEAEFA032.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "6492ADDE-A986-4346-B243-9AC2007E74EB",
+        "sale_date": "113年12月16日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-8C69F250-A9E3-44E8-9B91-CC085B893597",
+      "product_name": "微型傷害保險附約",
+      "category": "意外傷害",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=8C69F250-A9E3-44E8-9B91-CC085B893597",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "微型傷害保險附約 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/7E7FE135-2D48-458F-BDF2-B5242BB96EB0.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "8C69F250-A9E3-44E8-9B91-CC085B893597",
+        "sale_date": "103年12月23日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-984A6CF4-3506-48DE-8B05-547104BD8999",
+      "product_name": "常鴻增額保險",
+      "category": "儲蓄還本",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=984A6CF4-3506-48DE-8B05-547104BD8999",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "常鴻增額保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/66D1B0E7-EF1E-4DAF-BE60-270DB4387D90.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "984A6CF4-3506-48DE-8B05-547104BD8999",
+        "sale_date": "111年09月05日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-A4DAC44D-ACB8-422F-A970-84D292EF4FDA",
+      "product_name": "吉安傷害暨兒童傷害失能保險附約",
+      "category": "意外傷害",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=A4DAC44D-ACB8-422F-A970-84D292EF4FDA",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "吉安傷害暨兒童傷害失能保險附約 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/D1D81E5F-B9CB-4A58-A15F-E882A86D0DD9.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "A4DAC44D-ACB8-422F-A970-84D292EF4FDA",
+        "sale_date": "94年03月01日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-C4AFE69F-D7CC-49F0-B180-D5C2D71B5B95",
+      "product_name": "年年常春增額保險",
+      "category": "儲蓄還本",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=C4AFE69F-D7CC-49F0-B180-D5C2D71B5B95",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "年年常春增額保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/F3997485-F4C2-4EAF-8F5D-AD42E5636833.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "C4AFE69F-D7CC-49F0-B180-D5C2D71B5B95",
+        "sale_date": "112年11月23日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-CB6E070B-583B-46CF-8365-DC70B25AE1C7",
+      "product_name": "日額型住院醫療費用保險附約",
+      "category": "健康醫療",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=CB6E070B-583B-46CF-8365-DC70B25AE1C7",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "日額型住院醫療費用保險附約 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/8235AE28-1052-45FA-B58C-833A91F95BC6.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "CB6E070B-583B-46CF-8365-DC70B25AE1C7",
+        "sale_date": "93年01月01日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-DE806835-72A0-4EDC-800C-08B7A6AD5AB3",
+      "product_name": "郵幸福保險",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=DE806835-72A0-4EDC-800C-08B7A6AD5AB3",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "郵幸福保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/D1150865-0D6B-46B4-8A45-85FA829C680F.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "DE806835-72A0-4EDC-800C-08B7A6AD5AB3",
+        "sale_date": "109年07月01日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-DFE993AD-A4D4-422C-A6BB-7D2AF32797C1",
+      "product_name": "金郵利增額終身壽險",
+      "category": "儲蓄還本",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=DFE993AD-A4D4-422C-A6BB-7D2AF32797C1",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "金郵利增額終身壽險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/F49D703C-8C41-48CF-B254-E7D9798CC11A.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "DFE993AD-A4D4-422C-A6BB-7D2AF32797C1",
+        "sale_date": "115年07月28日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-EE44AEA4-3009-4638-BEC2-34DEDE70F078",
+      "product_name": "金平安傷害暨兒童傷害失能保險附約",
+      "category": "意外傷害",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=EE44AEA4-3009-4638-BEC2-34DEDE70F078",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "金平安傷害暨兒童傷害失能保險附約 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/0509F0F4-7AB0-4C64-8A72-44A5F32A5BE2.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "EE44AEA4-3009-4638-BEC2-34DEDE70F078",
+        "sale_date": "97年10月01日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-ACTIVE-F53A62D1-CC0B-4131-A973-34D704D30F19",
+      "product_name": "好吉利保險",
+      "category": "壽險保障",
+      "status": "active",
+      "is_historical": 0,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010102&page_type=3&IP_ID=F53A62D1-CC0B-4131-A973-34D704D30F19",
+      "documents": [
+        {
+          "document_type": "dm",
+          "title": "好吉利保險 商品DM",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_URL_4/579860DC-6622-4057-8F78-7F84348A587D.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_active_product_pages",
+        "ip_id": "F53A62D1-CC0B-4131-A973-34D704D30F19",
+        "sale_date": "114年06月26日",
+        "source_page_count": 45
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-A6704E5E-4954-4352-A991-8B8738966D15",
+      "product_name": "安家定期還本終身保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "安家定期還本終身保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/A6704E5E-4954-4352-A991-8B8738966D15.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "90年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-1594B874-4DCD-4EEC-A732-5E4FB7907952",
+      "product_name": "安富增值還本終身壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "安富增值還本終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/1594B874-4DCD-4EEC-A732-5E4FB7907952.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "90年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-25A84357-69EC-45A4-8D5B-61429AB86446",
+      "product_name": "二倍保障儲蓄壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "二倍保障儲蓄壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/25A84357-69EC-45A4-8D5B-61429AB86446.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "90年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-C105C4CE-DDD3-487C-B800-4250969A3A88",
+      "product_name": "安和終身保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "安和終身保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/C105C4CE-DDD3-487C-B800-4250969A3A88.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "87年12月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-16B6A82E-77B8-467F-B7DB-5FA5B3909900",
+      "product_name": "五年期滿平安儲蓄壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "五年期滿平安儲蓄壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/16B6A82E-77B8-467F-B7DB-5FA5B3909900.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "92年12月26日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-3FE4CD4A-7309-48C8-9110-5057C7A58E87",
+      "product_name": "小太陽兒童儲蓄壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "小太陽兒童儲蓄壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/3FE4CD4A-7309-48C8-9110-5057C7A58E87.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "92年12月26日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-0BF01199-367C-4246-8641-2CD01E046ECB",
+      "product_name": "安平二倍保障終身壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "安平二倍保障終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/0BF01199-367C-4246-8641-2CD01E046ECB.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "92年12月26日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-0215718F-207A-43AD-9051-C837622FAFBC",
+      "product_name": "快樂兒童增值還本終身壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "快樂兒童增值還本終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/0215718F-207A-43AD-9051-C837622FAFBC.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "90年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-F47CC31F-D049-46AD-A959-4421FE06A17F",
+      "product_name": "吉慶兒童保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "吉慶兒童保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/F47CC31F-D049-46AD-A959-4421FE06A17F.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "99年02月03日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-7B887F95-82B8-4E92-8BA9-832D838B8BC8",
+      "product_name": "吉祥保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "吉祥保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/7B887F95-82B8-4E92-8BA9-832D838B8BC8.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "98年06月08日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-926BFD79-912A-4DA5-A9DB-BD6F79B9C56C",
+      "product_name": "年年如意定期還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "年年如意定期還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/926BFD79-912A-4DA5-A9DB-BD6F79B9C56C.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "98年06月08日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-A6873E78-8CA2-44DB-BC82-A62FBE6F3AA5",
+      "product_name": "松柏長青定期壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "松柏長青定期壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/A6873E78-8CA2-44DB-BC82-A62FBE6F3AA5.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "98年12月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-C436E15F-AF47-4F2C-A331-D8195DEC890B",
+      "product_name": "步步高升保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "步步高升保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/C436E15F-AF47-4F2C-A331-D8195DEC890B.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "97年08月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-3CB8F16B-E208-477C-804D-28758EA1C625",
+      "product_name": "鴻運高照還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "鴻運高照還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/3CB8F16B-E208-477C-804D-28758EA1C625.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "100年10月12日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-AFDB0A87-4C21-453E-B604-94CA19A9DC1F",
+      "product_name": "福星高照終身壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "福星高照終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/AFDB0A87-4C21-453E-B604-94CA19A9DC1F.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "98年12月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-D1FB77F8-3C33-4606-85E9-6DF9E860E09B",
+      "product_name": "富兒樂還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "富兒樂還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/D1FB77F8-3C33-4606-85E9-6DF9E860E09B.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "98年02月05日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-29AB3B7F-4617-462C-81FC-841A93E30534",
+      "product_name": "六六金順保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "六六金順保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/29AB3B7F-4617-462C-81FC-841A93E30534.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "97年11月08日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-A93F45B7-77C3-443E-8364-7DAC303CE47D",
+      "product_name": "福安終身壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "福安終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/A93F45B7-77C3-443E-8364-7DAC303CE47D.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-A82A12A3-E2C9-4E09-9ECF-264C1F851020",
+      "product_name": "一路發保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "一路發保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/A82A12A3-E2C9-4E09-9ECF-264C1F851020.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "100年10月12日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-0EC0254B-DCB7-4212-8BB4-8152741694E6",
+      "product_name": "常春增額還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "常春增額還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/0EC0254B-DCB7-4212-8BB4-8152741694E6.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-40577E44-F0BA-40E8-8053-1239FD43265B",
+      "product_name": "美利人生利率變動型壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "美利人生利率變動型壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/40577E44-F0BA-40E8-8053-1239FD43265B.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年10月31日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-137BC3B5-FA5F-48BC-9CAF-94EADDE06F09",
+      "product_name": "金寶貝兒童保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "金寶貝兒童保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/137BC3B5-FA5F-48BC-9CAF-94EADDE06F09.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "102年03月21日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-3EF9F870-C842-4958-9E47-C7D97C7EC9D3",
+      "product_name": "快樂寶貝還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "快樂寶貝還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/3EF9F870-C842-4958-9E47-C7D97C7EC9D3.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "106年11月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-66F85DAC-5565-4070-A35D-36EAAFB5CD4C",
+      "product_name": "安康定期壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "安康定期壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/66F85DAC-5565-4070-A35D-36EAAFB5CD4C.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年03月31日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-3241688A-32FC-4CD5-BBE8-9185661760CE",
+      "product_name": "喜樂年年還本終身保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "喜樂年年還本終身保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/3241688A-32FC-4CD5-BBE8-9185661760CE.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "105年06月05日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-7A90E0D5-F583-47FC-87D8-26EF1B11CB40",
+      "product_name": "歡喜還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "歡喜還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/7A90E0D5-F583-47FC-87D8-26EF1B11CB40.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "107年03月23日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-8F23C71E-148E-48B1-AC4D-336F2A37FA0A",
+      "product_name": "六年期安順定期壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "六年期安順定期壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/8F23C71E-148E-48B1-AC4D-336F2A37FA0A.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年03月31日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-AD82DC41-D706-4EDD-9EA6-DA7FDDE908DC",
+      "product_name": "六年期吉利保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "六年期吉利保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/AD82DC41-D706-4EDD-9EA6-DA7FDDE908DC.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "107年03月23日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-EF1A2CAA-E9BE-44BB-B764-4C7ECE93765B",
+      "product_name": "康泰103保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "康泰103保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/EF1A2CAA-E9BE-44BB-B764-4C7ECE93765B.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年10月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-7D2D8FDE-4DFE-4D16-AF62-8A0A4F7F48AE",
+      "product_name": "金吉利增額保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "金吉利增額保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/7D2D8FDE-4DFE-4D16-AF62-8A0A4F7F48AE.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "107年03月23日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-5E7B99B8-E618-483B-8AD3-B8ADC491B6E6",
+      "product_name": "金彩123增額保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "金彩123增額保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/5E7B99B8-E618-483B-8AD3-B8ADC491B6E6.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年10月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-137A890C-3B3C-484C-A74F-D667A8400640",
+      "product_name": "康福保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "康福保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/137A890C-3B3C-484C-A74F-D667A8400640.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年10月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-192C9EDD-460B-41B7-B1ED-6820D7E4C28B",
+      "product_name": "祥富增額保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "祥富增額保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/192C9EDD-460B-41B7-B1ED-6820D7E4C28B.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年10月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-DA5C1C8A-4BD6-44CB-8FB7-AED3D035E87D",
+      "product_name": "合家歡增額保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "合家歡增額保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/DA5C1C8A-4BD6-44CB-8FB7-AED3D035E87D.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年01月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-B9357F70-F019-4F97-81C0-C1F243163E08",
+      "product_name": "大吉大利增額還本保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "大吉大利增額還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/B9357F70-F019-4F97-81C0-C1F243163E08.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "103年10月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-0DB712B4-9593-4CF7-BA10-648DFD0188B3",
+      "product_name": "康順定期壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "康順定期壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/0DB712B4-9593-4CF7-BA10-648DFD0188B3.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "110年04月09日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-2635E782-964E-49E9-9071-30455AE2A923",
+      "product_name": "年年金順還本保險",
+      "category": "年金保險",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "年年金順還本保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/2635E782-964E-49E9-9071-30455AE2A923.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "106年11月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-D938F706-CDA7-48F7-A03F-7C0F1CBF7823",
+      "product_name": "年年金喜還本終身保險",
+      "category": "年金保險",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "年年金喜還本終身保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/D938F706-CDA7-48F7-A03F-7C0F1CBF7823.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-44BC949C-31E5-47A8-B5AC-BC2CACE31202",
+      "product_name": "十分有利增額終身壽險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "十分有利增額終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/44BC949C-31E5-47A8-B5AC-BC2CACE31202.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-308989F9-AD60-4183-95D9-39078131E0BB",
+      "product_name": "安心小額終身壽險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "安心小額終身壽險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/308989F9-AD60-4183-95D9-39078131E0BB.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "114年12月31日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-05F3C59C-34F4-4026-B4D8-17C7B678A623",
+      "product_name": "幸福88保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "幸福88保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/05F3C59C-34F4-4026-B4D8-17C7B678A623.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年04月27日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-6203BDBF-6BEB-411B-904A-7F32C948B642",
+      "product_name": "富麗人生增額保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "富麗人生增額保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/6203BDBF-6BEB-411B-904A-7F32C948B642.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-455FAE63-95B7-496D-B243-6EA2D28E05A4",
+      "product_name": "活利369利率變動型保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "活利369利率變動型保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/455FAE63-95B7-496D-B243-6EA2D28E05A4.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "109年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-4C79C40C-E7D6-4FE1-BC9D-638437A790E0",
+      "product_name": "樂活168保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "樂活168保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/4C79C40C-E7D6-4FE1-BC9D-638437A790E0.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "112年08月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-31824CFF-241A-45B7-A4F6-6C9466815E0E",
+      "product_name": "常富123保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "常富123保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/31824CFF-241A-45B7-A4F6-6C9466815E0E.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "112年08月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-16E1DBF6-3F1F-4D51-B55E-06FD79046C55",
+      "product_name": "金歡喜增額保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "金歡喜增額保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/16E1DBF6-3F1F-4D51-B55E-06FD79046C55.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "112年08月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-4DF29C22-D8FF-42C8-8DE0-8736583EB997",
+      "product_name": "e68定期壽險(網路投保商品)",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "e68定期壽險(網路投保商品) 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/4DF29C22-D8FF-42C8-8DE0-8736583EB997.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "113年07月01日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-FE17C8E9-89F0-4948-83BF-E9144891B91A",
+      "product_name": "好利旺利率變動型保險",
+      "category": "儲蓄還本",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "好利旺利率變動型保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/FE17C8E9-89F0-4948-83BF-E9144891B91A.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "113年11月15日起"
+      }
+    },
+    {
+      "company": "中華郵政",
+      "product_id": "POST-OLD-B6B5B324-F9EE-4E5F-9B17-1F20C8335711",
+      "product_name": "金滿溢保險",
+      "category": "壽險保障",
+      "status": "discontinued",
+      "is_historical": 1,
+      "source_url": "https://www.post.gov.tw/post/internet/Insurance/index.jsp?ID=4010101",
+      "documents": [
+        {
+          "document_type": "terms",
+          "title": "金滿溢保險 保單條款",
+          "pdf_url": "https://www.post.gov.tw/post/FileCenter/post_ww2/Insurance_Products_Info/IP_article/B6B5B324-F9EE-4E5F-9B17-1F20C8335711.pdf"
+        }
+      ],
+      "metadata": {
+        "source": "official_discontinued_terms_table",
+        "product_type": "主 約",
+        "discontinue_date": "115年04月27日起"
+      }
+    }
+  ]
+}

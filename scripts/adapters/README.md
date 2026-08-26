@@ -10,10 +10,10 @@ SPA, or PDF-link structures.
 | --- | --- | --- |
 | `cathay_life_adapter.py` | 國泰人壽 | Official product pages |
 | `nanshan_life_adapter.py` | 南山人壽 | Official product pages |
-| `kgi_life_adapter.py` | 凱基人壽 | Official product pages and repaired PDF links |
+| `kgi_life_adapter.py` | 凱基人壽 | Suspicious/repaired PDF mapping report |
 | `taiwan_life_adapter.py` | 台灣人壽 | Existing official URLs; PDF download still browser-required |
 | `transglobe_life_adapter.py` | 全球人壽 | Official product pages |
-| `yuanta_life_adapter.py` | 元大人壽 | Existing official URLs; PDF download still browser-required |
+| `yuanta_life_adapter.py` | 元大人壽 | Official Nuxt API; PDF download still browser-required |
 | `first_life_adapter.py` | 第一金人壽 | Official product category pages |
 | `hontai_life_adapter.py` | 宏泰人壽 | Official product tables |
 | `mli_life_adapter.py` | 三商美邦人壽 | Official product cards |
@@ -21,6 +21,8 @@ SPA, or PDF-link structures.
 | `aia_life_adapter.py` | 友邦人壽 | Official clauses table/download list |
 | `chubb_life_adapter.py` | 安達人壽 | Official product prospectus page |
 | `prudential_life_adapter.py` | 保誠人壽 | Official e-consultant product page |
+| `post_life_adapter.py` | 中華郵政 | Official active products and discontinued terms table |
+| `cardif_life_adapter.py` | 法國巴黎人壽 | Official contract terms page |
 
 ## Typical Flow
 
@@ -43,23 +45,25 @@ python scripts\download_pdf_snapshots.py --company "友邦人壽" --limit 120 --
 python scripts\parse_pdf_snapshots.py --company "友邦人壽" --limit 120 --max-pages 30 --engine pypdf --report backend\data\aia_pdf_parse.json
 ```
 
-Refresh coverage reports:
+Refresh coverage reports and deployable seed:
 
 ```powershell
 python scripts\report_inventory_quality.py --output backend\data\inventory_quality_report.json
-python scripts\report_requested_company_coverage.py --output backend\data\REQUESTED_COMPANY_COVERAGE.md
+python scripts\report_requested_company_coverage.py
+python scripts\export_inventory_seed.py
 ```
 
 ## Remaining Gaps
 
-See `backend/data/INVENTORY_REMAINING_GAPS.md`.
+The current official 20-life-insurer coverage report is generated at
+`backend/data/REQUESTED_COMPANY_COVERAGE.md`.
 
 The short version:
 
-- 安聯人壽：official download zone/browser verification and SPA-only product shell.
-- 法國巴黎人壽：Liferay page requires content/API parameters; current direct HTML shows template error.
-- 臺銀人壽：official PDFs exist, but product-to-PDF mapping is not stable from ordinary HTTP crawl.
-- 華南永昌人壽：requires business confirmation on company/source ownership before crawling.
+- 安聯人壽: official product/download pages require browser or security verification.
+- 臺銀人壽: official pages currently return a shell/empty content to ordinary HTTP clients.
+- 台灣人壽: product inventory exists, but official PDF downloads need a browser-compatible flow.
+- 元大人壽: product inventory exists via official API, but PDF downloads need a dedicated downloader.
 
 Do not backfill these from random search-result PDFs unless the source and
 product ownership can be verified.

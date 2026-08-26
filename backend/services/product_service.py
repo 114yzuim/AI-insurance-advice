@@ -261,23 +261,23 @@ def get_product_inventory_summary() -> dict:
     remaining_gaps = [
         {
             "company": "安聯人壽",
-            "reason": "官方下載區需瀏覽器驗證，商品站回傳 SPA shell。",
+            "reason": "官方商品站有瀏覽器/安全驗證，普通 HTTP adapter 會被擋。",
             "next_step": "使用 browser flow 或官方匯出檔。",
         },
         {
-            "company": "法國巴黎人壽",
-            "reason": "Liferay 商品頁需 content/API 參數，普通 HTML 未展開清單。",
-            "next_step": "追 Liferay API 或請對方提供官方清單。",
+            "company": "臺銀人壽",
+            "reason": "官方頁面目前回傳空殼內容，商品與條款列表尚未定位。",
+            "next_step": "使用 browser flow 建立商品頁導覽規則。",
         },
         {
-            "company": "臺銀人壽",
+            "company": "元大人壽",
             "reason": "官方 PDF 分散，產品與 PDF 對應關係尚不穩定。",
             "next_step": "用 browser flow 建立產品頁導覽規則。",
         },
         {
-            "company": "華南永昌人壽",
-            "reason": "需確認是否仍為獨立壽險資料源或通路/歷史資料。",
-            "next_step": "請業務方確認資料歸屬。",
+            "company": "台灣人壽",
+            "reason": "已有商品與文件 URL，但 PDF 下載需要瀏覽器流程。",
+            "next_step": "補 browser downloader 或請官方提供條款檔。",
         },
     ]
     return {

@@ -20,6 +20,8 @@ backend/data/probe_*.pdf
 backend/data/*_probe.json
 backend/data/*_downloads.json
 backend/data/*_parse*.json
+backend/data/download_*.json
+backend/data/parse_*.json
 
 # SQLite advisor DB (contains test client PII, rebuilt via db_init.py)
 backend/advisor.db
