@@ -1,22 +1,34 @@
 import Link from "next/link";
 
 const highlights = [
-  { label: "8 張", value: "已建立保單" },
-  { label: "5 家", value: "保險公司" },
-  { label: "一輩子", value: "長期保單記憶" },
+  { label: "商品查詢", value: "先找商品，再決定是否建立保單" },
+  { label: "AI 推薦", value: "依客戶條件比較合適方案" },
+  { label: "全流程串接", value: "保單管理與理賠中心都可回查商品" },
 ];
 
-const coverageItems = [
-  { title: "壽險保障", value: "1,500 萬", color: "bg-sky-100 text-sky-700" },
-  { title: "癌症保障", value: "300 萬", color: "bg-rose-100 text-rose-700" },
-  { title: "重大傷病", value: "200 萬", color: "bg-emerald-100 text-emerald-700" },
-  { title: "實支實付", value: "40 萬", color: "bg-amber-100 text-amber-700" },
+const modules = [
+  {
+    title: "商品查詢與推薦",
+    text: "搜尋保險商品、依公司或類別篩選，勾選後可請 AI 比較適合客戶需求的方案。",
+    href: "/products",
+    primary: true,
+  },
+  {
+    title: "建立與管理保單",
+    text: "已確認商品或已有客戶資料時，可直接建立保單、上傳文件並整理保障缺口。",
+    href: "/policies",
+  },
+  {
+    title: "理賠中心",
+    text: "處理理賠資料、文件與預估結果；仍可從導覽列回到商品查詢與推薦。",
+    href: "/claims",
+  },
 ];
 
-const flows = [
-  { title: "我的保單", text: "集中管理主約、附約、保額與保費。" },
-  { title: "保障健診", text: "用現有保障扣出真正缺口。" },
-  { title: "理賠中心", text: "用文件與保單資料比對可申請項目。" },
+const recommendationSteps = [
+  "輸入客戶年齡、預算、保障目標或指定公司",
+  "查詢商品並加入比較清單",
+  "請 AI 產出推薦理由、注意事項與下一步建議",
 ];
 
 export default function Home() {
@@ -26,35 +38,41 @@ export default function Home() {
         <div className="flex flex-col justify-center">
           <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-teal-200 bg-white px-3 py-1.5 text-sm font-medium text-teal-700 shadow-sm">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            AI 保險顧問平台
+            AI 保險顧問系統
           </div>
 
           <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-normal text-slate-950 md:text-6xl">
-            你的保單，AI 幫你記一輩子
+            先查商品，再依客戶需求推薦保險方案
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">
-            把所有保單集中管理，從保障健診、保單條款到醫療理賠，需要的時候，AI 幫你找出真正能用的保障。
+            首頁即提供商品查詢與推薦入口。理專可先檢索商品、比較條件，再依客戶基本資料產生建議；若已明確知道流程，也能直接建立保單或進入理賠中心。
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/policies"
+              href="/products"
               className="inline-flex items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-800"
             >
-              + 建立我的保單資料
+              商品查詢與推薦
+            </Link>
+            <Link
+              href="/policies"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-700"
+            >
+              建立保單
             </Link>
             <Link
               href="/claims"
               className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-700"
             >
-              前往理賠中心
+              理賠中心
             </Link>
           </div>
 
-          <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
+          <div className="mt-10 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-3">
             {highlights.map((item) => (
               <div key={item.label} className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
-                <p className="text-2xl font-bold text-teal-700">{item.label}</p>
+                <p className="text-xl font-bold text-teal-700">{item.label}</p>
                 <p className="mt-1 text-sm leading-5 text-slate-500">{item.value}</p>
               </div>
             ))}
@@ -65,47 +83,54 @@ export default function Home() {
           <div className="w-full rounded-[2rem] border border-white bg-white/80 p-4 shadow-2xl shadow-teal-100 backdrop-blur">
             <div className="rounded-[1.5rem] bg-[#eaf7f1] p-5">
               <div className="mb-5">
-                <p className="text-sm font-semibold text-teal-700">個人保障總覽</p>
+                <p className="text-sm font-semibold text-teal-700">首頁主要工作區</p>
                 <h2 className="mt-1 text-2xl font-bold leading-tight text-slate-950">
-                  AI 先懂你的保單，再回答你的問題
+                  商品檢索、推薦、保單與理賠分流
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  當保單、條款、家庭成員與理賠紀錄被整理成同一份 Insurance Profile，AI 才能給出真正個人化的下一步。
+                  使用者不需要先進入理賠中心才能看商品資料。商品查詢與推薦是第一層功能，其他模組則保留給已確定的保單建立或理賠處理情境。
                 </p>
               </div>
 
               <div className="grid gap-3">
-                {coverageItems.map((item) => (
-                  <VisualCard key={item.title} title={item.title} value={item.value} color={item.color} />
+                {modules.map((module) => (
+                  <Link
+                    key={module.title}
+                    href={module.href}
+                    className={`block rounded-2xl p-4 shadow-sm ring-1 transition hover:-translate-y-0.5 ${
+                      module.primary
+                        ? "bg-slate-950 text-white ring-slate-950"
+                        : "bg-white text-slate-900 ring-slate-100 hover:ring-teal-200"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-3">
+                      <h3 className="text-base font-bold">{module.title}</h3>
+                      <span className={module.primary ? "text-teal-200" : "text-teal-700"}>前往</span>
+                    </div>
+                    <p className={`mt-2 text-sm leading-6 ${module.primary ? "text-slate-200" : "text-slate-500"}`}>
+                      {module.text}
+                    </p>
+                  </Link>
                 ))}
               </div>
 
-              <div className="mt-5 grid gap-3">
-                {flows.map((flow, index) => (
-                  <div key={flow.title} className="flex gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-sm font-bold text-white">
-                      {index + 1}
-                    </span>
-                    <div>
-                      <h3 className="text-sm font-bold text-slate-950">{flow.title}</h3>
-                      <p className="mt-1 text-sm leading-6 text-slate-500">{flow.text}</p>
+              <div className="mt-5 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold text-slate-950">推薦流程</h3>
+                <div className="mt-3 grid gap-3">
+                  {recommendationSteps.map((step, index) => (
+                    <div key={step} className="flex gap-3">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-teal-100 text-sm font-bold text-teal-700">
+                        {index + 1}
+                      </span>
+                      <p className="text-sm leading-6 text-slate-600">{step}</p>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
-}
-
-function VisualCard({ title, value, color }: { title: string; value: string; color: string }) {
-  return (
-    <div className="flex items-center justify-between rounded-2xl bg-white p-4 shadow-sm">
-      <span className="text-sm font-medium text-slate-500">{title}</span>
-      <span className={`rounded-full px-3 py-1 text-sm font-bold ${color}`}>{value}</span>
     </div>
   );
 }

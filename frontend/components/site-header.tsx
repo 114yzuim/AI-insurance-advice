@@ -16,7 +16,7 @@ export default function SiteHeader() {
       <nav className="flex h-16 w-full items-center gap-4 px-4 md:px-6">
         <Link href="/" className="flex shrink-0 items-center gap-2 text-base font-bold text-slate-950">
           <span className={`h-8 w-8 rounded-lg ${isAdvisor ? "bg-amber-300" : "bg-teal-400"}`} />
-          {isAdvisor ? "保險顧問系統" : "AI 保險顧問"}
+          {isAdvisor ? "保險顧問工作台" : "AI 保險顧問"}
         </Link>
         <NavLinks />
         <FontSizeToggle />

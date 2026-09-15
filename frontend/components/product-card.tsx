@@ -16,12 +16,12 @@ interface ProductCardProps {
 }
 
 const CATEGORY_COLOR: Record<string, string> = {
-  壽險保障: "bg-sky-100 text-sky-700",
-  健康醫療: "bg-emerald-100 text-emerald-700",
-  投資型保險: "bg-violet-100 text-violet-700",
-  意外傷害: "bg-orange-100 text-orange-700",
-  還本養老: "bg-amber-100 text-amber-700",
-  年金保險: "bg-rose-100 text-rose-700",
+  醫療險: "bg-sky-100 text-sky-700",
+  意外險: "bg-emerald-100 text-emerald-700",
+  壽險: "bg-violet-100 text-violet-700",
+  年金險: "bg-orange-100 text-orange-700",
+  投資型保險: "bg-amber-100 text-amber-700",
+  癌症險: "bg-rose-100 text-rose-700",
   其他: "bg-slate-100 text-slate-600",
 };
 
@@ -46,11 +46,11 @@ export default function ProductCard({ product, checked = false, onToggle }: Prod
             <CheckIcon />
           </span>
           <span className={`truncate rounded-full px-2.5 py-1 text-xs font-bold ${categoryColor}`}>
-            {product.category}
+            {product.category || "未分類"}
           </span>
         </div>
         <span className="shrink-0 rounded-full bg-slate-50 px-2 py-1 text-xs font-semibold text-slate-400">
-          {product.currency}
+          {product.currency || "TWD"}
         </span>
       </div>
 
@@ -64,7 +64,7 @@ export default function ProductCard({ product, checked = false, onToggle }: Prod
           href={`/translate?url=${encodeURIComponent(firstUrl)}&name=${encodeURIComponent(product.product_name)}`}
           className="inline-flex flex-1 items-center justify-center rounded-xl bg-teal-50 px-3 py-2 text-sm font-bold text-teal-700 transition hover:bg-teal-100"
         >
-          白話解釋
+          條款摘要
         </Link>
         {firstUrl && (
           <a
@@ -73,7 +73,7 @@ export default function ProductCard({ product, checked = false, onToggle }: Prod
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-3 py-2 text-sm font-bold text-slate-500 transition hover:bg-slate-50 hover:text-slate-800"
           >
-            條款
+            DM
           </a>
         )}
       </div>

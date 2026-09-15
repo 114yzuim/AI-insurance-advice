@@ -72,7 +72,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
     setSelectedProducts((prev) =>
       prev.find((s) => s.product_id === p.product_id)
         ? prev.filter((s) => s.product_id !== p.product_id)
-        : [...prev, p]
+        : [...prev, p],
     );
   }
 
@@ -91,7 +91,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
               </span>
               <input
                 type="text"
-                placeholder="搜尋商品名稱..."
+                placeholder="搜尋商品名稱、關鍵字或公司..."
                 value={keyword}
                 onChange={handleFilterChange(setKeyword)}
                 className="h-11 w-full rounded-2xl border border-slate-200 bg-white py-2 pl-10 pr-3 text-sm text-slate-800 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
@@ -103,9 +103,11 @@ export default function ProductList({ categories, companies }: ProductListProps)
               onChange={handleFilterChange(setSelectedCategory)}
               className="h-11 rounded-2xl border border-slate-200 bg-white px-3 text-sm font-medium text-slate-600 shadow-sm outline-none transition focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
             >
-              <option value="">所有類別</option>
+              <option value="">全部類別</option>
               {categories.map((c) => (
-                <option key={c} value={c}>{c}</option>
+                <option key={c} value={c}>
+                  {c}
+                </option>
               ))}
             </select>
 
@@ -114,9 +116,11 @@ export default function ProductList({ categories, companies }: ProductListProps)
               onChange={handleFilterChange(setSelectedCompany)}
               className="h-11 rounded-2xl border border-slate-200 bg-white px-3 text-sm font-medium text-slate-600 shadow-sm outline-none transition focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
             >
-              <option value="">所有公司</option>
+              <option value="">全部公司</option>
               {companies.map((c) => (
-                <option key={c} value={c}>{c}</option>
+                <option key={c} value={c}>
+                  {c}
+                </option>
               ))}
             </select>
 
@@ -134,11 +138,11 @@ export default function ProductList({ categories, companies }: ProductListProps)
               )}
               <button
                 onClick={() => setChatOpen((v) => !v)}
-                title={chatOpen ? "關閉 AI 詢問面板" : "開啟 AI 詢問面板"}
+                title={chatOpen ? "收合 AI 推薦面板" : "展開 AI 推薦面板"}
                 className="inline-flex h-11 items-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 text-sm font-bold text-slate-600 shadow-sm transition hover:border-teal-200 hover:text-teal-700"
               >
                 <MessageIcon />
-                {chatOpen ? "收起 AI" : "AI 詢問"}
+                {chatOpen ? "收合 AI" : "AI 推薦"}
               </button>
             </div>
           </div>
@@ -154,7 +158,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
           ) : products.length === 0 ? (
             <div className="rounded-3xl border border-dashed border-slate-300 bg-white px-6 py-16 text-center">
               <p className="text-base font-bold text-slate-700">找不到符合條件的商品</p>
-              <p className="mt-2 text-sm text-slate-400">可以清除篩選，或改用較短的商品關鍵字。</p>
+              <p className="mt-2 text-sm text-slate-400">請調整關鍵字、類別或公司篩選條件。</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">

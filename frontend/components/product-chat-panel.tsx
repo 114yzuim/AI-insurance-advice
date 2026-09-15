@@ -42,9 +42,8 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
     setLoading(true);
 
     const productContext =
-      `【用戶已選取的保險商品（供顧問參考背景資訊，根據用戶問題自然回應即可）】\n` +
-      selected.map((p, i) => `${i + 1}. ${p.product_name}（${p.company}，${p.category}）`).join("\n") +
-      `\n\n顧問回應提示：在介紹商品特性時，如有助於用戶理解，可適時提及該類保障的常見限制或條件（例如年齡、職業、等待期、除外事項等），以及哪類消費者情境較可能需要這類保障。不要主動推薦或比較哪家較好，保持資訊提供的立場。`;
+      "以下是使用者已選取、準備比較與推薦的保險商品。請以保險顧問角度，根據客戶基本資料、需求、預算與風險偏好，說明較適合的商品、推薦理由、可能缺口與投保前應確認事項。避免保證核保或理賠結果。\n" +
+      selected.map((p, i) => `${i + 1}. ${p.product_name}（${p.company}，${p.category}）`).join("\n");
 
     try {
       const res = await fetch("/api/chat", {
@@ -55,7 +54,7 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
       const data = await res.json();
       setMessages([...newMessages, { role: "assistant", content: data.reply }]);
     } catch {
-      setMessages([...newMessages, { role: "assistant", content: "抱歉，暫時無法取得回覆，請稍後再試。" }]);
+      setMessages([...newMessages, { role: "assistant", content: "系統暫時無法產生推薦，請稍後再試。" }]);
     } finally {
       setLoading(false);
     }
@@ -73,15 +72,15 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
       <div className="shrink-0 border-b border-slate-100 px-4 py-4">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <p className="text-sm font-bold text-teal-700">AI 商品詢問</p>
+            <p className="text-sm font-bold text-teal-700">AI 商品推薦</p>
             <h2 className="mt-1 text-lg font-bold text-slate-950">
-              {selected.length === 0 ? "先勾選商品" : `已選 ${selected.length} 張商品`}
+              {selected.length === 0 ? "先選擇商品" : `已選 ${selected.length} 個商品`}
             </h2>
           </div>
           {messages.length > 0 && (
             <button
               onClick={() => setMessages([])}
-              title="清除對話紀錄"
+              title="清除對話"
               className="rounded-full px-2.5 py-1 text-xs font-bold text-slate-400 transition hover:bg-rose-50 hover:text-rose-500"
             >
               清除
@@ -115,13 +114,13 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
       <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto px-4 py-4">
         {selected.length === 0 && messages.length === 0 ? (
           <EmptyState
-            title="勾選商品後詢問 AI"
-            description="例如條款限制、保障差異、適合情境，都可以放在這裡問。"
+            title="從左側勾選商品"
+            description="勾選候選商品後，輸入客戶條件即可請 AI 協助比較與推薦。"
           />
         ) : messages.length === 0 ? (
           <EmptyState
-            title="可以開始詢問"
-            description="試著問：這些商品的保障差異在哪裡？"
+            title="輸入客戶基本資料"
+            description="例如：35 歲、家庭責任高、預算每年 3 萬、想補足醫療與重大疾病。"
           />
         ) : (
           messages.map((m, i) => (
@@ -159,7 +158,7 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={selected.length === 0 ? "請先勾選商品..." : "輸入問題，Enter 送出"}
+            placeholder={selected.length === 0 ? "請先選擇商品..." : "輸入客戶資料與需求，Enter 送出"}
             disabled={selected.length === 0 || loading}
             rows={2}
             className="flex-1 resize-none rounded-2xl border border-slate-200 px-3 py-2 text-xs leading-5 text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-teal-300 focus:ring-4 focus:ring-teal-100 disabled:bg-slate-50 disabled:text-slate-400"
@@ -174,7 +173,7 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
           </button>
         </div>
         <p className="mt-2 text-center text-[10px] text-slate-300">
-          AI 回覆僅供資訊參考
+          AI 推薦僅供顧問初步比較，仍需以正式條款與核保結果為準。
         </p>
       </div>
     </aside>
