@@ -24,6 +24,7 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -33,6 +34,7 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
   async function handleSend() {
     const text = input.trim();
     if (!text || loading || selected.length === 0) return;
+    setError(null);
     setInput("");
 
     const userMsg: Message = { role: "user", content: text };
@@ -51,10 +53,17 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text, history, product_context: productContext }),
       });
-      const data = await res.json();
+      const data = await res.json().catch(() => null);
+      if (!res.ok || typeof data?.reply !== "string" || !data.reply.trim()) {
+        throw new Error(
+          typeof data?.error === "string" ? data.error : "AI 未傳回有效內容，請稍後再試。",
+        );
+      }
       setMessages([...newMessages, { role: "assistant", content: data.reply }]);
-    } catch {
-      setMessages([...newMessages, { role: "assistant", content: "系統暫時無法產生推薦，請稍後再試。" }]);
+    } catch (error) {
+      setMessages(messages);
+      setInput(text);
+      setError(error instanceof Error ? error.message : "系統暫時無法產生推薦，請稍後再試。");
     } finally {
       setLoading(false);
     }
@@ -79,7 +88,8 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
           </div>
           {messages.length > 0 && (
             <button
-              onClick={() => setMessages([])}
+              onClick={() => { setMessages([]); setError(null); }}
+              disabled={loading}
               title="清除對話"
               className="rounded-full px-2.5 py-1 text-xs font-bold text-slate-400 transition hover:bg-rose-50 hover:text-rose-500"
             >
@@ -153,6 +163,11 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
       </div>
 
       <div className="shrink-0 border-t border-slate-100 bg-white px-3 py-3">
+        {error && (
+          <p role="alert" className="mb-3 rounded-xl bg-rose-50 px-3 py-2 text-sm leading-6 text-rose-700">
+            {error}
+          </p>
+        )}
         <div className="flex items-end gap-2">
           <textarea
             value={input}

@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
-load_dotenv()
+from pathlib import Path
+load_dotenv(Path(__file__).with_name(".env"))
 
 import os
 
@@ -9,6 +10,7 @@ from routers import chat, clauses, companies, policies, products, translate, nee
 from routers import clients, balance_sheet, questionnaire
 from allocation.router import router as allocation_router
 from db_init import init_db
+from services.llm_service import get_model, get_provider, is_api_key_configured
 
 init_db()
 
@@ -45,5 +47,8 @@ app.include_router(questionnaire.router, prefix="/api/advisor/questionnaires", t
 
 @app.get("/")
 def health_check():
-    import os
-    return {"status": "ok", "api_key_set": bool(os.getenv("CLAUDE_API_KEY"))}
+    return {
+        "status": "ok", "api_key_set": is_api_key_configured(),
+        "ai_provider": get_provider(), "ai_model": get_model(),
+        "ai_fast_model": get_model("fast"),
+    }

@@ -1,10 +1,7 @@
 import json
-import os
 import re
-from anthropic import AsyncAnthropic
+from services.llm_service import generate_text
 from services.rag_service import recommend_products_for_assessment
-
-client = AsyncAnthropic(api_key=os.getenv("CLAUDE_API_KEY"))
 
 
 def _extract_json(text: str) -> dict | None:
@@ -133,12 +130,11 @@ members 陣列必須包含且只包含輸入的 {n} 位成員，順序相同。
 - 台灣保費行情（30 歲參考）：意外險 200 萬約 100–200/月；醫療日額 1000 元約 400–700/月；癌症 100 萬約 600–1200/月；失能月給 2 萬約 1000–1800/月；定期壽險 500 萬約 200–500/月"""
 
     try:
-        response = await client.messages.create(
-            model="claude-haiku-4-5-20251001",
+        text = await generate_text(
+            task="fast",
             max_tokens=4096,
             messages=[{"role": "user", "content": prompt}],
         )
-        text = response.content[0].text.strip()
         data = _extract_json(text)
         if data and "members" in data:
             for member in data["members"]:
@@ -149,7 +145,7 @@ members 陣列必須包含且只包含輸入的 {n} 位成員，順序相同。
                 member["recommended_products"] = recommend_products_for_assessment(priority_keys)
             return data
     except Exception as e:
-        print(f"[needs_assessment] error: {e}")
+        print(f"[needs_assessment] AI error: {type(e).__name__}")
 
     return {
         "family_summary": "無法完成評估，以下為各成員通用建議，請重新嘗試。",

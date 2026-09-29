@@ -8,15 +8,12 @@
 from __future__ import annotations
 
 import json
-import os
 import pathlib
 
-from anthropic import AsyncAnthropic
+from services.llm_service import generate_text
 
 from services.pdf_rag_service import format_clause_context, retrieve_clause_chunks
 from services.rag_service import format_context, retrieve_relevant_products
-
-_client = AsyncAnthropic(api_key=os.getenv("CLAUDE_API_KEY"))
 
 _SELECTED_PRODUCTS_PATH = (
     pathlib.Path(__file__).parent.parent / "data" / "selected_products.json"
@@ -56,14 +53,13 @@ async def extract_profile(history: list[dict], message: str) -> dict:
     conversation += f"\nuser: {message}"
 
     try:
-        resp = await _client.messages.create(
-            model="claude-haiku-4-5-20251001",
+        raw = await generate_text(
+            task="fast",
             max_tokens=200,
             temperature=0,
             system=_EXTRACT_SYSTEM,
             messages=[{"role": "user", "content": conversation}],
         )
-        raw = resp.content[0].text.strip()
         # 去掉可能的 code fence
         if "```" in raw:
             raw = raw.split("```")[1]

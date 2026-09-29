@@ -1,7 +1,4 @@
-import os
-from anthropic import AsyncAnthropic
-
-client = AsyncAnthropic(api_key=os.getenv("CLAUDE_API_KEY"))
+from services.llm_service import generate_text
 
 SYSTEM_PROMPT = """你是一位站在消費者這邊的 AI 保險顧問。
 你的職責是用清楚、平易近人的語言，根據用戶的保障需求，從提供的商品資料庫中推薦適合的保險商品。
@@ -37,14 +34,12 @@ async def get_advisory_response(
 ) -> str:
     system = f"{SYSTEM_PROMPT}\n\n{context}" if context else SYSTEM_PROMPT
     messages = history + [{"role": "user", "content": message}]
-    response = await client.messages.create(
-        model="claude-sonnet-4-6",
+    return await generate_text(
         max_tokens=1024,
         temperature=0,
         system=system,
         messages=messages,
     )
-    return response.content[0].text
 
 
 async def translate_policy_text(raw_text: str, product_name: str) -> str:
@@ -60,9 +55,7 @@ async def translate_policy_text(raw_text: str, product_name: str) -> str:
 3. 理賠流程簡述
 4. 消費者需注意的重點"""
 
-    response = await client.messages.create(
-        model="claude-sonnet-4-6",
+    return await generate_text(
         max_tokens=2048,
         messages=[{"role": "user", "content": prompt}],
     )
-    return response.content[0].text

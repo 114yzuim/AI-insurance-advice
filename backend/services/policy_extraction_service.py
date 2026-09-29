@@ -1,9 +1,6 @@
 import json
-import os
 import re
-from anthropic import AsyncAnthropic
-
-client = AsyncAnthropic(api_key=os.getenv("CLAUDE_API_KEY"))
+from services.llm_service import generate_text
 
 BASELINES = {
     "life_coverage": 500,       # 萬元
@@ -52,12 +49,10 @@ async def extract_policy_coverage(pdf_text: str) -> dict:
 - 金額若以元標示請自行換算（life/accident/cancer 要換萬元）"""
 
     try:
-        response = await client.messages.create(
-            model="claude-sonnet-4-6",
+        text = await generate_text(
             max_tokens=512,
             messages=[{"role": "user", "content": prompt}],
         )
-        text = response.content[0].text.strip()
         match = re.search(r"\{.*\}", text, re.DOTALL)
         if match:
             return json.loads(match.group())

@@ -1,9 +1,6 @@
 import json
-import os
 import re
-from anthropic import AsyncAnthropic
-
-client = AsyncAnthropic(api_key=os.getenv("CLAUDE_API_KEY"))
+from services.llm_service import generate_text
 
 
 def _extract_json(text: str) -> dict | None:
@@ -129,16 +126,15 @@ async def analyze_claim(
 - 不要給確定性結論，用「通常」「可能」「建議確認」等措辭"""
 
     try:
-        response = await client.messages.create(
-            model="claude-haiku-4-5-20251001",
+        text = await generate_text(
+            task="fast",
             max_tokens=1024,
             messages=[{"role": "user", "content": prompt}],
         )
-        text = response.content[0].text.strip()
         data = _extract_json(text)
         if data:
             return data
     except Exception as e:
-        print(f"[claims] error: {e}")
+        print(f"[claims] AI error: {type(e).__name__}")
 
     return _FALLBACK
