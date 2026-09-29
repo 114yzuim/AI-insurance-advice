@@ -8,8 +8,8 @@ const highlights = [
 
 const modules = [
   {
-    title: "商品查詢與推薦",
-    text: "搜尋保險商品、依公司或類別篩選，勾選後可請 AI 比較適合客戶需求的方案。",
+    title: "查看商品清單",
+    text: "瀏覽已收錄的保險商品，依保險公司、商品類別或關鍵字搜尋，也可勾選商品請 AI 協助比較。",
     href: "/products",
     primary: true,
   },
@@ -42,18 +42,19 @@ export default function Home() {
           </div>
 
           <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-normal text-slate-950 md:text-6xl">
-            先查商品，再依客戶需求推薦保險方案
+            先看有哪些商品，再找到適合你的保險
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">
-            首頁即提供商品查詢與推薦入口。理專可先檢索商品、比較條件，再依客戶基本資料產生建議；若已明確知道流程，也能直接建立保單或進入理賠中心。
+            點擊「查看商品清單」，即可瀏覽已收錄的保險商品，依公司、類別或關鍵字快速查找。找到感興趣的商品後，還能請 AI 依你的需求協助比較。
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/products"
-              className="inline-flex items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-800"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-700 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-teal-100 transition hover:-translate-y-0.5 hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
             >
-              商品查詢與推薦
+              查看商品清單
+              <span aria-hidden="true">→</span>
             </Link>
             <Link
               href="/policies"
