@@ -1,0 +1,180 @@
+-- AUTO-GENERATED from backend/inventory_migrations/0001_baseline.sql by
+-- scripts/translate_migrations_to_postgres.py -- do not hand-edit, re-run that
+-- script instead after changing the source SQLite migration.
+
+-- 0001_baseline.sql
+-- Baseline schema, extracted verbatim from the inline _SCHEMA string that used to
+-- live in inventory_db.py. All statements are idempotent (IF NOT EXISTS) so this
+-- migration is safe to run against a database that already has these tables from
+-- before the migration runner existed -- it is simply recorded as applied.
+
+CREATE TABLE IF NOT EXISTS insurance_companies (
+    id SERIAL PRIMARY KEY,
+    slug TEXT UNIQUE NOT NULL,
+    name TEXT NOT NULL,
+    short_name TEXT NOT NULL,
+    type TEXT NOT NULL CHECK (type IN ('life', 'property', 'reinsurance')),
+    status TEXT NOT NULL DEFAULT 'active',
+    former_names TEXT NOT NULL DEFAULT '[]',
+    official_url TEXT DEFAULT '',
+    source_url TEXT DEFAULT '',
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS'))
+);
+
+CREATE TABLE IF NOT EXISTS insurance_products (
+    id SERIAL PRIMARY KEY,
+    product_id TEXT NOT NULL,
+    company_id INTEGER REFERENCES insurance_companies(id),
+    company_name TEXT NOT NULL,
+    product_name TEXT NOT NULL,
+    category TEXT NOT NULL DEFAULT '其他',
+    currency TEXT DEFAULT '',
+    status TEXT NOT NULL DEFAULT 'unknown',
+    source TEXT NOT NULL DEFAULT 'existing_crawl',
+    source_url TEXT DEFAULT '',
+    final_source_url TEXT DEFAULT '',
+    url_status TEXT NOT NULL DEFAULT 'unknown',
+    document_status TEXT NOT NULL DEFAULT 'unknown',
+    is_historical INTEGER NOT NULL DEFAULT 0,
+    metadata TEXT NOT NULL DEFAULT '{}',
+    scraped_at TEXT,
+    imported_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    UNIQUE(product_id, company_name)
+);
+
+CREATE TABLE IF NOT EXISTS policy_documents (
+    id SERIAL PRIMARY KEY,
+    product_db_id INTEGER NOT NULL REFERENCES insurance_products(id) ON DELETE CASCADE,
+    document_type TEXT NOT NULL DEFAULT 'terms',
+    title TEXT DEFAULT '',
+    pdf_url TEXT NOT NULL,
+    final_pdf_url TEXT DEFAULT '',
+    local_path TEXT DEFAULT '',
+    checksum TEXT DEFAULT '',
+    pdf_status TEXT NOT NULL DEFAULT 'unknown',
+    text_status TEXT NOT NULL DEFAULT 'pending',
+    parsed_text TEXT DEFAULT '',
+    downloaded_at TEXT,
+    created_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    UNIQUE(product_db_id, pdf_url)
+);
+
+CREATE TABLE IF NOT EXISTS product_link_audits (
+    id SERIAL PRIMARY KEY,
+    product_db_id INTEGER NOT NULL REFERENCES insurance_products(id) ON DELETE CASCADE,
+    source_url TEXT DEFAULT '',
+    source_status TEXT DEFAULT '',
+    source_result TEXT NOT NULL DEFAULT 'unknown',
+    source_content_type TEXT DEFAULT '',
+    final_source_url TEXT DEFAULT '',
+    pdf_url TEXT DEFAULT '',
+    pdf_status TEXT DEFAULT '',
+    pdf_result TEXT NOT NULL DEFAULT 'unknown',
+    pdf_content_type TEXT DEFAULT '',
+    final_pdf_url TEXT DEFAULT '',
+    error TEXT DEFAULT '',
+    checked_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_products_company ON insurance_products(company_name);
+CREATE INDEX IF NOT EXISTS idx_products_category ON insurance_products(category);
+CREATE INDEX IF NOT EXISTS idx_products_status ON insurance_products(status, url_status, document_status);
+CREATE INDEX IF NOT EXISTS idx_documents_product ON policy_documents(product_db_id);
+CREATE INDEX IF NOT EXISTS idx_audits_product ON product_link_audits(product_db_id, checked_at);
+
+CREATE TABLE IF NOT EXISTS policy_document_chunks (
+    id SERIAL PRIMARY KEY,
+    document_id INTEGER NOT NULL REFERENCES policy_documents(id) ON DELETE CASCADE,
+    product_db_id INTEGER NOT NULL REFERENCES insurance_products(id) ON DELETE CASCADE,
+    chunk_index INTEGER NOT NULL,
+    text TEXT NOT NULL,
+    token_estimate INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    UNIQUE(document_id, chunk_index)
+);
+
+CREATE INDEX IF NOT EXISTS idx_chunks_document ON policy_document_chunks(document_id, chunk_index);
+CREATE INDEX IF NOT EXISTS idx_chunks_product ON policy_document_chunks(product_db_id);
+-- idx_chunks_text DROPPED for Postgres -- see this script's module docstring
+
+CREATE TABLE IF NOT EXISTS insurance_profiles (
+    id TEXT PRIMARY KEY,
+    owner_name TEXT NOT NULL,
+    relation TEXT NOT NULL DEFAULT '本人',
+    created_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS'))
+);
+
+CREATE TABLE IF NOT EXISTS customer_policies (
+    id SERIAL PRIMARY KEY,
+    profile_id TEXT NOT NULL REFERENCES insurance_profiles(id) ON DELETE CASCADE,
+    product_id TEXT DEFAULT '',
+    company_name TEXT NOT NULL,
+    policy_name TEXT NOT NULL,
+    policy_no TEXT DEFAULT '',
+    role TEXT NOT NULL DEFAULT '主約',
+    status TEXT NOT NULL DEFAULT '有效',
+    annual_premium REAL NOT NULL DEFAULT 0,
+    effective_date TEXT DEFAULT '',
+    source_document_id INTEGER REFERENCES policy_documents(id),
+    created_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS'))
+);
+
+CREATE TABLE IF NOT EXISTS customer_policy_coverages (
+    id SERIAL PRIMARY KEY,
+    policy_id INTEGER NOT NULL REFERENCES customer_policies(id) ON DELETE CASCADE,
+    coverage_key TEXT NOT NULL,
+    amount REAL NOT NULL DEFAULT 0,
+    unit TEXT NOT NULL DEFAULT '',
+    UNIQUE(policy_id, coverage_key)
+);
+
+CREATE TABLE IF NOT EXISTS customer_policy_riders (
+    id SERIAL PRIMARY KEY,
+    policy_id INTEGER NOT NULL REFERENCES customer_policies(id) ON DELETE CASCADE,
+    rider_name TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS customer_policy_uploads (
+    id SERIAL PRIMARY KEY,
+    profile_id TEXT NOT NULL REFERENCES insurance_profiles(id) ON DELETE CASCADE,
+    policy_id INTEGER REFERENCES customer_policies(id) ON DELETE SET NULL,
+    original_filename TEXT NOT NULL,
+    local_path TEXT NOT NULL,
+    content_type TEXT DEFAULT '',
+    file_size INTEGER NOT NULL DEFAULT 0,
+    ocr_status TEXT NOT NULL DEFAULT 'pending',
+    extracted_text TEXT DEFAULT '',
+    created_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_customer_policies_profile ON customer_policies(profile_id);
+CREATE INDEX IF NOT EXISTS idx_customer_policies_company ON customer_policies(company_name);
+CREATE INDEX IF NOT EXISTS idx_customer_policy_uploads_profile ON customer_policy_uploads(profile_id);
+
+CREATE TABLE IF NOT EXISTS claim_cases (
+    id SERIAL PRIMARY KEY,
+    profile_id TEXT NOT NULL REFERENCES insurance_profiles(id) ON DELETE CASCADE,
+    client_id TEXT DEFAULT '',
+    owner_name TEXT DEFAULT '',
+    scenario TEXT DEFAULT '',
+    status TEXT NOT NULL DEFAULT '文件整理中',
+    medical_expense_total REAL NOT NULL DEFAULT 0,
+    estimated_total REAL NOT NULL DEFAULT 0,
+    high_confidence_total REAL NOT NULL DEFAULT 0,
+    review_total REAL NOT NULL DEFAULT 0,
+    document_summary TEXT NOT NULL DEFAULT '{}',
+    required_documents TEXT NOT NULL DEFAULT '[]',
+    companies TEXT NOT NULL DEFAULT '[]',
+    notes TEXT DEFAULT '',
+    next_follow_up_date TEXT DEFAULT '',
+    created_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS')),
+    updated_at TEXT DEFAULT (to_char(now() AT TIME ZONE 'utc', 'YYYY-MM-DD HH24:MI:SS'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_claim_cases_profile ON claim_cases(profile_id, updated_at);
+CREATE INDEX IF NOT EXISTS idx_claim_cases_client ON claim_cases(client_id, updated_at);

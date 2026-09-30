@@ -27,6 +27,15 @@ backend/data/parse_*.json
 backend/advisor.db
 backend/insurance_inventory.db
 
+# Raw crawl snapshots / local object store fallback -- these belong in
+# object storage (scripts/object_storage.py) or a Railway volume, never in
+# a service's build upload (see Dockerfile.worker's own docstring).
+backend/data/ib_disclosure_snapshots/
+backend/data/ib_document_snapshots/
+backend/data/object_store/
+backend/data/pdfs/
+backend/data/inventory_seed.json.gz
+
 # Python
 __pycache__/
 *.py[cod]
@@ -76,3 +85,8 @@ tmp-ui-check/
 tmp_*.json
 tmp_*.txt
 selected_products_check.txt
+
+backend/data/tii_result_snapshots/
+backend/data/tii_*.jsonl*
+backend/data/product_embeddings/
+scripts/_tmp_dl/

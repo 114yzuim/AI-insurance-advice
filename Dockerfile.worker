@@ -1,0 +1,58 @@
+# Dockerfile.worker -- the crawler/parser worker image for Railway.
+#
+# This is NOT the web API's Dockerfile (backend/ has its own FastAPI app --
+# see docs/production_deployment_readiness.md for the full Railway service
+# layout). This image only runs the batch scripts under scripts/: IB/TII
+# ingestion, resolve/download, sync, parse_document_snapshots.py, the
+# object-store backfill, and the readiness/smoke-test reports.
+#
+# WHY LibreOffice AND NOT WINDOWS COM: .doc parsing needs a real converter
+# (see scripts/legacy_office_parser.py's module docstring) -- COM
+# automation only exists on Windows with a licensed local MS Word install,
+# neither of which this Linux container has or should have. LibreOffice
+# headless is the ONLY .doc path this image runs; scripts/legacy_office_
+# parser.py's --enable-windows-com fallback is dead code here on purpose
+# (pywin32 isn't even installed below) -- it stays local-development-only.
+#
+# IMPORTANT: the default CMD is a no-op that prints usage and exits. This
+# image is meant to be invoked with an explicit command per run (by a
+# Railway cron/scheduled job, or a manual `railway run`/`docker run`
+# override) -- see the command examples below. It must NEVER cold-start
+# into "crawl everything" on deploy; see docs/production_deployment_
+# readiness.md's "why not crawl 190k records on day one" section for why.
+
+FROM python:3.12-slim
+
+# --- LibreOffice headless + fonts (CJK fonts matter -- these documents are
+# Traditional Chinese; fonts-noto-cjk keeps LibreOffice's text extraction
+# from silently mangling characters it has no glyph metrics for) ---
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libreoffice-writer \
+        libreoffice-calc \
+        fonts-noto-cjk \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY backend/requirements-worker.txt backend/requirements-worker.txt
+# pywin32 is Windows-only and not in backend/requirements.txt at all -- this
+# image never installs it, which is itself a guarantee that
+# --enable-windows-com can never silently succeed here (see module
+# docstring above).
+RUN pip install --no-cache-dir -r backend/requirements-worker.txt
+
+COPY backend/ backend/
+COPY scripts/ scripts/
+
+# backend/data/ (local snapshots, local object store fallback) should be a
+# Railway Volume attached to this service in production, not baked into the
+# image -- see docs/production_deployment_readiness.md. NOT declared as a
+# Docker `VOLUME` instruction here: Railway's builder rejects it outright
+# ("use Railway Volumes" instead) -- attach the volume via the Railway
+# dashboard/CLI (`railway volume add`) pointed at this same path, or via
+# `docker run -v` for a plain local `docker run`.
+
+# No secrets, no network calls, no crawling on build or on plain `docker run`
+# with no args -- prints what this image is for and exits 0.
+CMD ["python", "-c", "print('AI-insurance-advice worker image. Pass an explicit command, e.g.:\\n\\n  python scripts/check_deployment_readiness.py\\n  python scripts/report_policy_data_readiness.py\\n  python scripts/parse_document_snapshots.py --source ib_disclosure --limit 100\\n  python scripts/backfill_document_snapshots_to_object_store.py --source ib_disclosure\\n  python scripts/run_staging_smoke_test.py\\n\\nSee docs/production_deployment_readiness.md for the full command reference and why nothing runs automatically on deploy.')"]

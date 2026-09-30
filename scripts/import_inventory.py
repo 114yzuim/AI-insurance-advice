@@ -54,16 +54,28 @@ def seed_companies(path: Path) -> int:
 
 
 def company_id_for(conn, company_name: str) -> int | None:
+    # former_names is a JSON array stored as TEXT -- SQLite's json_each()
+    # table-valued function has no Postgres equivalent by that name; the
+    # dialect marker on backend/pg_compat.PgConnectionWrapper (see its own
+    # docstring) picks Postgres's jsonb_array_elements_text() instead. See
+    # docs/postgres_migration_notes.md's 5-item table.
+    if getattr(conn, "dialect", "sqlite") == "postgres":
+        former_names_match = """EXISTS (
+                SELECT 1 FROM jsonb_array_elements_text(insurance_companies.former_names::jsonb) AS former_name
+                WHERE former_name = ?
+           )"""
+    else:
+        former_names_match = """EXISTS (
+                SELECT 1 FROM json_each(insurance_companies.former_names)
+                WHERE json_each.value = ?
+           )"""
     row = conn.execute(
-        """
+        f"""
         SELECT id
         FROM insurance_companies
         WHERE short_name = ?
            OR name = ?
-           OR EXISTS (
-                SELECT 1 FROM json_each(insurance_companies.former_names)
-                WHERE json_each.value = ?
-           )
+           OR {former_names_match}
         LIMIT 1
         """,
         (company_name, company_name, company_name),

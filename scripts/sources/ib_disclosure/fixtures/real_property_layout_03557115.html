@@ -1,0 +1,287 @@
+<!--
+This is a REAL captured snapshot of
+https://ins-info.ib.gov.tw/customer/Property_Layout.aspx?UID=03557115
+(fetched via a live browser session, saved verbatim, 2026-09-13), not a
+hand-written page.
+
+IMPORTANT CONTEXT: this URL is a COMPANY-level product *search entry* page
+(breadcrumb: 單一查詢 / 臺灣產物保險股份有限公司 / 商品查詢), not a specific
+product's detail page. Its results table has zero rows because no search has
+been submitted -- and per this project's scope for this phase, this code
+never submits that search (see property_parser.py's module docstring).
+So this fixture is genuinely representative of what
+ingest_ib_property_page.py will get back for a bare company URL like the one
+in the task spec: a real company_name, and no product rows at all. It is not
+a stand-in for a populated results page -- no fixture for that exists yet
+because producing one requires the form submission this phase deliberately
+avoids.
+-->
+<html lang="zh-tw"><head id="ctl00_Head1"><title>
+	保險業公開資訊觀測站
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"><link href="/assets/css/bootstrap-3.3.6.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/assets/js/slick/slick/slick.css"><link rel="stylesheet" type="text/css" href="/assets/js/slick/slick/slick-theme.css"><link href="/assets/css/main.css?v1.1" rel="stylesheet">
+    <style type="text/css">
+        .style2
+        {
+            background-color: #F5F4E9;
+            height: 25px;
+            text-indent: 3px;
+            line-height: 19px;
+            padding-right: 2px;
+            width: 16%;
+        }
+    </style>
+<script language="javascript">
+    function prep() {
+        history.go(-1);
+    }
+    function postData(url) {
+        document.forms[0].action = url;
+        document.forms[0].submit();
+    }
+    function sendURL(url) {
+        window.location = url;
+    }
+    function setInsuType(type) {
+        var idx = 0;
+        if (type == "A")
+            idx = 0;
+        else if (type == "產險")
+            idx = 1;
+        else if (type == "壽險")
+            idx = 2;
+        document.getElementById('insurancetype').options(idx).selected = true;
+    }
+</script></head>
+<body>
+<noscript><div>您的瀏覽器不支援JavaScript語法，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript功能</div></noscript>
+    <form name="aspnetForm" method="post" action="Property_Layout.aspx?UID=03557115" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="REDACTED_VIEWSTATE">
+</div>
+<script type="text/javascript">
+var theForm = document.forms['aspnetForm'];
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+</script>
+<div>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3CAA9274">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="REDACTED_EVENTVALIDATION">
+</div>
+    <a href="#C" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a>
+
+    <div class="app">
+        <header class="home">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-8 logo">
+                            <a href="/index.aspx">
+                                <h1>
+                                    <img src="/assets/img/logo.gif" alt="保險業公開資訊網站"></h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="left-sidebar text-center">
+            <a href="/customer/accountquery.aspx">
+                <div class="wrap-option">
+                    <div>統計查詢</div>
+                </div>
+            </a>
+            <a href="http://insprod.tii.org.tw/database/insurance/index.asp" target="_blank" title="財團法人保險事業發展中心保險商品查詢(另開視窗)">
+                <div class="wrap-option">
+                    <div>財團法人保險事業發展中心 保險商品查詢</div>
+                </div>
+            </a>
+        </div>
+
+        <section class="slick-banner  page">
+            <div class="wrapper" style="background: url('/assets/img/banner.jpg') no-repeat center center"></div>
+        </section>
+
+        <section class="page">
+            <div class="bg-gradient">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-2 bg-gradient-yellow"></div>
+
+                    <div class="col-md-10 detail">
+                        <a href="#C" accesskey="C" name="C" class="accesskey-content02" title="中央內容區塊">:::</a>
+
+ <script>
+        function goDetail(e, productCode){
+            var UID= '03557115';
+            var val = e.value ;
+            var queryString = "?UID=" + UID + "&proc=" + productCode;
+
+            if (val == '0') return;
+
+            document.location = 'property5-1-'+val+'.aspx'+queryString ;
+        }
+    </script>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+            <td valign="top" class="contentbg">
+                <div id="contentbox">
+                    <div class="title_main">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td>
+                                    <h2 class="tb4">
+                                        臺灣產物保險股份有限公司 - 資訊公開說明文件</h2>
+                                    <div align="right" class="grey">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div id="path">
+                        <a id="ctl00_MainContent_HyperLink1" href="announceinfo.aspx">單一查詢</a>
+                        /
+                             <a id="A2" href="property.aspx?UID=03557115">臺灣產物保險股份有限公司</a>
+
+                        / 商品查詢
+                    </div>
+					<div class="row content">
+						<div class="col-md-12">商品查詢</div>
+					</div>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered" summary="">
+						<tbody><tr>
+							<td height="34" class="tb1" scope="col">
+								<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" summary="">
+									<tbody><tr>
+										<th width="10%"><label for="txtProductCode"> 商品代碼</label></th>
+										<td width="25%" class="text12" scope="col">
+											<input name="ctl00$MainContent$txtProductCode" type="text" maxlength="50" id="ctl00_MainContent_txtProductCode" class="form-control" size="20">
+										</td>
+										<th width="20%"><label for="txtKeyWord"> 商品名稱(關鍵字查詢)</label></th>
+										<td width="25%">
+											<input name="ctl00$MainContent$txtKeyWord" type="text" maxlength="50" id="ctl00_MainContent_txtKeyWord" class="form-control" size="20">
+
+										</td>
+										<td width="10%" scope="col">
+											<center>
+												<input type="submit" name="ctl00$MainContent$btnQuery" value="查詢" id="ctl00_MainContent_btnQuery" class="btn btn-warning">
+											</center>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody></table>
+
+                    <table width="100%" border="0" cellspacing="1" cellpadding="0" class="table">
+                        <tbody><tr class="info">
+                            <td width="15%" align="center" class="tb2">
+                                商品代碼
+                            </td>
+
+                              <td width="45%" align="center" class="tb2">
+                                商品名稱
+                            </td>
+                            <td width="40%" align="center" class="tb2">
+                                功能
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div>
+
+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="left">
+                                <table align="center" width="100%">
+                                    <tbody><tr>
+                                        <td align="right">
+
+                                            &nbsp;
+
+                                            &nbsp;
+                                        </td>
+                                        <td align="center" width="25%">
+
+                                        </td>
+                                        <td align="left">
+
+                                            &nbsp;
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" align="center" style="height: 18px">
+                                            <a id="ctl00_MainContent_lblPageInfo" href="javascript:__doPostBack('ctl00$MainContent$lblPageInfo','')"></a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div class="memo">
+                        <p>
+                            <span class="brown">※申報頻率</span><span class="brown">：</span><br>
+                            事實發生或內容異動之日起三十日內更新。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+
+                    </div>
+                </div>
+                </div>
+
+                <div class="row text-center">
+                <img src="/assets/img/bg-city.png" width="100%" class="bg-city" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="link">
+            <div class="row text-center">
+                <div class="col-md-4 col-xs-6">
+                    <a href="openData.aspx">資料開放宣告</a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <a href="Information.aspx">資訊安全政策宣告</a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <a href="privacy.aspx">隱私權政策宣告</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>
+                            金融監督管理委員會保險局 版權所有
+                            <br>
+                            220232 新北市板橋區縣民大道二段7號17樓
+                            <span>電話:(02)8968-0899</span> <span>傳真:(02)8969-1300</span><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    </form>
+</body></html>

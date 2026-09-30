@@ -1,0 +1,22 @@
+# Minimal dependencies for the crawler/parser worker image.
+# Keep this separate from backend/requirements.txt so Railway workers do not
+# install the full web/RAG stack (torch, sentence-transformers, chromadb, etc.)
+# just to crawl, store, and parse insurance documents.
+
+httpx==0.27.2
+beautifulsoup4==4.14.3
+requests==2.34.2
+python-dotenv==1.0.1
+psycopg2-binary==2.9.12
+
+pdfplumber==0.11.4
+pypdf==6.14.0
+python-docx==1.2.0
+openpyxl==3.1.5
+xlrd==2.0.2
+
+# Test-only helper used by scripts/test_legacy_office_parser.py to generate
+# .xls fixtures. Harmless in the worker image, but not required at runtime.
+xlwt==1.3.0
+
+boto3==1.43.97

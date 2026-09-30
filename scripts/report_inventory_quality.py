@@ -19,6 +19,15 @@ def rows(conn, sql: str, params: tuple[Any, ...] = ()) -> list[dict[str, Any]]:
     return [dict(row) for row in conn.execute(sql, params).fetchall()]
 
 
+def _group_concat_fn(conn) -> str:
+    """SQLite's GROUP_CONCAT(expr, sep) and Postgres's STRING_AGG(expr,
+    sep) take the same two arguments in the same order -- only the
+    function name differs. See docs/postgres_migration_notes.md's 5-item
+    table.
+    """
+    return "STRING_AGG" if getattr(conn, "dialect", "sqlite") == "postgres" else "GROUP_CONCAT"
+
+
 def build_report(top: int) -> dict[str, Any]:
     with get_inventory_connection() as conn:
         totals = {
@@ -53,13 +62,14 @@ def build_report(top: int) -> dict[str, Any]:
             ORDER BY products DESC
             """,
         )
+        group_concat = _group_concat_fn(conn)
         duplicate_pdf_urls = rows(
             conn,
-            """
+            f"""
             SELECT
                 d.pdf_url,
                 COUNT(DISTINCT p.id) AS product_count,
-                GROUP_CONCAT(p.company_name || '|' || p.product_id || '|' || p.product_name, '\n') AS products
+                {group_concat}(p.company_name || '|' || p.product_id || '|' || p.product_name, '\n') AS products
             FROM policy_documents d
             JOIN insurance_products p ON p.id = d.product_db_id
             WHERE d.pdf_url != ''
@@ -72,11 +82,11 @@ def build_report(top: int) -> dict[str, Any]:
         )
         duplicate_checksums = rows(
             conn,
-            """
+            f"""
             SELECT
                 d.checksum,
                 COUNT(DISTINCT p.id) AS product_count,
-                GROUP_CONCAT(p.company_name || '|' || p.product_id || '|' || p.product_name || '|' || d.local_path, '\n') AS products
+                {group_concat}(p.company_name || '|' || p.product_id || '|' || p.product_name || '|' || d.local_path, '\n') AS products
             FROM policy_documents d
             JOIN insurance_products p ON p.id = d.product_db_id
             WHERE d.checksum != ''

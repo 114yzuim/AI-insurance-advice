@@ -7,7 +7,7 @@ from services.claim_case_service import create_claim_case, list_claim_cases, upd
 from services.claims_service import analyze_claim
 from services.claim_document_service import save_claim_document, summarize_claim_documents
 from services.claim_rules_service import estimate_claim
-from services.product_service import get_products
+from services.product_service import get_product_by_id
 from services.pdf_service import fetch_pdf_text
 
 router = APIRouter()
@@ -86,8 +86,7 @@ async def _fetch_policy_text(product_id: str) -> str:
     if product_id in _pdf_cache:
         return _pdf_cache[product_id]
 
-    products = get_products()
-    product = next((p for p in products if p["product_id"] == product_id), None)
+    product = get_product_by_id(product_id)
     if not product:
         return ""
 
