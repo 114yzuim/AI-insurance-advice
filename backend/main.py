@@ -10,9 +10,11 @@ from routers import chat, clauses, companies, policies, products, translate, nee
 from routers import clients, balance_sheet, questionnaire
 from allocation.router import router as allocation_router
 from db_init import init_db
+from inventory_db import init_inventory_db
 from services.llm_service import get_model, get_provider, is_api_key_configured
 
 init_db()
+init_inventory_db()
 
 app = FastAPI(title="AI-insurance-advice API")
 

@@ -2,10 +2,12 @@ import json
 import pathlib
 import sqlite3
 import gzip
-from contextlib import contextmanager
+from contextlib import closing, contextmanager
+from threading import Lock
 
 DB_PATH = pathlib.Path(__file__).parent / "insurance_inventory.db"
 SEED_PATH = pathlib.Path(__file__).parent / "data" / "inventory_seed.json.gz"
+_INIT_LOCK = Lock()
 
 _JSON_COLS = {"former_names", "download_urls", "metadata"}
 
@@ -184,8 +186,11 @@ CREATE INDEX IF NOT EXISTS idx_claim_cases_client ON claim_cases(client_id, upda
 
 
 def init_inventory_db() -> None:
-    with sqlite3.connect(str(DB_PATH)) as conn:
+    # Parallel initial requests must not race while importing the seed.
+    # sqlite3's transaction context alone does not close the connection.
+    with _INIT_LOCK, closing(sqlite3.connect(str(DB_PATH), timeout=30)) as conn:
         conn.executescript(_SCHEMA)
+        conn.execute("BEGIN IMMEDIATE")
         seed_inventory_if_empty(conn)
         conn.commit()
 

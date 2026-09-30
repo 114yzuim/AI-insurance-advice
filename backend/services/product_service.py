@@ -1,12 +1,10 @@
 import json
 from pathlib import Path
-from functools import lru_cache
 from inventory_db import get_inventory_connection, row_to_dict
 
 DATA_PATH = Path(__file__).parent.parent / "data" / "crawled_products_with_pdf_dm_links.json"
 
 
-@lru_cache(maxsize=1)
 def get_products() -> list[dict]:
     inventory_products = get_inventory_products()
     if inventory_products:
@@ -17,26 +15,25 @@ def get_products() -> list[dict]:
 
 
 def get_inventory_products() -> list[dict]:
-    try:
-        with get_inventory_connection() as conn:
-            rows = conn.execute(
-                """
-                SELECT
-                    p.product_id, p.product_name, p.company_name AS company, p.category, p.currency,
-                    p.source_url, p.final_source_url, p.status, p.url_status, p.document_status,
-                    COALESCE(
-                        json_group_array(d.pdf_url) FILTER (WHERE d.pdf_url IS NOT NULL),
-                        '[]'
-                    ) AS download_urls
-                FROM insurance_products p
-                LEFT JOIN policy_documents d ON d.product_db_id = p.id
-                GROUP BY p.id
-                ORDER BY p.company_name, p.product_name
-                """
-            ).fetchall()
-        return [row_to_dict(row) for row in rows]
-    except Exception:
-        return []
+    # A database error must surface, not silently replace the inventory with
+    # the legacy 780-product file. Read again after transient failures.
+    with get_inventory_connection() as conn:
+        rows = conn.execute(
+            """
+            SELECT
+                p.product_id, p.product_name, p.company_name AS company, p.category, p.currency,
+                p.source_url, p.final_source_url, p.status, p.url_status, p.document_status,
+                COALESCE(
+                    json_group_array(d.pdf_url) FILTER (WHERE d.pdf_url IS NOT NULL),
+                    '[]'
+                ) AS download_urls
+            FROM insurance_products p
+            LEFT JOIN policy_documents d ON d.product_db_id = p.id
+            GROUP BY p.id
+            ORDER BY p.company_name, p.product_name
+            """
+        ).fetchall()
+    return [row_to_dict(row) for row in rows]
 
 
 def search_products(
