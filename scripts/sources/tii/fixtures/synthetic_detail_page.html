@@ -1,0 +1,26 @@
+<!--
+This is a HAND-WRITTEN synthetic fixture for smoke-testing the parsers'
+label:value table scraping and Open2.ashx link extraction. It is NOT a real
+TII page capture (see this directory's README) -- it exists only so
+detail_parser.py / document_parser.py have something to run against in CI
+until a real saved page is available.
+-->
+<html>
+<body>
+<table>
+  <tr><td>公司名稱</td><td>國泰人壽保險股份有限公司</td></tr>
+  <tr><td>商品名稱</td><td>國泰人壽美好人生終身壽險</td></tr>
+  <tr><td>保險類別</td><td>傳統型壽險</td></tr>
+  <tr><td>銷售日</td><td>093/05/01</td></tr>
+  <tr><td>停售日</td><td>&nbsp;</td></tr>
+  <tr><td>核准日期</td><td>093/04/20</td></tr>
+  <tr><td>核准文號</td><td>台財保字第0930750123號</td></tr>
+  <tr><td>送審方式</td><td>核准</td></tr>
+</table>
+<table>
+  <tr><td>商品內容說明</td><td><a href="Open2.ashx?id=79093286-cbc3-4222-8af1-548383d952ce">下載</a></td></tr>
+  <tr><td>保單條款</td><td><a href="Open2.ashx?id=4c50e7e7-21a5-4cbb-9251-df5467980ae6">下載</a></td></tr>
+  <tr><td>要保書</td><td><a href="/Open2.ashx?id=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee">要保書.pdf</a></td></tr>
+</table>
+</body>
+</html>

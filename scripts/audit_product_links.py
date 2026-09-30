@@ -13,6 +13,7 @@ if str(BACKEND) not in sys.path:
 
 import httpx
 from inventory_db import get_inventory_connection, row_to_dict
+from inventory_http import DEFAULT_HEADERS, referer_for_url
 
 DEFAULT_OUTPUT = BACKEND / "data" / "product_link_audit.json"
 
@@ -53,16 +54,18 @@ def classify(
 async def check_url(client: httpx.AsyncClient, url: str, *, expect_pdf: bool) -> dict[str, str]:
     if not url:
         return {"status": "no_url", "content_type": "", "final_url": "", "result": "missing", "error": "", "body_preview": ""}
+    referer = referer_for_url(url)
+    referer_headers = {"Referer": referer} if referer else {}
     try:
         try:
-            response = await client.head(url)
+            response = await client.head(url, headers=referer_headers)
         except httpx.TransportError:
-            response = await client.get(url, headers={"Range": "bytes=0-512"})
+            response = await client.get(url, headers={**referer_headers, "Range": "bytes=0-512"})
         if response.status_code in {403, 405}:
-            response = await client.get(url, headers={"Range": "bytes=0-512"})
+            response = await client.get(url, headers={**referer_headers, "Range": "bytes=0-512"})
         content_type = response.headers.get("content-type", "")
-        if "taiwanlife.com" in url.lower() and "text/html" in content_type.lower() and response.request.method == "HEAD":
-            response = await client.get(url, headers={"Range": "bytes=0-2048"})
+        if "text/html" in content_type.lower() and response.request.method == "HEAD":
+            response = await client.get(url, headers={**referer_headers, "Range": "bytes=0-2048"})
         status = str(response.status_code)
         content_type = response.headers.get("content-type", "")
         final_url = str(response.url)
@@ -211,13 +214,9 @@ def persist_results(results: list[dict[str, Any]], output: Path) -> None:
 async def main_async(args: argparse.Namespace) -> None:
     products = fetch_products(args.limit, args.company, args.only_unknown)
     timeout = httpx.Timeout(args.timeout)
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "application/pdf,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
-        "Referer": "https://www.taiwanlife.com/",
-    }
-    async with httpx.AsyncClient(timeout=timeout, follow_redirects=True, headers=headers, verify=args.verify_ssl) as client:
+    async with httpx.AsyncClient(
+        timeout=timeout, follow_redirects=True, headers=DEFAULT_HEADERS, verify=not args.insecure
+    ) as client:
         semaphore = asyncio.Semaphore(args.concurrency)
 
         async def run_one(product: dict[str, Any]) -> dict[str, Any]:
@@ -236,7 +235,12 @@ def main() -> None:
     parser.add_argument("--only-unknown", action="store_true")
     parser.add_argument("--concurrency", type=int, default=5)
     parser.add_argument("--timeout", type=float, default=10)
-    parser.add_argument("--verify-ssl", action="store_true")
+    parser.add_argument(
+        "--insecure",
+        action="store_true",
+        help="Disable TLS certificate verification (default: verify). Only use for a known, "
+        "trusted host with a broken cert chain.",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     asyncio.run(main_async(args))

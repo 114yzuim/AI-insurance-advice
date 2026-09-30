@@ -25,7 +25,9 @@ def inventory_clause_summary() -> dict:
         totals = {
             "products": conn.execute("SELECT COUNT(*) FROM insurance_products").fetchone()[0],
             "documents": conn.execute("SELECT COUNT(*) FROM policy_documents").fetchone()[0],
-            "downloaded_documents": conn.execute("SELECT COUNT(*) FROM policy_documents WHERE local_path != ''").fetchone()[0],
+            "downloaded_documents": conn.execute(
+                "SELECT COUNT(*) FROM policy_documents WHERE COALESCE(local_path, '') <> '' OR text_status = 'parsed'"
+            ).fetchone()[0],
             "parsed_documents": conn.execute("SELECT COUNT(*) FROM policy_documents WHERE text_status = 'parsed'").fetchone()[0],
             "chunks": conn.execute("SELECT COUNT(*) FROM policy_document_chunks").fetchone()[0],
         }
@@ -110,7 +112,10 @@ def search_clauses(
     params.extend([f"%{keyword.strip()}%", limit])
     with get_inventory_connection() as conn:
         rows = conn.execute(sql, params).fetchall()
-    return [dict(row) for row in rows]
+    items = [dict(row) for row in rows]
+    for item in items:
+        item.pop("local_path", None)  # raw files live off-server; a path here is meaningless/leaky
+    return items
 
 
 def format_clause_context(items: list[dict]) -> str:

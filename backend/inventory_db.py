@@ -1,13 +1,31 @@
 import json
+import os
 import pathlib
 import sqlite3
 import gzip
 from contextlib import closing, contextmanager
 from threading import Lock
 
+from dotenv import load_dotenv
+
 DB_PATH = pathlib.Path(__file__).parent / "insurance_inventory.db"
 SEED_PATH = pathlib.Path(__file__).parent / "data" / "inventory_seed.json.gz"
 _INIT_LOCK = Lock()
+
+# Loads backend/.env (DATABASE_URL) for every script that imports this module,
+# not just the FastAPI app. A no-op if the file doesn't exist or the variable
+# is already set in the real environment (as on Railway).
+load_dotenv(pathlib.Path(__file__).parent / ".env")
+
+MIGRATIONS_DIR = pathlib.Path(__file__).parent / "inventory_migrations"
+MIGRATIONS_DIR_PG = pathlib.Path(__file__).parent / "inventory_migrations_pg"
+
+# When set, get_inventory_connection() uses Postgres via backend/pg_compat.py
+# (production: the ~130k-product catalogue lives there); otherwise the SQLite
+# file above, exactly as before. psycopg2 is imported lazily, only on that path.
+DATABASE_URL_ENV_VAR = "DATABASE_URL"
+_MIGRATE_LOCK = Lock()
+_MIGRATED_PATHS: set[str] = set()
 
 _JSON_COLS = {"former_names", "download_urls", "metadata"}
 
@@ -195,6 +213,75 @@ def init_inventory_db() -> None:
         conn.commit()
 
 
+def _ensure_migrations_table(conn: sqlite3.Connection) -> None:
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS schema_migrations (
+            version TEXT PRIMARY KEY,
+            applied_at TEXT DEFAULT (datetime('now'))
+        )
+        """
+    )
+
+
+def _iter_statements(sql: str):
+    """Split a migration file into statements (sqlite3.complete_statement
+    understands strings/comments), so each file runs in one transaction --
+    executescript() would commit part-way and could leave it half-applied."""
+    buffer = ""
+    for line in sql.splitlines(keepends=True):
+        buffer += line
+        if sqlite3.complete_statement(buffer):
+            statement = buffer.strip()
+            if statement:
+                yield statement
+            buffer = ""
+    if buffer.strip():
+        raise ValueError("Incomplete trailing SQL statement in migration file")
+
+
+def run_migrations(conn: sqlite3.Connection) -> None:
+    """Apply every inventory_migrations/*.sql not yet recorded in
+    schema_migrations, in filename order, one transaction per file. They add
+    the market-universe tables (source records, document registry, product
+    attributes, ...) on top of _SCHEMA; 0001 repeats _SCHEMA with IF NOT
+    EXISTS, so it is a no-op on a database init_inventory_db() created."""
+    _ensure_migrations_table(conn)
+    applied = {row[0] for row in conn.execute("SELECT version FROM schema_migrations")}
+    if not MIGRATIONS_DIR.exists():
+        return
+    for path in sorted(MIGRATIONS_DIR.glob("*.sql")):
+        version = path.stem
+        if version in applied:
+            continue
+        statements = list(_iter_statements(path.read_text(encoding="utf-8")))
+        conn.execute("BEGIN")
+        try:
+            for statement in statements:
+                conn.execute(statement)
+            conn.execute("INSERT INTO schema_migrations (version) VALUES (?)", (version,))
+        except Exception:
+            conn.rollback()
+            raise
+        else:
+            conn.commit()
+
+
+def _ensure_sqlite_migrations() -> None:
+    """Run the migrations once per process per database file, after
+    init_inventory_db(); serialized so parallel first requests can't both
+    apply the same file."""
+    key = str(DB_PATH)
+    if key in _MIGRATED_PATHS:
+        return
+    with _MIGRATE_LOCK:
+        if key in _MIGRATED_PATHS:
+            return
+        with closing(sqlite3.connect(key, timeout=30, isolation_level=None)) as conn:
+            run_migrations(conn)
+        _MIGRATED_PATHS.add(key)
+
+
 def seed_inventory_if_empty(conn: sqlite3.Connection) -> None:
     if not SEED_PATH.exists():
         return
@@ -212,15 +299,38 @@ def seed_inventory_if_empty(conn: sqlite3.Connection) -> None:
         columns = list(rows[0].keys())
         placeholders = ", ".join(["?"] * len(columns))
         column_sql = ", ".join(columns)
-        conn.executemany(
-            f"INSERT OR REPLACE INTO {table} ({column_sql}) VALUES ({placeholders})",
-            [[row.get(column) for column in columns] for row in rows],
-        )
+        values = [[row.get(column) for column in columns] for row in rows]
+        # `INSERT OR REPLACE` is SQLite-only; on Postgres (pg_compat) use an
+        # explicit conflict target -- seed dumps always carry the `id` PK.
+        if getattr(conn, "dialect", "sqlite") == "postgres" and "id" in columns:
+            update_columns = [c for c in columns if c != "id"]
+            set_sql = ", ".join(f"{c} = excluded.{c}" for c in update_columns)
+            sql = f"INSERT INTO {table} ({column_sql}) VALUES ({placeholders}) ON CONFLICT (id) DO UPDATE SET {set_sql}"
+        else:
+            sql = f"INSERT OR REPLACE INTO {table} ({column_sql}) VALUES ({placeholders})"
+        conn.executemany(sql, values)
 
 
 @contextmanager
 def get_inventory_connection():
+    """SQLite by default; Postgres when DATABASE_URL is set (production).
+    Callers just use conn.execute(...) on either -- pg_compat translates the
+    SQLite-style placeholders and rows."""
+    database_url = os.environ.get(DATABASE_URL_ENV_VAR)
+    if database_url:
+        import sys
+
+        sys.path.insert(0, str(pathlib.Path(__file__).parent))
+        from pg_compat import get_pg_connection, run_migrations_pg
+
+        with get_pg_connection(database_url) as conn:
+            run_migrations_pg(conn, MIGRATIONS_DIR_PG)
+            seed_inventory_if_empty(conn)
+            yield conn
+        return
+
     init_inventory_db()
+    _ensure_sqlite_migrations()
     conn = sqlite3.connect(str(DB_PATH))
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")

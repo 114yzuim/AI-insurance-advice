@@ -18,7 +18,13 @@ DEFAULT_REPORT = BACKEND / "data" / "pdf_parse_report.json"
 
 
 def fetch_documents(limit: int, company: str | None, retry_failed: bool) -> list[dict[str, Any]]:
-    where = ["d.local_path != ''", "d.local_path IS NOT NULL"]
+    # This module only knows how to read PDFs (pdfplumber/pypdf below) --
+    # a non-PDF local_path (e.g. a synced .xls/.doc from
+    # scripts/sync_document_registry_to_policy_documents.py, which marks
+    # those 'downloaded_not_parsed' rather than 'pending' precisely so they
+    # don't land here) must never be handed to this parser regardless of
+    # what set its text_status. Defense in depth, not the only guard.
+    where = ["d.local_path != ''", "d.local_path IS NOT NULL", "LOWER(d.local_path) LIKE '%.pdf'"]
     params: list[Any] = []
     if retry_failed:
         where.append("d.text_status IN ('pending', 'parse_failed', 'scanned_pdf')")

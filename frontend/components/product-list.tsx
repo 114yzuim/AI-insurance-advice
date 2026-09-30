@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import ProductCard from "./product-card";
 import ProductChatPanel from "./product-chat-panel";
+import { COVERAGE_OPTIONS, type Coverage } from "@/lib/coverage";
 
 interface Product {
   product_id: string;
@@ -10,6 +11,8 @@ interface Product {
   company: string;
   category: string;
   currency: string;
+  status?: string;
+  coverage?: Coverage | null;
   download_urls: string[];
 }
 
@@ -29,6 +32,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
   const [keyword, setKeyword] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedCompany, setSelectedCompany] = useState("");
+  const [selectedCoverage, setSelectedCoverage] = useState("");
 
   const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
   const [chatOpen, setChatOpen] = useState(true);
@@ -39,6 +43,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
     if (keyword) params.set("keyword", keyword);
     if (selectedCategory) params.set("category", selectedCategory);
     if (selectedCompany) params.set("company", selectedCompany);
+    if (selectedCoverage) params.set("coverage_type", selectedCoverage);
 
     try {
       const res = await fetch(`/api/products?${params}`);
@@ -51,7 +56,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
     } finally {
       setLoading(false);
     }
-  }, [page, keyword, selectedCategory, selectedCompany]);
+  }, [page, keyword, selectedCategory, selectedCompany, selectedCoverage]);
 
   useEffect(() => {
     queueMicrotask(() => {
@@ -84,7 +89,7 @@ export default function ProductList({ categories, companies }: ProductListProps)
     <div className="flex h-full min-h-0 bg-[#f7faf8]">
       <div className="min-w-0 flex-1 overflow-y-auto px-4 pb-6 md:px-6">
         <div className="sticky top-0 z-10 -mx-4 border-b border-slate-200 bg-[#f7faf8]/95 px-4 py-4 backdrop-blur md:-mx-6 md:px-6">
-          <div className="grid gap-3 xl:grid-cols-[minmax(260px,1fr)_220px_220px_auto]">
+          <div className="grid gap-3 xl:grid-cols-[minmax(240px,1fr)_180px_180px_180px_auto]">
             <label className="relative">
               <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
                 <SearchIcon />
@@ -120,6 +125,20 @@ export default function ProductList({ categories, companies }: ProductListProps)
               {companies.map((c) => (
                 <option key={c} value={c}>
                   {c}
+                </option>
+              ))}
+            </select>
+
+            <select
+              value={selectedCoverage}
+              onChange={handleFilterChange(setSelectedCoverage)}
+              title="依條款擷取的保障類型篩選（只含有條款資料的商品）"
+              className="h-11 rounded-2xl border border-slate-200 bg-white px-3 text-sm font-medium text-slate-600 shadow-sm outline-none transition focus:border-teal-300 focus:ring-4 focus:ring-teal-100"
+            >
+              <option value="">全部保障類型</option>
+              {COVERAGE_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>
+                  {o.label}
                 </option>
               ))}
             </select>

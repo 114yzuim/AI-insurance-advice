@@ -15,6 +15,7 @@ if str(BACKEND) not in sys.path:
 
 import httpx
 from inventory_db import get_inventory_connection, row_to_dict
+from inventory_http import DEFAULT_HEADERS, referer_for_url
 
 DEFAULT_OUTPUT_ROOT = BACKEND / "data" / "documents"
 DEFAULT_REPORT = BACKEND / "data" / "pdf_snapshot_downloads.json"
@@ -82,7 +83,8 @@ async def download_one(client: httpx.AsyncClient, doc: dict[str, Any], output_ro
     target = product_dir / f"document_{doc['document_id']}.pdf"
 
     try:
-        response = await client.get(url)
+        referer = referer_for_url(url)
+        response = await client.get(url, headers={"Referer": referer} if referer else None)
         response.raise_for_status()
         content_type = response.headers.get("content-type", "")
         content = response.content
@@ -140,13 +142,9 @@ async def main_async(args: argparse.Namespace) -> None:
     docs = fetch_documents(args.limit, args.company, args.include_redirected, args.retry_failed, args.include_suspicious)
     args.output_root.mkdir(parents=True, exist_ok=True)
     timeout = httpx.Timeout(args.timeout)
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "application/pdf,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
-        "Referer": "https://www.taiwanlife.com/",
-    }
-    async with httpx.AsyncClient(timeout=timeout, follow_redirects=True, headers=headers, verify=args.verify_ssl) as client:
+    async with httpx.AsyncClient(
+        timeout=timeout, follow_redirects=True, headers=DEFAULT_HEADERS, verify=not args.insecure
+    ) as client:
         semaphore = asyncio.Semaphore(args.concurrency)
 
         async def run_one(doc: dict[str, Any]) -> dict[str, Any]:
@@ -177,7 +175,12 @@ def main() -> None:
     parser.add_argument("--retry-failed", action="store_true")
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--timeout", type=float, default=20)
-    parser.add_argument("--verify-ssl", action="store_true")
+    parser.add_argument(
+        "--insecure",
+        action="store_true",
+        help="Disable TLS certificate verification (default: verify). Only use for a known, "
+        "trusted host with a broken cert chain.",
+    )
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     args = parser.parse_args()

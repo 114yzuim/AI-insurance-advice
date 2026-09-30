@@ -1,0 +1,261 @@
+<!--
+This is a REAL captured snapshot of the RESULT of POSTing an empty query
+(product_code="", keyword="") to
+https://ins-info.ib.gov.tw/customer/Property_Layout.aspx?UID=03557115 --
+fetched via a live browser session (clicking "查詢" with both fields blank,
+the same empty-query submission scripts/sources/ib_disclosure/query_client.py
+performs via httpx), saved verbatim, 2026-09-13. Page 1 of 192 for this
+company (臺灣產物保險股份有限公司), 10 products per page. This is what
+property_parser.py's `_find_data_grid()`/`_extract_product_rows()` and
+pagination extraction are built and tested against.
+-->
+<html lang="zh-tw"><head id="ctl00_Head1"><title>
+	保險業公開資訊觀測站
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"><link href="/assets/css/bootstrap-3.3.6.min.css" rel="stylesheet"></head>
+<body>
+    <form name="aspnetForm" method="post" action="Property_Layout.aspx?UID=03557115" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="REDACTED_VIEWSTATE">
+</div>
+<div>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3CAA9274">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="REDACTED_EVENTVALIDATION">
+</div>
+    <a href="#C" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a>
+
+    <div class="app">
+        <header class="home">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-8 logo">
+                            <a href="/index.aspx">
+                                <h1>
+                                    <img src="/assets/img/logo.gif" alt="保險業公開資訊網站"></h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page">
+            <div class="bg-gradient">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-2 bg-gradient-yellow"></div>
+
+                    <div class="col-md-10 detail">
+                        <a href="#C" accesskey="C" name="C" class="accesskey-content02" title="中央內容區塊">:::</a>
+
+ <script>
+        function goDetail(e, productCode){
+            var UID= '03557115';
+            var val = e.value ;
+            var queryString = "?UID=" + UID + "&proc=" + productCode;
+
+            if (val == '0') return;
+
+            document.location = 'property5-1-'+val+'.aspx'+queryString ;
+        }
+    </script>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+            <td valign="top" class="contentbg">
+                <div id="contentbox">
+                    <div class="title_main">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td>
+                                    <h2 class="tb4">
+                                        臺灣產物保險股份有限公司 - 資訊公開說明文件</h2>
+                                    <div align="right" class="grey">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div id="path">
+                        <a id="ctl00_MainContent_HyperLink1" href="announceinfo.aspx">單一查詢</a>
+                        /
+                             <a id="A2" href="property.aspx?UID=03557115">臺灣產物保險股份有限公司</a>
+
+                        / 商品查詢
+                    </div>
+					<div class="row content">
+						<div class="col-md-12">商品查詢</div>
+					</div>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered" summary="">
+						<tbody><tr>
+							<td height="34" class="tb1" scope="col">
+								<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" summary="">
+									<tbody><tr>
+										<th width="10%"><label for="txtProductCode"> 商品代碼</label></th>
+										<td width="25%" class="text12" scope="col">
+											<input name="ctl00$MainContent$txtProductCode" type="text" maxlength="50" id="ctl00_MainContent_txtProductCode" class="form-control" size="20">
+										</td>
+										<th width="20%"><label for="txtKeyWord"> 商品名稱(關鍵字查詢)</label></th>
+										<td width="25%">
+											<input name="ctl00$MainContent$txtKeyWord" type="text" maxlength="50" id="ctl00_MainContent_txtKeyWord" class="form-control" size="20">
+
+										</td>
+										<td width="10%" scope="col">
+											<center>
+												<input type="submit" name="ctl00$MainContent$btnQuery" value="查詢" id="ctl00_MainContent_btnQuery" class="btn btn-warning">
+											</center>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody></table>
+
+                    <table width="100%" border="0" cellspacing="1" cellpadding="0" class="table">
+                        <tbody><tr class="info">
+                            <td width="15%" align="center" class="tb2">
+                                商品代碼
+                            </td>
+
+                              <td width="45%" align="center" class="tb2">
+                                商品名稱
+                            </td>
+                            <td width="40%" align="center" class="tb2">
+                                功能
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div>
+	<table cellspacing="0" cellpadding="4" rules="all" border="1" id="ctl00_MainContent_DataGridSearchResults" style="color:#333333;width:100%;border-collapse:collapse;">
+		<tbody><tr style="background-color:#EFF3FB;">
+			<td style="width:25%;">
+                                                <span id="ctl00_MainContent_DataGridSearchResults_ctl02_lbProductCode">1011421171090180</span>
+                                            </td><td style="width:45%;">
+                                                <span id="ctl00_MainContent_DataGridSearchResults_ctl02_Label4">Taiwan Fire &amp; Marine Insurance Company Commercial General Liability Insurance Fire Legal Liability Clause (A)</span>
+                                            </td><td style="width:20%;">
+
+                                             <select id="func" onchange="goDetail(this, '1011421171090180') ">
+                                                    <option value="0">請選擇</option>
+                                                    <option value="1">1. 基本資訊</option>
+                                                    <option value="2">2. 條款內容</option>
+                                                        <option value="3">3. 短期費率表</option>
+                                                        <option value="4">4. 銷售予金融消費者之保險商品預定附加費用率與保費退費係數表</option>
+                                                        <option value="5">5. 理賠申請文件及程序</option>
+
+                                                </select>
+                                            </td>
+		</tr><tr style="background-color:White;">
+			<td style="width:25%;">
+                                                <span id="ctl00_MainContent_DataGridSearchResults_ctl03_lbProductCode">1011415260380502</span>
+                                            </td><td style="width:45%;">
+                                                <span id="ctl00_MainContent_DataGridSearchResults_ctl03_Label4">臺灣產物旅遊綜合保險寵物寄託意外費用補償附加條款</span>
+                                            </td><td style="width:20%;">
+
+                                             <select id="func" onchange="goDetail(this, '1011415260380502') ">
+                                                    <option value="0">請選擇</option>
+                                                    <option value="1">1. 基本資訊</option>
+                                                    <option value="2">2. 條款內容</option>
+                                                        <option value="3">3. 短期費率表</option>
+                                                        <option value="4">4. 銷售予金融消費者之保險商品預定附加費用率與保費退費係數表</option>
+                                                        <option value="5">5. 理賠申請文件及程序</option>
+
+                                                </select>
+                                            </td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td style="width:25%;">
+                                                <span id="ctl00_MainContent_DataGridSearchResults_ctl04_lbProductCode">1011415260380501</span>
+                                            </td><td style="width:45%;">
+                                                <span id="ctl00_MainContent_DataGridSearchResults_ctl04_Label4">臺灣產物旅遊綜合保險信用卡盜刷損失保險附加條款</span>
+                                            </td><td style="width:20%;">
+
+                                             <select id="func" onchange="goDetail(this, '1011415260380501') ">
+                                                    <option value="0">請選擇</option>
+                                                    <option value="1">1. 基本資訊</option>
+                                                    <option value="2">2. 條款內容</option>
+                                                        <option value="3">3. 短期費率表</option>
+                                                        <option value="4">4. 銷售予金融消費者之保險商品預定附加費用率與保費退費係數表</option>
+                                                        <option value="5">5. 理賠申請文件及程序</option>
+
+                                                </select>
+                                            </td>
+		</tr>
+	</tbody></table>
+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="left">
+                                <table align="center" width="100%">
+                                    <tbody><tr>
+                                        <td align="right">
+                                            <a id="ctl00_MainContent_lbtnFirst" disabled="disabled" autopostback="true">第一頁</a>
+                                            &nbsp;
+                                            <a id="ctl00_MainContent_lbtnPrev" disabled="disabled" autopostback="true">前一頁</a>
+                                            &nbsp;
+                                        </td>
+                                        <td align="center" width="25%">
+                                            <table id="ctl00_MainContent_dlPaging" cellspacing="0" border="0" style="font-size:Large;border-collapse:collapse;">
+	<tbody><tr>
+		<td>
+                                                    <a id="ctl00_MainContent_dlPaging_ctl00_lnkbtnPaging" disabled="disabled" style="font-weight:bold;font-size:35px;font-color:#00FFFF;">1</a>
+                                                </td><td>
+                                                    <a id="ctl00_MainContent_dlPaging_ctl01_lnkbtnPaging" href="Property_Layout.aspx?Page=2&amp;UID=03557115">2</a>
+                                                </td><td>
+                                                    <a id="ctl00_MainContent_dlPaging_ctl02_lnkbtnPaging" href="Property_Layout.aspx?Page=3&amp;UID=03557115">3</a>
+                                                </td>
+	</tr>
+</tbody></table>
+                                        </td>
+                                        <td align="left">
+                                            <a id="ctl00_MainContent_lbtnNext" autopostback="true" href="Property_Layout.aspx?Page=2&amp;UID=03557115">下一頁</a>
+                                            &nbsp;
+                                            <a id="ctl00_MainContent_lbtnLast" autopostback="true" href="Property_Layout.aspx?Page=192&amp;UID=03557115">最後頁</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" align="center" style="height: 18px">
+                                            <a id="ctl00_MainContent_lblPageInfo" href="javascript:__doPostBack('ctl00$MainContent$lblPageInfo','')">目前在第 1 頁，共 192 頁</a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div class="memo">
+                        <p>
+                            <span class="brown">※申報頻率</span><span class="brown">：</span><br>
+                            事實發生或內容異動之日起三十日內更新。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>
+                            金融監督管理委員會保險局 版權所有
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    </form>
+</body></html>

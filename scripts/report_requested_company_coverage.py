@@ -55,8 +55,21 @@ REQUESTED_PROPERTY = [
 
 
 def fetch_company(conn, name: str) -> dict:
+    # See scripts/import_inventory.py's company_id_for() for why this
+    # branches -- json_each() has no Postgres equivalent by that name;
+    # docs/postgres_migration_notes.md's 5-item table.
+    if getattr(conn, "dialect", "sqlite") == "postgres":
+        former_names_match = """EXISTS (
+                SELECT 1 FROM jsonb_array_elements_text(c.former_names::jsonb) AS former_name
+                WHERE former_name = ?
+           )"""
+    else:
+        former_names_match = """EXISTS (
+                SELECT 1 FROM json_each(c.former_names)
+                WHERE json_each.value = ?
+           )"""
     row = conn.execute(
-        """
+        f"""
         SELECT
             c.short_name,
             c.type,
@@ -77,10 +90,7 @@ def fetch_company(conn, name: str) -> dict:
         WHERE c.short_name = ?
            OR c.name = ?
            OR c.name LIKE ?
-           OR EXISTS (
-                SELECT 1 FROM json_each(c.former_names)
-                WHERE json_each.value = ?
-           )
+           OR {former_names_match}
         GROUP BY c.id
         """,
         (name, name, f"%{name}%", name),

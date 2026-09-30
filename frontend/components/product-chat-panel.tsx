@@ -2,12 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import MarkdownContent from "./markdown-content";
+import { coverageSummary, type Coverage } from "@/lib/coverage";
 
 interface Product {
   product_id: string;
   product_name: string;
   company: string;
   category: string;
+  coverage?: Coverage | null;
 }
 
 interface Message {
@@ -46,12 +48,17 @@ export default function ProductChatPanel({ selected, onDeselect }: ProductChatPa
     const productContext =
       "以下是使用者已選取、準備比較與推薦的保險商品。請以保險顧問角度，根據客戶基本資料、需求、預算與風險偏好，說明較適合的商品、推薦理由、可能缺口與投保前應確認事項。避免保證核保或理賠結果。\n" +
       selected.map((p, i) => `${i + 1}. ${p.product_name}（${p.company}，${p.category}）`).join("\n");
+    // Facts extracted from each product's own clauses (backend `coverage`);
+    // appended so the model answers from them instead of guessing.
+    const clauseContext =
+      "\n\n【條款摘要】（從各商品條款擷取；標示「無條款資料」的商品不得推測其條款內容）\n" +
+      selected.map((p, i) => `${i + 1}. ${p.product_name}：${coverageSummary(p.coverage)}`).join("\n");
 
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, history, product_context: productContext }),
+        body: JSON.stringify({ message: text, history, product_context: productContext + clauseContext }),
       });
       const data = await res.json().catch(() => null);
       if (!res.ok || typeof data?.reply !== "string" || !data.reply.trim()) {

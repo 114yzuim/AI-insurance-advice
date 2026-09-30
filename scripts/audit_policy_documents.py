@@ -14,6 +14,7 @@ if str(BACKEND) not in sys.path:
 import httpx
 from audit_product_links import check_url
 from inventory_db import get_inventory_connection, row_to_dict
+from inventory_http import DEFAULT_HEADERS
 
 DEFAULT_OUTPUT = BACKEND / "data" / "policy_document_audit.json"
 
@@ -102,17 +103,11 @@ def persist(results: list[dict[str, Any]], output: Path) -> None:
 
 async def main_async(args: argparse.Namespace) -> None:
     docs = fetch_documents(args.limit, args.company, args.only_unknown)
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "application/pdf,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
-        "Referer": "https://www.taiwanlife.com/",
-    }
     async with httpx.AsyncClient(
         timeout=httpx.Timeout(args.timeout),
         follow_redirects=True,
-        headers=headers,
-        verify=args.verify_ssl,
+        headers=DEFAULT_HEADERS,
+        verify=not args.insecure,
     ) as client:
         semaphore = asyncio.Semaphore(args.concurrency)
 
@@ -132,7 +127,12 @@ def main() -> None:
     parser.add_argument("--only-unknown", action="store_true")
     parser.add_argument("--concurrency", type=int, default=8)
     parser.add_argument("--timeout", type=float, default=15)
-    parser.add_argument("--verify-ssl", action="store_true")
+    parser.add_argument(
+        "--insecure",
+        action="store_true",
+        help="Disable TLS certificate verification (default: verify). Only use for a known, "
+        "trusted host with a broken cert chain.",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     asyncio.run(main_async(args))

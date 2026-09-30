@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { COVERAGE_LABEL, type Coverage } from "@/lib/coverage";
 
 interface Product {
   product_id: string;
@@ -6,6 +7,8 @@ interface Product {
   company: string;
   category: string;
   currency: string;
+  status?: string;
+  coverage?: Coverage | null;
   download_urls: string[];
 }
 
@@ -23,6 +26,14 @@ const CATEGORY_COLOR: Record<string, string> = {
   投資型保險: "bg-amber-100 text-amber-700",
   癌症險: "bg-rose-100 text-rose-700",
   其他: "bg-slate-100 text-slate-600",
+  // Property-insurance categories (TII / IB products, inferred by scripts/product_category.py).
+  車險: "bg-cyan-100 text-cyan-700",
+  火災及住宅: "bg-red-100 text-red-700",
+  海上及貨物: "bg-blue-100 text-blue-700",
+  工程保險: "bg-yellow-100 text-yellow-800",
+  責任保險: "bg-indigo-100 text-indigo-700",
+  信用保證: "bg-lime-100 text-lime-700",
+  產險其他: "bg-slate-100 text-slate-600",
 };
 
 export default function ProductCard({ product, checked = false, onToggle }: ProductCardProps) {
@@ -48,6 +59,9 @@ export default function ProductCard({ product, checked = false, onToggle }: Prod
           <span className={`truncate rounded-full px-2.5 py-1 text-xs font-bold ${categoryColor}`}>
             {product.category || "未分類"}
           </span>
+          {product.status === "discontinued" && (
+            <span className="shrink-0 rounded-full bg-slate-200 px-2 py-1 text-xs font-bold text-slate-600">已停售</span>
+          )}
         </div>
         <span className="shrink-0 rounded-full bg-slate-50 px-2 py-1 text-xs font-semibold text-slate-400">
           {product.currency || "TWD"}
@@ -58,6 +72,19 @@ export default function ProductCard({ product, checked = false, onToggle }: Prod
         {product.product_name}
       </h3>
       <p className="mt-2 text-sm font-medium text-slate-500">{product.company}</p>
+
+      {product.coverage && (product.coverage.types.length > 0 || product.coverage.is_rider) && (
+        <div className="mt-3 flex flex-wrap gap-1" title="從條款擷取的保障類型">
+          {product.coverage.types.map((t) => (
+            <span key={t} className="rounded-full bg-teal-50 px-2 py-0.5 text-xs font-bold text-teal-700">
+              {COVERAGE_LABEL[t] ?? t}
+            </span>
+          ))}
+          {product.coverage.is_rider && (
+            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-500">附約</span>
+          )}
+        </div>
+      )}
 
       <div className="mt-auto flex gap-2 pt-4" onClick={(e) => e.stopPropagation()}>
         <Link
