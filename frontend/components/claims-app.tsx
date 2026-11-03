@@ -1,15 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import {
-  COVERAGE_LABELS,
+  fetchInsuranceProfiles,
   fetchPolicyPortfolio,
   formatMoney,
   getPoliciesByCompany,
   getPolicySummary,
-  type CoverageKey,
+  type InsuranceProfile,
   type PolicyPortfolio,
 } from "@/lib/demo-policies";
 
@@ -102,14 +102,6 @@ const UPLOADS: Array<{ key: UploadKey; title: string; text: string }> = [
   { key: "detail", title: "醫療費用明細", text: "用來比對實支實付、手術與雜費項目。" },
 ];
 
-const CLAIM_FACTORS: Partial<Record<CoverageKey, { factor: number; confidence: Confidence }>> = {
-  daily: { factor: 6, confidence: "高度符合" },
-  medical: { factor: 5000, confidence: "高度符合" },
-  accident: { factor: 120, confidence: "高度符合" },
-  critical: { factor: 500, confidence: "需保險公司確認" },
-  cancer: { factor: 350, confidence: "需保險公司確認" },
-};
-
 const CLAIM_CASE_STATUSES: ClaimCaseStatus[] = ["文件整理中", "待送件", "已送件", "保險公司審核中", "已補件", "已結案"];
 
 export default function ClaimsApp() {
@@ -117,6 +109,18 @@ export default function ClaimsApp() {
   const profileId = searchParams.get("profile_id") ?? "demo-user";
   const ownerName = searchParams.get("owner_name") ?? "客戶";
   const clientId = searchParams.get("client_id");
+  return <ClaimsProfileApp key={profileId} profileId={profileId} requestedOwnerName={ownerName} clientId={clientId} />;
+}
+
+function ClaimsProfileApp({ profileId, requestedOwnerName, clientId }: {
+  profileId: string;
+  requestedOwnerName: string;
+  clientId: string | null;
+}) {
+  const router = useRouter();
+  const [profiles, setProfiles] = useState<InsuranceProfile[]>([]);
+  const [profileError, setProfileError] = useState("");
+  const [portfolioLoading, setPortfolioLoading] = useState(true);
   const [files, setFiles] = useState<UploadedFiles>({ diagnosis: null, receipt: null, detail: null });
   const [scenario, setScenario] = useState("");
   const [phase, setPhase] = useState<"input" | "analyzing" | "result">("input");
@@ -127,6 +131,17 @@ export default function ClaimsApp() {
   const [claimCases, setClaimCases] = useState<ClaimCase[]>([]);
   const [caseError, setCaseError] = useState("");
   const [portfolio, setPortfolio] = useState<PolicyPortfolio>(EMPTY_PORTFOLIO);
+  const ownerName = portfolio.profile?.owner_name ?? profiles.find((profile) => profile.id === profileId)?.owner_name ?? requestedOwnerName;
+
+  useEffect(() => {
+    let mounted = true;
+    fetchInsuranceProfiles().then((data) => {
+      if (mounted) setProfiles(data);
+    }).catch(() => {
+      if (mounted) setProfileError("客戶清單讀取失敗，請重新整理後再試。");
+    });
+    return () => { mounted = false; };
+  }, []);
 
   useEffect(() => {
     let mounted = true;
@@ -135,7 +150,13 @@ export default function ClaimsApp() {
         if (mounted) setPortfolio(data);
       })
       .catch(() => {
-        if (mounted) setPortfolio(EMPTY_PORTFOLIO);
+        if (mounted) {
+          setPortfolio(EMPTY_PORTFOLIO);
+          setProfileError("保單讀取失敗，請稍後再試；目前無法進行保障試算。");
+        }
+      })
+      .finally(() => {
+        if (mounted) setPortfolioLoading(false);
       });
     return () => {
       mounted = false;
@@ -179,9 +200,10 @@ export default function ClaimsApp() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ profile_id: profileId, scenario }),
       });
-      setClaimEstimate(estimateRes.ok ? await estimateRes.json() : null);
+      if (!estimateRes.ok) throw new Error("保障示範試算服務暫時無法使用");
+      setClaimEstimate(await estimateRes.json());
     } catch {
-      setDocumentError("文件解析或理賠估算失敗，請稍後再試。");
+      setDocumentError("文件解析或保障試算服務暫時無法使用。已讀取的文件會保留，請稍後再試。");
       setClaimEstimate(null);
     } finally {
       window.setTimeout(() => setPhase("result"), 500);
@@ -243,10 +265,10 @@ export default function ClaimsApp() {
           <div>
             <p className="text-sm font-bold text-teal-700">理賠服務中心</p>
             <h1 className="mt-2 text-3xl font-bold leading-tight text-slate-950 md:text-5xl">
-              {ownerName} 的理賠試算
+              {ownerName} 的理賠準備
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-7 text-slate-600">
-              上傳診斷證明、收據與醫療明細後，系統會依此客戶現有保單比對可能理賠項目、預估金額與應備文件。
+              上傳診斷證明、收據與醫療明細，整理文件資訊與現有保障，準備向保險公司確認的資料。
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -266,6 +288,27 @@ export default function ClaimsApp() {
             </Link>
           </div>
         </div>
+
+        <section className="mb-5 rounded-2xl border border-slate-200 bg-white p-5">
+          <label htmlFor="claim-profile" className="text-sm font-bold text-slate-800">這次要整理誰的理賠資料？</label>
+          <select
+            id="claim-profile"
+            value={profileId}
+            onChange={(event) => {
+              const selected = profiles.find((profile) => profile.id === event.target.value);
+              if (!selected) return;
+              const params = new URLSearchParams({ profile_id: selected.id, owner_name: selected.owner_name ?? "客戶" });
+              router.replace(`/claims?${params.toString()}`, { scroll: false });
+            }}
+            className="mt-3 block w-full max-w-md rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-800"
+          >
+            {!profiles.some((profile) => profile.id === profileId) && <option value={profileId}>{ownerName}</option>}
+            {profiles.map((profile) => <option key={profile.id} value={profile.id}>{profile.owner_name}（{profile.policy_count ?? 0} 張保單）</option>)}
+          </select>
+          <p className="mt-2 text-xs leading-5 text-slate-500">請先選擇客戶，再上傳這位客戶的文件；切換客戶會清空本次尚未儲存的分析。</p>
+          {profileError && <p className="mt-2 text-sm text-rose-700">{profileError}</p>}
+          {!portfolioLoading && !profileError && policySummary.policyCount === 0 && <p className="mt-2 text-sm font-bold text-amber-800">目前選擇的客戶沒有保單。請切換客戶，或先建立保單；這不代表不能申請理賠。</p>}
+        </section>
 
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
           <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
@@ -297,7 +340,7 @@ export default function ClaimsApp() {
 
             <button
               onClick={analyze}
-              disabled={uploadedCount === 0 && !scenario.trim()}
+              disabled={portfolioLoading || Boolean(profileError) || (uploadedCount === 0 && !scenario.trim())}
               className="mt-5 w-full rounded-xl bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
             >
               開始理賠比對
@@ -329,7 +372,7 @@ export default function ClaimsApp() {
               <div className="mt-3 grid gap-2 text-sm leading-6 text-amber-900">
                 <p>需先建立客戶既有保單。</p>
                 <p>診斷證明、收據、費用明細越完整，判讀越準。</p>
-                <p>預估金額仍需以保險公司核定與條款為準。</p>
+                <p>目前保障試算使用固定示範係數，不代表本次可申請或核賠金額。</p>
               </div>
             </section>
           </aside>
@@ -370,8 +413,7 @@ function ClaimResultView({
 }) {
   const [savingCase, setSavingCase] = useState(false);
   const [caseMessage, setCaseMessage] = useState("");
-  const fallbackClaims = buildClaimEstimate(companies);
-  const companyClaims = estimate?.companies ?? fallbackClaims;
+  const companyClaims = estimate?.companies ?? [];
   const estimatedTotal = estimate?.estimated_total ?? companyClaims.reduce((sum, company) => sum + company.total, 0);
   const highConfidenceTotal =
     estimate?.high_confidence_total ??
@@ -440,7 +482,7 @@ function ClaimResultView({
         <div className="mb-5 flex flex-col gap-4 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm lg:flex-row lg:items-start lg:justify-between">
           <div>
             <p className="text-sm font-bold text-teal-700">理賠比對結果</p>
-            <h1 className="mt-1 text-3xl font-bold text-slate-950">{ownerName} 的預估理賠</h1>
+            <h1 className="mt-1 text-3xl font-bold text-slate-950">{ownerName} 的理賠準備摘要</h1>
             <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-500">
               <span className="font-bold text-slate-700">補充說明：</span>{scenario || "未填寫"}
             </p>
@@ -455,9 +497,13 @@ function ClaimResultView({
 
         <section className="grid gap-3 md:grid-cols-3">
           <MetricCard label="本次醫療費用" value={medicalExpenseLabel} tone="text-slate-950" />
-          <MetricCard label="AI 預估可申請理賠" value={formatMoney(estimatedTotal)} tone="text-teal-700" />
-          <MetricCard label="涉及保險公司" value={`${companyClaims.length} 家`} tone="text-amber-600" />
+          <MetricCard label="保障示範試算（非可領金額）" value={!estimate ? "暫時無法試算" : estimate.policy_count === 0 ? "尚未帶入保單" : formatMoney(estimatedTotal)} tone="text-teal-700" />
+          <MetricCard label="已帶入保險公司" value={`${companies.length} 家`} tone="text-amber-600" />
         </section>
+
+        <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-900">
+          {estimate?.policy_count === 0 ? "目前選擇的客戶沒有保單，無法進行保障試算；這不代表不能申請理賠。請返回重新分析，選擇有保單的客戶。" : "目前金額依保單額度與固定示範係數計算，尚未依本次文件、正式條款及給付條件核算；不代表可申請或核賠金額。"}
+        </p>
 
         <div className="mt-5 grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
           <main className="space-y-4">
@@ -491,7 +537,7 @@ function ClaimResultView({
                     <div key={`${item.name}-${item.source_policy}`} className="grid grid-cols-[1fr_auto_auto] items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm">
                       <span className="font-bold text-slate-800">{item.name}</span>
                       <span className={`rounded-lg px-2 py-1 text-xs font-bold ${item.confidence === "高度符合" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
-                        {item.confidence}
+                        待條款確認
                       </span>
                       <span className="font-bold tabular-nums text-slate-950">{formatMoney(item.amount)}</span>
                       {item.source_policy && (
@@ -508,11 +554,12 @@ function ClaimResultView({
 
           <aside className="space-y-4">
             <section className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
-              <h2 className="text-sm font-bold text-slate-950">AI 理賠判讀</h2>
+              <h2 className="text-sm font-bold text-slate-950">示範試算分組</h2>
               <div className="mt-3 grid gap-2">
-                <ConfidenceRow label="高度符合" value={highConfidenceTotal} tone="green" />
-                <ConfidenceRow label="需保險公司確認" value={reviewTotal} tone="amber" />
-                <ConfidenceRow label="可能不符合" value={0} tone="gray" />
+                {estimate && estimate.policy_count > 0 ? <>
+                  <ConfidenceRow label="固定係數示範" value={highConfidenceTotal} tone="green" />
+                  <ConfidenceRow label="其他示範項目" value={reviewTotal} tone="amber" />
+                </> : <p className="text-sm text-slate-500">{estimate ? "請先帶入客戶保單。" : "試算服務暫時無法使用。"}</p>}
               </div>
             </section>
 
@@ -736,33 +783,6 @@ function DocumentSummaryPanel({ summary }: { summary: ClaimDocumentExtraction })
       )}
     </section>
   );
-}
-
-function buildClaimEstimate(companies: CompanyPolicyGroup[]): CompanyClaim[] {
-  return companies
-    .map((group) => {
-      const items = group.policies.flatMap((policy) =>
-        Object.entries(policy.coverages).flatMap(([key, amount]) => {
-          const coverageKey = key as CoverageKey;
-          const rule = CLAIM_FACTORS[coverageKey];
-          if (!rule || !amount) return [];
-          return [
-            {
-              name: COVERAGE_LABELS[coverageKey].label,
-              amount: Math.round(amount * rule.factor),
-              confidence: rule.confidence,
-              source_policy: policy.name,
-            },
-          ];
-        }),
-      );
-      return {
-        company: group.company,
-        total: items.reduce((sum, item) => sum + item.amount, 0),
-        items,
-      };
-    })
-    .filter((company) => company.total > 0);
 }
 
 function buildRequiredDocuments(companyCount: number) {

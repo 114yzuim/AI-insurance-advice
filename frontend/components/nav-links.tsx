@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 type NavLink = {
   href: string;
@@ -24,6 +24,7 @@ const ADVISOR_LINKS: NavLink[] = [
 
 export default function NavLinks() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const isAdvisor = pathname.startsWith("/advisor");
   const links = isAdvisor ? ADVISOR_LINKS : CUSTOMER_LINKS;
 
@@ -31,10 +32,18 @@ export default function NavLinks() {
     <div className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-sm">
       {links.map(({ href, label, exact }) => {
         const active = exact ? pathname === href : pathname.startsWith(href);
+        const profileParams = new URLSearchParams();
+        if (!isAdvisor && searchParams.get("profile_id")) {
+          for (const key of ["profile_id", "owner_name", "relation", "client_id"]) {
+            const value = searchParams.get(key);
+            if (value) profileParams.set(key, value);
+          }
+        }
+        const destination = profileParams.size ? `${href}?${profileParams.toString()}` : href;
         return (
           <Link
             key={href}
-            href={href}
+            href={destination}
             className={`shrink-0 rounded-full px-3 py-2 font-semibold transition ${
               active
                 ? "bg-slate-950 text-white"

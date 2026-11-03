@@ -36,7 +36,7 @@ def list_claim_cases(profile_id: str = DEFAULT_PROFILE_ID, client_id: str = "") 
             SELECT *
             FROM claim_cases
             {where_sql}
-            ORDER BY datetime(updated_at) DESC, id DESC
+            ORDER BY updated_at DESC, id DESC
             """,
             params,
         ).fetchall()
@@ -58,6 +58,7 @@ def create_claim_case(payload: dict[str, Any]) -> dict[str, Any]:
                 notes, next_follow_up_date, updated_at
             )
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
+            RETURNING id
             """,
             (
                 profile_id,
@@ -76,7 +77,8 @@ def create_claim_case(payload: dict[str, Any]) -> dict[str, Any]:
                 str(payload.get("next_follow_up_date") or ""),
             ),
         )
-        row = conn.execute("SELECT * FROM claim_cases WHERE id = ?", (int(cursor.lastrowid),)).fetchone()
+        case_id = int(cursor.fetchone()["id"])
+        row = conn.execute("SELECT * FROM claim_cases WHERE id = ?", (case_id,)).fetchone()
         return claim_case_to_dict(row)
 
 

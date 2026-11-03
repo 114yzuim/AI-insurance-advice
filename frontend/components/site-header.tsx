@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Suspense } from "react";
 import { usePathname } from "next/navigation";
 import FontSizeToggle from "@/components/font-size-toggle";
 import NavLinks from "@/components/nav-links";
@@ -18,7 +19,9 @@ export default function SiteHeader() {
           <span className={`h-8 w-8 rounded-lg ${isAdvisor ? "bg-amber-300" : "bg-teal-400"}`} />
           {isAdvisor ? "保險顧問工作台" : "AI 保險顧問"}
         </Link>
-        <NavLinks />
+        <Suspense fallback={<div className="flex-1" />}>
+          <NavLinks />
+        </Suspense>
         <FontSizeToggle />
       </nav>
     </header>

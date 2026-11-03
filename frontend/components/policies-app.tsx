@@ -1,7 +1,8 @@
 "use client";
 
 import { FormEvent, ReactNode, useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   COVERAGE_LABELS,
   COVERAGE_ORDER,
@@ -57,6 +58,7 @@ function makeEmptyForm(): PolicyFormState {
 }
 
 export default function PoliciesApp() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const requestedProfileId = searchParams.get("profile_id") ?? "demo-user";
   const requestedOwnerName = searchParams.get("owner_name") ?? "預設客戶";
@@ -96,6 +98,7 @@ export default function PoliciesApp() {
   useEffect(() => {
     let mounted = true;
     queueMicrotask(() => {
+      if (mounted) setActiveProfileId(requestedProfileId);
       fetchInsuranceProfiles()
         .then(async (data) => {
           let nextProfiles = data;
@@ -166,6 +169,11 @@ export default function PoliciesApp() {
   async function handleProfileSelect(profileId: string) {
     setActiveProfileId(profileId);
     setActiveCompany("全部");
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("profile_id", profileId);
+    params.set("owner_name", profiles.find((profile) => profile.id === profileId)?.owner_name ?? "客戶");
+    params.delete("client_id");
+    router.replace(`/policies?${params.toString()}`, { scroll: false });
     await reloadPolicies(profileId);
   }
 
@@ -273,6 +281,12 @@ export default function PoliciesApp() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
+            <Link
+              href={`/claims?${new URLSearchParams({ profile_id: activeProfileId, owner_name: portfolio.profile?.owner_name ?? "客戶" }).toString()}`}
+              className="rounded-xl bg-teal-700 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-teal-800"
+            >
+              前往理賠中心
+            </Link>
             <button
               onClick={openCreateForm}
               className="rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-slate-800"
